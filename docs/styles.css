@@ -236,3 +236,61 @@ mark.hit { background: #fff3a8; }
 .b-card summary .p ul, .b-card summary .p ol, .front .prompt ul, .front .prompt ol, .q ul, .q ol { margin: 0; padding-left: 1.2em; text-align: left; }
 .front .prompt ul.l0, .front .prompt ol.l0 { display: inline-block; }
 .chip { text-align: left; }
+
+/* ---------- cheer-up easter egg (teal, bubbly) ---------- */
+:root {
+  --teal: #5ec8c0; --teal-deep: #1f7a74; --teal-soft: #e6faf8; --teal-line: #9fe0da;
+  --bubbly: ui-rounded, "SF Pro Rounded", "Nunito", "Quicksand", "Varela Round", "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+}
+.cheer-row { text-align: center; margin: 10px 0 2px; }
+.cheer-pill {
+  font-family: var(--bubbly); font-weight: 700; font-size: 0.88rem; color: var(--teal-deep);
+  background: var(--teal-soft); border: 1.5px dashed var(--teal-line); border-radius: 999px; padding: 7px 14px;
+  cursor: pointer; transition: transform 0.15s ease, background 0.15s ease; -webkit-tap-highlight-color: transparent;
+}
+.cheer-pill:hover { background: #d4f5f1; transform: translateY(-1px) scale(1.02); }
+.cheer-nudge { display: inline-flex; align-items: center; gap: 4px; animation: cheer-in 0.5s cubic-bezier(.2,1.4,.4,1); }
+.cheer-nudge .cheer-pill { font-size: 0.8rem; padding: 5px 11px; }
+.cheer-x { border: 0; background: transparent; color: var(--muted); font-size: 1.1rem; line-height: 1; cursor: pointer; padding: 2px 6px; }
+
+.cheer-overlay {
+  position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; padding: 18px;
+  background: rgba(94, 200, 192, 0.32); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+  animation: cheer-fade 0.25s ease; overflow: hidden;
+}
+.cheer-overlay.closing { animation: cheer-fade 0.22s ease reverse forwards; }
+.cheer-card {
+  position: relative; background: #fff; border-radius: 34px; padding: 18px 18px 16px; max-width: 440px; width: 100%;
+  box-shadow: 0 20px 50px rgba(31, 122, 116, 0.35), 0 0 0 6px rgba(255,255,255,0.55);
+  animation: cheer-pop 0.6s cubic-bezier(.2,1.5,.4,1); text-align: center; font-family: var(--bubbly);
+  max-height: calc(100dvh - 36px); display: flex; flex-direction: column;
+}
+.cheer-frame {
+  position: relative; margin: 0 auto; border-radius: 26px; background: linear-gradient(135deg, #bff0ea, #e6faf8);
+  padding: 9px; box-shadow: 0 10px 26px rgba(31,122,116,0.28), inset 0 0 0 3px #fff; transform: rotate(-2deg);
+  transition: transform 0.4s cubic-bezier(.2,1.4,.4,1); min-height: 160px; min-width: 200px; display: flex; align-items: center; justify-content: center;
+  flex: 0 1 auto; overflow: hidden;
+}
+.cheer-frame.ready { transform: rotate(-1.5deg); }
+.cheer-frame img { display: block; max-width: 100%; max-height: min(52vh, 480px); width: auto; border-radius: 18px; opacity: 0; transition: opacity 0.35s ease; }
+.cheer-frame.ready img { opacity: 1; }
+.cheer-frame.broken img { display: none; }
+.cheer-spinner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 34px; animation: cheer-beat 1s ease-in-out infinite; }
+.cheer-frame.ready .cheer-spinner { display: none; }
+.cheer-msg { font-size: 1.22rem; font-weight: 800; color: var(--teal-deep); line-height: 1.35; margin: 16px 6px 4px; letter-spacing: 0.01em; }
+.cheer-actions { display: flex; gap: 10px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
+.cheer-btn {
+  font-family: var(--bubbly); font-weight: 800; border-radius: 999px; padding: 11px 18px; border: 2px solid var(--teal-line);
+  background: var(--teal-soft); color: var(--teal-deep); cursor: pointer; transition: transform 0.12s ease; -webkit-tap-highlight-color: transparent;
+}
+.cheer-btn.primary { background: linear-gradient(135deg, #6fd3cb, #3fb8ae); color: #fff; border-color: transparent; box-shadow: 0 6px 16px rgba(63,184,174,0.4); }
+.cheer-btn:active { transform: scale(0.96); }
+.cheer-hearts { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.cheer-heart { position: absolute; bottom: -40px; animation: cheer-float 5.5s linear infinite; opacity: 0; filter: drop-shadow(0 2px 4px rgba(31,122,116,0.3)); }
+
+@keyframes cheer-pop { 0% { transform: scale(0.5) rotate(-6deg); opacity: 0; } 60% { transform: scale(1.06) rotate(1.5deg); opacity: 1; } 100% { transform: scale(1) rotate(0); } }
+@keyframes cheer-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cheer-in { from { transform: translateY(8px) scale(0.9); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes cheer-beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.25); } }
+@keyframes cheer-float { 0% { transform: translateY(0) rotate(0); opacity: 0; } 10% { opacity: 0.9; } 90% { opacity: 0.6; } 100% { transform: translateY(-105vh) rotate(25deg); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cheer-card, .cheer-heart, .cheer-nudge { animation: none; } }

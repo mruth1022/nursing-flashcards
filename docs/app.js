@@ -113,6 +113,7 @@
     }
     s.answers.push(entry);
     s.index++; s.flipped = false;
+    Cheer.onAnswer(yes);
     saveProgress();
     if (s.index >= s.queue.length) { s.phase = 'summary'; saveSession(); render(); return; }
     saveSession(); render();
@@ -238,10 +239,12 @@
         </div>
         <button class="btn primary big" data-act="start" ${count ? '' : 'disabled'}>Study ${count} card${count === 1 ? '' : 's'}</button>
       </div>
+      ${Cheer.pillHtml()}
       <p class="hint kbd-only">Keyboard: <span class="kbd">Space</span> flip · <span class="kbd">→</span> or <span class="kbd">Y</span> got it · <span class="kbd">←</span> or <span class="kbd">N</span> still learning · <span class="kbd">U</span> undo</p>
       <p class="hint">Deck updated ${d.generatedAt ? fmtDate(d.generatedAt) : '—'}</p>`;
 
     bindDeckPicker(renderHome);
+    Cheer.bind($app);
     $app.querySelectorAll('.chip[data-sec]').forEach(b => b.onclick = () => {
       const n = b.dataset.sec; const i = sel.indexOf(n);
       if (i >= 0) sel.splice(i, 1); else sel.push(n);
@@ -283,7 +286,9 @@
             ? h`<button class="btn no" data-act="no">Still learning<span class="k kbd-only">← or N</span></button><button class="btn yes" data-act="yes">Got it<span class="k kbd-only">→ or Y</span></button>`
             : h`<button class="btn primary single" data-act="flip">Show answer<span class="k kbd-only">Space</span></button>`}
         </div>
-        <div class="under"><span>${s.roundYes.length} got it · ${s.roundNo.length} still learning</span><span>${s.flipped ? 'Swipe → got it · ← still learning' : ''}</span></div>
+        <div class="under"><span>${s.roundYes.length} got it · ${s.roundNo.length} still learning</span>${Cheer.current()
+          ? h`<span class="cheer-nudge"><button class="cheer-pill" data-act="cheer">${esc(Cheer.current())}</button><button class="cheer-x" data-act="cheer-dismiss" aria-label="Dismiss">×</button></span>`
+          : h`<span>${s.flipped ? 'Swipe → got it · ← still learning' : ''}</span>`}</div>
       </div>`;
 
     const $card = $app.querySelector('#card');
@@ -297,6 +302,7 @@
     const y = $app.querySelector('[data-act=yes]'); if (y) y.onclick = () => answer(true);
     const n = $app.querySelector('[data-act=no]'); if (n) n.onclick = () => answer(false);
     $app.querySelector('[data-act=undo]').onclick = undo;
+    Cheer.bind($app);
     $app.querySelector('[data-act=end]').onclick = () => { if (confirm('End this session? Your answers so far are saved.')) { endSession(true); go('home'); } };
 
     // swipe (only when flipped)
@@ -314,7 +320,7 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { closeLightbox(); return; }
+    if (e.key === 'Escape') { closeLightbox(); Cheer.close(); return; }
     if (state.view !== 'study' || !state.session) return;
     if (e.target && ['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
     const s = state.session; const k = e.key;
@@ -351,9 +357,11 @@
           ${rounds && !doneAll ? h`<button class="btn primary big" data-act="next">Start round ${s.round + 1}</button>` : ''}
           <button class="btn ${rounds && !doneAll ? '' : 'primary'} big" data-act="finish">Finish</button>
         </div>
+        ${Cheer.pillHtml()}
         ${missed.length ? h`<div class="panel pile" style="margin-top:20px"><b>Still learning</b><ul class="list">${missed.map(id => h`<li><span class="dot no"></span>${esc(state.cards.get(id).prompt)}</li>`).join('')}</ul></div>` : ''}
       </div></div>`;
     const nx = $app.querySelector('[data-act=next]'); if (nx) nx.onclick = nextRound;
+    Cheer.bind($app);
     $app.querySelector('[data-act=finish]').onclick = () => { endSession(true); go('stats'); };
   }
 
@@ -529,6 +537,75 @@
     $app.querySelector('[data-act=merge]').onclick = () => doImport(false);
     $app.querySelector('[data-act=replace]').onclick = () => doImport(true);
   }
+
+
+  // ------------------------------------------------------------ cheer-up easter egg
+  const Cheer = (() => {
+    const FALLBACK = { balto: ["Don't worry, Balto believes in you! 💙"], us: ["Don't worry, I believe in you! 💙"] };
+    let data = null, loading = null, recentPhotos = [], recentMsgs = [];
+    let missStreak = 0, sinceNudge = 0, lastNudgeAt = 0, nudge = null, nudgeTimer = null;
+
+    function load() {
+      if (data) return Promise.resolve(data);
+      loading = loading || Promise.all([
+        fetch('cheer/manifest.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : { photos: [] }).catch(() => ({ photos: [] })),
+        fetch('cheer/messages.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : FALLBACK).catch(() => FALLBACK),
+      ]).then(([m, msgs]) => (data = { photos: m.photos || [], msgs: { ...FALLBACK, ...msgs } }));
+      return loading;
+    }
+    function pick(list, recent, keep) {
+      const fresh = list.filter(x => !recent.includes(x));
+      const pool = fresh.length ? fresh : list;
+      const x = pool[Math.floor(Math.random() * pool.length)];
+      recent.push(x); if (recent.length > keep) recent.shift();
+      return x;
+    }
+    function choose() {
+      const photo = pick(data.photos, recentPhotos, Math.min(40, Math.max(1, data.photos.length - 1)));
+      const list = data.msgs[photo.who] || data.msgs.us;
+      return { photo, msg: pick(list, recentMsgs, Math.min(8, list.length - 1)) };
+    }
+    async function show() {
+      await load();
+      if (!data.photos.length) { toast('No photos yet 💙'); return; }
+      close();
+      const { photo, msg } = choose();
+      const el = document.createElement('div'); el.className = 'cheer-overlay'; el.id = 'cheer';
+      const hearts = Array.from({ length: 9 }, (_, i) => `<span class="cheer-heart" style="left:${6 + i * 11}%; animation-delay:${(i * 0.45).toFixed(2)}s; font-size:${14 + (i * 7) % 16}px">${i % 3 ? '💙' : '🩵'}</span>`).join('');
+      el.innerHTML = `<div class="cheer-hearts">${hearts}</div>
+        <div class="cheer-card" role="dialog" aria-label="A little encouragement">
+          <div class="cheer-frame"><img alt="" src="cheer/${photo.file}"><div class="cheer-spinner">💙</div></div>
+          <p class="cheer-msg">${esc(msg)}</p>
+          <div class="cheer-actions"><button class="cheer-btn" data-act="another">Another one 💙</button><button class="cheer-btn primary" data-act="close">Back to it ✨</button></div>
+        </div>`;
+      const img = el.querySelector('img');
+      img.onload = () => el.querySelector('.cheer-frame').classList.add('ready');
+      img.onerror = () => { el.querySelector('.cheer-frame').classList.add('ready', 'broken'); };
+      el.addEventListener('click', (e) => { if (e.target === el) close(); });
+      el.querySelector('[data-act=close]').onclick = close;
+      el.querySelector('[data-act=another]').onclick = () => show();
+      document.body.appendChild(el);
+      // warm the cache for the next one
+      const nxt = data.photos[Math.floor(Math.random() * data.photos.length)]; if (nxt) { const pre = new Image(); pre.src = 'cheer/' + nxt.file; }
+    }
+    function close() { const el = document.getElementById('cheer'); if (el) { el.classList.add('closing'); setTimeout(() => el.remove(), 220); } }
+    function onAnswer(yes) {
+      missStreak = yes ? 0 : missStreak + 1; sinceNudge++;
+      if (Date.now() - lastNudgeAt < 4 * 60 * 1000) return;
+      if (missStreak >= 3) setNudge('Rough patch? Tap for a smile 💙');
+      else if (sinceNudge >= 30) setNudge('Quick smile break? 💙');
+    }
+    function setNudge(text) {
+      lastNudgeAt = Date.now(); missStreak = 0; sinceNudge = 0; nudge = text;
+      clearTimeout(nudgeTimer); nudgeTimer = setTimeout(() => { nudge = null; if (state.view === 'study') render(); }, 12000);
+    }
+    function current() { return nudge; }
+    function dismiss() { nudge = null; clearTimeout(nudgeTimer); }
+    function pillHtml() { return `<div class="cheer-row"><button class="cheer-pill" data-act="cheer">Feeling discouraged? 💙</button></div>`; }
+    function bind(root) { root.querySelectorAll('[data-act=cheer]').forEach(b => b.onclick = (e) => { e.preventDefault(); show(); }); const d = root.querySelector('[data-act=cheer-dismiss]'); if (d) d.onclick = (e) => { e.preventDefault(); dismiss(); render(); }; }
+    setTimeout(load, 1500); // fetch quietly after the app is up
+    return { show, close, onAnswer, current, pillHtml, bind };
+  })();
 
   // ------------------------------------------------------------ boot
   (async () => {
