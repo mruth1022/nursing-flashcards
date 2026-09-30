@@ -10,11 +10,14 @@ Usage:
 Rules:
   * Every <table> becomes cards. Column 1 = prompt, column 2 = answer.
     An optional column 3 is used as a label/tag for the card.
-  * Sections: a row whose prompt cell is a heading (h1-h4) starts a new section
-    that runs until the next heading row or the end of the table. Rows before the
-    first heading row use the table's default name: --sections (comma separated,
-    one per table in document order), else the nearest heading above the table,
-    else "Part N". Sections with the same name merge.
+  * Sections: a row whose prompt cell is a heading (Heading 1-4) starts a new
+    section that runs until the next heading row or the end of the table. When
+    two heading levels are used, the higher one (e.g. Heading 1 "Unit 1") is a
+    group and the lower one (Heading 2 "Heart Failure") is the section. A heading
+    row with an empty answer is only a label; with an answer it is also a card.
+    Rows before the first heading row use the table's default name: --sections
+    (comma separated, one per table in document order), else the nearest heading
+    above the table, else "Part N".
   * Each document is a "test" (deck) named after the doc title. Re-running the
     import for a doc replaces that test in cards.json and keeps the others;
     --fresh drops everything else.
@@ -405,11 +408,26 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
     table_index = 0
     seen_ids: dict[str, int] = {}
 
-    def section_cards(name: str) -> list[dict]:
-        if name not in sections:
-            sections[name] = {"name": name, "cards": []}
-            order.append(name)
-        return sections[name]["cards"]
+    def section_cards(name: str, group: str | None = None) -> list[dict]:
+        key = f"{group or ''}\x00{name}"
+        if key not in sections:
+            sections[key] = {"name": name, "group": group, "cards": []}
+            order.append(key)
+        return sections[key]["cards"]
+
+    def heading_level(cell: Node) -> int | None:
+        lv = [int(n.tag[1]) for n in cell.iter() if n.tag in HEADING_TAGS]
+        return min(lv) if lv else None
+
+    # Which heading levels are used inside prompt cells? Two or more => top level = group.
+    used_levels: set[int] = set()
+    for tr in (n for n in body.iter() if n.tag == "tr"):
+        tds = [td for td in tr.children if td.tag in ("td", "th")]
+        if tds:
+            lv = heading_level(tds[0])
+            if lv is not None and tds[0].plain_text():
+                used_levels.add(lv)
+    group_level = min(used_levels) if len(used_levels) >= 2 else None
 
     def walk(node: Node):
         nonlocal current_heading, table_index
@@ -435,6 +453,7 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
         rows = [tr for tr in table.iter() if tr.tag == "tr" and _owning_table(tr) is table]
         first = True
         wide_warned = False
+        group: str | None = None
         cards = section_cards(default_name)
         for tr in rows:
             cells = [td for td in tr.children if td.tag in ("td", "th")]
@@ -470,8 +489,13 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
             prompt_html = renderer.render_cell(cells[0])
             prompt_imgs = list(renderer.image_hashes)
 
-            if prompt_text and any(n.tag in HEADING_TAGS for n in cells[0].iter()):
-                cards = section_cards(prompt_text)
+            lvl = heading_level(cells[0]) if prompt_text else None
+            if lvl is not None:
+                if group_level is not None and lvl == group_level:
+                    group = prompt_text
+                cards = section_cards(prompt_text, group)
+                if not answer_html:
+                    continue  # pure section label, not a card
 
             if not answer_html:
                 warnings.append(f"Card has an empty answer: {prompt_text[:60]!r}")
@@ -506,7 +530,10 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
         "title": (tb.title or "Flashcards").strip(),
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "cardCount": total,
-        "sections": [sections[n] for n in order if sections[n]["cards"]],
+        "sections": [
+            {k: v for k, v in sections[n].items() if not (k == "group" and v is None)}
+            for n in order if sections[n]["cards"]
+        ],
     }
     return deck, warnings
 
@@ -626,7 +653,7 @@ def main(argv=None):
     n_img = sum(c.get("images", 0) for s in deck["sections"] for c in s["cards"])
     print(f"Test: {deck['title']}")
     for s in deck["sections"]:
-        print(f"  {len(s['cards']):4d}  {s['name']}")
+        print(f"  {len(s['cards']):4d}  {(s['group'] + ' › ') if s.get('group') else ''}{s['name']}")
     print(f"Total cards: {deck['cardCount']}  ({n_img} images)  ->  {out}")
     if len(bundle["decks"]) > 1:
         print("Tests in cards.json: " + ", ".join(d["title"] for d in bundle["decks"]))

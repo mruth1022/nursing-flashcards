@@ -48,10 +48,10 @@
     const data = await res.json();
     state.decks = data.decks || [{ key: 'single', title: data.title || 'Flashcards', generatedAt: data.generatedAt, cardCount: data.cardCount, sections: data.sections }];
     state.cards.clear();
-    for (const d of state.decks) for (const s of d.sections) for (const c of s.cards) state.cards.set(c.id, { ...c, section: s.name, deckKey: d.key, deckTitle: d.title });
+    for (const d of state.decks) for (const s of d.sections) for (const c of s.cards) state.cards.set(c.id, { ...c, section: s.name, sectionKey: sKey(s), sectionLabel: sLabel(d, s), group: s.group || '', deckKey: d.key, deckTitle: d.title });
     if (!state.decks.some(d => d.key === state.prefs.deck)) state.prefs.deck = state.decks[0].key;
     for (const d of state.decks) {
-      const names = d.sections.map(s => s.name);
+      const names = d.sections.map(sKey);
       const sel = state.prefs.sectionsByDeck[d.key];
       state.prefs.sectionsByDeck[d.key] = sel && sel.some(n => names.includes(n)) ? sel.filter(n => names.includes(n)) : names.slice();
     }
@@ -59,13 +59,20 @@
     if (state.session && state.session.queue.some(id => !state.cards.has(id))) { state.session = null; saveSession(); }
   }
   function deck() { return state.decks.find(d => d.key === state.prefs.deck) || state.decks[0]; }
+  function sKey(sec) { return sec.group ? sec.group + '\u241f' + sec.name : sec.name; }
+  function sLabel(d, sec) { return sec.group && sec.name === sec.group && d.sections.some(x => x !== sec && x.group === sec.group) ? 'General' : sec.name; }
+  function groupsOf(d) {
+    const out = [];
+    for (const sec of d.sections) { const g = sec.group || ''; let G = out.find(x => x.name === g); if (!G) out.push(G = { name: g, secs: [] }); G.secs.push(sec); }
+    return out;
+  }
   function selectedSections() { return state.prefs.sectionsByDeck[deck().key]; }
 
   // ------------------------------------------------------------ selection
   function selectCards(cfg) {
     const d = state.decks.find(x => x.key === cfg.deck) || deck();
     const secs = new Set(cfg.sections);
-    let groups = d.sections.filter(s => secs.has(s.name)).map(s => s.cards.map(c => c.id));
+    let groups = d.sections.filter(s => secs.has(sKey(s))).map(s => s.cards.map(c => c.id));
     if (cfg.scope === 'unmastered') groups = groups.map(g => g.filter(id => !isMastered(id)));
     if (cfg.scope === 'weakest') groups = [weakestIds(groups.flat(), 20)];
     if (cfg.order === 'section') groups = groups.map(shuffle);
@@ -214,9 +221,9 @@
 
       <div class="panel" style="margin-top:16px">
         ${deckPicker()}
-        <div class="field"><label class="lbl">Sections</label>
-          <div class="chips">${d.sections.map(s => { const ss = sectionStats(s); return h`<button class="chip ${sel.includes(s.name) ? 'on' : ''}" data-sec="${esc(s.name)}">${esc(s.name)} <span class="cnt">${ss.y}/${ss.t}</span></button>`; }).join('')}</div>
-          <div class="hint"><button class="link" data-act="all">All</button> · <button class="link" data-act="none">None</button></div>
+        <div class="field"><label class="lbl">Sections <span class="hint" style="display:inline;text-transform:none;letter-spacing:0;font-weight:500">· <button class="link" data-act="all">All</button> · <button class="link" data-act="none">None</button></span></label>
+          ${groupsOf(d).map(G => h`<div class="grp">${G.name ? h`<button class="grp-name" data-grp="${esc(G.name)}" title="Toggle all in ${esc(G.name)}">${esc(G.name)}</button>` : ''}
+            <div class="chips">${G.secs.map(sec => { const ss = sectionStats(sec); const k = sKey(sec); return h`<button class="chip ${sel.includes(k) ? 'on' : ''}" data-sec="${esc(k)}">${esc(sLabel(d, sec))} <span class="cnt">${ss.y}/${ss.t}</span></button>`; }).join('')}</div></div>`).join('')}
         </div>
         <div class="field"><label class="lbl">Which cards</label>
           <div class="seg" data-pref="scope">
@@ -251,7 +258,13 @@
       savePrefs(); renderHome();
     });
     $app.querySelectorAll('.seg[data-pref] button').forEach(b => b.onclick = () => { p[b.parentElement.dataset.pref] = b.dataset.val; savePrefs(); renderHome(); });
-    $app.querySelector('[data-act=all]').onclick = () => { p.sectionsByDeck[d.key] = d.sections.map(s => s.name); savePrefs(); renderHome(); };
+    $app.querySelectorAll('[data-grp]').forEach(b => b.onclick = () => {
+      const keys = d.sections.filter(sec => (sec.group || '') === b.dataset.grp).map(sKey);
+      const allOn = keys.every(k => sel.includes(k));
+      p.sectionsByDeck[d.key] = allOn ? sel.filter(k => !keys.includes(k)) : [...new Set([...sel, ...keys])];
+      savePrefs(); renderHome();
+    });
+    $app.querySelector('[data-act=all]').onclick = () => { p.sectionsByDeck[d.key] = d.sections.map(sKey); savePrefs(); renderHome(); };
     $app.querySelector('[data-act=none]').onclick = () => { p.sectionsByDeck[d.key] = []; savePrefs(); renderHome(); };
     $app.querySelector('[data-act=start]').onclick = () => { if (state.session) endSession(true); startSession(homeCfg()); };
     const r = $app.querySelector('[data-act=resume]'); if (r) r.onclick = () => go('study');
@@ -266,7 +279,7 @@
     const c = state.cards.get(id);
     const total = s.queue.length; const done = s.index;
     const remaining = s.config.mode === 'reinsert' ? new Set(s.queue.slice(s.index)).size : total - done;
-    const kicker = [c.section, c.label].filter(Boolean).map(esc).join(' · ');
+    const kicker = [c.group, c.sectionLabel !== c.group || !c.group ? c.sectionLabel : '', c.label].filter(Boolean).map(esc).join(' · ');
     $app.innerHTML = h`
       <div class="study">
         <div class="study-top">
@@ -383,10 +396,10 @@
         ${barHtml(st, true)}
       </div>
       <div class="panel"><b>By section</b>
-        <ul class="list">${d.sections.map(s => { const ss = sectionStats(s); return h`<li>
-          <div class="sec-row"><span class="name">${esc(s.name)}</span><span class="pct">${ss.y}/${ss.t}</span>
-            <button class="btn small" data-study-sec="${esc(s.name)}" ${ss.y === ss.t ? 'disabled' : ''}>Study ${ss.t - ss.y}</button></div>
-          ${barHtml(ss)}</li>`; }).join('')}</ul>
+        <ul class="list">${groupsOf(d).map(G => (G.name ? h`<li class="grp-head">${esc(G.name)}</li>` : '') + G.secs.map(s => { const ss = sectionStats(s); return h`<li>
+          <div class="sec-row"><span class="name">${esc(sLabel(d, s))}</span><span class="pct">${ss.y}/${ss.t}</span>
+            <button class="btn small" data-study-sec="${esc(sKey(s))}" ${ss.y === ss.t ? 'disabled' : ''}>Study ${ss.t - ss.y}</button></div>
+          ${barHtml(ss)}</li>`; }).join('')).join('')}</ul>
       </div>
       <div class="panel"><div class="row"><b>Weakest cards</b><div class="spacer"></div>${weakest.length ? h`<button class="btn small primary" data-act="study-weak">Study these ${weakest.length}</button>` : ''}</div>
         ${weakest.length ? h`<ul class="list">${weakest.map(id => { const c = state.cards.get(id); const r = rec(id); return h`<li class="sec-row"><span class="dot ${r.status}"></span><span class="name" style="font-weight:500">${esc(c.prompt)}</span><span class="pct">${r.no}✗ ${r.yes}✓</span></li>`; }).join('')}</ul>` : '<p class="empty">No missed cards yet.</p>'}
@@ -399,7 +412,7 @@
     bindDeckPicker(renderStats);
     const base = () => ({ deck: d.key, order: state.prefs.order, mode: state.prefs.mode });
     $app.querySelectorAll('[data-study-sec]').forEach(b => b.onclick = () => { if (state.session) endSession(true); startSession({ ...base(), sections: [b.dataset.studySec], scope: 'unmastered' }); });
-    const w = $app.querySelector('[data-act=study-weak]'); if (w) w.onclick = () => { if (state.session) endSession(true); startSession({ ...base(), sections: d.sections.map(s => s.name), scope: 'weakest' }); };
+    const w = $app.querySelector('[data-act=study-weak]'); if (w) w.onclick = () => { if (state.session) endSession(true); startSession({ ...base(), sections: d.sections.map(sKey), scope: 'weakest' }); };
     $app.querySelector('[data-act=reset]').onclick = () => { if (confirm('Reset ALL progress and session history on this device? This cannot be undone.')) { state.progress = { cards: {}, sessions: [] }; endSession(false); saveProgress(); renderStats(); toast('Progress reset'); } };
   }
 
@@ -413,7 +426,7 @@
     let total = 0;
     const secsHtml = d.sections.map(s => {
       const cards = s.cards.filter(match); total += cards.length; if (!cards.length) return '';
-      return h`<h2>${esc(s.name)} <span style="color:var(--muted);font-weight:400">${cards.length}</span></h2><div class="panel" style="padding:4px 16px">
+      return h`<h2>${s.group ? h`<span class="grp-inline">${esc(s.group)} ›</span> ` : ''}${esc(sLabel(d, s))} <span style="color:var(--muted);font-weight:400">${cards.length}</span></h2><div class="panel" style="padding:4px 16px">
         ${cards.map(c => h`<details class="b-card" ${terms.length ? 'open' : ''}><summary><span class="dot ${statusOf(c.id) || ''}"></span><span class="p">${hi(c.promptHtml || esc(c.prompt))}</span>${c.label ? h`<span class="tag">${esc(c.label)}</span>` : ''}</summary>
           <div class="ans a">${hi(c.answerHtml || '<i>(no answer)</i>')}
             <div class="row" style="margin-top:10px"><button class="btn small" data-mark="no" data-id="${c.id}">Still learning</button><button class="btn small" data-mark="yes" data-id="${c.id}">Got it</button>${statusOf(c.id) ? h`<button class="btn small ghost" data-mark="clear" data-id="${c.id}">Clear</button>` : ''}</div>

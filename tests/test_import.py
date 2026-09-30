@@ -179,6 +179,59 @@ class RealStyleTests(unittest.TestCase):
         self.assertIn("Rate &lt; 60", img["answerHtml"])
 
 
+UNIT_DOC = """
+<html><body>
+<table><tbody>
+<tr><td><h1>Dosage Calculation</h1></td><td></td></tr>
+<tr><td>Round to?</td><td>Tenths</td></tr>
+</tbody></table>
+<table><tbody>
+<tr><td><h1>Unit 1</h1></td><td></td></tr>
+<tr><td><h2>Heart Failure</h2></td><td></td></tr>
+<tr><td>Cardiac Output</td><td>4-8 L/min</td></tr>
+<tr><td><h2>EKG</h2></td><td></td></tr>
+<tr><td>P wave</td><td>Atrial depolarization</td></tr>
+</tbody></table>
+<table><tbody>
+<tr><td><h1>Unit 2</h1></td><td></td></tr>
+<tr><td>PT</td><td>11-12.5 s</td></tr>
+<tr><td><h2>Pulmonary Embolism</h2></td><td>Sudden dyspnea</td></tr>
+<tr><td>Treatment</td><td>Heparin</td></tr>
+<tr><td><h2>EKG</h2></td><td></td></tr>
+<tr><td>QRS</td><td>Ventricular depolarization</td></tr>
+</tbody></table>
+</body></html>
+"""
+
+
+class UnitGroupingTests(unittest.TestCase):
+    def setUp(self):
+        self.deck, self.warnings = import_doc.extract(UNIT_DOC)
+        self.secs = [(s.get("group"), s["name"], [c["prompt"] for c in s["cards"]]) for s in self.deck["sections"]]
+
+    def test_two_levels_make_groups_and_sections(self):
+        self.assertEqual(self.secs, [
+            ("Dosage Calculation", "Dosage Calculation", ["Round to?"]),
+            ("Unit 1", "Heart Failure", ["Cardiac Output"]),
+            ("Unit 1", "EKG", ["P wave"]),
+            ("Unit 2", "Unit 2", ["PT"]),
+            ("Unit 2", "Pulmonary Embolism", ["Pulmonary Embolism", "Treatment"]),
+            ("Unit 2", "EKG", ["QRS"]),
+        ])
+
+    def test_label_only_heading_rows_are_not_cards_and_not_warned(self):
+        self.assertEqual(self.deck["cardCount"], 7)
+        self.assertFalse(any("empty answer" in w for w in self.warnings))
+
+    def test_heading_row_with_answer_is_still_a_card(self):
+        pe = next(s for s in self.deck["sections"] if s["name"] == "Pulmonary Embolism")
+        self.assertEqual(pe["cards"][0]["answerHtml"], "Sudden dyspnea")
+
+    def test_single_level_has_no_groups(self):
+        deck, _ = import_doc.extract(REAL_STYLE_DOC, section_names=["Coag"])
+        self.assertTrue(all("group" not in s for s in deck["sections"]))
+
+
 class MainMergeTests(unittest.TestCase):
     def test_reimport_replaces_same_doc_and_keeps_others(self):
         with tempfile.TemporaryDirectory() as td:

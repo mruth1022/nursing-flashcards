@@ -23,8 +23,7 @@ Requirements: Python 3.9+ (macOS has it), `git`. The photo script also needs Pil
 The doc must be shared as **Anyone with the link can view**.
 
 ```bash
-python3 tools/import_doc.py "https://docs.google.com/document/d/1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0/edit" \
-  --sections "IV Calculations,Cardiac,Coagulation,Electrolytes,Hematology & Immunity"
+python3 tools/import_doc.py "https://docs.google.com/document/d/1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0/edit"
 git add -A && git commit -m "Update cards" && git push
 ```
 
@@ -39,8 +38,7 @@ Each doc becomes a separate **Test** in the app, named after the doc title (a tr
 is more than one.
 
 ```bash
-python3 tools/import_doc.py "https://docs.google.com/document/d/<OTHER_DOC_ID>/edit" \
-  --sections "Name for table 1,Name for table 2"
+python3 tools/import_doc.py "https://docs.google.com/document/d/<OTHER_DOC_ID>/edit"
 git add -A && git commit -m "Add <test name>" && git push
 ```
 
@@ -52,11 +50,14 @@ git add -A && git commit -m "Add <test name>" && git push
 
 * Every table in the doc is a set of cards: column 1 = prompt, column 2 = answer. An optional
   column 3 becomes a small label on the card.
-* **Sections:** a row whose prompt is styled as a Google Docs *Heading 1–4* starts a new section
-  that runs until the next heading row or the end of that table. Rows before the first heading row
-  in a table get the table's default name from `--sections` (one name per table, in document
-  order; leave an entry blank to keep the automatic name). Without `--sections` the default is a
-  heading placed above the table in the doc, else "Part N".
+* **Units and sections come from heading rows.** In the doc, make the prompt cell of a row a
+  Google Docs *Heading 1* to start a unit (e.g. "Unit 1") and a *Heading 2* to start a section
+  (e.g. "Heart Failure"). Each runs until the next heading row or the end of that table. Leave the
+  answer cell empty and the row is only a label; give it an answer and it is also a card. If a doc
+  uses just one heading level, those rows are plain sections with no units.
+* Cards that sit directly under a unit heading with no section heading show up as "General" in
+  that unit. A table with no heading rows at all gets a name from `--sections` (one name per table
+  in document order) or, failing that, "Part N".
 * A first row like "Term | Definition" is skipped automatically. Force it with `--skip-header` or
   keep it with `--keep-header`.
 * Prompt cells that contain only an image become "identify this" cards.

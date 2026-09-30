@@ -294,3 +294,14 @@ mark.hit { background: #fff3a8; }
 @keyframes cheer-beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.25); } }
 @keyframes cheer-float { 0% { transform: translateY(0) rotate(0); opacity: 0; } 10% { opacity: 0.9; } 90% { opacity: 0.6; } 100% { transform: translateY(-105vh) rotate(25deg); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .cheer-card, .cheer-heart, .cheer-nudge { animation: none; } }
+
+/* ---------- unit groups ---------- */
+.grp { margin: 6px 0 10px; }
+.grp-name {
+  display: block; background: none; border: 0; padding: 0; margin: 0 0 6px; cursor: pointer; text-align: left;
+  font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);
+}
+.grp-name:hover { text-decoration: underline; }
+.list li.grp-head { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); padding: 16px 0 4px; border-top: 0; }
+.list li.grp-head + li { border-top: 0; }
+.grp-inline { color: var(--muted); font-weight: 500; }

@@ -1,24 +1,25 @@
 {
- "generatedAt": "2026-09-30T04:16:15+00:00",
+ "generatedAt": "2026-09-30T06:26:11+00:00",
  "decks": [
   {
    "title": "NS30A Final",
-   "generatedAt": "2026-09-30T04:16:15+00:00",
+   "generatedAt": "2026-09-30T06:26:11+00:00",
    "cardCount": 175,
    "sections": [
     {
-     "name": "IV Calculations",
+     "name": "Dosage Calculation",
+     "group": "Dosage Calculation",
      "cards": [
       {
        "id": "28353d38d9",
        "prompt": "When calculating the rate on an IV pump, what do you round to?",
        "promptHtml": "<p>When calculating the rate on an IV pump, what do you round to?</p>",
-       "answerHtml": "<p>Tenths</p>"
+       "answerHtml": "<p>Tenths</p><ul class=\"l1\"><li>Except for pediatric, which is always to the <span style=\"color:#ff0000\">hundredths </span>place</li></ul>"
       },
       {
-       "id": "7b2a7382ad",
-       "prompt": "If a “drop factor” (eg: 15 gtt/mL) is provided, what does this mean?",
-       "promptHtml": "<ul class=\"l0\"><li>If a “<mark style=\"background-color:#ff9900\">drop factor</mark>” (eg: <mark style=\"background-color:#ff9900\">15 gtt/mL</mark>) is provided, what does this mean?</li></ul>",
+       "id": "c0ff22db4e",
+       "prompt": "If a “drop factor” (eg: 15 gtt/mL) is provided, what are they asking for?",
+       "promptHtml": "<p>If a “<mark style=\"background-color:#ff9900\">drop factor</mark>” (eg: <mark style=\"background-color:#ff9900\">15 gtt/mL</mark>) is provided, what are they asking for?</p>",
        "answerHtml": "<p>It means the question is asking for a manual IV flow rate in <mark style=\"background-color:#ff9900\">gtt/min</mark>, since this applies only when using gravity and drip chambers</p>"
       },
       {
@@ -86,7 +87,8 @@
      ]
     },
     {
-     "name": "Cardiac",
+     "name": "Heart Failure",
+     "group": "Unit 1",
      "cards": [
       {
        "id": "40d057a12d",
@@ -255,7 +257,13 @@
        "prompt": "Nursing Considerations for Heart Failure",
        "promptHtml": "<p>Nursing Considerations for Heart Failure</p>",
        "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff00ff\">Sodium &lt; 2 g/day</span></li><li><b>Report </b></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">2-3 lbs </span>in<span style=\"color:#ff00ff\"> 24-48 hrs </span></li><li><span style=\"color:#ff00ff\">5 lbs </span>in a <span style=\"color:#ff00ff\">week</span></li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "Thrombocytopenia",
+     "group": "Unit 1",
+     "cards": [
       {
        "id": "d4debd6764",
        "prompt": "Immune Thrombocytopenia (ITP)",
@@ -273,7 +281,13 @@
        "prompt": "Disseminated Intravascular Coagulation (DIC)",
        "promptHtml": "<p>Disseminated Intravascular Coagulation (DIC)</p>",
        "answerHtml": "<p>→ Disseminated = Widespread, affecting everything</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Widespread clotting AND bleeding at the same time</span></li><li><b>↑ </b>D-dimer (hallmark)</li></ul><p>Treatment</p><ul class=\"l0\"><li>1st = Treat <b>underlying cause</b> <span style=\"color:#ff0000\">urgently</span></li><li>Blood products: <mark style=\"background-color:#00ffff\">FFP, platelets, cryoprecipitate, RBCs</mark></li><li>Continuous <mark style=\"background-color:#00ff00\">bleeding/clotting assessment</mark></li><li>Hemodialysis if AKI</li><li>Assess </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Tissue damage/ischemia</mark></li><li><mark style=\"background-color:#00ff00\">Neurological status</mark></li></ul><ul class=\"l0\"><li>D/t stroke risk</li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "EKG",
+     "group": "Unit 1",
+     "cards": [
       {
        "id": "5648346e1a",
        "prompt": "P wave",
@@ -465,7 +479,8 @@
      ]
     },
     {
-     "name": "Coagulation",
+     "name": "Unit 2",
+     "group": "Unit 2",
      "cards": [
       {
        "id": "4a320b9cd5",
@@ -501,6 +516,7 @@
     },
     {
      "name": "Pulmonary Embolism",
+     "group": "Unit 2",
      "cards": [
       {
        "id": "8164e1fd9a",
@@ -542,6 +558,7 @@
     },
     {
      "name": "Tuberculosis",
+     "group": "Unit 2",
      "cards": [
       {
        "id": "46cbea5490",
@@ -577,13 +594,20 @@
     },
     {
      "name": "Pulmonary Fibrosis",
+     "group": "Unit 2",
      "cards": [
       {
        "id": "4b4e0abb43",
        "prompt": "Pulmonary Fibrosis",
        "promptHtml": "<p><b>Pulmonary Fibrosis</b></p>",
        "answerHtml": "<p>Chronic, progressive lung disease</p><p>Caused by</p><ul class=\"l0\"><li>Lung injury </li><li>Excess collagen &amp; scar tissue</li><li><mark style=\"background-color:#00ffff\">Amiodarone</mark> </li></ul><p>Complications </p><ul class=\"l0\"><li>Pulmonary HTN</li><li>R ventricular heart failure </li></ul><ul class=\"l1\"><li>Leads to → <span style=\"color:#ff0000\">Cor Pulmonale</span> (heart failure d/t lung condition) </li></ul><p>Diagnostics </p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">CT Chest</mark></li></ul><ul class=\"l1\"><li>“<span style=\"color:#ff0000\">Honeycomb</span>” = permanent scar tissue</li></ul><p>Nursing Care</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Bronchodilators </mark></li><li><mark style=\"background-color:#00ff00\">Help w/ SOB</mark></li><li><mark style=\"background-color:#00ffff\">Oxygen </mark>therapy</li><li><span style=\"color:#ff00ff\">SpO2 ≥ 90%</span></li><li><mark style=\"background-color:#00ff00\">Chest percussion</mark></li></ul><ul class=\"l1\"><li>Get rid of secretions </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Pulmonary rehab</mark></li></ul><ol class=\"l1\" start=\"1\"><li>Exercise</li><li>Breathing strategies</li><li>Psychosocial support </li><li><mark style=\"background-color:#00ff00\">[Help them </mark><mark style=\"background-color:#00ff00\"><b>preserve </b></mark><mark style=\"background-color:#00ff00\">as much lung function as possible]</mark></li></ol><ul class=\"l0\"><li>Lung transplant = only cure</li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "ABGs",
+     "group": "Unit 2",
+     "cards": [
       {
        "id": "6d0288d1c3",
        "prompt": "pH",
@@ -642,13 +666,8 @@
     },
     {
      "name": "Electrolytes",
+     "group": "Electrolytes",
      "cards": [
-      {
-       "id": "3ebaf6b653",
-       "prompt": "Electrolyte mnemonic",
-       "promptHtml": "<p>Electrolyte mnemonic</p>",
-       "answerHtml": "<p>Nice Cats Keep Pet Mice        </p>"
-      },
       {
        "id": "5e6f6b1433",
        "prompt": "Na",
@@ -682,7 +701,8 @@
      ]
     },
     {
-     "name": "Hematology & Immunity",
+     "name": "Immunity",
+     "group": "Unit 3",
      "cards": [
       {
        "id": "82996521a0",
@@ -731,7 +751,13 @@
        "prompt": "Dendritic Cells",
        "promptHtml": "<p>Dendritic Cells</p>",
        "answerHtml": "<p><i>Present antigen to T cells</i></p>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "Hypersensitivity Reactions",
+     "group": "Unit 3",
+     "cards": [
       {
        "id": "d074babf4c",
        "prompt": "Hypersensitivity Reactions",
@@ -767,7 +793,13 @@
        "prompt": "Type 4 Delayed Cell-Mediated Reaction",
        "promptHtml": "<p><b>Type 4</b></p><p>Delayed <b>Cell-Mediated</b> Reaction</p>",
        "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Involves T Cells</mark> !</li><li><span style=\"color:#ff00ff\">48-72 hours after</span></li></ul><p>Examples:</p><ul class=\"l0\"><li>2 step TB skin test (PPD)</li><li>Contact dermatitis (poison ivy)</li><li>Transplant rejection</li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "Blood Transfusion Reactions",
+     "group": "Unit 3",
+     "cards": [
       {
        "id": "32cc86a87b",
        "prompt": "What size IV is needed for blood transfusions?",
@@ -851,7 +883,13 @@
        "prompt": "Transfusion Associated Graft vs Host Disease",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\">Transfusion Associated </mark><mark style=\"background-color:#ffff00\"><b>Graft vs Host Disease</b></mark></p>",
        "answerHtml": "<p><b>Type 4</b> reaction</p><ul class=\"l0\"><li>Can occur <span style=\"color:#ff00ff\">2-30 days AFTER</span> transfusion</li></ul><p>Manifestations</p><ul class=\"l0\"><li>Fever</li><li>Rash</li><li>Diarrhea</li><li><span style=\"color:#ff0000\">Liver dysfunction</span></li><li><span style=\"color:#ff0000\">Bone dysfunction</span></li><li><span style=\"color:#ff0000\">Pancytopenia </span>(all cells are low)</li></ul><p><mark style=\"background-color:#00ff00\">Prevention</mark></p><ul class=\"l0\"><li><b>Leukoreduction / Irradiated</b> blood products</li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "HIV",
+     "group": "Unit 3",
+     "cards": [
       {
        "id": "80ac1d61cb",
        "prompt": "How is HIV transmitted",
@@ -863,6 +901,12 @@
        "prompt": "Oral Hairy Leukoplakia",
        "promptHtml": "<p><b>Oral Hairy Leukoplakia </b></p>",
        "answerHtml": "<ul class=\"l0\"><li><b>Painless white coated spots</b> on the side of the tongue</li><li>Caused by <span style=\"color:#ff0000\">Epstein Barr Virus!</span></li></ul>"
+      },
+      {
+       "id": "53811bcf9c",
+       "prompt": "Wasting / Anorexia",
+       "promptHtml": "<p><b>Wasting / Anorexia</b></p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Megestrol acetate</mark> - <b>Appetite </b>stimulant</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">↑ Clotting risk!</span></li></ul><p><mark style=\"background-color:#00ffff\">Dronabinol</mark></p><ul class=\"l0\"><li>Cannabis-derived <b>appetite </b>stimulant</li></ul>"
       },
       {
        "id": "812c6113bf",
@@ -892,6 +936,7 @@
     },
     {
      "name": "Opportunistic Infections & Malignancies",
+     "group": "Unit 3",
      "cards": [
       {
        "id": "9f709ab8fa",
@@ -903,7 +948,7 @@
        "id": "e315dfd5bc",
        "prompt": "Pneumocytis jirovecii Pneumonia (PJP)",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\">Pneumocytis jirovecii </mark><mark style=\"background-color:#ffff00\"><b>Pneumonia</b></mark> (<b>PJP</b>)</p>",
-       "answerHtml": "<p>Fungal infection </p><p><span style=\"color:#ff0000\">Pneumonia symptoms </span></p><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Oxygen</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids </mark>(if significantly hypoxic)</li></ul>"
+       "answerHtml": "<p>Fungal infection </p><p><span style=\"color:#ff0000\">Pneumonia symptoms </span></p><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Trimethoprim-sulfamethoxazole</mark></li><li><mark style=\"background-color:#00ffff\">Oxygen</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids </mark>(if significantly hypoxic)</li></ul>"
       },
       {
        "id": "a84d160716",
@@ -915,19 +960,19 @@
        "id": "f73ecff8d7",
        "prompt": "Mycobacterium Avium Complex (MAC)",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\">Mycobacterium Avium Complex</mark> (<b>MAC</b>)</p>",
-       "answerHtml": "<p>Bacterial Infection</p><p>Occurs with ↓ Severely low <span style=\"color:#ff00ff\">CD4 &lt; 50</span></p><p><span style=\"color:#ff0000\">GI Symptoms </span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Gastroenteritis</span></li><li><span style=\"color:#ff0000\">Watery diarrhea</span></li><li><span style=\"color:#ff0000\">Weight loss</span></li><li>Can affect multiple organs</li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Antibiotic </mark>&amp; <mark style=\"background-color:#00ffff\">ART </mark>therapy</li></ul>"
+       "answerHtml": "<p>Bacterial Infection</p><p>Occurs with ↓ Severely low <span style=\"color:#ff00ff\">CD4 &lt; 50</span></p><p><span style=\"color:#ff0000\">GI Symptoms </span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Gastroenteritis</span></li><li><span style=\"color:#ff0000\">Watery diarrhea</span></li><li><span style=\"color:#ff0000\">Weight loss</span></li><li>Can affect multiple organs</li></ul><p>Prophylactic treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Azithromycin</mark> weekly when <span style=\"color:#ff00ff\">CD4 &lt; 50</span></li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Antibiotic </mark>&amp; <mark style=\"background-color:#00ffff\">ART </mark>therapy</li></ul>"
       },
       {
        "id": "88cb8c8913",
        "prompt": "Cytomegalovirus (CMV)",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\">Cytomegalovirus </mark>(<b>CMV</b>)</p>",
-       "answerHtml": "<p>Viral infection</p><p>Signs</p><ul class=\"l0\"><li>[Inflammation of eyes, esophagus, mouth, lungs]</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\"><b>Retinitis (</b></span>Progressive <span style=\"color:#ff0000\">vision loss)</span></li><li><span style=\"color:#ff0000\">Esophagitis, stomatitis</span></li><li><span style=\"color:#ff0000\">Pneumonitis</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Neurologic</span> dz        </li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Intravitreal injections</mark></li><li><mark style=\"background-color:#00ffff\">ART </mark>therapy</li></ul>"
+       "answerHtml": "<p>Viral infection</p><p>Signs</p><ul class=\"l0\"><li>[Inflammation of eyes, esophagus, mouth, lungs]</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\"><b>Retinitis (</b></span>Progressive <span style=\"color:#ff0000\">vision loss)</span></li><li><span style=\"color:#ff0000\">Esophagitis, stomatitis</span></li><li><span style=\"color:#ff0000\">Pneumonitis</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Neurologic</span> dz        </li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Ganciclovir</mark></li><li><mark style=\"background-color:#00ffff\">Intravitreal injections</mark></li><li><mark style=\"background-color:#00ffff\">ART </mark>therapy</li></ul>"
       },
       {
        "id": "fce557c6af",
        "prompt": "Candidiasis",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Candidiasis</b></mark></p>",
-       "answerHtml": "<ul class=\"l0\"><li>Fungal infection</li><li>Oral = earliest opportunistic infection</li><li>Invasive = rare but life-threatening in severe immunosuppression</li></ul><p><u>Oral Candidiasis</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>White plaque</b></span> on tongue</li></ul><p><u>Esophageal Candidiasis</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Odynophagia (</span>Painful swallow) </li><li><span style=\"color:#ff0000\">Dysphagia</span></li></ul><p><u>Invasive Candidiasis affects</u></p><ul class=\"l0\"><li>Blood</li><li>Skin</li><li>Mucosa</li><li>Internal Organs</li><li>Eyes</li></ul><p>Treat with <mark style=\"background-color:#00ffff\">IV antifungals</mark></p>"
+       "answerHtml": "<ul class=\"l0\"><li>Fungal infection</li><li>Oral = earliest opportunistic infection</li><li>Invasive = rare but life-threatening in severe immunosuppression</li></ul><p><u>Oral Candidiasis</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>White plaque</b></span> on tongue</li></ul><p>Treatment:</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Fluconazole</mark></li><li><mark style=\"background-color:#00ffff\">Nystatin </mark>(swish/spit)</li></ul><p><u>Esophageal Candidiasis</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Odynophagia (</span>Painful swallow) </li><li><span style=\"color:#ff0000\">Dysphagia</span></li></ul><p>Treat with</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">IV/PO Fluconazole</mark> (swallow)</li><li><mark style=\"background-color:#00ffff\">Nystatin </mark>(swish/swallow)</li></ul><p><u>Invasive Candidiasis affects</u></p><ul class=\"l0\"><li>Blood</li><li>Skin</li><li>Mucosa</li><li>Internal Organs</li><li>Eyes</li></ul><p>Treat with <mark style=\"background-color:#00ffff\">IV antifungals</mark></p>"
       },
       {
        "id": "f8201ba011",
@@ -940,7 +985,13 @@
        "prompt": "CNS Lymphoma [Burkitt’s / Brain lymphoma]",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>CNS Lymphoma</b></mark></p><p>[Burkitt’s / Brain lymphoma]</p>",
        "answerHtml": "<p>Malignant Cancer</p><p>Signs</p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Neuro changes</b></span></li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">ART </mark>therapy</li><li><mark style=\"background-color:#00ffff\">Chemotherapy</mark></li><li><mark style=\"background-color:#00ffff\">Radiation</mark></li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "ART Therapy Anti Retroviral Therapy",
+     "group": "Unit 3",
+     "cards": [
       {
        "id": "22dc149cca",
        "prompt": "ART Therapy",
@@ -1000,7 +1051,13 @@
        "prompt": "Protease Inhibitors",
        "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Protease Inhibitors</b></mark></p>",
        "answerHtml": "<p>Action</p><ul class=\"l0\"><li>Block protease to<b> prevent from being cut into pieces</b> &amp; producing <mark style=\"background-color:#ffff00\">mature </mark><b>HIV particles</b></li></ul><p>Stage</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Maturation</mark></li></ul><p>Monitor:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Liver </span>problems</li><li><span style=\"color:#ff0000\">Hyperglycemia</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Polydipsia </span>(thirst)</li><li><span style=\"color:#ff0000\">Polyuria</span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Glycosuria </span>(glucose in urine)</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Polyphagia </span>(hunger)</li><li><span style=\"color:#ff0000\">Irritable </span></li></ul><ul class=\"l0\"><li>Hyperlipidemia</li></ul><ul class=\"l1\"><li>LDL</li><li>HDL</li></ul><p><span style=\"color:#ff0000\">Interacts w/ statins!</span></p>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "Pituitary Alterations",
+     "group": "Unit 4",
+     "cards": [
       {
        "id": "0a1968eb66",
        "prompt": "Pituitary",
@@ -1017,14 +1074,20 @@
        "id": "026a1a0fa6",
        "prompt": "SIADH",
        "promptHtml": "<p><span style=\"color:#ff0000\"><b>SIADH</b></span></p>",
-       "answerHtml": "<p> <span style=\"color:#ff0000\">“Swollen Inside”</span></p><p><mark style=\"background-color:#ffff00\">↑ ADH</mark></p><p><u>SIGNS</u></p><ul class=\"l0\"><li>↓ Dilutional <span style=\"color:#0000ff\">hyponatremia </span>(sodium &lt; 135)</li><li><i>↓ </i>Serum Osmolality</li><li><i>↓ </i>Urine output</li><li>↑  Weight</li><li>↑ Urine Osmolality</li><li>↑ Urine Specific Gravity</li><li><span style=\"color:#ff0000\">Neurologic </span>changes, possible <span style=\"color:#ff0000\">cerebral edema </span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Fluid restriction</mark></p><p><mark style=\"background-color:#00ff00\">HOB flat</mark></p><p><mark style=\"background-color:#00ffff\">Vaptans”</mark> (<mark style=\"background-color:#00ffff\">tol</mark><mark style=\"background-color:#00ffff\"><b>vaptan</b></mark><mark style=\"background-color:#00ffff\">, coni</mark><mark style=\"background-color:#00ffff\"><b>vaptan</b></mark>)</p><ul class=\"l0\"><li>These meds block ADH</li><li><mark style=\"background-color:#00ff00\">Liver precautions</mark>!</li><li>[With this med, you would expect ↑ urine output to go up]</li></ul><p><span style=\"color:#ff0000\"><u>Severe Hyponatremia</u></span><span style=\"color:#ff0000\">:</span> Sodium &lt; 120</p><p><span style=\"color:#ff0000\">Fluid restriction</span></p><p><mark style=\"background-color:#00ffff\">Hypertonic saline</mark> (<mark style=\"background-color:#00ffff\">3% sodium chloride)</mark></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>BP</li><li>Neuro</li><li>IV site (tissue necrosis if it leaks)</li></ul><p><u>NURSING ACTION</u></p><ul class=\"l0\"><li>Correct sodium <b>GRADUALLY </b>by NO MORE THAN <span style=\"color:#ff00ff\">8-12 mEq/L in the first 24 hrs</span>!</li><li>Seizure &amp; Fall precautions</li><li>Daily weight (<span style=\"color:#ff00ff\">2.2 lbs = 1 liter of fluid)</span> </li></ul>"
+       "answerHtml": "<p> <span style=\"color:#ff0000\">“Swollen Inside”</span></p><p><mark style=\"background-color:#ffff00\">↑ ADH</mark></p><p><u>SIGNS</u></p><ul class=\"l0\"><li>↓ Dilutional <span style=\"color:#0000ff\">hyponatremia </span>(sodium &lt; 135)</li><li><i>↓ </i>Serum Osmolality</li><li><i>↓ </i>Urine output</li><li>↑  Weight</li><li>↑ Urine Osmolality</li><li>↑ Urine Specific Gravity</li><li><span style=\"color:#ff0000\">Neurologic </span>changes, possible <span style=\"color:#ff0000\">cerebral edema </span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Fluid restriction</mark></p><p><mark style=\"background-color:#00ff00\">HOB flat</mark></p><p><mark style=\"background-color:#00ffff\"><u>Demeclocycline</u></mark></p><ul class=\"l0\"><li><b>Inhibits ADH</b> action at renal tubule</li><li>Used in chronic SIADH unresponsive to fluid restriction </li></ul><p>Nursing considerations</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor renal function</mark> </li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Nephrotoxic</span>!</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Photosensitivity </span></li><li>Risk for <span style=\"color:#ff0000\">dehydration</span></li></ul><p><mark style=\"background-color:#00ffff\">Vaptans”</mark> (<mark style=\"background-color:#00ffff\">tol</mark><mark style=\"background-color:#00ffff\"><b>vaptan</b></mark><mark style=\"background-color:#00ffff\">, coni</mark><mark style=\"background-color:#00ffff\"><b>vaptan</b></mark>)</p><ul class=\"l0\"><li>These meds block ADH</li><li><mark style=\"background-color:#00ff00\">Liver precautions</mark>!</li><li>[With this med, you would expect ↑ urine output to go up]</li></ul><p><mark style=\"background-color:#00ffff\">Furosemide </mark>(Lasix)</p><p>-Only for <span style=\"color:#ff0000\">mild</span> forms of hyponatremia (sodium level of 125) </p><p><span style=\"color:#ff0000\"><u>Severe Hyponatremia</u></span><span style=\"color:#ff0000\">:</span> Sodium &lt; 120</p><p><span style=\"color:#ff0000\">Fluid restriction</span></p><p><mark style=\"background-color:#00ffff\">Hypertonic saline</mark> (<mark style=\"background-color:#00ffff\">3% sodium chloride)</mark></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>BP</li><li>Neuro</li><li>IV site (tissue necrosis if it leaks)</li></ul><p><u>NURSING ACTION</u></p><ul class=\"l0\"><li>Correct sodium <b>GRADUALLY </b>by NO MORE THAN <span style=\"color:#ff00ff\">8-12 mEq/L in the first 24 hrs</span>!</li><li>Seizure &amp; Fall precautions</li><li>Daily weight (<span style=\"color:#ff00ff\">2.2 lbs = 1 liter of fluid)</span> </li></ul>"
       },
       {
        "id": "5aad905626",
        "prompt": "Diabetes Insipidus (DI)",
        "promptHtml": "<p><span style=\"color:#0000ff\"><b>Diabetes Insipidus (DI)</b></span></p>",
-       "answerHtml": "<p><span style=\"color:#0000ff\">“Dry Inside”</span></p><p><mark style=\"background-color:#ffff00\">↓ ADH or absent</mark></p><p><i>Causes</i></p><ul class=\"l0\"><li><i>Brain injuries, tumor in the head, pregnancy</i></li></ul><p><mark style=\"background-color:#ffff00\">Central DI</mark></p><ul class=\"l0\"><li>↓ <b>Low</b> ADH production from <span style=\"color:#ff0000\">posterior pituitary gland</span></li><li>(Central = think <span style=\"color:#ff0000\">brain</span>)</li></ul><p><mark style=\"background-color:#ffff00\">Nephrogenic DI</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Kidneys</span> unresponsive to ADH</li></ul><p>Urine output can exceed <span style=\"color:#ff00ff\">2-20 L/day</span></p><p><u>SIGNS</u></p><ul class=\"l0\"><li>↑ Urine output (Polyuria)</li><li>↑ Serum Osmolality </li><li>↑ <span style=\"color:#ff0000\">Hypernatremia</span></li><li><span style=\"color:#ff0000\">Neuro changes</span></li><li>↓ Weight</li><li>Polydipsia (thirst)</li><li>↓ Diluted Urine Osmolality</li><li>↓ Urine Specific Gravity</li></ul><p><u>DIAGNOSTICS</u></p><p><b>Before </b>diagnostics, get → Baseline</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Vitals</mark></li><li><mark style=\"background-color:#00ff00\">Weight</mark></li><li><mark style=\"background-color:#00ff00\">Average urine output</mark></li><li><mark style=\"background-color:#00ff00\">Urine studies</mark> </li></ul><p><mark style=\"background-color:#00ff00\">Water-deprivation test</mark></p><ul class=\"l0\"><li>Deprive them for <span style=\"color:#ff00ff\">8-12 hours</span> of water</li><li>Results = Their <b>urine will STILL be diluted</b></li></ul><p><mark style=\"background-color:#00ffff\">Desmopressin</mark><mark style=\"background-color:#ffff00\"> (DDAVP) Challenge</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\"><i>Desmopressin</i></mark><mark style=\"background-color:#ffff00\"><i> acts like ADH</i></mark></li></ul><p><u>Central DI</u></p><p><b>Kidneys respond</b> to DDAVP</p><p>Results =</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Concentrated urine</mark></li><li><mark style=\"background-color:#ffff00\">↓ Low UOP</mark></li></ul><p><u>Nephrogenic DI</u></p><p><b>NO response</b> to DDAVP</p><p>Results = </p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Urine is diluted</mark></li><li><mark style=\"background-color:#ffff00\">↑ High UOP</mark></li></ul><p><u>TREATMENT</u></p><p><u>Central </u><mark style=\"background-color:#ffff00\"><u>D</u></mark><u>I</u></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">D</mark><mark style=\"background-color:#00ffff\">esmopressin </mark>(DDVAP)</li><li><mark style=\"background-color:#00ff00\">Fluid replacement</mark></li></ul><p><u>Nephrogenic DI</u></p><ul class=\"l0\"><li><b>Sodium restriction</b> <span style=\"color:#ff00ff\">3 g/day</span></li></ul>"
-      },
+       "answerHtml": "<p><span style=\"color:#0000ff\">“Dry Inside”</span></p><p><mark style=\"background-color:#ffff00\">↓ ADH or absent</mark></p><p><i>Causes</i></p><ul class=\"l0\"><li><i>Brain injuries, tumor in the head, pregnancy</i></li></ul><p><mark style=\"background-color:#ffff00\">Central DI</mark></p><ul class=\"l0\"><li>↓ <b>Low</b> ADH production from <span style=\"color:#ff0000\">posterior pituitary gland</span></li><li>(Central = think <span style=\"color:#ff0000\">brain</span>)</li></ul><p><mark style=\"background-color:#ffff00\">Nephrogenic DI</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Kidneys</span> unresponsive to ADH</li></ul><p>Urine output can exceed <span style=\"color:#ff00ff\">2-20 L/day</span></p><p><u>SIGNS</u></p><ul class=\"l0\"><li>↑ Urine output (Polyuria)</li><li>↑ Serum Osmolality </li><li>↑ <span style=\"color:#ff0000\">Hypernatremia</span></li><li><span style=\"color:#ff0000\">Neuro changes</span></li><li>↓ Weight</li><li>Polydipsia (thirst)</li><li>↓ Diluted Urine Osmolality</li><li>↓ Urine Specific Gravity</li></ul><p><u>DIAGNOSTICS</u></p><p><b>Before </b>diagnostics, get → Baseline</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Vitals</mark></li><li><mark style=\"background-color:#00ff00\">Weight</mark></li><li><mark style=\"background-color:#00ff00\">Average urine output</mark></li><li><mark style=\"background-color:#00ff00\">Urine studies</mark> </li></ul><p><mark style=\"background-color:#00ff00\">Water-deprivation test</mark></p><ul class=\"l0\"><li>Deprive them for <span style=\"color:#ff00ff\">8-12 hours</span> of water</li><li>Results = Their <b>urine will STILL be diluted</b></li></ul><p><mark style=\"background-color:#00ffff\">Desmopressin</mark><mark style=\"background-color:#ffff00\"> (DDAVP) Challenge</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\"><i>Desmopressin</i></mark><mark style=\"background-color:#ffff00\"><i> acts like ADH</i></mark></li></ul><p><u>Central DI</u></p><p><b>Kidneys respond</b> to DDAVP</p><p>Results =</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Concentrated urine</mark></li><li><mark style=\"background-color:#ffff00\">↓ Low UOP</mark></li></ul><p><u>Nephrogenic DI</u></p><p><b>NO response</b> to DDAVP</p><p>Results = </p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Urine is diluted</mark></li><li><mark style=\"background-color:#ffff00\">↑ High UOP</mark></li></ul><p><u>TREATMENT</u></p><p><u>Central </u><mark style=\"background-color:#ffff00\"><u>D</u></mark><u>I</u></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">D</mark><mark style=\"background-color:#00ffff\">esmopressin </mark>(DDVAP)</li><li><mark style=\"background-color:#00ff00\">Fluid replacement</mark></li></ul><p><u>Nephrogenic DI</u></p><ul class=\"l0\"><li><b>Sodium restriction</b> <span style=\"color:#ff00ff\">3 g/day</span></li><li><mark style=\"background-color:#00ffff\">Thiazide diuretics</mark>        </li><li>Paradoxical effect - causes the Pt to <b>conserve &amp; reabsorb water</b>!</li><li><mark style=\"background-color:#00ffff\">Indomethacin </mark>(NSAID)</li><li><b>↑ Increases responsiveness</b> of the kidneys <b>to ADH</b></li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Thyroid Alterations",
+     "group": "Unit 4",
+     "cards": [
       {
        "id": "17cec672cd",
        "prompt": "Thyroid gland produces",
@@ -1047,13 +1110,13 @@
        "id": "9046d1ee50",
        "prompt": "Hyperthyroidism / Thyrotoxicosis",
        "promptHtml": "<p><span style=\"color:#ff0000\"><b>Hyperthyroidism / Thyrotoxicosis</b></span></p>",
-       "answerHtml": "<p><span style=\"color:#ff0000\">Hot &amp; Fast</span></p><p>↑ T3 and/or T4</p><p>↓ TSH</p><p><i><u>CAUSES</u></i></p><ul class=\"l0\"><li><i>Excess iodine (iodine is needed to make thyroid hormones) </i></li><li><i>Inflamed thyroid</i></li></ul><p><u>SIGNS</u> </p><ul class=\"l0\"><li>Goiter</li><li>Bruit</li><li><span style=\"color:#ff0000\">Exopthalmos (eye protrusion)</span></li><li>Skin/hair</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Warm, moist, fine hair</span></li></ul><p><span style=\"color:#ff0000\"><b><u>Grave’s Disease</u></b></span></p><ul class=\"l0\"><li>Autoimmune hyperthyroidism </li><li>TSI (thyroid stimulating immunoglobulins) <b>antibodies</b> stimulate TSH receptor → This increases T3/T4 ↑</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Radioactive Iodine</mark> (RAI)</p><ul class=\"l0\"><li><b>Destroys</b> thyroid tissue</li><li>Definitive<mark style=\"background-color:#00ff00\"> treatment for hyperthyroidism/cancer</mark></li><li><span style=\"color:#ff0000\">Radiation precautions</span>!</li><li>Avoid close contact for <span style=\"color:#ff00ff\">7 days post-treatment </span>(esp. w/ children &amp; pregnant females)</li><li>Double flush the toilet</li><li>Using own <b>linens </b>&amp; <b>utensils </b>at home</li></ul><p><mark style=\"background-color:#00ffff\">Beta blockers</mark></p><ul class=\"l0\"><li>Help w/ <b>symptom management</b> </li></ul><p><mark style=\"background-color:#00ffff\">Propranolol </mark> (Non-selective)</p><p>Nursing considerations</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Assess for bronchospasms </mark>in asthma/COPD Pts</li></ul><p><mark style=\"background-color:#00ffff\">Atenolol </mark>(Selective)</p><p><u>NURSING ACTIONS</u></p><p>Diet</p><ul class=\"l0\"><li>↑ High </li><li>Calorie</li><li>Protein</li><li>Carbohydrate intake</li></ul><p>Frequent small meals</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">4-6/day</span></li></ul><p><b>Vitamins </b>B, C, D, &amp; minerals</p><p><span style=\"color:#ff0000\">Avoid </span>caffeine &amp; stimulants </p><p><span style=\"color:#ff0000\">Avoid excess iodine</span></p>"
+       "answerHtml": "<p><span style=\"color:#ff0000\">Hot &amp; Fast</span></p><p>↑ T3 and/or T4</p><p>↓ TSH</p><p><i><u>CAUSES</u></i></p><ul class=\"l0\"><li><i>Excess iodine (iodine is needed to make thyroid hormones) </i></li><li><i>Inflamed thyroid</i></li></ul><p><u>SIGNS</u> </p><ul class=\"l0\"><li>Goiter</li><li>Bruit</li><li><span style=\"color:#ff0000\">Exopthalmos (eye protrusion)</span></li><li>Skin/hair</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Warm, moist, fine hair</span></li></ul><p><span style=\"color:#ff0000\"><b><u>Grave’s Disease</u></b></span></p><ul class=\"l0\"><li>Autoimmune hyperthyroidism </li><li>TSI (thyroid stimulating immunoglobulins) <b>antibodies</b> stimulate TSH receptor → This increases T3/T4 ↑</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Methimazole</mark></p><ul class=\"l0\"><li>Blocks thyroid peroxidase</li><li>Preferred for <b>long-term maintenance </b></li></ul><p><mark style=\"background-color:#00ffff\">Propylthiouracil </mark>(PTU)</p><ul class=\"l0\"><li>Blocks T3/T4 synthesis</li><li>Preferred in pregnancy <span style=\"color:#ff00ff\">1st trimester</span></li></ul><p>Nursing considerations for <mark style=\"background-color:#00ffff\">Methimazole &amp; PTU</mark></p><ul class=\"l0\"><li>Teach to <mark style=\"background-color:#00ff00\">report sore throat/fever</mark></li><li>Monitor <mark style=\"background-color:#00ff00\">thyroid labs </mark>every <span style=\"color:#ff00ff\">4-6 weeks</span></li><li><span style=\"color:#ff0000\">DON’T STOP ABRUPTLY </span></li></ul><p><mark style=\"background-color:#00ffff\">Potassium iodine</mark></p><ul class=\"l0\"><li>Blocks thyroid hormone <b>release</b></li><li>Used <b>pre-op</b> for thyroid surgery</li></ul><p><mark style=\"background-color:#00ffff\">Lugol’s solution</mark></p><ul class=\"l0\"><li>Reduces thyroid <b>vascularity</b> <b>pre-op</b></li></ul><p><mark style=\"background-color:#00ffff\">Radioactive Iodine</mark> (RAI)</p><ul class=\"l0\"><li><b>Destroys</b> thyroid tissue</li><li>Definitive<mark style=\"background-color:#00ff00\"> treatment for hyperthyroidism/cancer</mark></li><li><span style=\"color:#ff0000\">Radiation precautions</span>!</li><li>Avoid close contact for <span style=\"color:#ff00ff\">7 days post-treatment </span>(esp. w/ children &amp; pregnant females)</li><li>Double flush the toilet</li><li>Using own <b>linens </b>&amp; <b>utensils </b>at home</li></ul><p><mark style=\"background-color:#00ffff\">Beta blockers</mark></p><ul class=\"l0\"><li>Help w/ <b>symptom management</b> </li></ul><p><mark style=\"background-color:#00ffff\">Propranolol </mark> (Non-selective)</p><p>Nursing considerations</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Assess for bronchospasms </mark>in asthma/COPD Pts</li></ul><p><mark style=\"background-color:#00ffff\">Atenolol </mark>(Selective)</p><p><u>NURSING ACTIONS</u></p><p>Diet</p><ul class=\"l0\"><li>↑ High </li><li>Calorie</li><li>Protein</li><li>Carbohydrate intake</li></ul><p>Frequent small meals</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">4-6/day</span></li></ul><p><b>Vitamins </b>B, C, D, &amp; minerals</p><p><span style=\"color:#ff0000\">Avoid </span>caffeine &amp; stimulants </p><p><span style=\"color:#ff0000\">Avoid excess iodine</span></p>"
       },
       {
        "id": "d3b74b0b3e",
        "prompt": "Thyroid Storm",
        "promptHtml": "<p><span style=\"color:#ff0000\"><b>Thyroid Storm</b></span></p>",
-       "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Infection</li><li>Surgery</li><li>Trauma </li><li>Abrupt medication stop</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Severe Temp! ＞104 F</span></li><li><span style=\"color:#ff00ff\">HR ＞140</span></li><li><span style=\"color:#ff0000\">Agitation</span></li><li><span style=\"color:#ff0000\">Delirium </span></li><li><span style=\"color:#ff0000\">Restless</span></li></ul><p><u>RISK FOR</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Arrhythmias </span></li><li><span style=\"color:#ff0000\">Heart failure</span></li><li><span style=\"color:#ff0000\">Shock</span></li></ul><p><u>TREATMENT</u> </p><p><mark style=\"background-color:#00ff00\">Supportive management</mark> (treat the cause)</p>"
+       "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Infection</li><li>Surgery</li><li>Trauma </li><li>Abrupt medication stop</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Severe Temp! ＞104 F</span></li><li><span style=\"color:#ff00ff\">HR ＞140</span></li><li><span style=\"color:#ff0000\">Agitation</span></li><li><span style=\"color:#ff0000\">Delirium </span></li><li><span style=\"color:#ff0000\">Restless</span></li></ul><p><u>RISK FOR</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Arrhythmias </span></li><li><span style=\"color:#ff0000\">Heart failure</span></li><li><span style=\"color:#ff0000\">Shock</span></li></ul><p><u>TREATMENT</u> </p><p><mark style=\"background-color:#00ff00\">Supportive management</mark> (treat the cause)</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Propylthiouracil (</mark>PTU)</li><li><mark style=\"background-color:#00ffff\">Beta-blockers</mark></li><li><mark style=\"background-color:#00ffff\">Iodine</mark></li><li>Cooling</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Arctic Sun</mark> (cool wrap) </li></ul><ul class=\"l0\"><li>Steroids (<mark style=\"background-color:#00ffff\">Prednisone</mark>)</li></ul>"
       },
       {
        "id": "f8587b72e6",
@@ -1065,14 +1128,20 @@
        "id": "4f8e9dce5c",
        "prompt": "Hypothyroidism",
        "promptHtml": "<p><span style=\"color:#0000ff\"><b>Hypothyroidism</b></span></p>",
-       "answerHtml": "<p><span style=\"color:#0000ff\">Cold &amp; slow</span></p><p>↓ T4</p><p>↑ TSH</p><p><u>SIGNS</u></p><ul class=\"l0\"><li>Depression</li><li>Cognitive impairments </li><li>Slowed speech </li><li><span style=\"color:#ff0000\">Periorbital edema</span></li></ul><ul class=\"l1\"><li>Substances w/ hypothyroidism that lodge themselves into the Pt’s tissues around their eyes &amp; this attracts water</li></ul><ul class=\"l0\"><li>Skin/hair</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dry, coarse, hair loss</span></li></ul><p><u>DIAGNOSTICS</u></p><p><b>Primary hypothyroidism</b></p><ul class=\"l0\"><li>↑ TSH </li><li>↓ free T4</li><li>[There’s an issue w/ the thyroid]</li></ul><p><b>Thyroid antibodies</b></p><ul class=\"l0\"><li>Suggest <b>autoimmune </b>disease</li><li>↑ <b>Cholesterol </b></li><li>↑ <b>Triglycerides</b></li><li><b>Anemia</b></li><li>↑ Creatinine kinase (<b>CK</b>) </li></ul><p><u>Nursing considerations</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor HR</mark></li></ul><ul class=\"l1\"><li>Over replacement causes <span style=\"color:#ff0000\">tachycardia/arrhythmias </span></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Lifelong therapy</mark></li></ul><p><u>NURSING ACTIONS</u></p><ul class=\"l0\"><li>Focus on controlling their weight</li><li><mark style=\"background-color:#ffff00\">Iodine is needed to make T3/T4</mark></li></ul><p><u>Iodine-Rich Foods</u></p><ul class=\"l0\"><li>Seafood</li><li>Seaweed</li><li>Dairy</li><li><mark style=\"background-color:#00ff00\">Iodized salt</mark></li></ul><ul class=\"l1\"><li>Essential for <b>T3/T4 synthesis</b></li></ul><p><span style=\"color:#ff0000\">Avoid goitrogenic foods in excess (plant-based foods)</span></p>"
+       "answerHtml": "<p><span style=\"color:#0000ff\">Cold &amp; slow</span></p><p>↓ T4</p><p>↑ TSH</p><p><u>SIGNS</u></p><ul class=\"l0\"><li>Depression</li><li>Cognitive impairments </li><li>Slowed speech </li><li><span style=\"color:#ff0000\">Periorbital edema</span></li></ul><ul class=\"l1\"><li>Substances w/ hypothyroidism that lodge themselves into the Pt’s tissues around their eyes &amp; this attracts water</li></ul><ul class=\"l0\"><li>Skin/hair</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dry, coarse, hair loss</span></li></ul><p><u>DIAGNOSTICS</u></p><p><b>Primary hypothyroidism</b></p><ul class=\"l0\"><li>↑ TSH </li><li>↓ free T4</li><li>[There’s an issue w/ the thyroid]</li></ul><p><b>Thyroid antibodies</b></p><ul class=\"l0\"><li>Suggest <b>autoimmune </b>disease</li><li>↑ <b>Cholesterol </b></li><li>↑ <b>Triglycerides</b></li><li><b>Anemia</b></li><li>↑ Creatinine kinase (<b>CK</b>) </li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Levothyroxine</mark></p><ul class=\"l0\"><li>Synthetic T4</li><li>Drug of choice for hypothyroidism </li><li>Take on <mark style=\"background-color:#00ff00\">empty stomach</mark> in the AM</li><li>Full effect in <span style=\"color:#ff00ff\">4-6 weeks</span></li></ul><p><u>Nursing considerations</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor HR</mark></li></ul><ul class=\"l1\"><li>Over replacement causes <span style=\"color:#ff0000\">tachycardia/arrhythmias </span></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Lifelong therapy</mark></li></ul><p><u>NURSING ACTIONS</u></p><ul class=\"l0\"><li>Focus on controlling their weight</li><li><mark style=\"background-color:#ffff00\">Iodine is needed to make T3/T4</mark></li></ul><p><u>Iodine-Rich Foods</u></p><ul class=\"l0\"><li>Seafood</li><li>Seaweed</li><li>Dairy</li><li><mark style=\"background-color:#00ff00\">Iodized salt</mark></li></ul><ul class=\"l1\"><li>Essential for <b>T3/T4 synthesis</b></li></ul><p><span style=\"color:#ff0000\">Avoid goitrogenic foods in excess (plant-based foods)</span></p>"
       },
       {
        "id": "1638174d4a",
        "prompt": "Myxedema Coma",
        "promptHtml": "<p><span style=\"color:#0000ff\"><b>Myxedema Coma</b></span></p>",
        "answerHtml": "<p>Rare but <span style=\"color:#ff0000\">life-threatening</span></p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Infection</li><li>Cold exposure</li><li>Medications</li></ul><ul class=\"l1\"><li>Narcotics / Opiates</li><li>Sedatives</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li>“<span style=\"color:#ff0000\">Mask like appearance” - </span><span style=\"color:#0000ff\">d/t severe hypothyroidism</span></li><li><span style=\"color:#ff0000\">Flat affect</span></li><li><span style=\"color:#ff0000\">No expression</span></li><li><span style=\"color:#ff0000\">Hypoglycemia</span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Supportive Care</mark> (treat their symptoms)</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">IV levothyroxine</mark></li><li><mark style=\"background-color:#00ffff\">IV T4</mark></li><li>Warming</li></ul><ul class=\"l1\"><li>“<mark style=\"background-color:#00ff00\">Bear hugger</mark>”</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Ventilatory support</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids</mark></li></ul><ul class=\"l1\"><li>To bring up their <b>sugar ↑</b></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Dextrose </mark>solution</li></ul><ul class=\"l1\"><li>To bring up their <b>sugar ↑</b></li></ul>"
-      },
+      }
+     ]
+    },
+    {
+     "name": "Parathyroid Alterations",
+     "group": "Unit 4",
+     "cards": [
       {
        "id": "0190d336a7",
        "prompt": "Parathyroid & Calcium",
@@ -1095,14 +1164,20 @@
        "id": "3a015adffd",
        "prompt": "Hyperparathyroidism",
        "promptHtml": "<p><span style=\"color:#ff0000\"><b>Hyperparathyroidism</b></span></p>",
-       "answerHtml": "<p><i>PTH = </i><b><i>P</i></b><i>uts </i><b><i>T</i></b><i>he Calcium </i><b><i>H</i></b><i>igh</i></p><p><b><i>Hyper = High </i></b><mark style=\"background-color:#ffff00\"><b><i>↑ Calcium</i></b></mark><mark style=\"background-color:#ffff00\"><i> / ↑ </i></mark><mark style=\"background-color:#ffff00\"><b><i>PTH </i></b></mark></p><p><mark style=\"background-color:#ffff00\"><i>↓ </i></mark><mark style=\"background-color:#ffff00\"><b><i>Phosphate</i></b></mark></p><p>“<span style=\"color:#ff0000\">Bones, Stones, Groans, Moans</span>”</p><ul class=\"l0\"><li>Fractures</li><li>Kidney stones</li><li>GI upset</li><li>Fatigue</li></ul><p><u>DIAGNOSTICS</u></p><p><mark style=\"background-color:#00ff00\">Dual Energy X- Ray Absorptiometry (Dexa scan)</mark></p><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Parathyroidectomy </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor ABCs</mark> (surgery to the throat)</li><li>Bone &amp; renal monitoring</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Monitor kidney</mark> for stone damage </li></ul><ul class=\"l0\"><li>Assess calcium levels</li></ul><ul class=\"l1\"><li>Risk for <span style=\"color:#ff0000\">hypocalcemia </span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Tetany </span></li><li><span style=\"color:#ff0000\">Chvostek’s Sign</span></li><li><span style=\"color:#ff0000\">Trousseau’s Sign</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Calcium gluconate</mark> </li></ul><p><mark style=\"background-color:#00ff00\">Hydration</mark></p><ul class=\"l0\"><li>To prevent stone formation</li></ul><p><mark style=\"background-color:#00ffff\">Calcimimetics </mark></p><p><b><i>“Mimicing - tricks thyroid gland into thinking there’s a lot of calcium → suppress parathyroid to decrease calcium levels”</i></b></p><ul class=\"l0\"><li>Used in primary/secondary hyperparathyroidism</li><li><mark style=\"background-color:#00ff00\">Monitor</mark></li></ul><ul class=\"l1\"><li>Nausea</li><li>Hypocalcemia </li></ul>"
+       "answerHtml": "<p><i>PTH = </i><b><i>P</i></b><i>uts </i><b><i>T</i></b><i>he Calcium </i><b><i>H</i></b><i>igh</i></p><p><b><i>Hyper = High </i></b><mark style=\"background-color:#ffff00\"><b><i>↑ Calcium</i></b></mark><mark style=\"background-color:#ffff00\"><i> / ↑ </i></mark><mark style=\"background-color:#ffff00\"><b><i>PTH </i></b></mark></p><p><mark style=\"background-color:#ffff00\"><i>↓ </i></mark><mark style=\"background-color:#ffff00\"><b><i>Phosphate</i></b></mark></p><p>“<span style=\"color:#ff0000\">Bones, Stones, Groans, Moans</span>”</p><ul class=\"l0\"><li>Fractures</li><li>Kidney stones</li><li>GI upset</li><li>Fatigue</li></ul><p><u>DIAGNOSTICS</u></p><p><mark style=\"background-color:#00ff00\">Dual Energy X- Ray Absorptiometry (Dexa scan)</mark></p><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Parathyroidectomy </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor ABCs</mark> (surgery to the throat)</li><li>Bone &amp; renal monitoring</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Monitor kidney</mark> for stone damage </li></ul><ul class=\"l0\"><li>Assess calcium levels</li></ul><ul class=\"l1\"><li>Risk for <span style=\"color:#ff0000\">hypocalcemia </span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Tetany </span></li><li><span style=\"color:#ff0000\">Chvostek’s Sign</span></li><li><span style=\"color:#ff0000\">Trousseau’s Sign</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Calcium gluconate</mark> </li></ul><p><mark style=\"background-color:#00ff00\">Hydration</mark></p><ul class=\"l0\"><li>To prevent stone formation</li></ul><p><mark style=\"background-color:#00ffff\">Alendronate </mark>(Fosamax)</p><ul class=\"l0\"><li><b>Inhibits bone resorption (reduce calcium release from the bones)</b></li></ul><p>Nursing Considerations</p><ul class=\"l0\"><li>Take w/ <mark style=\"background-color:#00ff00\">full glass of water</mark></li><li>Remain <span style=\"color:#ff00ff\">upright 30 min</span></li></ul><p><mark style=\"background-color:#00ffff\">Calcimimetics </mark></p><p><b><i>“Mimicing - tricks thyroid gland into thinking there’s a lot of calcium → suppress parathyroid to decrease calcium levels”</i></b></p><ul class=\"l0\"><li>Used in primary/secondary hyperparathyroidism</li><li><mark style=\"background-color:#00ff00\">Monitor</mark></li></ul><ul class=\"l1\"><li>Nausea</li><li>Hypocalcemia </li></ul><p><mark style=\"background-color:#00ffff\">Furosemide</mark></p><ul class=\"l0\"><li>This gets rid of calcium</li></ul>"
       },
       {
        "id": "759181e63d",
        "prompt": "Hypoparathyroidism",
        "promptHtml": "<p><span style=\"color:#0000ff\"><b>Hypoparathyroidism</b></span></p>",
-       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b><i>Hypo = ↓ Calcium</i></b></mark><mark style=\"background-color:#ffff00\"><i> / ↓ PTH</i></mark></p><p><mark style=\"background-color:#ffff00\"><i>↑ Phosphate</i></mark></p><p><u>CAUSES</u></p><ul class=\"l0\"><li>Post-thyroid/parathyroid surgery (most common)</li><li>Autoimmune</li><li>Hypomagenesemia </li></ul><p><u>SIGNS</u></p><p><span style=\"color:#ff0000\">Hypocalcemia </span></p><ul class=\"l0\"><li>Tetany</li><li>Muscle cramps</li><li>+ Chvostek’s (face)</li><li>+ Trousseau’s sign (BP)</li></ul><p><span style=\"color:#ff0000\">Hyperphosphetemia</span></p><ul class=\"l0\"><li>Laryngospasms</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Airway emergency risk</span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Calcium Gluconate</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Emergency</span> treatment for → Acute <span style=\"color:#ff0000\">hypocalcemia </span>/ Tetany</li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">↑ High Calcium Diet</mark></p><p><mark style=\"background-color:#ffff00\">Calcium sources</mark></p><ul class=\"l0\"><li>Dairy</li><li>Leafy greens</li><li>Fortified foods</li><li>Almonds</li><li>Sardines</li></ul><p><mark style=\"background-color:#ffff00\">Vitamin D</mark></p><ul class=\"l0\"><li>Essential for calcium absorption</li></ul><ul class=\"l1\"><li>Sun exposure</li><li>Fortified foods</li><li>Supplements</li></ul><p>↓ <span style=\"color:#ff0000\"><b>AVOID </b></span><b>Phosphate</b> rich foods:</p><ul class=\"l0\"><li>Limit processed food</li><li>Cola</li><li>[↑ Phosphate = Protein]</li></ul><ul class=\"l1\"><li>Meat</li><li>Pudding</li></ul><p><span style=\"color:#ff0000\">*At bedside,</span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">IV Calcium Gluconate (push slowly!)</span></li><li><span style=\"color:#ff0000\">Trach tray* </span></li></ul>"
-      },
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b><i>Hypo = ↓ Calcium</i></b></mark><mark style=\"background-color:#ffff00\"><i> / ↓ PTH</i></mark></p><p><mark style=\"background-color:#ffff00\"><i>↑ Phosphate</i></mark></p><p><u>CAUSES</u></p><ul class=\"l0\"><li>Post-thyroid/parathyroid surgery (most common)</li><li>Autoimmune</li><li>Hypomagenesemia </li></ul><p><u>SIGNS</u></p><p><span style=\"color:#ff0000\">Hypocalcemia </span></p><ul class=\"l0\"><li>Tetany</li><li>Muscle cramps</li><li>+ Chvostek’s (face)</li><li>+ Trousseau’s sign (BP)</li></ul><p><span style=\"color:#ff0000\">Hyperphosphetemia</span></p><ul class=\"l0\"><li>Laryngospasms</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Airway emergency risk</span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Cholecalciferol </mark>(Vitamin D3)</p><ul class=\"l0\"><li><b>Long term </b>support for calcium</li><li>Vit D helps <b>GI</b> <b>absorb calcium</b></li></ul><p><mark style=\"background-color:#00ffff\">Calcium Gluconate</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Emergency</span> treatment for → Acute <span style=\"color:#ff0000\">hypocalcemia </span>/ Tetany</li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">↑ High Calcium Diet</mark></p><p><mark style=\"background-color:#ffff00\">Calcium sources</mark></p><ul class=\"l0\"><li>Dairy</li><li>Leafy greens</li><li>Fortified foods</li><li>Almonds</li><li>Sardines</li></ul><p><mark style=\"background-color:#ffff00\">Vitamin D</mark></p><ul class=\"l0\"><li>Essential for calcium absorption</li></ul><ul class=\"l1\"><li>Sun exposure</li><li>Fortified foods</li><li>Supplements</li></ul><p>↓ <span style=\"color:#ff0000\"><b>AVOID </b></span><b>Phosphate</b> rich foods:</p><ul class=\"l0\"><li>Limit processed food</li><li>Cola</li><li>[↑ Phosphate = Protein]</li></ul><ul class=\"l1\"><li>Meat</li><li>Pudding</li></ul><p><span style=\"color:#ff0000\">*At bedside,</span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">IV Calcium Gluconate (push slowly!)</span></li><li><span style=\"color:#ff0000\">Trach tray* </span></li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Adrenal Alterations",
+     "group": "Unit 4",
+     "cards": [
       {
        "id": "38f874a761",
        "prompt": "Adrenal gland",
@@ -1119,25 +1194,25 @@
        "id": "25047e2d32",
        "prompt": "Hyperaldosteronism",
        "promptHtml": "<p><span style=\"color:#ff0000\"><b>Hyperaldosteronism</b></span></p>",
-       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b><i>↑ Aldosterone</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>AL</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>A = Adds Sodium &amp; Water IN</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>L = Lets Potassium OUT</i></b></mark></p><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hypertension</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">HA</span></li></ul><ul class=\"l0\"><li><span style=\"color:#0000ff\">Hypokalemia </span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dysrhythmias </span></li><li><span style=\"color:#ff0000\">Weakness</span></li><li><span style=\"color:#ff0000\">Cramps</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Metabolic Alkalosis </span>= very common</li></ul><p><u>Nursing Considerations</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid salt substitutes</span> (have potassium)</li></ul><p>In <mark style=\"background-color:#ffff00\">males</mark>, can cause</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Gynecomastia</span> (benign breast enlargement)</li><li>↓ Libido </li><li>Erectile Dysfunction</li></ul><p>In <mark style=\"background-color:#ffff00\">women</mark>, can cause</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Menstrual changes</span></li></ul><p><mark style=\"background-color:#00ff00\">Adrenalectomy </mark></p><ul class=\"l0\"><li>Premedicate w/ <mark style=\"background-color:#00ffff\">spironolactone</mark> or <mark style=\"background-color:#00ffff\">replace K</mark></li></ul><p><mark style=\"background-color:#00ffff\">Antihypertensive </mark>meds</p><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>BP</li><li>Electrolytes</li></ul><ul class=\"l1\"><li>Potassium levels</li></ul><ul class=\"l0\"><li>ABGs</li></ul><p><mark style=\"background-color:#00ff00\">↓ Low-sodium diet</mark> education</p>"
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b><i>↑ Aldosterone</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>AL</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>A = Adds Sodium &amp; Water IN</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>L = Lets Potassium OUT</i></b></mark></p><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hypertension</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">HA</span></li></ul><ul class=\"l0\"><li><span style=\"color:#0000ff\">Hypokalemia </span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dysrhythmias </span></li><li><span style=\"color:#ff0000\">Weakness</span></li><li><span style=\"color:#ff0000\">Cramps</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Metabolic Alkalosis </span>= very common</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Spironolactone</mark></p><ul class=\"l0\"><li>SPARES potassium (holds onto K)</li></ul><p><u>Nursing Considerations</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid salt substitutes</span> (have potassium)</li></ul><p>In <mark style=\"background-color:#ffff00\">males</mark>, can cause</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Gynecomastia</span> (benign breast enlargement)</li><li>↓ Libido </li><li>Erectile Dysfunction</li></ul><p>In <mark style=\"background-color:#ffff00\">women</mark>, can cause</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Menstrual changes</span></li></ul><p><mark style=\"background-color:#00ff00\">Adrenalectomy </mark></p><ul class=\"l0\"><li>Premedicate w/ <mark style=\"background-color:#00ffff\">spironolactone</mark> or <mark style=\"background-color:#00ffff\">replace K</mark></li></ul><p><mark style=\"background-color:#00ffff\">Antihypertensive </mark>meds</p><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>BP</li><li>Electrolytes</li></ul><ul class=\"l1\"><li>Potassium levels</li></ul><ul class=\"l0\"><li>ABGs</li></ul><p><mark style=\"background-color:#00ff00\">↓ Low-sodium diet</mark> education</p>"
       },
       {
        "id": "150d9beafd",
        "prompt": "Cushing Syndrome",
        "promptHtml": "<p><span style=\"color:#ff0000\"><b>Cushing Syndrome</b></span></p>",
-       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b>Cushion of ↑ Cortisol</b></mark></p><p><mark style=\"background-color:#ffff00\">Cushing’s </mark><mark style=\"background-color:#ffff00\"><b>Disease</b></mark></p><ul class=\"l0\"><li>D/t - Pituitary <b>ACTH </b>excess </li><li>(Adrenocorticotropic hormone - tells the adrenals to make more cortisol)</li></ul><p><mark style=\"background-color:#ffff00\">Cushing’s </mark><mark style=\"background-color:#ffff00\"><b>Syndrome</b></mark></p><ul class=\"l0\"><li>D/t <b>Adrenal tumor</b> or <b>Steroid </b>use</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hypertension</span></li><li><span style=\"color:#ff0000\">Hyperglycemia</span></li><li><span style=\"color:#ff0000\">Osteoporosis </span></li><li><span style=\"color:#ff0000\">Poor wound healing</span></li><li><span style=\"color:#ff0000\">Hirsutism </span></li></ul><ul class=\"l1\"><li>Excess facial hair (female)</li></ul><p><u>DIAGNOSTICS</u></p><p><mark style=\"background-color:#00ff00\">Late-night salivary cortisol </mark></p><ul class=\"l0\"><li>They will have <b>↑ Cortisol</b> levels</li><li>[Normally, cortisol levels should be low ↓]</li></ul><p><mark style=\"background-color:#00ffff\">Dexamethasone</mark><mark style=\"background-color:#ffff00\"> suppression</mark></p><ul class=\"l0\"><li>They still have <b>↑ Cortisol </b></li><li>[Normally, the body should stop/decrease cortisol production when given dexamethasone] </li></ul><p><mark style=\"background-color:#00ff00\">24-hour urinary free cortisol </mark></p><ul class=\"l0\"><li>They will have <b>↑ Cortisol</b> levels</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#ffff00\">Depends on the cause</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Transsphenoidal </mark>removal of pituitary tumor</li><li><mark style=\"background-color:#00ffff\">Adrenalectomy</mark></li><li><mark style=\"background-color:#00ffff\">Radiation</mark></li></ul><p><mark style=\"background-color:#00ff00\">Exogenous steroid management </mark></p><ul class=\"l0\"><li>If someone is taking steroids, you need to <span style=\"color:#ff0000\"><b>TAPER </b></span>THEM DOWN </li></ul><p><u>NURSING ACTIONS</u></p><p>Acute <mark style=\"background-color:#00ff00\">monitoring</mark></p><ul class=\"l0\"><li>Weight</li><li><span style=\"color:#ff0000\">Glucose</span></li></ul><p><span style=\"color:#ff0000\">Infection</span>/<b>skin breakdown</b> &amp; <b>VTE prevention</b></p><ul class=\"l0\"><li>↑ Cortisol can </li></ul><ul class=\"l1\"><li>Affect your <b>immune </b>function</li><li>Put you in a <span style=\"color:#ff0000\">hypercoagulable state</span></li></ul><p>Postoperative complications</p><ul class=\"l0\"><li>Prone to <span style=\"color:#ff0000\">dehydration, confusion, fatigue</span></li></ul><p><mark style=\"background-color:#00ff00\">Emotional support</mark></p><ul class=\"l0\"><li>Body image disturbances</li><li>Sexual function changes</li><li>Affects Libido &amp; Sexual characteristics</li></ul>"
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b>Cushion of ↑ Cortisol</b></mark></p><p><mark style=\"background-color:#ffff00\">Cushing’s </mark><mark style=\"background-color:#ffff00\"><b>Disease</b></mark></p><ul class=\"l0\"><li>D/t - Pituitary <b>ACTH </b>excess </li><li>(Adrenocorticotropic hormone - tells the adrenals to make more cortisol)</li></ul><p><mark style=\"background-color:#ffff00\">Cushing’s </mark><mark style=\"background-color:#ffff00\"><b>Syndrome</b></mark></p><ul class=\"l0\"><li>D/t <b>Adrenal tumor</b> or <b>Steroid </b>use</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hypertension</span></li><li><span style=\"color:#ff0000\">Hyperglycemia</span></li><li><span style=\"color:#ff0000\">Osteoporosis </span></li><li><span style=\"color:#ff0000\">Poor wound healing</span></li><li><span style=\"color:#ff0000\">Hirsutism </span></li></ul><ul class=\"l1\"><li>Excess facial hair (female)</li></ul><p><u>DIAGNOSTICS</u></p><p><mark style=\"background-color:#00ff00\">Late-night salivary cortisol </mark></p><ul class=\"l0\"><li>They will have <b>↑ Cortisol</b> levels</li><li>[Normally, cortisol levels should be low ↓]</li></ul><p><mark style=\"background-color:#00ffff\">Dexamethasone</mark><mark style=\"background-color:#ffff00\"> suppression</mark></p><ul class=\"l0\"><li>They still have <b>↑ Cortisol </b></li><li>[Normally, the body should stop/decrease cortisol production when given dexamethasone] </li></ul><p><mark style=\"background-color:#00ff00\">24-hour urinary free cortisol </mark></p><ul class=\"l0\"><li>They will have <b>↑ Cortisol</b> levels</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#ffff00\">Depends on the cause</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Transsphenoidal </mark>removal of pituitary tumor</li><li><mark style=\"background-color:#00ffff\">Adrenalectomy</mark></li><li><mark style=\"background-color:#00ffff\">Radiation</mark></li></ul><p><mark style=\"background-color:#00ffff\">Ketoconazole</mark></p><p><mark style=\"background-color:#00ffff\">Mitotane</mark></p><ul class=\"l0\"><li>These 2 meds help reduce <b>↓ cortisol production</b></li></ul><p><mark style=\"background-color:#00ffff\">Aminoglutethimide</mark></p><ul class=\"l0\"><li>Blocks adrenal steroid synthesis </li></ul><p><mark style=\"background-color:#00ff00\">Exogenous steroid management </mark></p><ul class=\"l0\"><li>If someone is taking steroids, you need to <span style=\"color:#ff0000\"><b>TAPER </b></span>THEM DOWN </li></ul><p><u>NURSING ACTIONS</u></p><p>Acute <mark style=\"background-color:#00ff00\">monitoring</mark></p><ul class=\"l0\"><li>Weight</li><li><span style=\"color:#ff0000\">Glucose</span></li></ul><p><span style=\"color:#ff0000\">Infection</span>/<b>skin breakdown</b> &amp; <b>VTE prevention</b></p><ul class=\"l0\"><li>↑ Cortisol can </li></ul><ul class=\"l1\"><li>Affect your <b>immune </b>function</li><li>Put you in a <span style=\"color:#ff0000\">hypercoagulable state</span></li></ul><p>Postoperative complications</p><ul class=\"l0\"><li>Prone to <span style=\"color:#ff0000\">dehydration, confusion, fatigue</span></li></ul><p><mark style=\"background-color:#00ff00\">Emotional support</mark></p><ul class=\"l0\"><li>Body image disturbances</li><li>Sexual function changes</li><li>Affects Libido &amp; Sexual characteristics</li></ul>"
       },
       {
        "id": "e1287b1c6c",
        "prompt": "Addison Disease",
        "promptHtml": "<p><span style=\"color:#0000ff\"><b>Addison Disease</b></span></p>",
-       "answerHtml": "<p><span style=\"color:#0000ff\">ADD, need to ADD Cortisol</span></p><p><mark style=\"background-color:#ffff00\">↓ Cortisol</mark></p><p><mark style=\"background-color:#ffff00\">Primary Adrenal Insufficiency </mark></p><ul class=\"l0\"><li><b>Adrenal cortex damage</b></li></ul><ul class=\"l1\"><li>↓ Cortisol</li><li>↓ Aldosterone</li><li>↓ Adrenal androgens</li></ul><p><mark style=\"background-color:#ffff00\">Secondary / Central</mark></p><ul class=\"l0\"><li>Issue w/ the <b>pituitary</b></li><li>↓ Pituitary ACTH</li><li>↓ Cortisol</li><li>↓ Adrenal androgens</li><li>Aldosterone usually preserved</li></ul><ul class=\"l1\"><li>[because Aldosterone is part of RAAS]</li></ul><p><u>CAUSES</u></p><ul class=\"l0\"><li>Infections</li></ul><ul class=\"l1\"><li>TB</li><li>Fungal</li><li>HIV</li></ul><ul class=\"l0\"><li>Cancer</li><li>Adrenal damage / removal</li></ul><p><u>SIGNS</u></p><p>Onset is <b>gradual</b></p><ul class=\"l0\"><li><b>Fatigue</b></li><li><b>Weakness</b></li><li>Craving salt</li><li><b>↓ Appetite</b></li><li><b>Weight loss</b></li><li><b>Orthostatic Hypotension</b></li></ul><ul class=\"l1\"><li>D/t ↓ Water &amp; Sodium (↓ in circulating volume)</li></ul><ul class=\"l0\"><li>Cramps</li><li>Depression</li><li>Abdominal pain</li><li>↓ Libido</li><li>Muscle weakness</li></ul><p><span style=\"color:#0000ff\"><u>Primary Addison’s</u></span></p><ul class=\"l0\"><li><b>Dizziness</b></li><li><b>Thirst</b></li></ul><ul class=\"l1\"><li>D/t ↓ aldosterone</li></ul><p><span style=\"color:#0000ff\"><u>Secondary Addison’s</u></span></p><ul class=\"l0\"><li><b>Bronze hyper-pigmentation</b></li></ul><ul class=\"l1\"><li>Seen with ↑ACTH</li></ul><p><u>DIAGNOSTICS</u></p><p>ACTH stimulates → adrenal glands to produce more ↑ cortisol</p><p><mark style=\"background-color:#00ff00\"><u>ACTH stimulation test</u></mark></p><p><b>Primary</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↑ ACTH</mark></li><li><mark style=\"background-color:#ffff00\"><b>Poor / no </b></mark><mark style=\"background-color:#ffff00\">cortisol response</mark></li><li>[Cortisol is still low because the <b>adrenal is damaged</b> &amp; doesn’t respond]</li></ul><p><b>Secondary / Central</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ or normal ACTH</mark></li><li><mark style=\"background-color:#ffff00\">↓ Cortisol </mark></li><li>[There is usually a problem in the brain: <b>pituitary/hypothalamus</b>]</li></ul><p><mark style=\"background-color:#00ff00\"><u>CRH Stimulation Test</u></mark></p><p>[To figure out if the <b>Secondary/Central </b>problem is from the <b>pituitary </b>OR <b>hypothalamus</b>]</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ ACTH = </mark><mark style=\"background-color:#ffff00;color:#ff0000\">pituitary </mark><mark style=\"background-color:#ffff00\">problem!</mark></li><li><mark style=\"background-color:#ffff00\">↑ ACTH = </mark><mark style=\"background-color:#ffff00;color:#ff0000\">hypothalamus </mark><mark style=\"background-color:#ffff00\">problem!</mark></li><li>No cortisol response</li></ul><p><mark style=\"background-color:#00ff00\">Monitor - Electrolytes, Renal panel</mark></p><p><u>Primary problem</u> =</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ BG </mark></li><li><mark style=\"background-color:#ffff00\">↓ Na </mark></li><li><mark style=\"background-color:#ffff00\">↑ K </mark></li><li>[Aldosterone is also being affected</li><li>[So we’re losing sodium, retaining potassium, and have low BG d/t lack of cortisol]</li></ul><p><mark style=\"background-color:#00ff00\">EKG</mark></p><ul class=\"l0\"><li>D/t <b>Hyperkalemia</b></li><li>Monitor for <span style=\"color:#ff0000\">arrhythmias </span></li></ul><p><mark style=\"background-color:#00ff00\">Imaging</mark></p><ul class=\"l0\"><li>CT (3D imaging)</li><li>MRI (soft tissue)</li><li>[Both check for <b>adrenal abnormalities]</b></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Steroids</mark></p><p><span style=\"color:#ff0000\">Long-term risks of steroid use</span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Immunosuppressant</span></li><li>↑ Hyperglycemia</li><li>↑Hypertension</li><li>Delayed healing</li><li>Muscle &amp; bone loss</li><li>Cushing-like changes</li><li>Adrenal suppression</li></ul><p><mark style=\"background-color:#00ff00\">Pt education</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Never stop steroids abruptly</span> !</li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Stress-dose steroids</mark></p><ul class=\"l0\"><li>Increase <b>↑ in stress</b> = <b>↑ their dose</b> of steroids</li></ul><p>Emergency preparedness</p><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">IM hydrocortisone </mark></li></ul><p><mark style=\"background-color:#00ff00\">Patient education</mark></p><ul class=\"l0\"><li>Severe vomiting/diarrhea, weakness, confusion, altered LOC, can’t keep steroids down → Seek <span style=\"color:#ff0000\">emergency care</span>!</li></ul>"
+       "answerHtml": "<p><span style=\"color:#0000ff\">ADD, need to ADD Cortisol</span></p><p><mark style=\"background-color:#ffff00\">↓ Cortisol</mark></p><p><mark style=\"background-color:#ffff00\">Primary Adrenal Insufficiency </mark></p><ul class=\"l0\"><li><b>Adrenal cortex damage</b></li></ul><ul class=\"l1\"><li>↓ Cortisol</li><li>↓ Aldosterone</li><li>↓ Adrenal androgens</li></ul><p><mark style=\"background-color:#ffff00\">Secondary / Central</mark></p><ul class=\"l0\"><li>Issue w/ the <b>pituitary</b></li><li>↓ Pituitary ACTH</li><li>↓ Cortisol</li><li>↓ Adrenal androgens</li><li>Aldosterone usually preserved</li></ul><ul class=\"l1\"><li>[because Aldosterone is part of RAAS]</li></ul><p><u>CAUSES</u></p><ul class=\"l0\"><li>Infections</li></ul><ul class=\"l1\"><li>TB</li><li>Fungal</li><li>HIV</li></ul><ul class=\"l0\"><li>Cancer</li><li>Adrenal damage / removal</li></ul><p><u>SIGNS</u></p><p>Onset is <b>gradual</b></p><ul class=\"l0\"><li><b>Fatigue</b></li><li><b>Weakness</b></li><li>Craving salt</li><li><b>↓ Appetite</b></li><li><b>Weight loss</b></li><li><b>Orthostatic Hypotension</b></li></ul><ul class=\"l1\"><li>D/t ↓ Water &amp; Sodium (↓ in circulating volume)</li></ul><ul class=\"l0\"><li>Cramps</li><li>Depression</li><li>Abdominal pain</li><li>↓ Libido</li><li>Muscle weakness</li></ul><p><span style=\"color:#0000ff\"><u>Primary Addison’s</u></span></p><ul class=\"l0\"><li><b>Dizziness</b></li><li><b>Thirst</b></li></ul><ul class=\"l1\"><li>D/t ↓ aldosterone</li></ul><p><span style=\"color:#0000ff\"><u>Secondary Addison’s</u></span></p><ul class=\"l0\"><li><b>Bronze hyper-pigmentation</b></li></ul><ul class=\"l1\"><li>Seen with ↑ACTH</li></ul><p><u>DIAGNOSTICS</u></p><p>ACTH stimulates → adrenal glands to produce more ↑ cortisol</p><p><mark style=\"background-color:#00ff00\"><u>ACTH stimulation test</u></mark></p><p><b>Primary</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↑ ACTH</mark></li><li><mark style=\"background-color:#ffff00\"><b>Poor / no </b></mark><mark style=\"background-color:#ffff00\">cortisol response</mark></li><li>[Cortisol is still low because the <b>adrenal is damaged</b> &amp; doesn’t respond]</li></ul><p><b>Secondary / Central</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ or normal ACTH</mark></li><li><mark style=\"background-color:#ffff00\">↓ Cortisol </mark></li><li>[There is usually a problem in the brain: <b>pituitary/hypothalamus</b>]</li></ul><p><mark style=\"background-color:#00ff00\"><u>CRH Stimulation Test</u></mark></p><p>[To figure out if the <b>Secondary/Central </b>problem is from the <b>pituitary </b>OR <b>hypothalamus</b>]</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ ACTH = </mark><mark style=\"background-color:#ffff00;color:#ff0000\">pituitary </mark><mark style=\"background-color:#ffff00\">problem!</mark></li><li><mark style=\"background-color:#ffff00\">↑ ACTH = </mark><mark style=\"background-color:#ffff00;color:#ff0000\">hypothalamus </mark><mark style=\"background-color:#ffff00\">problem!</mark></li><li>No cortisol response</li></ul><p><mark style=\"background-color:#00ff00\">Monitor - Electrolytes, Renal panel</mark></p><p><u>Primary problem</u> =</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ BG </mark></li><li><mark style=\"background-color:#ffff00\">↓ Na </mark></li><li><mark style=\"background-color:#ffff00\">↑ K </mark></li><li>[Aldosterone is also being affected</li><li>[So we’re losing sodium, retaining potassium, and have low BG d/t lack of cortisol]</li></ul><p><mark style=\"background-color:#00ff00\">EKG</mark></p><ul class=\"l0\"><li>D/t <b>Hyperkalemia</b></li><li>Monitor for <span style=\"color:#ff0000\">arrhythmias </span></li></ul><p><mark style=\"background-color:#00ff00\">Imaging</mark></p><ul class=\"l0\"><li>CT (3D imaging)</li><li>MRI (soft tissue)</li><li>[Both check for <b>adrenal abnormalities]</b></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Hydrocortisone </mark></p><p><mark style=\"background-color:#00ffff\">Prednisone</mark></p><p><span style=\"color:#ff0000\">Long-term risks of steroid use</span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Immunosuppressant</span></li><li>↑ Hyperglycemia</li><li>↑Hypertension</li><li>Delayed healing</li><li>Muscle &amp; bone loss</li><li>Cushing-like changes</li><li>Adrenal suppression</li></ul><p><mark style=\"background-color:#00ff00\">Pt education</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Never stop steroids abruptly</span> !</li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Stress-dose steroids</mark></p><ul class=\"l0\"><li>Increase <b>↑ in stress</b> = <b>↑ their dose</b> of steroids</li></ul><p>Emergency preparedness</p><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">IM hydrocortisone </mark></li></ul><p><mark style=\"background-color:#00ff00\">Patient education</mark></p><ul class=\"l0\"><li>Severe vomiting/diarrhea, weakness, confusion, altered LOC, can’t keep steroids down → Seek <span style=\"color:#ff0000\">emergency care</span>!</li></ul>"
       },
       {
        "id": "16463bb8d2",
        "prompt": "Addisonian Crisis",
        "promptHtml": "<p><span style=\"color:#0000ff\"><b>Addisonian Crisis</b></span></p>",
-       "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Stress</li><li>Infection</li><li>Missed steroids</li></ul><ul class=\"l1\"><li>Or stopping them abruptly</li></ul><p><u>More severe SIGNS than Addison’s</u></p><ul class=\"l0\"><li>Severe hypotension</li><li>Vomiting</li><li>Weakness</li><li>Confusion</li></ul><p><b>Supportive</b> treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Steroids</mark></li><li><mark style=\"background-color:#00ff00\">Fluid resuscitations</mark></li></ul><ul class=\"l1\"><li>To support their BP</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Glucose </mark>monitoring</li></ul>"
+       "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Stress</li><li>Infection</li><li>Missed steroids</li></ul><ul class=\"l1\"><li>Or stopping them abruptly</li></ul><p><u>More severe SIGNS than Addison’s</u></p><ul class=\"l0\"><li>Severe hypotension</li><li>Vomiting</li><li>Weakness</li><li>Confusion</li></ul><p><b>Supportive</b> treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">IV hydrocortisone</mark></li><li><mark style=\"background-color:#00ffff\">[Prednisone]</mark></li><li><mark style=\"background-color:#00ff00\">Fluid resuscitations</mark></li></ul><ul class=\"l1\"><li>To support their BP</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Glucose </mark>monitoring</li></ul>"
       }
      ]
     }
