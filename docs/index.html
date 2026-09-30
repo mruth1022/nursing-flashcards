@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f6f7fb">
+<title>Flashcards</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app" aria-live="polite">
+  <div class="loading">Loading cards…</div>
+</div>
+<nav id="nav" class="nav" aria-label="Main">
+  <a href="#home" data-view="home"><span class="ico">🏠</span><span>Home</span></a>
+  <a href="#stats" data-view="stats"><span class="ico">📊</span><span>Stats</span></a>
+  <a href="#browse" data-view="browse"><span class="ico">🔎</span><span>Browse</span></a>
+  <a href="#sync" data-view="sync"><span class="ico">🔗</span><span>Sync</span></a>
+</nav>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

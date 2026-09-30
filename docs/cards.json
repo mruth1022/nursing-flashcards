@@ -1,0 +1,1150 @@
+{
+ "generatedAt": "2026-09-30T04:16:15+00:00",
+ "decks": [
+  {
+   "title": "NS30A Final",
+   "generatedAt": "2026-09-30T04:16:15+00:00",
+   "cardCount": 175,
+   "sections": [
+    {
+     "name": "IV Calculations",
+     "cards": [
+      {
+       "id": "28353d38d9",
+       "prompt": "When calculating the rate on an IV pump, what do you round to?",
+       "promptHtml": "<p>When calculating the rate on an IV pump, what do you round to?</p>",
+       "answerHtml": "<p>Tenths</p>"
+      },
+      {
+       "id": "7b2a7382ad",
+       "prompt": "If a “drop factor” (eg: 15 gtt/mL) is provided, what does this mean?",
+       "promptHtml": "<ul class=\"l0\"><li>If a “<mark style=\"background-color:#ff9900\">drop factor</mark>” (eg: <mark style=\"background-color:#ff9900\">15 gtt/mL</mark>) is provided, what does this mean?</li></ul>",
+       "answerHtml": "<p>It means the question is asking for a manual IV flow rate in <mark style=\"background-color:#ff9900\">gtt/min</mark>, since this applies only when using gravity and drip chambers</p>"
+      },
+      {
+       "id": "94ad00aa93",
+       "prompt": "Drops per minute",
+       "promptHtml": "<p>Drops per minute</p>",
+       "answerHtml": "<p><img src=\"img/d016e5b9f2f9.png\" alt=\"\" loading=\"lazy\">= <mark style=\"background-color:#ff9900\">gtt/min</mark> </p><p>[AKA: <mark style=\"background-color:#ff9900\">Drip Rate</mark> - <mark style=\"background-color:#ff9900\">Manual infusion using gravity]</mark></p><p>*Round to a <span style=\"color:#ff0000\">whole number</span>*</p><p>Ex: </p><p>Order: 50 mL over 30 minutes</p><p>The drop factor is 10 gtt/mL</p><ul class=\"l0\"><li>Calculate the IV flow rate. What would the infusion rate or flow rate be in drops per minute (gtts/min) administering this antibiotic in 30 minutes?</li></ul><p><img src=\"img/9881fcf4e4df.png\" alt=\"\" loading=\"lazy\">= 16.6 gtt/min → 17 gtt/min</p>",
+       "images": 2
+      },
+      {
+       "id": "dbf22c2185",
+       "prompt": "Calculating Hours of Infusion",
+       "promptHtml": "<p>Calculating Hours of Infusion</p>",
+       "answerHtml": "<p>Time calculation is expressed in hours:</p><p>“Infuse over 6.6 hours” → 6 hours and 0.6 min → 0.6 x 60 min = 36 minutes</p><ul class=\"l0\"><li>6.6 hours = Infuse over =<b>6 hours and 36 minutes</b></li></ul>"
+      },
+      {
+       "id": "6aa96c8a32",
+       "prompt": "Milliliter/Hour mL/hr",
+       "promptHtml": "<p>Milliliter/Hour </p><p>mL/hr</p>",
+       "answerHtml": "<p><img src=\"img/1e6a313529c4.png\" alt=\"\" loading=\"lazy\"></p><p><img src=\"img/7b8f572004c5.png\" alt=\"\" loading=\"lazy\">x <img src=\"img/32db388e637a.png\" alt=\"\" loading=\"lazy\"></p><p>*Round to the <span style=\"color:#ff0000\">tenths </span>place*</p><p>[IV Fluid Bolus Question]</p><p>Ex: The provider orders a fluid bolus of 20 mL/kg of 0.9% normal saline IV to be infused over 90 minutes. The client’s weight is 147 lbs.</p><ol class=\"l0\" start=\"1\"><li>How many milliliters will be administered for the bolus? </li><li>Calculate the flow rate?</li><li>66.818 kg —&gt; 66.8 kg x 20 mL = 1,336 mL</li><li>90 minutes = 1.5 hours —&gt; 1,336 mL/1.5 hours =890.667→890.7 mL/hr</li></ol>",
+       "images": 3
+      },
+      {
+       "id": "f8c92a40d1",
+       "prompt": "Infusion Time",
+       "promptHtml": "<p>Infusion Time</p>",
+       "answerHtml": "<p>Infusion time = <img src=\"img/da1d7e9c721d.png\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "8fa0e679ad",
+       "prompt": "Flow Rates",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Flow Rates</mark></p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#ffff00\">mL/hr</mark></p><p>[<mark style=\"background-color:#ffff00\">How fast the fluid is running</mark>]</p><p>(Calculate dosage based on weight BEFORE calculating flow rate)</p>",
+       "images": 1
+      },
+      {
+       "id": "a2b388b92e",
+       "prompt": "Infusion Titrations",
+       "promptHtml": "<p>Infusion Titrations</p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\">= <mark style=\"background-color:#ffff00\">mL/hr </mark></p><p>Calculate the lower flow rate</p><p>Calculate the higher flow rate</p>",
+       "images": 1
+      },
+      {
+       "id": "d7e517eef4",
+       "prompt": "Heparin Infusion/Drip",
+       "promptHtml": "<p>Heparin Infusion/Drip</p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#ffff00\">mL/hr</mark></p><p>Ex: The order is to infuse 1,000 units per hour from the solution shown in Figure 22-13 (Pg. 448). You will infuse this on an electronic infusion device that can be programmed to the tenth.</p><p><img src=\"img/21cb0433384e.png\" alt=\"\" loading=\"lazy\"> = 25 mL/hr</p><p><img src=\"img/3b7faf56d3b5.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#00ffff\">units/hr</mark></p><p>Ex: </p><p>Order: An IV of 500 mL containing 20,000 units heparin is running at 28 mL/hr.</p><p>Calculate the units/hr infusing</p><p><img src=\"img/268ab22caf5f.png\" alt=\"\" loading=\"lazy\"> = 1,120 units/hr</p>",
+       "images": 4
+      },
+      {
+       "id": "a6c3df6c94",
+       "prompt": "Insulin Drip",
+       "promptHtml": "<p>Insulin Drip</p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#ffff00\">mL/hr</mark></p><p>Ex: Prepare an insulin drip of 50 units regular insulin in 100 mL NS. Administer the insulin drip at 6 units/hr. As the nurse preparing this insulin drip, you will add 50 units of regular insulin to the IV bag of 100 mL NS. You will need to label this bag. Refer to Figure 22-24 (Pg. 456).</p><p><img src=\"img/98e67d26c942.png\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 2
+      },
+      {
+       "id": "60c047dd37",
+       "prompt": "Titration Medication (mcg/min)",
+       "promptHtml": "<p>Titration Medication (mcg/min)</p>",
+       "answerHtml": "<p><img src=\"img/71458be13baf.png\" alt=\"\" loading=\"lazy\"></p><p>Ex: A maintenance dose of 16 mcg/min has been ordered using 6 mg in 300 mL of normal saline. Calculate the flow rate.</p><p><img src=\"img/1454ffc53895.png\" alt=\"\" loading=\"lazy\"></p><p>960 mcg —&gt; 0.96 mg/hr</p><p><img src=\"img/6b2b3c6a92fd.png\" alt=\"\" loading=\"lazy\">48 mL/hr</p>",
+       "images": 3
+      }
+     ]
+    },
+    {
+     "name": "Cardiac",
+     "cards": [
+      {
+       "id": "40d057a12d",
+       "prompt": "Arteries carry? Veins carry?",
+       "promptHtml": "<p>Arteries carry?</p><p>Veins carry?</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Arteries carry oxygenated blood AWAY from the heart</span></p><p><span style=\"color:#0000ff\">Veins carry deoxygenated blood back to the heart</span></p><p><span style=\"color:#ff0000\">Arteries = Away from the heart</span></p><p><span style=\"color:#0000ff\">Veins = Visit the heart</span></p><p>[Pulmonary artery </p><ul class=\"l0\"><li>Carries <span style=\"color:#0000ff\">deoxygenated </span>blood from the heart → lungs</li></ul><p>Pulmonary vein</p><ul class=\"l0\"><li>Carries <span style=\"color:#ff0000\">oxygenated </span>blood from the lungs → heart]</li></ul>"
+      },
+      {
+       "id": "3b4149c3c1",
+       "prompt": "Cardiac Output Formula",
+       "promptHtml": "<p>Cardiac Output Formula</p>",
+       "answerHtml": "<p>Heart Rate x Stroke Volume = Cardiac Output</p><p>HR x SV = CO</p>"
+      },
+      {
+       "id": "5000985cfa",
+       "prompt": "Cardiac Output",
+       "promptHtml": "<p>Cardiac Output</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">4 - 8</span> Liters/<b>minute</b></p>"
+      },
+      {
+       "id": "4345646122",
+       "prompt": "Stroke Volume",
+       "promptHtml": "<p>Stroke Volume</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">60 - 100</span> mL/<b>beat</b></p>"
+      },
+      {
+       "id": "84d76cdc87",
+       "prompt": "Ejection Fraction",
+       "promptHtml": "<p>Ejection Fraction</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">55 - 70%</span></p>"
+      },
+      {
+       "id": "2ff673dd71",
+       "prompt": "Systolic Failure",
+       "promptHtml": "<p>Systolic Failure</p>",
+       "answerHtml": "<p>Systolic = <b>Squeeze </b>issue</p><p>EF = <span style=\"color:#ff00ff\">40% or lower</span></p><p>Diagnosed w/ <b>echocardiogram</b></p>"
+      },
+      {
+       "id": "d282a68c30",
+       "prompt": "Diastolic Failure",
+       "promptHtml": "<p>Diastolic Failure</p>",
+       "answerHtml": "<p>Ventricles are not FILLING IN properly</p><p>EF <span style=\"color:#ff00ff\">≥ 50%</span> </p><p>Diagnosed w/ <b>echocardiogram</b></p>"
+      },
+      {
+       "id": "42c5d0515e",
+       "prompt": "Heart Failure Compensatory Mechanisms",
+       "promptHtml": "<p>Heart Failure Compensatory Mechanisms</p>",
+       "answerHtml": "<ol class=\"l0\" start=\"1\"><li>RAAS Activation &amp; ADH Release</li><li>SNS Activation </li></ol><ul class=\"l0\"><li>Epinephrine = <span style=\"color:#ff0000\">HUGE O2 demand!</span></li><li>Norepinephrine = <span style=\"color:#ff0000\">↑ BP</span></li></ul><ol class=\"l0\" start=\"3\"><li>Ventricular adaptations</li></ol><ul class=\"l0\"><li><span style=\"color:#ff0000\">↑ O2 demand</span></li></ul><ol class=\"l0\" start=\"4\"><li>Endothelin &amp; Cytokines</li></ol>"
+      },
+      {
+       "id": "f7c8c069f9",
+       "prompt": "Counter Regulatory Mechanisms",
+       "promptHtml": "<p>Counter Regulatory Mechanisms</p>",
+       "answerHtml": "<p>ANP/BNP</p><ul class=\"l0\"><li><b>Na</b>triuresis = ↓ <b>Na</b></li><li>Vasodilation = ↓ Afterload</li><li>Diuresis = ↓ Water (H2O)</li><li>BNP has a longer half life</li><li>The ↑ ANP/BNP, the worse the fluid overload/HF is</li></ul><p>Nitric Oxide &amp; Prostaglandins</p><ul class=\"l0\"><li>Oppose RAAS &amp; SNS</li><li>↓ Afterload</li></ul>"
+      },
+      {
+       "id": "e7665e8f6b",
+       "prompt": "AHA Stage Classifications",
+       "promptHtml": "<p>AHA Stage Classifications</p>",
+       "answerHtml": "<p>Stages are permanent </p>"
+      },
+      {
+       "id": "6bb53b783f",
+       "prompt": "NYHA Stage Classification",
+       "promptHtml": "<p>NYHA Stage Classification</p>",
+       "answerHtml": "<p>Based on symptoms </p><ul class=\"l0\"><li>Can improve or get worse</li></ul>"
+      },
+      {
+       "id": "3e437c1b45",
+       "prompt": "Left Ventricular Ejection Fraction Classifications (LVEF)",
+       "promptHtml": "<p>Left Ventricular Ejection Fraction Classifications</p><p>(LVEF)</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">R</span>educed EF</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">EF &lt; 40%</span></li><li><span style=\"color:#ff00ff\">HF</span><u>r</u><span style=\"color:#ff00ff\">EF </span></li></ul><ul class=\"l1\"><li>(Pronounced Hef Ref)</li></ul><ul class=\"l0\"><li>Weak contraction, significantly reduced pumping</li></ul><p><span style=\"color:#ff0000\"><u>P</u></span>reserved/Mildly Reduced</p><ol class=\"l0\" start=\"1\"><li><span style=\"color:#ff00ff\">EF 50%</span></li></ol><ol class=\"l1\" start=\"1\"><li><span style=\"color:#ff00ff\">HF</span><u>p</u><span style=\"color:#ff00ff\">EF</span></li></ol><ol class=\"l2\" start=\"1\"><li>(Pronounced Hef Pef)</li></ol><ol class=\"l1\" start=\"2\"><li>Preserved pumping, but impaired filling</li></ol><p>Ejection fraction drives <b>treatment</b></p>"
+      },
+      {
+       "id": "3fe6fbca05",
+       "prompt": "Dysrhythmias",
+       "promptHtml": "<p>Dysrhythmias </p>",
+       "answerHtml": "<ul class=\"l0\"><li>Continuous telemetry</li><li>Report HR <span style=\"color:#ff00ff\">&lt; 60</span> or  &gt; 100</li><li>Monitor <mark style=\"background-color:#00ff00\">electrolytes</mark></li></ul>"
+      },
+      {
+       "id": "8f587d37ed",
+       "prompt": "Complications of Heart Failure",
+       "promptHtml": "<p>Complications of Heart Failure</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Pulmonary edema</li><li>Pleural effusion</li><li>Dysrhymias </li><li>Thrombus</li><li>Dyssynchronous ventricular contraction</li><li>Hepatomegaly</li><li>Cardiorenal syndrome</li><li>Anemia</li><li>Cardiogenic shock</li></ul>"
+      },
+      {
+       "id": "88cf64a058",
+       "prompt": "Pulmonary EDEMA",
+       "promptHtml": "<p>Pulmonary EDEMA</p>",
+       "answerHtml": "<p>Fluid INSIDE the lungs</p><p><span style=\"color:#ff0000\">S&amp;S</span></p><ul class=\"l0\"><li>Pink frothy sputum (emergency!)</li><li>Mottled skin</li><li>Accessory muscles</li><li>Gray, dusky appearance </li></ul><p><mark style=\"background-color:#00ff00\">Treatment</mark></p><ul class=\"l0\"><li>BiPAP (with oxygen)</li><li>Diuretics</li><li>IV Nitroglycerin </li></ul>"
+      },
+      {
+       "id": "c03df12050",
+       "prompt": "Pleural Effusion",
+       "promptHtml": "<p>Pleural Effusion</p>",
+       "answerHtml": "<p>Fluid AROUND the lungs</p><ul class=\"l0\"><li>Affects oxygenation d/t lungs not being able to expand</li></ul>"
+      },
+      {
+       "id": "15e4cedbaa",
+       "prompt": "Diagnostic tests for Heart Failure",
+       "promptHtml": "<p>Diagnostic tests for Heart Failure</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Echocardiogram </li><li>12 lead ECG</li><li>Chest Xray</li><li>Nuclear Imaging</li><li>Stress test </li></ul><ul class=\"l1\"><li>To look for perfusion defects</li></ul><ul class=\"l0\"><li>Cardiac Cath</li></ul><ul class=\"l1\"><li>Evaluate arteries/perfusion</li></ul><ul class=\"l0\"><li>BNP</li><li>NT-proBNP (longer half life than BNP)</li></ul>"
+      },
+      {
+       "id": "9333240d82",
+       "prompt": "Treatment for Heart Failure",
+       "promptHtml": "<p>Treatment for Heart Failure</p>",
+       "answerHtml": "<p>Ultrafiltration </p><p>Left Ventricular Assist Device (LVAD)</p><ul class=\"l0\"><li>Temporary</li><li>Bridge to heart transplant</li></ul><p>Intraaortic balloon pump (IABP)</p><ul class=\"l0\"><li>Verify </li></ul><ul class=\"l1\"><li>Placement w/ daily chest xray</li><li>If it’s actually helping the Pt</li></ul><p>Extracorporeal Membrane Oxygenation (ECMO)</p><ul class=\"l0\"><li>Like an extra lung</li><li>Takes blood out &amp; oxygenates it</li><li>For SEVERELY decompensated Pts</li></ul>"
+      },
+      {
+       "id": "51cf37fa09",
+       "prompt": "*Drug therapy for Heart Failure",
+       "promptHtml": "<p>*Drug therapy for Heart Failure</p>",
+       "answerHtml": "<p><b>A</b>CE &amp; ARBs - ↓ BP</p><ul class=\"l0\"><li>ACE = “<mark style=\"background-color:#00ffff\">pril</mark>”</li><li>ARBs = “<mark style=\"background-color:#00ffff\">sartan</mark>”</li></ul><p><b>B</b>eta Blockers - ↓ HR &amp; ↓ BP</p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\">lol</mark>”</li></ul><p><b>C</b>alcium Channel Blockers - ↓ HR &amp; ↓ BP</p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\">dipine</mark>”</li></ul><p><b>D</b>igoxin - ↓ BP</p><ul class=\"l0\"><li>Cardiac Glycoside</li></ul><p><b>D</b>ilators (Vasodilators)</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Nitroglycerin</mark></li></ul><p><b>D</b>iuretics - ↓ BP</p><ul class=\"l0\"><li>Potassium wasting &amp; Sparing</li></ul><p>All these drugs ↓ BP &amp; take workload off the heart</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Orthostatic HTN</mark></li><li><mark style=\"background-color:#00ff00\">“Slow position changes”</mark></li></ul><p>EXCEPT Digoxin </p><ul class=\"l0\"><li>Digs for deeper contraction </li><li>ONLY <span style=\"color:#ff0000\">↓ HR</span> (doesn’t affect BP)</li><li>“ Digoxin the toxin </li></ul>"
+      },
+      {
+       "id": "d9394d4b33",
+       "prompt": "*ACE & ARBs",
+       "promptHtml": "<p>*ACE &amp; ARBs</p>",
+       "answerHtml": "<p>A → Antihypertensive = ↓ BP</p><p>A → Adds potassium</p><p>ACE</p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\"><b>pril</b></mark>”</li><li>1st choice </li><li>Lisinopril = chill pril, puts the BP low</li><li>↓ Preload AND Afterload</li><li>“Prils puff the tongue &amp; add potassium”</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Monitor K</mark></li><li><mark style=\"background-color:#00ff00\">Angioedema</mark></li></ul><p>ARBs</p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\"><b>sartan</b></mark>”</li><li>2nd choice </li><li>“Sartan” = relax man, ↓ BP</li><li>↓ Afterload</li><li>“Sartans spare the potassium” </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Monitor K</mark></li></ul>"
+      },
+      {
+       "id": "83015e6dfb",
+       "prompt": "*Beta Blockers",
+       "promptHtml": "<p>*Beta Blockers</p>",
+       "answerHtml": "<p>“<mark style=\"background-color:#00ffff\"><b>lol</b></mark>” - double L = double low</p><p>↓ Low HR</p><p>↓ Low BP</p><p>BEFORE administration</p><ul class=\"l0\"><li>Check HR/BP</li><li>Remove as much fluid as possible</li></ul><p>Can </p><ul class=\"l0\"><li>Mask <span style=\"color:#ff0000\">hypoglycemia</span></li><li>Improve ejection fraction over time</li></ul>"
+      },
+      {
+       "id": "ff66886f40",
+       "prompt": "*Calcium Channel Blockers",
+       "promptHtml": "<p>*Calcium Channel Blockers</p>",
+       "answerHtml": "<p>Calm the heart</p><p>↓ HR &amp; BP</p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\"><b>dipine</b></mark>” declines the blood pressure, not the HR </li><li>“<mark style=\"background-color:#00ffff\"><b>zem</b></mark>” / zen yoga - relaxes BP and HR </li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Avoided </span>in systolic HF because it reduces contractility</li></ul>"
+      },
+      {
+       "id": "5e537d2f16",
+       "prompt": "*Digoxin",
+       "promptHtml": "<p>*Digoxin</p>",
+       "answerHtml": "<p>Digoxin digs for a deeper contraction </p><p>↓ HR</p><ul class=\"l0\"><li>Used for <b>abnormal rhythms</b> only</li></ul><p>Digoxin is a toxin </p><ul class=\"l0\"><li>“ATP”</li><li><b>A</b>pical pulse (hold <span style=\"color:#ff00ff\">&lt; 60</span>)</li><li><b>T</b>oxicity over <span style=\"color:#ff00ff\">2.0</span></li><li><b>↓ P</b>otassium &lt; 3.5 ↑ risk of toxicity </li><li>↑ BUN/Creatinine = Hold</li></ul><p>Antidote = Digibind</p>"
+      },
+      {
+       "id": "272d139608",
+       "prompt": "*NitrOglycerin",
+       "promptHtml": "<p>*Nitr<b>O</b>glycerin </p>",
+       "answerHtml": "<p>Vas<b>O</b>dilators </p><ul class=\"l0\"><li><b>↓ </b>Preload</li><li>Contraindicated w/ “<mark style=\"background-color:#00ffff\"><b>afil</b></mark>” like <b>sildenafil</b></li><li><b>“</b>We stop nitro if the BP is low”</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Monitor BP/EKG</mark></li></ul><p>SE</p><ul class=\"l0\"><li>Headache</li><li>Hypotension</li><li>Hot flushing</li><li></li></ul><p>[<mark style=\"background-color:#00ffff\">Isosorbide</mark> = also a vasodilator]</p>"
+      },
+      {
+       "id": "7cb1b6b67c",
+       "prompt": "*Diuretics",
+       "promptHtml": "<p>*Diuretics </p>",
+       "answerHtml": "<p>Potassium Wasting</p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\"><b>ide</b></mark>”</li><li>Gets RID of potassium </li></ul><p><mark style=\"background-color:#00ffff\">spironolactone</mark></p><ul class=\"l0\"><li>Potassium SPARING</li><li>Wants a spare..HOLDS ONTO POTASSIUM</li></ul><p>Monitor</p><ul class=\"l0\"><li>Electrolytes</li><li>I&amp;O</li><li>Vitals</li><li>BUN/Creatinine</li></ul>"
+      },
+      {
+       "id": "adae59cb11",
+       "prompt": "*Positive Inotrope",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">*Positive Inotrope</mark></p>",
+       "answerHtml": "<p>Dopamine</p><p>Dobutamine</p><p>Milrinone</p><p>Goal =</p><p><mark style=\"background-color:#ffff00\">↑ Contractility</mark></p><p><mark style=\"background-color:#ffff00\">↑ Cardiac output</mark></p><p>Monitor</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Tachyarrthymias </span></li></ul>"
+      },
+      {
+       "id": "2b4a04b5fb",
+       "prompt": "Implantable cardiac device",
+       "promptHtml": "<p>Implantable cardiac device</p>",
+       "answerHtml": "<p>If Pt has ejection fraction <span style=\"color:#ff00ff\">&lt; 35</span></p><p>This is a pacemaker that can shock the PT</p>"
+      },
+      {
+       "id": "305119d9f2",
+       "prompt": "Nursing Considerations for Heart Failure",
+       "promptHtml": "<p>Nursing Considerations for Heart Failure</p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff00ff\">Sodium &lt; 2 g/day</span></li><li><b>Report </b></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">2-3 lbs </span>in<span style=\"color:#ff00ff\"> 24-48 hrs </span></li><li><span style=\"color:#ff00ff\">5 lbs </span>in a <span style=\"color:#ff00ff\">week</span></li></ul>"
+      },
+      {
+       "id": "d4debd6764",
+       "prompt": "Immune Thrombocytopenia (ITP)",
+       "promptHtml": "<p>Immune Thrombocytopenia (ITP)</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Autoimmune mediated platelet destruction</span></p><ul class=\"l0\"><li>Low platelet → bleeding risk</li></ul><p><mark style=\"background-color:#00ff00\">Treatment</mark></p><ul class=\"l0\"><li>1st = <mark style=\"background-color:#00ffff\">Corticosteroids</mark></li><li>IV Immunoglobulin (<mark style=\"background-color:#00ffff\">IVIG</mark>) for rapid increase</li><li>Splenectomy</li></ul>"
+      },
+      {
+       "id": "8708a93921",
+       "prompt": "Thrombotic Thrombocytopenic Purpura (TTP)",
+       "promptHtml": "<p>Thrombotic Thrombocytopenic Purpura (TTP)</p>",
+       "answerHtml": "<p>→ Thrombotic = <span style=\"color:#ff0000\">clots developing!</span></p><p><span style=\"color:#ff0000\">→ Platelet consumption that causes microthrombi</span></p><p><i>↓ Platelets</i></p><p><i>Clots</i></p><p><i>RBC damage</i></p><p><span style=\"color:#ff0000\"><i>Organ ischemia (tissue necrosis)</i></span></p><p>SE</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Neuro changes</span></li><li><span style=\"color:#ff0000\">Renal dysfunction</span></li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Plasmapheresis</mark> (PLEX)</li></ul><ul class=\"l1\"><li>To filter out excess VWF</li></ul><ul class=\"l0\"><li>OR</li></ul><ul class=\"l1\"><li>Get rid of antibodies [if it’s d/t autoimmune]</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Corticosteroids</mark> </li></ul><p>Can be caused by <mark style=\"background-color:#00ffff\">clopidogrel</mark></p>"
+      },
+      {
+       "id": "0d12c85e8f",
+       "prompt": "Disseminated Intravascular Coagulation (DIC)",
+       "promptHtml": "<p>Disseminated Intravascular Coagulation (DIC)</p>",
+       "answerHtml": "<p>→ Disseminated = Widespread, affecting everything</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Widespread clotting AND bleeding at the same time</span></li><li><b>↑ </b>D-dimer (hallmark)</li></ul><p>Treatment</p><ul class=\"l0\"><li>1st = Treat <b>underlying cause</b> <span style=\"color:#ff0000\">urgently</span></li><li>Blood products: <mark style=\"background-color:#00ffff\">FFP, platelets, cryoprecipitate, RBCs</mark></li><li>Continuous <mark style=\"background-color:#00ff00\">bleeding/clotting assessment</mark></li><li>Hemodialysis if AKI</li><li>Assess </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Tissue damage/ischemia</mark></li><li><mark style=\"background-color:#00ff00\">Neurological status</mark></li></ul><ul class=\"l0\"><li>D/t stroke risk</li></ul>"
+      },
+      {
+       "id": "5648346e1a",
+       "prompt": "P wave",
+       "promptHtml": "<p>P wave</p>",
+       "answerHtml": "<p>Atrial depolarization </p><p>(contraction)</p>"
+      },
+      {
+       "id": "8524329966",
+       "prompt": "QRS",
+       "promptHtml": "<p>QRS</p>",
+       "answerHtml": "<p>Ventricular depolarization (contraction)</p><ul class=\"l0\"><li><i>Upside down V = ventricles</i></li></ul><p>[atria repolarization hidden in here too]</p>"
+      },
+      {
+       "id": "af4de45575",
+       "prompt": "T wave",
+       "promptHtml": "<p>T wave</p>",
+       "answerHtml": "<p>Ventricular <b>re</b>polarization (<b>re</b>laxing)</p>"
+      },
+      {
+       "id": "d29d11aa0a",
+       "prompt": "PR Interval",
+       "promptHtml": "<p>PR Interval</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">0.12 - 0.20 sec</span></p><p>Atrial contraction/relaxation</p>"
+      },
+      {
+       "id": "7531cd7ec1",
+       "prompt": "QRS Complex",
+       "promptHtml": "<p>QRS Complex</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">&lt; 0.12 sec</span></p><p>Ventricular contractions</p>"
+      },
+      {
+       "id": "20f5f28903",
+       "prompt": "QT Interval",
+       "promptHtml": "<p>QT Interval</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">0.34 - 0.43 sec</span></p><p>Ventricular contraction &amp; relaxation</p>"
+      },
+      {
+       "id": "005790c49b",
+       "prompt": "1 small box",
+       "promptHtml": "<p>1 small box</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">0.04 sec</span></p>"
+      },
+      {
+       "id": "77f2af6152",
+       "prompt": "1 large box",
+       "promptHtml": "<p>1 large box</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">0.20 sec</span></p><p>5 small boxes</p>"
+      },
+      {
+       "id": "ifd5dcc0f6",
+       "prompt": "[Image] Normal Sinus Rhythm",
+       "promptHtml": "<p> <img src=\"img/dc8a9a4de975.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Normal Sinus Rhythm </mark></p><ul class=\"l0\"><li>Everything is <b>normal</b></li><li>Rate = <span style=\"color:#ff00ff\">60 - 100 bpm</span></li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i2d99fd387",
+       "prompt": "[Image] Sinus Arrhythmia",
+       "promptHtml": "<p> <img src=\"img/5409217fc565.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Sinus Arrhythmia</mark></p><ul class=\"l0\"><li>Everything is normal EXCEPT </li></ul><p>→ <span style=\"color:#ff0000\">Irregular R-R intervals</span></p><p>[Usually no treatment needed]</p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "ibf8421dbe",
+       "prompt": "[Image] Sinus Bradycardia",
+       "promptHtml": "<p> <img src=\"img/47b5506dd572.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Sinus Bradycardia</mark></p><ul class=\"l0\"><li>Everything is normal EXCEPT</li></ul><p>→ Rate <span style=\"color:#ff00ff\">&lt; 60 bpm</span></p><p>Treatment</p><ul class=\"l0\"><li>Only if <span style=\"color:#ff0000\">symptomatic </span></li></ul><p>→ <mark style=\"background-color:#00ffff\">Atropine</mark> 0.5 mg IV</p><ul class=\"l0\"><li>Still not responding to treatment → <span style=\"color:#ff0000\">transcutaneous pacing</span></li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i1aaa40bda",
+       "prompt": "[Image] Sinus Tachycardia",
+       "promptHtml": "<p> <img src=\"img/6667634f2309.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Sinus Tachycardia</mark></p><ul class=\"l0\"><li>Rate <span style=\"color:#ff00ff\">&gt; 100 bpm</span></li></ul><p>Treatment</p><ul class=\"l0\"><li>Treat the cause</li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i7fe745aa2",
+       "prompt": "[Image] Supraventricular Tachycardia (SVT)",
+       "promptHtml": "<p> <img src=\"img/36055208622b.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Supraventricular Tachycardia (SVT)</mark></p><ul class=\"l0\"><li>Rate = <span style=\"color:#ff00ff\">151 - 220 bpm</span></li><li>Narrow QRS</li><li><span style=\"color:#ff0000\">Buried P waves</span></li></ul><p><mark style=\"background-color:#00ff00\">Treatment</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Stable = 1st try → Vagal maneuvers</mark> </li></ul><ul class=\"l1\"><li>“Bear down”</li><li><mark style=\"background-color:#00ffff\">2nd → Adenosine </mark>6 mg rapid IV push</li></ul><ul class=\"l2\"><li>3rd → redose Adenosine at different dose</li></ul><ul class=\"l0\"><li>4th OR VERY <span style=\"color:#ff0000\">UNSTABLE</span> =<span style=\"color:#ff0000\"> Cardioversion </span></li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i446085df3",
+       "prompt": "[Image] Atrial Flutter",
+       "promptHtml": "<p> <img src=\"img/19acdf6e65f2.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Atrial Flutter</mark></p><ul class=\"l0\"><li>Classic <span style=\"color:#ff0000\">sawtooth </span>flutter waves</li></ul><p>Treatment</p><ul class=\"l0\"><li>Rate control (keep HR <span style=\"color:#ff00ff\">&lt; 100</span>)</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Beta-Blockers</mark></li><li><mark style=\"background-color:#00ffff\">Calcium Channel Blockers</mark></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Anticoagulation</mark> for stroke risk</li><li><span style=\"color:#ff0000\">Unstable = Cardioversion</span></li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "ia6f827cf0",
+       "prompt": "[Image] Atrial Fibrillation",
+       "promptHtml": "<p> <img src=\"img/39dd5bbc9706.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Atrial Fibrillation</mark></p><ul class=\"l0\"><li>No P waves </li><li><b>Chaotic baseline</b></li><li><span style=\"color:#ff0000\">Irregularly irregular</span> rhythm </li></ul><p>Treatment</p><ul class=\"l0\"><li>Rate/rhythm control (keep HR <span style=\"color:#ff00ff\">&lt; 100</span>)</li><li><mark style=\"background-color:#00ffff\">Anticoagulation</mark> → stroke prevention!</li><li><span style=\"color:#ff0000\">Unstable = Cardioversion </span></li></ul><ul class=\"l1\"><li>[CANNOT if they have a clot]</li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i54c60510c",
+       "prompt": "[Image] First Degree Heart Block",
+       "promptHtml": "<p> <img src=\"img/a8c90de252a0.png\" alt=\"\" loading=\"lazy\"> </p><p> <img src=\"img/9a70bea3e837.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">First Degree Heart Block</mark></p><ul class=\"l0\"><li>PR interval <span style=\"color:#ff00ff\">&gt; 0.20 sec</span></li></ul><p>Treatment</p><ul class=\"l0\"><li>No treatment needed</li></ul><p><i>“If the R is far from the P, then you have a 1st degree”</i></p>",
+       "imagePrompt": true,
+       "images": 2
+      },
+      {
+       "id": "ifa90ce271",
+       "prompt": "[Image] Second-Degree Type I",
+       "promptHtml": "<p> <img src=\"img/ded7896b68f7.png\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Second-Degree Type I</mark></p><p><mark style=\"background-color:#ffff00\">[Mobitz I or Wenckebach]</mark></p><ul class=\"l0\"><li>PR interval <b>progressively lengthens</b></li><li>QRS eventually <b>dropped</b></li></ul><p>Treatment</p><ul class=\"l0\"><li>Often benign - <mark style=\"background-color:#00ff00\">monitor</mark></li><li><mark style=\"background-color:#00ffff\">Atropine</mark> if <span style=\"color:#ff0000\">HR &lt; 60 bpm</span> &amp; <b>symptomatic</b></li></ul><p><i>“Longer, longer, drop, now I have a wenckebach”</i></p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "ifc3895fdf",
+       "prompt": "[Image] Second-Degree Type II",
+       "promptHtml": "<p> <img src=\"img/1791527c6a91.png\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Second-Degree Type II</mark></p><p><mark style=\"background-color:#ffff00\">[Mobitz II]</mark></p><ul class=\"l0\"><li>PR interval constant - then <b>sudden dropped QRS</b></li></ul><p>Treatment</p><ul class=\"l0\"><li><b>High risk!</b> Can progress to 3rd degree</li><li><span style=\"color:#ff0000\">Pacemaker </span>often needed</li></ul><p><i>“If some QRS’s don’t go thru, now you have a Mobitz II”</i></p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i3d40e491b",
+       "prompt": "[Image] Third Degree Heart Block",
+       "promptHtml": "<p><img src=\"img/c1505d969400.png\" alt=\"\" loading=\"lazy\"></p><p><img src=\"img/2902347298e8.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Third Degree Heart Block</mark></p><ul class=\"l0\"><li>P waves &amp; QRS <b>completely dissociated</b></li></ul><p>Management</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Unstable = Emergency</span>!</li></ul><ul class=\"l1\"><li>Transcutaneous or temporary <span style=\"color:#ff0000\">pacing</span></li></ul><p>OR</p><ul class=\"l0\"><li>Temporary treatment = <mark style=\"background-color:#00ffff\">Dopamine </mark>infusion</li><li><span style=\"color:#ff0000\">Permanent pacemaker </span></li></ul><p><i>“If the R’s + P’s don’t agree, now you have a 3rd degree”</i></p><p> <img src=\"img/40c97fd21549.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "imagePrompt": true,
+       "images": 3
+      },
+      {
+       "id": "i2c5784469",
+       "prompt": "[Image] Ventricular Tachycardia (Monomorphic)",
+       "promptHtml": "<p> <img src=\"img/c14a90828ccb.png\" alt=\"\" loading=\"lazy\"> </p><p><img src=\"img/9cd13499dc2a.png\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Ventricular Tachycardia (Monomorphic)</mark></p><p><b>→ </b>LIFE THREATENING!</p><ul class=\"l0\"><li>Rate: <span style=\"color:#ff00ff\">&gt; 100 bpm</span></li><li>Wide <span style=\"color:#ff00ff\">QRS &gt; 0.12 sec</span></li></ul><p>Treatment</p><ul class=\"l0\"><li>Stable w/ a pulse = <mark style=\"background-color:#00ffff\">Amiodarone</mark> 150 mg IV</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Check their BP!</mark></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Un</b></span><span style=\"color:#ff0000\">stable</span> w/ a pulse = <span style=\"color:#ff0000\">Synchronized cardioversion</span></li><li>No pulse = <span style=\"color:#ff0000\">CPR </span>→ Defib → <mark style=\"background-color:#00ffff\">Epinephrine</mark> → <mark style=\"background-color:#00ffff\">Amiodarone</mark></li></ul>",
+       "imagePrompt": true,
+       "images": 2
+      },
+      {
+       "id": "i72436441c",
+       "prompt": "[Image] Torsades de Pointes",
+       "promptHtml": "<p> <img src=\"img/aca0bfdfccad.png\" alt=\"\" loading=\"lazy\"> </p><p><img src=\"img/09dc3fbdf507.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Torsades de Pointes</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Associated with </mark><mark style=\"background-color:#00ff00\"><b>low magnesium</b></mark></li><li>“twists”</li></ul><p>Treatment</p><ul class=\"l0\"><li>With pulse = <mark style=\"background-color:#00ffff\">Magnesium Sulfate</mark> 2 g IV</li><li>NO pulse = <span style=\"color:#ff0000\">CPR </span>→ Defib → <mark style=\"background-color:#00ffff\">Epinephrine</mark></li></ul>",
+       "imagePrompt": true,
+       "images": 2
+      },
+      {
+       "id": "ibc8e7ffcb",
+       "prompt": "[Image] Ventricular Fibrillation (VFib)",
+       "promptHtml": "<p><img src=\"img/9a386829f1fd.png\" alt=\"\" loading=\"lazy\"> </p><p><img src=\"img/9c4761a9850b.png\" alt=\"\" loading=\"lazy\"></p><p><img src=\"img/fc8ef22d1ca3.png\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Ventricular Fibrillation (VFib)</mark></p><p>→ LIFE THREATENING!</p><ul class=\"l0\"><li>Chaotic, disorganized electrical activity</li><li>No effective cardiac output</li></ul><p>Treatment</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">CPR</span></li><li>Defibrillation</li><li><mark style=\"background-color:#00ff00\">Epinephrine</mark> 1 mg IV every 3-5 min</li></ul>",
+       "imagePrompt": true,
+       "images": 3
+      },
+      {
+       "id": "ca26e9e8b9",
+       "prompt": "What is asystole & how to treat?",
+       "promptHtml": "<p>What is asystole &amp; how to treat?</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Asystole</mark></p><ul class=\"l0\"><li>Flatline</li></ul><p>Treatment</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">CPR </span>+ <mark style=\"background-color:#00ffff\">Epinephrine</mark> </li><li>NO DEFIBRILLATION</li></ul>"
+      },
+      {
+       "id": "78b8aaf1ea",
+       "prompt": "What is PEA & how to treat?",
+       "promptHtml": "<p>What is PEA &amp; how to treat?</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Pulseless Electrical Activity (PEA)</mark></p><ul class=\"l0\"><li>Organized rhythm but no mechanical function → <span style=\"color:#ff0000\">no pulse</span>! </li></ul><p>Treatment</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">CPR </span>+ <mark style=\"background-color:#00ffff\">Epinephrine</mark> </li><li>Treat reversible causes</li><li>NO DEFIBRILLATION</li></ul>"
+      },
+      {
+       "id": "i9ef1c5fd9",
+       "prompt": "[Image] Premature Atrial Contraction",
+       "promptHtml": "<p> <img src=\"img/67ac6f774c0c.png\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Premature Atrial Contraction</mark></p><ul class=\"l0\"><li>Abnormal or early P wave</li><li>[no treatment needed]</li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i71ca8ea37",
+       "prompt": "[Image] Premature Ventricular Contractions (PVC)",
+       "promptHtml": "<p><img src=\"img/5232cc919a9c.png\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Premature Ventricular Contractions (PVC)</mark></p><ul class=\"l0\"><li>Early, <b>wide, bizarre QRS</b></li></ul><ul class=\"l1\"><li>Pause afterward</li></ul><p>Treatment</p><ul class=\"l0\"><li>Treat if <span style=\"color:#ff0000\">frequent </span>&amp; <span style=\"color:#ff0000\">symptomatic </span></li><li>If Pt is having a lot of PVCs, check their electrolytes </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Potassium</mark></li><li><mark style=\"background-color:#00ff00\">Magnesium</mark></li></ul>",
+       "imagePrompt": true,
+       "images": 1
+      }
+     ]
+    },
+    {
+     "name": "Coagulation",
+     "cards": [
+      {
+       "id": "4a320b9cd5",
+       "prompt": "PT Prothrombin time",
+       "promptHtml": "<p>PT</p><p>Prothrombin time</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">11 - 12.5 seconds</span></p>"
+      },
+      {
+       "id": "e8b050ba0c",
+       "prompt": "INR International normalized ratio",
+       "promptHtml": "<p>INR</p><p>International normalized ratio</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">0.8 - 1.1</span></p>"
+      },
+      {
+       "id": "b5e7fbe4d6",
+       "prompt": "APTT Activated partial thromboplastin time",
+       "promptHtml": "<p>APTT</p><p>Activated partial thromboplastin time</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">30 - 40 seconds</span></p>"
+      },
+      {
+       "id": "b745625190",
+       "prompt": "Platelets",
+       "promptHtml": "<p>Platelets</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">150 - 400</span></p>"
+      },
+      {
+       "id": "9836a64269",
+       "prompt": "Virchow’s Triad",
+       "promptHtml": "<p>Virchow’s Triad</p>",
+       "answerHtml": "<p>Stasis</p><p>Hypercoagulability</p><p>Endothelial injury</p>"
+      }
+     ]
+    },
+    {
+     "name": "Pulmonary Embolism",
+     "cards": [
+      {
+       "id": "8164e1fd9a",
+       "prompt": "Pulmonary Embolism",
+       "promptHtml": "<p><b>Pulmonary Embolism</b></p>",
+       "answerHtml": "<p><u>S&amp;S:</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Sudden onset dyspnea</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#ffff00\">Sudden SOB</mark> = most common</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Feeling of impending doom</span></li></ul><ul class=\"l1\"><li>“I feel like something bad is going to happen”</li></ul><ul class=\"l0\"><li>VQ mismatch</li></ul><ul class=\"l1\"><li>V = Ventilation</li><li>Q = Perfusion</li><li>[There will be ventilation but <b>NO </b>perfusion!]</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">↑ Pulmonary vascular resistance</span></li><li><span style=\"color:#ff0000\">Right ventricular heart strain </span></li></ul><p><u>Complications</u>:</p><p><b>Pulmonary Infarction</b> </p><ul class=\"l0\"><li>Lung tissue death from <span style=\"color:#ff0000\">ischemia</span></li><li>Hemorrhagic consolidation</li><li>Hemoptysis</li><li>Pleuritic pain</li></ul><p><b>Pulmonary Hypertension</b></p><ul class=\"l0\"><li>↑ Pulmonary vascular resistance</li><li>Right ventricular heart strain </li></ul><ul class=\"l1\"><li>[Vessels in the lungs are very narrow/vasoconstricted - a lot of pressure in the lungs! Pressure overworks the RIGHT side of the heart]</li></ul><p><b>Saddle Pulmonary Embolism</b></p><ul class=\"l0\"><li>Saddle =</li></ul><ul class=\"l1\"><li>Clot is at the bifurcation of the L &amp; R branches of the lungs &amp; it extends further into the lungs</li></ul><ul class=\"l0\"><li>These Pts usually </li></ul><ul class=\"l1\"><li>Have <span style=\"color:#ff0000\">R ventricular strain</span></li><li>Have <span style=\"color:#ff0000\">↑ pressure</span> in system</li><li>Prone to <span style=\"color:#ff0000\">shock</span></li></ul><ul class=\"l0\"><li>Risk for PEA arrest!</li></ul><ul class=\"l1\"><li>There is proper electrical activity but there is no mechanical function (no contraction) because the <span style=\"color:#ff0000\">perfusion is blocked </span></li></ul><p><u>Diagnostics</u></p><ul class=\"l0\"><li>CT Scan</li></ul><ul class=\"l1\"><li>Pt needs IV contrast</li></ul><ul class=\"l2\"><li>Check renal function PRIOR!</li><li>Assess urine output AFTER</li></ul><ul class=\"l0\"><li>VQ scan</li></ul><p><u>Nursing Management for Acute PE</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Semi-Fowler’s position</mark></li><li>Assess cardiopulmonary status</li><li>Oxygen, IV fluids, medications</li><li>Monitor coagulation &amp; complications </li></ul><ul class=\"l1\"><li>Monitor for <span style=\"color:#ff0000\">bleeding</span></li></ul><ul class=\"l0\"><li>Breathing is a priority! → Semi Fowler’s </li><li>Is Pt stable ?</li></ul><p>→ Get Pt ready for <mark style=\"background-color:#00ff00\">CT</mark></p><ul class=\"l0\"><li>Safety</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Fall precautions</mark> (d/t bleeding risk)</li></ul><ul class=\"l2\"><li>“<span style=\"color:#ff0000\">Slow position changes</span>” </li></ul><ul class=\"l0\"><li>Patient support</li></ul><ul class=\"l1\"><li>Reassurance</li><li>Emotional support</li><li>Symptom management</li></ul><ul class=\"l0\"><li>Patient education</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#ffff00\">AC therapy</mark></li></ul><ul class=\"l2\"><li></li></ul><ul class=\"l1\"><li>Monitoring</li><li><mark style=\"background-color:#00ff00\">Fall precautions</mark> </li><li><mark style=\"background-color:#00ff00\">Bleeding precautions at home</mark></li></ul><ul class=\"l2\"><li>Dark stool?</li><li><span style=\"color:#ff0000\">Avoid NSAIDs </span></li><li>{Anticoagulant use &amp; NSAIDS can <span style=\"color:#ff0000\">↑ their risk of bleeding</span>!]</li></ul><ul class=\"l3\"><li>Motrin</li><li>Ibuprofen</li><li>Aleve</li><li>Indomethacin</li><li>Naproxen</li><li>Celecoxib</li></ul>"
+      },
+      {
+       "id": "659a682c41",
+       "prompt": "*Anticoagulants (3)",
+       "promptHtml": "<p>*Anticoagulants (3)</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Heparin </mark></p><ul class=\"l0\"><li>Has a short half life</li></ul><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li><b>APTT </b>every <span style=\"color:#ff00ff\">6 hours</span></li><li>Bleeding</li><li>HIT</li></ul><ul class=\"l1\"><li>Platelet drop needs to be <span style=\"color:#ff0000\">&gt; 50%</span> to be considered HIT</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Anti-Xa</mark> as ordered, unless Pt takes heparin at home, then you will monitor a different lab</li></ul><p>Reversal agent = <mark style=\"background-color:#ffff00\">Protamine sulfate</mark></p><p><mark style=\"background-color:#00ffff\">lovenox</mark></p><ul class=\"l0\"><li>Dosing is different depending on treatment</li></ul><ul class=\"l1\"><li>Prophylactic </li></ul><ul class=\"l2\"><li>Vs</li></ul><ul class=\"l1\"><li>Anticoagulation </li></ul><p>Reversal agent = <mark style=\"background-color:#ffff00\">Protamine sulfate</mark></p><p><mark style=\"background-color:#00ffff\">Warfarin</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">INR monitoring</mark> every <span style=\"color:#ff00ff\">2-3 days</span></li><li><span style=\"color:#ff0000\">Slow </span>onset, bridge w/ <mark style=\"background-color:#00ffff\">heparin</mark></li><li>Consistent <b>Vitamin K</b> intake!</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Green, leafy veggies</mark></li></ul>"
+      },
+      {
+       "id": "7038f6ce39",
+       "prompt": "What is contraindicated with anticoagulants?",
+       "promptHtml": "<p>What is <span style=\"color:#ff0000\">contraindicated </span>with anticoagulants?</p>",
+       "answerHtml": "<p>IM injections</p>"
+      },
+      {
+       "id": "9fe75f3fbd",
+       "prompt": "*Factor Xa Inhibitors",
+       "promptHtml": "<p>*Factor Xa Inhibitors </p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Rivaroxaban</mark></p><ul class=\"l0\"><li>No routine monitoring needed</li></ul><p><mark style=\"background-color:#00ffff\">Apixaban </mark></p><ul class=\"l0\"><li><b>Preferred </b>in renal impairment</li><li>Avoid <span style=\"color:#ff0000\">NSAIDs</span>!</li></ul><p>Reversal agent =<mark style=\"background-color:#ffff00\"> Andexanet alfa</mark></p>"
+      },
+      {
+       "id": "5379d1dc2b",
+       "prompt": "*Direct Thrombin Inhibitors",
+       "promptHtml": "<p>*Direct Thrombin Inhibitors </p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Dabigatran </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor </mark></li></ul><ul class=\"l1\"><li>Bleeding</li><li>Renal function</li></ul><p>Reversal agent = <mark style=\"background-color:#ffff00\">idarucizumab (Praxbind)</mark></p>"
+      },
+      {
+       "id": "614e82037b",
+       "prompt": "Nursing Management for Pulmonary Embolism",
+       "promptHtml": "<p>Nursing Management for Pulmonary Embolism</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Semi-Fowler’s position</li><li>Get Pt ready for CT</li><li>Fall precautions</li></ul><ul class=\"l1\"><li>D/t bleeding risk</li></ul><ul class=\"l0\"><li>Avoid <span style=\"color:#ff0000\">NSAIDs</span>!</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Tuberculosis",
+     "cards": [
+      {
+       "id": "46cbea5490",
+       "prompt": "Tuberculosis",
+       "promptHtml": "<p><b>Tuberculosis</b></p>",
+       "answerHtml": "<p>Hallmark lesion = tubercle granuloma</p><ul class=\"l0\"><li>Bacteria is walled off</li><li>Cavity lesions</li><li>Necrosis</li><li>Scar tissue </li><li>Consolidation </li><li>Military TB = life threatening! </li></ul>"
+      },
+      {
+       "id": "1f92987775",
+       "prompt": "TB Diagnostics",
+       "promptHtml": "<p>TB Diagnostics</p>",
+       "answerHtml": "<p>TST/PPD IM injection</p><ul class=\"l0\"><li>Raising/hardening of skin = Positive</li></ul><p>AFB Smear &amp; Culture</p><ul class=\"l0\"><li><b>Definitive </b>diagnosis </li></ul><p>Immunocompromised = may have <span style=\"color:#ff0000\">false negative!</span></p>"
+      },
+      {
+       "id": "1f4548500e",
+       "prompt": "TB Drug Therapy",
+       "promptHtml": "<p>TB Drug Therapy</p>",
+       "answerHtml": "<p>Initial phase</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">2 months</span> = RIPE combo</li></ul><p>Continuation Phase</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">4-7 months</span> = RI only</li></ul><p>“3 hit the liver, E hits the eyes”</p><ul class=\"l0\"><li>LFTs <span style=\"color:#ff00ff\">&gt; 36</span></li></ul><p><mark style=\"background-color:#00ffff\">Rifampin </mark></p><ul class=\"l0\"><li>Turns <span style=\"color:#ff0000\">urine/secretions orange</span></li></ul><p><mark style=\"background-color:#00ffff\">Isoniazid</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Peripheral neuropathy </span></li></ul><p>→ Give <mark style=\"background-color:#00ffff\">Vitamin B6 (pyridoxine)</mark></p><p><mark style=\"background-color:#00ffff\">Pyrazinamide </mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hyperuricemia</span></li></ul><p><mark style=\"background-color:#00ffff\">Ethambutol </mark></p><ul class=\"l0\"><li>Monitor <span style=\"color:#ff0000\">vision</span></li></ul>"
+      },
+      {
+       "id": "c48d6ae759",
+       "prompt": "Drug resistant TB",
+       "promptHtml": "<p>Drug resistant TB</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Aminoglycosides</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">“mycin”</mark></li></ul><p><mark style=\"background-color:#00ffff\">Fluoroquinolones</mark></p><ul class=\"l0\"><li>“<mark style=\"background-color:#00ffff\">Floxacin</mark>” meds → <i>flock of oxens</i> </li></ul>"
+      },
+      {
+       "id": "57847a485f",
+       "prompt": "Collaborative Care for TB",
+       "promptHtml": "<p>Collaborative Care for TB</p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff0000\">Mandated </span>isolation!!</li><li>Nurses = <span style=\"color:#ff0000\">Mandated reporting </span>to Public Health</li><li>6 months minimum of medication adherence</li></ul><ul class=\"l1\"><li>Never skip doses!</li></ul><ul class=\"l0\"><li>1 year minimum follow up w/ infectious disease or public health </li></ul><p>Diagnostic follow up</p><ul class=\"l0\"><li>Sputum cultures at <span style=\"color:#ff00ff\">2, 5</span>, and <span style=\"color:#ff00ff\">6</span> months</li><li>CXR monitoring</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Pulmonary Fibrosis",
+     "cards": [
+      {
+       "id": "4b4e0abb43",
+       "prompt": "Pulmonary Fibrosis",
+       "promptHtml": "<p><b>Pulmonary Fibrosis</b></p>",
+       "answerHtml": "<p>Chronic, progressive lung disease</p><p>Caused by</p><ul class=\"l0\"><li>Lung injury </li><li>Excess collagen &amp; scar tissue</li><li><mark style=\"background-color:#00ffff\">Amiodarone</mark> </li></ul><p>Complications </p><ul class=\"l0\"><li>Pulmonary HTN</li><li>R ventricular heart failure </li></ul><ul class=\"l1\"><li>Leads to → <span style=\"color:#ff0000\">Cor Pulmonale</span> (heart failure d/t lung condition) </li></ul><p>Diagnostics </p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">CT Chest</mark></li></ul><ul class=\"l1\"><li>“<span style=\"color:#ff0000\">Honeycomb</span>” = permanent scar tissue</li></ul><p>Nursing Care</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Bronchodilators </mark></li><li><mark style=\"background-color:#00ff00\">Help w/ SOB</mark></li><li><mark style=\"background-color:#00ffff\">Oxygen </mark>therapy</li><li><span style=\"color:#ff00ff\">SpO2 ≥ 90%</span></li><li><mark style=\"background-color:#00ff00\">Chest percussion</mark></li></ul><ul class=\"l1\"><li>Get rid of secretions </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Pulmonary rehab</mark></li></ul><ol class=\"l1\" start=\"1\"><li>Exercise</li><li>Breathing strategies</li><li>Psychosocial support </li><li><mark style=\"background-color:#00ff00\">[Help them </mark><mark style=\"background-color:#00ff00\"><b>preserve </b></mark><mark style=\"background-color:#00ff00\">as much lung function as possible]</mark></li></ol><ul class=\"l0\"><li>Lung transplant = only cure</li></ul>"
+      },
+      {
+       "id": "6d0288d1c3",
+       "prompt": "pH",
+       "promptHtml": "<p>pH</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">7.35</span> - <span style=\"color:#0000ff\">7.45</span></p>"
+      },
+      {
+       "id": "3f4f15cb4a",
+       "prompt": "PaCO2",
+       "promptHtml": "<p>PaCO2</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">45</span> - <span style=\"color:#0000ff\">35</span></p>"
+      },
+      {
+       "id": "ed294cb354",
+       "prompt": "HCO3",
+       "promptHtml": "<p>HCO3</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">22</span> - <span style=\"color:#0000ff\">26</span></p>"
+      },
+      {
+       "id": "73b8de2077",
+       "prompt": "PaO2",
+       "promptHtml": "<p>PaO2</p>",
+       "answerHtml": "<p><span style=\"color:#0000ff\">&lt; 80 = hypoxia</span></p><p>[oxygen status]</p>"
+      },
+      {
+       "id": "040971756c",
+       "prompt": "SaO2",
+       "promptHtml": "<p>SaO2</p>",
+       "answerHtml": "<p>≥ 95%</p><p>[oxygen saturation]</p>"
+      },
+      {
+       "id": "9c1ea29569",
+       "prompt": "pH = normal →",
+       "promptHtml": "<p>pH = normal →</p>",
+       "answerHtml": "<p>Fully Compensated</p>"
+      },
+      {
+       "id": "f0eb654752",
+       "prompt": "pH = abnormal 1 abnormal system",
+       "promptHtml": "<p>pH = abnormal</p><p>1 abnormal system</p>",
+       "answerHtml": "<p>UNcompensated</p>"
+      },
+      {
+       "id": "41f2c48f77",
+       "prompt": "pH = abnormal BOTH systems abnormal",
+       "promptHtml": "<p>pH = abnormal</p><p>BOTH systems abnormal</p>",
+       "answerHtml": "<p>PARTIALLY compensated</p>"
+      },
+      {
+       "id": "ad0008c537",
+       "prompt": "Anion Gap Normal Anion gap? High Anion gap?",
+       "promptHtml": "<p>Anion Gap</p><ul class=\"l0\"><li>Normal Anion gap?</li><li>High Anion gap?</li></ul>",
+       "answerHtml": "<p>Normal Anion Gap = Bicarbonate LOSS</p><p>↑ High Anion Gap = Too much ACID!</p>"
+      }
+     ]
+    },
+    {
+     "name": "Electrolytes",
+     "cards": [
+      {
+       "id": "3ebaf6b653",
+       "prompt": "Electrolyte mnemonic",
+       "promptHtml": "<p>Electrolyte mnemonic</p>",
+       "answerHtml": "<p>Nice Cats Keep Pet Mice        </p>"
+      },
+      {
+       "id": "5e6f6b1433",
+       "prompt": "Na",
+       "promptHtml": "<p>Na</p>",
+       "answerHtml": "<p>135 - 145</p>"
+      },
+      {
+       "id": "749d8ec525",
+       "prompt": "Ca",
+       "promptHtml": "<p>Ca</p>",
+       "answerHtml": "<p>9 - 10.5</p>"
+      },
+      {
+       "id": "50be1154a7",
+       "prompt": "K",
+       "promptHtml": "<p>K</p>",
+       "answerHtml": "<p>3.5 - 5</p>"
+      },
+      {
+       "id": "74a3eaafe1",
+       "prompt": "PO 4-",
+       "promptHtml": "<p>PO 4-</p>",
+       "answerHtml": "<p>3 - 4.5</p>"
+      },
+      {
+       "id": "b0856da5c9",
+       "prompt": "Mg",
+       "promptHtml": "<p>Mg</p>",
+       "answerHtml": "<p>1.3 - 2.1</p>"
+      }
+     ]
+    },
+    {
+     "name": "Hematology & Immunity",
+     "cards": [
+      {
+       "id": "82996521a0",
+       "prompt": "Leukocytes",
+       "promptHtml": "<p>Leukocytes </p>",
+       "answerHtml": "<p><i>WBC</i></p>"
+      },
+      {
+       "id": "78e8e4f8a5",
+       "prompt": "Neutrophils",
+       "promptHtml": "<p><b>Neutrophils </b></p>",
+       "answerHtml": "<p><i>1st responders</i></p>"
+      },
+      {
+       "id": "6af4b3a9c1",
+       "prompt": "Lymphocytes",
+       "promptHtml": "<p><b>Lymphocytes </b></p>",
+       "answerHtml": "<p><i>B cells</i></p><p><i>T cells (CD4 = Helper T cell, CD8 = Cytotoxic T cell)</i></p><p><i>Natural Killer Cells</i></p><p><i>(Adaptive immunity)</i></p>"
+      },
+      {
+       "id": "bb9b2cbdcf",
+       "prompt": "Monocytes",
+       "promptHtml": "<p><b>Monocytes</b></p>",
+       "answerHtml": "<p><i>Macrophages</i></p><ul class=\"l0\"><li><i>Clean up debri</i></li><li><i>Play a role in presenting antigens to T cells</i></li></ul>"
+      },
+      {
+       "id": "861255e505",
+       "prompt": "Eosinophils",
+       "promptHtml": "<p><b>Eosinophils</b></p>",
+       "answerHtml": "<p><i>Fight allergies, parasites, asthma</i></p>"
+      },
+      {
+       "id": "8940218f12",
+       "prompt": "Basophils",
+       "promptHtml": "<p><b>Basophils</b></p>",
+       "answerHtml": "<p><i>Release histamine </i></p><ul class=\"l0\"><li><i>Prominent in allergic/inflammatory responses </i></li></ul>"
+      },
+      {
+       "id": "6eaf8106f7",
+       "prompt": "Cytokines",
+       "promptHtml": "<p>Cytokines</p>",
+       "answerHtml": "<p><i>Cytokines regulate</i></p><ul class=\"l0\"><li><i>Inflammation</i></li><li><i>Self-growth</i></li><li><i>Immune activity </i></li></ul>"
+      },
+      {
+       "id": "58fce7e6aa",
+       "prompt": "Dendritic Cells",
+       "promptHtml": "<p>Dendritic Cells</p>",
+       "answerHtml": "<p><i>Present antigen to T cells</i></p>"
+      },
+      {
+       "id": "d074babf4c",
+       "prompt": "Hypersensitivity Reactions",
+       "promptHtml": "<p>Hypersensitivity Reactions</p>",
+       "answerHtml": "<p>Classified by <b>antigen </b>&amp; <b>timing</b></p><p>Types 1-3 = Humoral Immunity</p><p>Type 4 = Cell-mediated &amp; has a delayed response</p>"
+      },
+      {
+       "id": "f1b1679b00",
+       "prompt": "Complement System",
+       "promptHtml": "<p>Complement System</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Increase inflammation</li><li>Mark cells for removal</li><li>Destroy cell membranes</li></ul>"
+      },
+      {
+       "id": "09d318326a",
+       "prompt": "Type 1 Hypersensitivity Reaction",
+       "promptHtml": "<p><b>Type 1</b> </p><p>Hypersensitivity Reaction</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">IgE</mark> immunoglobulins</p><p><u>Manifestations </u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Mild urticaria (hives) → Anaphylaxis </span></li><li><span style=\"color:#ff0000\">Angioedema </span></li></ul><p><u>Anaphylaxis Treatment</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">IM Epinephrine</mark></li><li><mark style=\"background-color:#00ff00\">Supine / Low Fowler’s         / Elevate legs</mark></li><li><mark style=\"background-color:#00ffff\">Non-rebreather mask - 15 L O2</mark></li><li><mark style=\"background-color:#00ffff\">Fluids</mark></li><li><mark style=\"background-color:#00ffff\">Diphenhydramine</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids</mark></li></ul><p><u>Atopic Reactions Examples</u></p><ul class=\"l1\"><li><span style=\"color:#ff0000\">Asthma</span></li><li><span style=\"color:#ff0000\">Allergic rhinitis</span></li><li><span style=\"color:#ff0000\">Eczema</span></li></ul><ul class=\"l0\"><li>Managed w/ </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Antihistamines</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids</mark></li><li>Avoidance</li></ul>"
+      },
+      {
+       "id": "a810cc55c9",
+       "prompt": "Type 2 Cytotoxic Reaction",
+       "promptHtml": "<p><b>Type 2</b></p><p><b>Cytotoxic </b>Reaction</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">IgG</mark> or <mark style=\"background-color:#ffff00\">IgM</mark> immunoglobulins</p><ul class=\"l0\"><li>[Host destroys its own cells and results in antibody-mediated cytotoxicity]</li></ul><p>Examples:</p><ul class=\"l0\"><li>ABO transfusion reaction</li><li>Hemolytic disease of newborn</li><li>Myasthenia gravis</li><li>Good Pasture Syndrome</li></ul><ul class=\"l1\"><li>Autoimmune disorder that attacks lungs/kidneys &amp; this leads to pulmonary hemorrhage &amp; glomerular nephritis </li></ul>"
+      },
+      {
+       "id": "537694a47e",
+       "prompt": "Type 3 Immune Complex Mediated Reaction",
+       "promptHtml": "<p><b>Type 3</b></p><p><b>Immune Complex Mediated </b>Reaction</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">IgG</mark> or <mark style=\"background-color:#ffff00\">IgM</mark> immunoglobulins</p><ul class=\"l0\"><li>Antigen-antibody clusters lead to → tissue damage</li></ul><p>Examples:</p><ul class=\"l0\"><li>Lupus </li><li>Serum sickness (Fever, Rash, Joint pain)</li></ul>"
+      },
+      {
+       "id": "22c204dc76",
+       "prompt": "Type 4 Delayed Cell-Mediated Reaction",
+       "promptHtml": "<p><b>Type 4</b></p><p>Delayed <b>Cell-Mediated</b> Reaction</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Involves T Cells</mark> !</li><li><span style=\"color:#ff00ff\">48-72 hours after</span></li></ul><p>Examples:</p><ul class=\"l0\"><li>2 step TB skin test (PPD)</li><li>Contact dermatitis (poison ivy)</li><li>Transplant rejection</li></ul>"
+      },
+      {
+       "id": "32cc86a87b",
+       "prompt": "What size IV is needed for blood transfusions?",
+       "promptHtml": "<p>What <b>size IV</b> is needed for blood transfusions?</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">20 gauge or larger</span></p><p>18 gauge </p><p>16 gauge </p>"
+      },
+      {
+       "id": "5c618aacdb",
+       "prompt": "Fresh Frozen Plasma (FFP)",
+       "promptHtml": "<p>Fresh Frozen Plasma (<b>FFP</b>)</p>",
+       "answerHtml": "<p><b>ALL </b>the clotting factors</p><p>Only need to match the <span style=\"color:#ff0000\">blood type</span></p><ul class=\"l0\"><li>Rh antigen does NOT matter</li></ul>"
+      },
+      {
+       "id": "5f13e78a4c",
+       "prompt": "Infusion of Platelets",
+       "promptHtml": "<p>Infusion of <b>Platelets</b></p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff00ff\">1 unit</span> = increase by <span style=\"color:#ff00ff\">30-60 points</span></li></ul>"
+      },
+      {
+       "id": "d865255747",
+       "prompt": "Cryoprecipitate infusion",
+       "promptHtml": "<p><b>Cryoprecipitate</b> infusion</p>",
+       "answerHtml": "<p>Anyone can receive anything (blood type/antigen doesn’t matter)</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Fibrinogen replacement</mark> (to stop <span style=\"color:#ff0000\">bleeding</span>!)</li><li><mark style=\"background-color:#ffff00\">Factor VIII replacement</mark> / XIII</li><li>DIC</li><li>Trauma Pts</li><li>Mass transfusion protocols</li></ul>"
+      },
+      {
+       "id": "6fc86f4823",
+       "prompt": "1 set of blood tubing is only good for",
+       "promptHtml": "<p><b>1 set of blood tubing</b> is only good for</p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff00ff\">4 hours</span> MAX</li></ul><ul class=\"l1\"><li>OR</li></ul><ul class=\"l0\"><li><span style=\"color:#ff00ff\">2</span> blood products</li></ul>"
+      },
+      {
+       "id": "6dfc26b8fd",
+       "prompt": "Rh factor",
+       "promptHtml": "<p><b>Rh factor</b></p>",
+       "answerHtml": "<p>Rh factor = Antigen</p><ul class=\"l1\"><li><mark style=\"background-color:#ffff00\">+ = Present</mark> Antigen</li><li>Negative  = Absent Antigen</li></ul>"
+      },
+      {
+       "id": "e302896150",
+       "prompt": "PRBC (Packed Red Blood Cells)",
+       "promptHtml": "<p><b>PRBC </b></p><p>(Packed Red Blood Cells)</p>",
+       "answerHtml": "<p>O <span style=\"color:#ff0000\">negative </span>= Universal donor</p><p>AB+ = Universal recipient </p><p>Positive = Can receive + and - blood</p><p>Negative = Can ONLY receive -</p><p>O = no antigens! </p><p>A = A antigens</p><p>B = B antigens</p><p>AB = A &amp; B antigens</p>"
+      },
+      {
+       "id": "77dfd6d60a",
+       "prompt": "Blood Transfusion Nursing Actions",
+       "promptHtml": "<p>Blood Transfusion<b> Nursing Actions</b></p>",
+       "answerHtml": "<p>Baseline Vitals</p><ul class=\"l0\"><li>At least <span style=\"color:#ff00ff\">15 min or less</span> → Before transfusion</li><li>Repeat </li></ul><ul class=\"l1\"><li>At <span style=\"color:#ff00ff\">15 min</span></li><li>Every <span style=\"color:#ff00ff\">30-60 minutes</span></li></ul><ul class=\"l0\"><li>After the end of transfusion</li></ul><p>Infuse Blood Products</p><ul class=\"l0\"><li>Slowly for first 15 min = no more than <span style=\"color:#ff00ff\">2 mL/min</span></li></ul>"
+      },
+      {
+       "id": "ac44e10855",
+       "prompt": "Allergic Transfusion Reaction",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Allergic Transfusion Reaction</mark></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Type 1 reaction - IgE</mark></p><p><span style=\"color:#ff0000\">Manifestations </span></p><ul class=\"l0\"><li>Redness</li><li>Urticaria</li><li>Pruritus</li><li>Flushing (Redness on cheeks)</li></ul><p><mark style=\"background-color:#00ff00\">Action</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop</span> transfusion</li><li><span style=\"color:#ff0000\">Notify</span> provider</li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Antihistamines</mark></li><li>May resume transfusion if mild reaction</li></ul>"
+      },
+      {
+       "id": "d1515a0427",
+       "prompt": "Acute Hemolytic Transfusion Reaction",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Acute Hemolytic Transfusion Reaction</mark></p>",
+       "answerHtml": "<p>Most severe reaction </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop transfusion immediately</span>!</li></ul><p><span style=\"color:#ff0000\">Manifestations</span></p><ul class=\"l0\"><li>Chest pain</li><li>Hypotension</li><li>Tachycardic</li><li>Jaundice </li><li>Fever</li><li>Chills</li><li>Flank pain</li><li>Hemoglobinuria </li></ul><p>Complications / Worst case scenario</p><ul class=\"l0\"><li>AKI</li><li>Shock</li><li>DIC</li><li>Cardiac arrest</li><li>Death</li></ul><p><mark style=\"background-color:#00ff00\">Nursing Actions</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop </span>the transfusion</li><li>New set of <mark style=\"background-color:#00ffff\">normal saline</mark></li><li><mark style=\"background-color:#00ff00\">Monitor </mark>UOP and vitals</li><li>When Pt is stable, fill out an <b>incident report</b></li></ul>"
+      },
+      {
+       "id": "8ef4fc16ce",
+       "prompt": "Febrile Nonhemolytic Transfusion Reaction",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Febrile Nonhemolytic Transfusion Reaction</mark></p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Manifestations</span></p><ul class=\"l0\"><li>Fever </li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">↑ 1 ℃ </span>= reaction</li><li><span style=\"color:#ff00ff\">↑ 2 ℉ </span>= reaction</li></ul><ul class=\"l0\"><li>Chills</li><li>Headache</li></ul><p><mark style=\"background-color:#00ff00\">Management</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop</span> transfusion</li><li><span style=\"color:#ff0000\">Notify</span> provider</li></ul><p><mark style=\"background-color:#00ff00\">Prevention</mark></p><ul class=\"l0\"><li>Pt needs to get Leukoreduced blood products!</li></ul>"
+      },
+      {
+       "id": "306d37b735",
+       "prompt": "Transfusion Related Acute Lung Injury (TRALI)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Transfusion Related Acute Lung Injury</mark> (TRALI)</p>",
+       "answerHtml": "<p>Manifestations <span style=\"color:#ff00ff\">during</span> or <span style=\"color:#ff00ff\">within 6 hours</span> of transfusion</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Pulmonary edema</span> (very common)</li><li>Acute <span style=\"color:#0000ff\">hypoxia</span></li><li>Bilateral infiltrates on CXR</li><li>Fever</li></ul><p><mark style=\"background-color:#00ff00\">Management</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop </span>transfusion</li><li>Supplemental <mark style=\"background-color:#00ffff\">oxygen</mark></li></ul>"
+      },
+      {
+       "id": "4a0137b816",
+       "prompt": "Transfusion Associated Circulatory Overload (TACO)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Transfusion Associated Circulatory Overload </mark>(TACO)</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Manifestations</span>:</p><ul class=\"l0\"><li>Dyspnea</li><li>HTN</li><li>JVD</li><li>Crackles</li></ul><p><mark style=\"background-color:#00ff00\">Management</mark>:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Stop/slow</b></span> transfusion</li><li><b>Upright</b> position</li><li><mark style=\"background-color:#00ffff\">Diuretics</mark></li><li><mark style=\"background-color:#00ffff\"><b>Oxygen</b></mark></li></ul>"
+      },
+      {
+       "id": "97aebfd9c3",
+       "prompt": "Transfusion Associated Graft vs Host Disease",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Transfusion Associated </mark><mark style=\"background-color:#ffff00\"><b>Graft vs Host Disease</b></mark></p>",
+       "answerHtml": "<p><b>Type 4</b> reaction</p><ul class=\"l0\"><li>Can occur <span style=\"color:#ff00ff\">2-30 days AFTER</span> transfusion</li></ul><p>Manifestations</p><ul class=\"l0\"><li>Fever</li><li>Rash</li><li>Diarrhea</li><li><span style=\"color:#ff0000\">Liver dysfunction</span></li><li><span style=\"color:#ff0000\">Bone dysfunction</span></li><li><span style=\"color:#ff0000\">Pancytopenia </span>(all cells are low)</li></ul><p><mark style=\"background-color:#00ff00\">Prevention</mark></p><ul class=\"l0\"><li><b>Leukoreduction / Irradiated</b> blood products</li></ul>"
+      },
+      {
+       "id": "80ac1d61cb",
+       "prompt": "How is HIV transmitted",
+       "promptHtml": "<p>How is HIV transmitted</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Perinatal Transmission</mark></p><ul class=\"l1\"><li>Labor</li><li>Breast milk</li><li>Pregnant w/ a ↑ viral load</li></ul><p><mark style=\"background-color:#ffff00\">Sexual Transmission</mark></p><ul class=\"l1\"><li>Bodily fluids</li></ul><ul class=\"l2\"><li>Blood</li><li>Semen</li><li>Vaginal secretions</li></ul><ul class=\"l1\"><li>Open lesions / trauma to the intimate areas</li></ul><p><mark style=\"background-color:#ffff00\">Contact w/ Blood &amp; Blood Products</mark></p><ul class=\"l1\"><li>Shared needles / syringe</li><li>Puncture wounds</li></ul><ul class=\"l2\"><li>&lt; 1% transmission risk - depending on viral load</li></ul><ul class=\"l1\"><li>If they received a blood transfusion back in the 1980s</li></ul>"
+      },
+      {
+       "id": "f28b90400b",
+       "prompt": "Oral Hairy Leukoplakia",
+       "promptHtml": "<p><b>Oral Hairy Leukoplakia </b></p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Painless white coated spots</b> on the side of the tongue</li><li>Caused by <span style=\"color:#ff0000\">Epstein Barr Virus!</span></li></ul>"
+      },
+      {
+       "id": "812c6113bf",
+       "prompt": "Dyslipidemia",
+       "promptHtml": "<p><b>Dyslipidemia</b></p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Statins </mark></p><ul class=\"l0\"><li>Monitor</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">LFTs</mark></li><li><mark style=\"background-color:#00ff00\">Creatinine Kinase (CK) </mark>levels</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Contraindicated w/ Protease Inhibitors</span>!</li></ul>"
+      },
+      {
+       "id": "5c91d618d8",
+       "prompt": "Neuropathy & Pain",
+       "promptHtml": "<p><b>Neuropathy &amp; Pain</b></p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Gabapentin</mark>, <mark style=\"background-color:#00ffff\">pregabalin</mark></li></ul><ul class=\"l1\"><li>1st line </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">amitriptyline</mark></li><li>NSAIDs</li><li>Opioids</li></ul>"
+      },
+      {
+       "id": "e746d05cc0",
+       "prompt": "What is contraindicated if someone tests positive for HIV?",
+       "promptHtml": "<p>What is <span style=\"color:#ff0000\">contraindicated </span>if someone tests positive for HIV?</p>",
+       "answerHtml": "<p>Live vaccinations</p><p><i>(MMR, varicella, rotavirus, nasal influenza, yellow fever, smallpox, oral typhoid)</i></p>"
+      },
+      {
+       "id": "3b20dc834c",
+       "prompt": "HIV meds",
+       "promptHtml": "<p>HIV meds</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">PrEP</mark></p><ul class=\"l0\"><li><b>Before</b> exposure</li></ul><p><mark style=\"background-color:#00ffff\">PEP </mark></p><ul class=\"l0\"><li>Take <b>after </b>exposure</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Opportunistic Infections & Malignancies",
+     "cards": [
+      {
+       "id": "9f709ab8fa",
+       "prompt": "Opportunistic Infections & Malignancies",
+       "promptHtml": "<p><b>Opportunistic Infections &amp; Malignancies</b></p>",
+       "answerHtml": "<p>These infections occur with low <mark style=\"background-color:#ffff00\">↓ CD4 count</mark></p>"
+      },
+      {
+       "id": "e315dfd5bc",
+       "prompt": "Pneumocytis jirovecii Pneumonia (PJP)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Pneumocytis jirovecii </mark><mark style=\"background-color:#ffff00\"><b>Pneumonia</b></mark> (<b>PJP</b>)</p>",
+       "answerHtml": "<p>Fungal infection </p><p><span style=\"color:#ff0000\">Pneumonia symptoms </span></p><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Oxygen</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids </mark>(if significantly hypoxic)</li></ul>"
+      },
+      {
+       "id": "a84d160716",
+       "prompt": "Mycobacterium Tuberculosis (TB)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Mycobacterium Tuberculosis</mark> (<b>TB</b>)</p>",
+       "answerHtml": "<p>Bacterial infection</p><p><span style=\"color:#ff0000\">TB Symptoms </span></p><p>Occurs at ANY CD4</p><ul class=\"l0\"><li>Disseminates when <span style=\"color:#ff00ff\">CD4 &lt; 200</span></li><li><span style=\"color:#ff0000\">Extrapulmonary TB</span> common in advanced HIV (miliary TB)</li></ul><p><mark style=\"background-color:#00ff00\">Management</mark></p><ul class=\"l0\"><li>Monitor <span style=\"color:#ff0000\">liver</span>!</li><li><mark style=\"background-color:#00ffff\">RIPE </mark>and <mark style=\"background-color:#00ffff\">ART </mark>therapy </li></ul>"
+      },
+      {
+       "id": "f73ecff8d7",
+       "prompt": "Mycobacterium Avium Complex (MAC)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Mycobacterium Avium Complex</mark> (<b>MAC</b>)</p>",
+       "answerHtml": "<p>Bacterial Infection</p><p>Occurs with ↓ Severely low <span style=\"color:#ff00ff\">CD4 &lt; 50</span></p><p><span style=\"color:#ff0000\">GI Symptoms </span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Gastroenteritis</span></li><li><span style=\"color:#ff0000\">Watery diarrhea</span></li><li><span style=\"color:#ff0000\">Weight loss</span></li><li>Can affect multiple organs</li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Antibiotic </mark>&amp; <mark style=\"background-color:#00ffff\">ART </mark>therapy</li></ul>"
+      },
+      {
+       "id": "88cb8c8913",
+       "prompt": "Cytomegalovirus (CMV)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Cytomegalovirus </mark>(<b>CMV</b>)</p>",
+       "answerHtml": "<p>Viral infection</p><p>Signs</p><ul class=\"l0\"><li>[Inflammation of eyes, esophagus, mouth, lungs]</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\"><b>Retinitis (</b></span>Progressive <span style=\"color:#ff0000\">vision loss)</span></li><li><span style=\"color:#ff0000\">Esophagitis, stomatitis</span></li><li><span style=\"color:#ff0000\">Pneumonitis</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Neurologic</span> dz        </li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Intravitreal injections</mark></li><li><mark style=\"background-color:#00ffff\">ART </mark>therapy</li></ul>"
+      },
+      {
+       "id": "fce557c6af",
+       "prompt": "Candidiasis",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Candidiasis</b></mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Fungal infection</li><li>Oral = earliest opportunistic infection</li><li>Invasive = rare but life-threatening in severe immunosuppression</li></ul><p><u>Oral Candidiasis</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>White plaque</b></span> on tongue</li></ul><p><u>Esophageal Candidiasis</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Odynophagia (</span>Painful swallow) </li><li><span style=\"color:#ff0000\">Dysphagia</span></li></ul><p><u>Invasive Candidiasis affects</u></p><ul class=\"l0\"><li>Blood</li><li>Skin</li><li>Mucosa</li><li>Internal Organs</li><li>Eyes</li></ul><p>Treat with <mark style=\"background-color:#00ffff\">IV antifungals</mark></p>"
+      },
+      {
+       "id": "f8201ba011",
+       "prompt": "Kaposi Sarcoma (KS)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Kaposi Sarcoma </mark>(<b>KS</b>)</p>",
+       "answerHtml": "<p>Malignant Cancer</p><p>Signs</p><ul class=\"l0\"><li>Painless, brown nodular <b>skin lesions</b></li><li>May involve</li></ul><ul class=\"l1\"><li><b>Lungs</b></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Dyspnea</span></li><li><span style=\"color:#ff0000\">Hemoptysis</span></li></ul><ul class=\"l1\"><li><b>GI </b>tract</li><li><b>Lymph </b>nodes</li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">ART </mark>Therapy</li><li><b>Localized </b>lesions → <mark style=\"background-color:#00ffff\">Radiation</mark>, <mark style=\"background-color:#00ffff\">Surgery</mark></li><li>Disseminated → <mark style=\"background-color:#00ffff\">Systemic Chemo</mark></li></ul>"
+      },
+      {
+       "id": "8cc8a51d8f",
+       "prompt": "CNS Lymphoma [Burkitt’s / Brain lymphoma]",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>CNS Lymphoma</b></mark></p><p>[Burkitt’s / Brain lymphoma]</p>",
+       "answerHtml": "<p>Malignant Cancer</p><p>Signs</p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Neuro changes</b></span></li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">ART </mark>therapy</li><li><mark style=\"background-color:#00ffff\">Chemotherapy</mark></li><li><mark style=\"background-color:#00ffff\">Radiation</mark></li></ul>"
+      },
+      {
+       "id": "22dc149cca",
+       "prompt": "ART Therapy",
+       "promptHtml": "<p>ART Therapy</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">NEVER hold ART Therapy without an order!</span></p>"
+      },
+      {
+       "id": "b9e76db435",
+       "prompt": "What attaches to CD4 cells?",
+       "promptHtml": "<p>What attaches to CD4 cells?</p>",
+       "answerHtml": "<p><b>Envelope glycoprotein</b> (<b> gp120</b> / <b>gp41</b>) → attach to CD4 cells</p>"
+      },
+      {
+       "id": "7c773d3b1e",
+       "prompt": "HIV Life Cycle mnemonic",
+       "promptHtml": "<p>HIV Life Cycle mnemonic </p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">“Extra Ripe”</mark></p>"
+      },
+      {
+       "id": "7cf19a8ecf",
+       "prompt": "Fusion Inhibitors",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Fusion Inhibitors</b></mark></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li><b>Bind to HIV gp41 protein</b> to <b>prevent fusion</b> with the → CD4 cell membrane</li></ul><p>Stage</p><ul class=\"l0\"><li>Binding &amp; Fusion</li></ul><p>Monitor:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">IM Injection site reactions</span></li></ul><ul class=\"l1\"><li>Redness</li><li>Swelling</li><li>Pain</li></ul>"
+      },
+      {
+       "id": "0bfe3fd8de",
+       "prompt": "Entry Inhibitors",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Entry Inhibitors</b></mark></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li><b>Block HIV from attaching</b> to <b>BOTH</b> receptors or coreceptors on the CD4 cell </li></ul><ul class=\"l1\"><li>[<mark style=\"background-color:#ffff00\">CXCR4</mark> and <mark style=\"background-color:#ffff00\">CCR5 </mark>receptors]</li></ul><p>Stage</p><ul class=\"l0\"><li>Binding &amp; Fusion</li></ul><p>Monitor:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Liver </span>injury</li><li><span style=\"color:#ff0000\">Hypersensitivity</span></li></ul>"
+      },
+      {
+       "id": "c7785c3ade",
+       "prompt": "CCR5 Antagonists",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>CCR5 Antagonists</b></mark></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li><b>Prevent HIV from attaching &amp; entering</b> the cell by <b>blocking </b><b><u>CCR5</u></b><b> coreceptor</b></li></ul><p>Stage</p><ul class=\"l0\"><li>Binding &amp; Attachment</li></ul><p><mark style=\"background-color:#00ff00\">Complete </mark><mark style=\"background-color:#00ff00\"><b>testing </b></mark><mark style=\"background-color:#00ff00\">before therapy</mark></p><ul class=\"l0\"><li><i>Does the HIV strain enter thru CCR5? </i></li><li><i>Yes → Use this med</i></li></ul>"
+      },
+      {
+       "id": "bb649af285",
+       "prompt": "Nonnucleoside Reverse Transcriptase Inhibitors (NNRTIs)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Nonnucleoside Reverse Transcriptase Inhibitors </mark></p><p><b>(NNRTIs)</b></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li>Prevents the split of RNA into DNA</li></ul><p>Stage </p><ul class=\"l0\"><li>Reverse Transcriptase</li></ul><p><mark style=\"background-color:#00ff00\">Monitor: </mark></p><p><span style=\"color:#ff0000\">Liver problems</span></p><ul class=\"l0\"><li><i>ALT</i></li><li><i>AST</i></li><li><i>ALP</i></li><li><i>Bilirubin</i></li><li><i>Stools (clay)</i></li><li><i>Skin (yellow)</i></li></ul><p>Mood changes:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Nightmares</span></li><li><span style=\"color:#ff0000\">Hallucinations</span></li></ul><ul class=\"l1\"><li>Reorient</li><li>Sitter</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Suicidal </span>thoughts</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Safety precautions!</mark></li></ul>"
+      },
+      {
+       "id": "e79a5b7d9b",
+       "prompt": "Nucleoside / Nucleotide Reverse Transcriptase Inhibitors (NRTIs)",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Nucleoside / Nucleotide Reverse Transcriptase Inhibitors </mark></p><p><b>(NRTIs)</b></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li>They insert themselves into the HIV DNA w/ “fake building blocks” so the HIV can NOT insert its effects into the nucleus DNA</li></ul><p>Stage</p><ul class=\"l0\"><li>Reverse Transcription</li></ul><p>Monitor:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Rashes</span></li><li><span style=\"color:#ff0000\">Skin </span>problems</li><li><span style=\"color:#ff0000\">Liver </span>problem</li><li><span style=\"color:#ff0000\">Peripheral neuropathy</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Pain management</mark></li><li><b>Change meds</b> if too painful</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Lactic acidosis</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Check</mark></li></ul><ul class=\"l2\"><li>Lactate level</li><li>ABGs</li></ul><ul class=\"l0\"><li>Treat w/ <b>another med</b></li></ul>"
+      },
+      {
+       "id": "c6d083ba08",
+       "prompt": "Integrase Inhibitors",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Integrase Inhibitors</b></mark></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li>Blocks the integrase enzyme to prevent <b>HIV DNA from inserting into the CD4 cell’s DNA</b></li></ul><p>Stage</p><ul class=\"l0\"><li>Integration</li></ul><p>Monitor</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Skin </span>reactions</li><li>Widespread inflammation </li></ul><ul class=\"l1\"><li>Initially ↑ WBCs, they eventually deplete ↓</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Muscle pain</span></li><li><span style=\"color:#ff0000\">Weakness</span></li></ul><p>Separate from <span style=\"color:#ff0000\"><b>antacids</b></span></p><ul class=\"l1\"><li>They reduce <b>↓ absorption </b></li></ul>"
+      },
+      {
+       "id": "577a4afb22",
+       "prompt": "Protease Inhibitors",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Protease Inhibitors</b></mark></p>",
+       "answerHtml": "<p>Action</p><ul class=\"l0\"><li>Block protease to<b> prevent from being cut into pieces</b> &amp; producing <mark style=\"background-color:#ffff00\">mature </mark><b>HIV particles</b></li></ul><p>Stage</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Maturation</mark></li></ul><p>Monitor:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Liver </span>problems</li><li><span style=\"color:#ff0000\">Hyperglycemia</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Polydipsia </span>(thirst)</li><li><span style=\"color:#ff0000\">Polyuria</span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Glycosuria </span>(glucose in urine)</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Polyphagia </span>(hunger)</li><li><span style=\"color:#ff0000\">Irritable </span></li></ul><ul class=\"l0\"><li>Hyperlipidemia</li></ul><ul class=\"l1\"><li>LDL</li><li>HDL</li></ul><p><span style=\"color:#ff0000\">Interacts w/ statins!</span></p>"
+      },
+      {
+       "id": "0a1968eb66",
+       "prompt": "Pituitary",
+       "promptHtml": "<p>Pituitary </p>",
+       "answerHtml": "<ul class=\"l0\"><li><i>Master gland of the endocrine system</i></li><li><i>Regulates</i></li></ul><ul class=\"l1\"><li><i>Growth</i></li><li><i>Metabolism</i></li><li><i>Reproductive system</i></li><li><i>Fluid balance</i></li><li><i>Stress</i></li></ul><ul class=\"l0\"><li><i>Anterior pituitary gland</i></li></ul><ul class=\"l1\"><li><i>Makes &amp; releases hormones</i></li></ul><ul class=\"l0\"><li><i>Posterior pituitary gland</i></li></ul><ul class=\"l1\"><li><i>Stores &amp; releases hormones</i></li></ul>"
+      },
+      {
+       "id": "de48ce7f83",
+       "prompt": "Acromegaly",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Acromegaly </b></mark></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">↑ GH (growth hormone0</mark></p><p>Usually d/t tumor on pituitary gland</p><p><u>SIGNS</u></p><ul class=\"l0\"><li>Bone and soft tissue enlargement/thickening</li><li>Increased risk of HF, HTN, arrhythmias </li><li>Diabetes / Insulin resistance </li></ul><p><u>DIAGNOSTICS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">↑ IGF-1 Level (</span>Insulin Like Growth Factor-1)</li><li>Oral glucose tolerance test</li><li><span style=\"color:#ff0000\">↑ GH</span> after drinking it</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Transphenoidal Hypophys</mark><mark style=\"background-color:#00ff00\"><b>ectomy</b></mark><b> (</b>surgery performed thru the nose to remove part of the pituitary) </p><p><mark style=\"background-color:#00ffff\">Somatostatin Analogs</mark></p><p><mark style=\"background-color:#00ffff\">Dopamine Agonists</mark></p><ul class=\"l0\"><li>These 2 <b>reduce the secretion</b> of GH</li></ul><p><mark style=\"background-color:#00ffff\">Growth Hormone Antagonists </mark></p><ul class=\"l0\"><li><b>Block the effects/action</b> of GH</li></ul><p><u>NURSING ACTIONS AFTER TREATMENT</u></p><ul class=\"l0\"><li>Hormone replacement</li><li>Neuro &amp; Visual assessment</li><li>Monitor fluid &amp; electrolytes (assess for SIADH/DI)</li><li>CSF leak precautions</li><li>Prevent constipation </li><li>HOB elevated 30 degrees (keep ICP low)</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">No</span></li></ul><ul class=\"l2\"><li>Blowing your nose hard</li><li>Bending over </li><li>Coughing</li><li>Lifting heavy objects (15-25 lb restriction)</li></ul>"
+      },
+      {
+       "id": "026a1a0fa6",
+       "prompt": "SIADH",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>SIADH</b></span></p>",
+       "answerHtml": "<p> <span style=\"color:#ff0000\">“Swollen Inside”</span></p><p><mark style=\"background-color:#ffff00\">↑ ADH</mark></p><p><u>SIGNS</u></p><ul class=\"l0\"><li>↓ Dilutional <span style=\"color:#0000ff\">hyponatremia </span>(sodium &lt; 135)</li><li><i>↓ </i>Serum Osmolality</li><li><i>↓ </i>Urine output</li><li>↑  Weight</li><li>↑ Urine Osmolality</li><li>↑ Urine Specific Gravity</li><li><span style=\"color:#ff0000\">Neurologic </span>changes, possible <span style=\"color:#ff0000\">cerebral edema </span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Fluid restriction</mark></p><p><mark style=\"background-color:#00ff00\">HOB flat</mark></p><p><mark style=\"background-color:#00ffff\">Vaptans”</mark> (<mark style=\"background-color:#00ffff\">tol</mark><mark style=\"background-color:#00ffff\"><b>vaptan</b></mark><mark style=\"background-color:#00ffff\">, coni</mark><mark style=\"background-color:#00ffff\"><b>vaptan</b></mark>)</p><ul class=\"l0\"><li>These meds block ADH</li><li><mark style=\"background-color:#00ff00\">Liver precautions</mark>!</li><li>[With this med, you would expect ↑ urine output to go up]</li></ul><p><span style=\"color:#ff0000\"><u>Severe Hyponatremia</u></span><span style=\"color:#ff0000\">:</span> Sodium &lt; 120</p><p><span style=\"color:#ff0000\">Fluid restriction</span></p><p><mark style=\"background-color:#00ffff\">Hypertonic saline</mark> (<mark style=\"background-color:#00ffff\">3% sodium chloride)</mark></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>BP</li><li>Neuro</li><li>IV site (tissue necrosis if it leaks)</li></ul><p><u>NURSING ACTION</u></p><ul class=\"l0\"><li>Correct sodium <b>GRADUALLY </b>by NO MORE THAN <span style=\"color:#ff00ff\">8-12 mEq/L in the first 24 hrs</span>!</li><li>Seizure &amp; Fall precautions</li><li>Daily weight (<span style=\"color:#ff00ff\">2.2 lbs = 1 liter of fluid)</span> </li></ul>"
+      },
+      {
+       "id": "5aad905626",
+       "prompt": "Diabetes Insipidus (DI)",
+       "promptHtml": "<p><span style=\"color:#0000ff\"><b>Diabetes Insipidus (DI)</b></span></p>",
+       "answerHtml": "<p><span style=\"color:#0000ff\">“Dry Inside”</span></p><p><mark style=\"background-color:#ffff00\">↓ ADH or absent</mark></p><p><i>Causes</i></p><ul class=\"l0\"><li><i>Brain injuries, tumor in the head, pregnancy</i></li></ul><p><mark style=\"background-color:#ffff00\">Central DI</mark></p><ul class=\"l0\"><li>↓ <b>Low</b> ADH production from <span style=\"color:#ff0000\">posterior pituitary gland</span></li><li>(Central = think <span style=\"color:#ff0000\">brain</span>)</li></ul><p><mark style=\"background-color:#ffff00\">Nephrogenic DI</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Kidneys</span> unresponsive to ADH</li></ul><p>Urine output can exceed <span style=\"color:#ff00ff\">2-20 L/day</span></p><p><u>SIGNS</u></p><ul class=\"l0\"><li>↑ Urine output (Polyuria)</li><li>↑ Serum Osmolality </li><li>↑ <span style=\"color:#ff0000\">Hypernatremia</span></li><li><span style=\"color:#ff0000\">Neuro changes</span></li><li>↓ Weight</li><li>Polydipsia (thirst)</li><li>↓ Diluted Urine Osmolality</li><li>↓ Urine Specific Gravity</li></ul><p><u>DIAGNOSTICS</u></p><p><b>Before </b>diagnostics, get → Baseline</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Vitals</mark></li><li><mark style=\"background-color:#00ff00\">Weight</mark></li><li><mark style=\"background-color:#00ff00\">Average urine output</mark></li><li><mark style=\"background-color:#00ff00\">Urine studies</mark> </li></ul><p><mark style=\"background-color:#00ff00\">Water-deprivation test</mark></p><ul class=\"l0\"><li>Deprive them for <span style=\"color:#ff00ff\">8-12 hours</span> of water</li><li>Results = Their <b>urine will STILL be diluted</b></li></ul><p><mark style=\"background-color:#00ffff\">Desmopressin</mark><mark style=\"background-color:#ffff00\"> (DDAVP) Challenge</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\"><i>Desmopressin</i></mark><mark style=\"background-color:#ffff00\"><i> acts like ADH</i></mark></li></ul><p><u>Central DI</u></p><p><b>Kidneys respond</b> to DDAVP</p><p>Results =</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Concentrated urine</mark></li><li><mark style=\"background-color:#ffff00\">↓ Low UOP</mark></li></ul><p><u>Nephrogenic DI</u></p><p><b>NO response</b> to DDAVP</p><p>Results = </p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Urine is diluted</mark></li><li><mark style=\"background-color:#ffff00\">↑ High UOP</mark></li></ul><p><u>TREATMENT</u></p><p><u>Central </u><mark style=\"background-color:#ffff00\"><u>D</u></mark><u>I</u></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">D</mark><mark style=\"background-color:#00ffff\">esmopressin </mark>(DDVAP)</li><li><mark style=\"background-color:#00ff00\">Fluid replacement</mark></li></ul><p><u>Nephrogenic DI</u></p><ul class=\"l0\"><li><b>Sodium restriction</b> <span style=\"color:#ff00ff\">3 g/day</span></li></ul>"
+      },
+      {
+       "id": "17cec672cd",
+       "prompt": "Thyroid gland produces",
+       "promptHtml": "<p>Thyroid gland produces</p>",
+       "answerHtml": "<p><i>T3, T4, and calcitonin hormones</i></p><p><i>T3 = more active &amp; potent</i></p>"
+      },
+      {
+       "id": "d660b2bf51",
+       "prompt": "TSH",
+       "promptHtml": "<p>TSH</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><i>TSH has an </i></mark><mark style=\"background-color:#ffff00\"><b><i>inverse </i></b></mark><mark style=\"background-color:#ffff00\"><i>relationship with the alteration</i></mark> </p><p><i>TSH = How the </i><b><i>pituitary gland ←</i></b><i> talks to the</i><b><i> → thyroid</i></b> </p>"
+      },
+      {
+       "id": "3fdc9a13dd",
+       "prompt": "Iodine",
+       "promptHtml": "<p>Iodine</p>",
+       "answerHtml": "<p>Iodine is needed to make T3/T4</p>"
+      },
+      {
+       "id": "9046d1ee50",
+       "prompt": "Hyperthyroidism / Thyrotoxicosis",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>Hyperthyroidism / Thyrotoxicosis</b></span></p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Hot &amp; Fast</span></p><p>↑ T3 and/or T4</p><p>↓ TSH</p><p><i><u>CAUSES</u></i></p><ul class=\"l0\"><li><i>Excess iodine (iodine is needed to make thyroid hormones) </i></li><li><i>Inflamed thyroid</i></li></ul><p><u>SIGNS</u> </p><ul class=\"l0\"><li>Goiter</li><li>Bruit</li><li><span style=\"color:#ff0000\">Exopthalmos (eye protrusion)</span></li><li>Skin/hair</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Warm, moist, fine hair</span></li></ul><p><span style=\"color:#ff0000\"><b><u>Grave’s Disease</u></b></span></p><ul class=\"l0\"><li>Autoimmune hyperthyroidism </li><li>TSI (thyroid stimulating immunoglobulins) <b>antibodies</b> stimulate TSH receptor → This increases T3/T4 ↑</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Radioactive Iodine</mark> (RAI)</p><ul class=\"l0\"><li><b>Destroys</b> thyroid tissue</li><li>Definitive<mark style=\"background-color:#00ff00\"> treatment for hyperthyroidism/cancer</mark></li><li><span style=\"color:#ff0000\">Radiation precautions</span>!</li><li>Avoid close contact for <span style=\"color:#ff00ff\">7 days post-treatment </span>(esp. w/ children &amp; pregnant females)</li><li>Double flush the toilet</li><li>Using own <b>linens </b>&amp; <b>utensils </b>at home</li></ul><p><mark style=\"background-color:#00ffff\">Beta blockers</mark></p><ul class=\"l0\"><li>Help w/ <b>symptom management</b> </li></ul><p><mark style=\"background-color:#00ffff\">Propranolol </mark> (Non-selective)</p><p>Nursing considerations</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Assess for bronchospasms </mark>in asthma/COPD Pts</li></ul><p><mark style=\"background-color:#00ffff\">Atenolol </mark>(Selective)</p><p><u>NURSING ACTIONS</u></p><p>Diet</p><ul class=\"l0\"><li>↑ High </li><li>Calorie</li><li>Protein</li><li>Carbohydrate intake</li></ul><p>Frequent small meals</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">4-6/day</span></li></ul><p><b>Vitamins </b>B, C, D, &amp; minerals</p><p><span style=\"color:#ff0000\">Avoid </span>caffeine &amp; stimulants </p><p><span style=\"color:#ff0000\">Avoid excess iodine</span></p>"
+      },
+      {
+       "id": "d3b74b0b3e",
+       "prompt": "Thyroid Storm",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>Thyroid Storm</b></span></p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Infection</li><li>Surgery</li><li>Trauma </li><li>Abrupt medication stop</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Severe Temp! ＞104 F</span></li><li><span style=\"color:#ff00ff\">HR ＞140</span></li><li><span style=\"color:#ff0000\">Agitation</span></li><li><span style=\"color:#ff0000\">Delirium </span></li><li><span style=\"color:#ff0000\">Restless</span></li></ul><p><u>RISK FOR</u> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Arrhythmias </span></li><li><span style=\"color:#ff0000\">Heart failure</span></li><li><span style=\"color:#ff0000\">Shock</span></li></ul><p><u>TREATMENT</u> </p><p><mark style=\"background-color:#00ff00\">Supportive management</mark> (treat the cause)</p>"
+      },
+      {
+       "id": "f8587b72e6",
+       "prompt": "Thyroidectomy",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>Thyroidectomy</b></span></p>",
+       "answerHtml": "<p>Preoperative care</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Iodine solutions</mark></li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li><b>Airway</b> &amp; <span style=\"color:#ff0000\">hemorrhage - </span>at least <span style=\"color:#ff00ff\">every 2 hrs for the first 24 hours</span></li><li><span style=\"color:#ff0000\">Hypocalcemia</span></li><li>The thyroid produces calcitonin &amp; you removed the thyroid!</li><li><mark style=\"background-color:#00ff00\">Monitor</mark> for</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Tetany</span></li><li><span style=\"color:#ff0000\">Trousseau</span></li><li><span style=\"color:#ff0000\">Chvostek’s sign</span></li></ul><p><mark style=\"background-color:#ffff00\">Have at the bedside: </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Suction</mark></li><li><mark style=\"background-color:#00ff00\">Trach tray</mark></li></ul><p>Need <mark style=\"background-color:#00ffff\">Calcium Gluconate order PRN</mark></p><ul class=\"l0\"><li>Push <span style=\"color:#ff0000\">slowly!</span></li></ul>"
+      },
+      {
+       "id": "4f8e9dce5c",
+       "prompt": "Hypothyroidism",
+       "promptHtml": "<p><span style=\"color:#0000ff\"><b>Hypothyroidism</b></span></p>",
+       "answerHtml": "<p><span style=\"color:#0000ff\">Cold &amp; slow</span></p><p>↓ T4</p><p>↑ TSH</p><p><u>SIGNS</u></p><ul class=\"l0\"><li>Depression</li><li>Cognitive impairments </li><li>Slowed speech </li><li><span style=\"color:#ff0000\">Periorbital edema</span></li></ul><ul class=\"l1\"><li>Substances w/ hypothyroidism that lodge themselves into the Pt’s tissues around their eyes &amp; this attracts water</li></ul><ul class=\"l0\"><li>Skin/hair</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dry, coarse, hair loss</span></li></ul><p><u>DIAGNOSTICS</u></p><p><b>Primary hypothyroidism</b></p><ul class=\"l0\"><li>↑ TSH </li><li>↓ free T4</li><li>[There’s an issue w/ the thyroid]</li></ul><p><b>Thyroid antibodies</b></p><ul class=\"l0\"><li>Suggest <b>autoimmune </b>disease</li><li>↑ <b>Cholesterol </b></li><li>↑ <b>Triglycerides</b></li><li><b>Anemia</b></li><li>↑ Creatinine kinase (<b>CK</b>) </li></ul><p><u>Nursing considerations</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor HR</mark></li></ul><ul class=\"l1\"><li>Over replacement causes <span style=\"color:#ff0000\">tachycardia/arrhythmias </span></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Lifelong therapy</mark></li></ul><p><u>NURSING ACTIONS</u></p><ul class=\"l0\"><li>Focus on controlling their weight</li><li><mark style=\"background-color:#ffff00\">Iodine is needed to make T3/T4</mark></li></ul><p><u>Iodine-Rich Foods</u></p><ul class=\"l0\"><li>Seafood</li><li>Seaweed</li><li>Dairy</li><li><mark style=\"background-color:#00ff00\">Iodized salt</mark></li></ul><ul class=\"l1\"><li>Essential for <b>T3/T4 synthesis</b></li></ul><p><span style=\"color:#ff0000\">Avoid goitrogenic foods in excess (plant-based foods)</span></p>"
+      },
+      {
+       "id": "1638174d4a",
+       "prompt": "Myxedema Coma",
+       "promptHtml": "<p><span style=\"color:#0000ff\"><b>Myxedema Coma</b></span></p>",
+       "answerHtml": "<p>Rare but <span style=\"color:#ff0000\">life-threatening</span></p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Infection</li><li>Cold exposure</li><li>Medications</li></ul><ul class=\"l1\"><li>Narcotics / Opiates</li><li>Sedatives</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li>“<span style=\"color:#ff0000\">Mask like appearance” - </span><span style=\"color:#0000ff\">d/t severe hypothyroidism</span></li><li><span style=\"color:#ff0000\">Flat affect</span></li><li><span style=\"color:#ff0000\">No expression</span></li><li><span style=\"color:#ff0000\">Hypoglycemia</span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Supportive Care</mark> (treat their symptoms)</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">IV levothyroxine</mark></li><li><mark style=\"background-color:#00ffff\">IV T4</mark></li><li>Warming</li></ul><ul class=\"l1\"><li>“<mark style=\"background-color:#00ff00\">Bear hugger</mark>”</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Ventilatory support</mark></li><li><mark style=\"background-color:#00ffff\">Corticosteroids</mark></li></ul><ul class=\"l1\"><li>To bring up their <b>sugar ↑</b></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Dextrose </mark>solution</li></ul><ul class=\"l1\"><li>To bring up their <b>sugar ↑</b></li></ul>"
+      },
+      {
+       "id": "0190d336a7",
+       "prompt": "Parathyroid & Calcium",
+       "promptHtml": "<p>Parathyroid &amp; Calcium</p>",
+       "answerHtml": "<ul class=\"l0\"><li><i>Release calcium from the bone</i></li><li><i>Help kidneys reabsorb calcium/retain it</i></li><li><i>Helps intestines absorb more calcium </i></li></ul>"
+      },
+      {
+       "id": "ab47666ce9",
+       "prompt": "Calcium",
+       "promptHtml": "<p>Calcium</p>",
+       "answerHtml": "<p><i>Has a lot to do w/ → </i><b><i>cardiac functioning</i></b><i> &amp; </i><b><i>blood clotting</i></b></p>"
+      },
+      {
+       "id": "5cf35a9153",
+       "prompt": "Calcium & Phosphate",
+       "promptHtml": "<p>Calcium &amp; Phosphate</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><i>Calcium &amp; Phosphate are always </i></mark><mark style=\"background-color:#ffff00\"><b><i>opposite</i></b></mark></p>"
+      },
+      {
+       "id": "3a015adffd",
+       "prompt": "Hyperparathyroidism",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>Hyperparathyroidism</b></span></p>",
+       "answerHtml": "<p><i>PTH = </i><b><i>P</i></b><i>uts </i><b><i>T</i></b><i>he Calcium </i><b><i>H</i></b><i>igh</i></p><p><b><i>Hyper = High </i></b><mark style=\"background-color:#ffff00\"><b><i>↑ Calcium</i></b></mark><mark style=\"background-color:#ffff00\"><i> / ↑ </i></mark><mark style=\"background-color:#ffff00\"><b><i>PTH </i></b></mark></p><p><mark style=\"background-color:#ffff00\"><i>↓ </i></mark><mark style=\"background-color:#ffff00\"><b><i>Phosphate</i></b></mark></p><p>“<span style=\"color:#ff0000\">Bones, Stones, Groans, Moans</span>”</p><ul class=\"l0\"><li>Fractures</li><li>Kidney stones</li><li>GI upset</li><li>Fatigue</li></ul><p><u>DIAGNOSTICS</u></p><p><mark style=\"background-color:#00ff00\">Dual Energy X- Ray Absorptiometry (Dexa scan)</mark></p><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ff00\">Parathyroidectomy </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Monitor ABCs</mark> (surgery to the throat)</li><li>Bone &amp; renal monitoring</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Monitor kidney</mark> for stone damage </li></ul><ul class=\"l0\"><li>Assess calcium levels</li></ul><ul class=\"l1\"><li>Risk for <span style=\"color:#ff0000\">hypocalcemia </span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Tetany </span></li><li><span style=\"color:#ff0000\">Chvostek’s Sign</span></li><li><span style=\"color:#ff0000\">Trousseau’s Sign</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Calcium gluconate</mark> </li></ul><p><mark style=\"background-color:#00ff00\">Hydration</mark></p><ul class=\"l0\"><li>To prevent stone formation</li></ul><p><mark style=\"background-color:#00ffff\">Calcimimetics </mark></p><p><b><i>“Mimicing - tricks thyroid gland into thinking there’s a lot of calcium → suppress parathyroid to decrease calcium levels”</i></b></p><ul class=\"l0\"><li>Used in primary/secondary hyperparathyroidism</li><li><mark style=\"background-color:#00ff00\">Monitor</mark></li></ul><ul class=\"l1\"><li>Nausea</li><li>Hypocalcemia </li></ul>"
+      },
+      {
+       "id": "759181e63d",
+       "prompt": "Hypoparathyroidism",
+       "promptHtml": "<p><span style=\"color:#0000ff\"><b>Hypoparathyroidism</b></span></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b><i>Hypo = ↓ Calcium</i></b></mark><mark style=\"background-color:#ffff00\"><i> / ↓ PTH</i></mark></p><p><mark style=\"background-color:#ffff00\"><i>↑ Phosphate</i></mark></p><p><u>CAUSES</u></p><ul class=\"l0\"><li>Post-thyroid/parathyroid surgery (most common)</li><li>Autoimmune</li><li>Hypomagenesemia </li></ul><p><u>SIGNS</u></p><p><span style=\"color:#ff0000\">Hypocalcemia </span></p><ul class=\"l0\"><li>Tetany</li><li>Muscle cramps</li><li>+ Chvostek’s (face)</li><li>+ Trousseau’s sign (BP)</li></ul><p><span style=\"color:#ff0000\">Hyperphosphetemia</span></p><ul class=\"l0\"><li>Laryngospasms</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Airway emergency risk</span></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Calcium Gluconate</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Emergency</span> treatment for → Acute <span style=\"color:#ff0000\">hypocalcemia </span>/ Tetany</li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">↑ High Calcium Diet</mark></p><p><mark style=\"background-color:#ffff00\">Calcium sources</mark></p><ul class=\"l0\"><li>Dairy</li><li>Leafy greens</li><li>Fortified foods</li><li>Almonds</li><li>Sardines</li></ul><p><mark style=\"background-color:#ffff00\">Vitamin D</mark></p><ul class=\"l0\"><li>Essential for calcium absorption</li></ul><ul class=\"l1\"><li>Sun exposure</li><li>Fortified foods</li><li>Supplements</li></ul><p>↓ <span style=\"color:#ff0000\"><b>AVOID </b></span><b>Phosphate</b> rich foods:</p><ul class=\"l0\"><li>Limit processed food</li><li>Cola</li><li>[↑ Phosphate = Protein]</li></ul><ul class=\"l1\"><li>Meat</li><li>Pudding</li></ul><p><span style=\"color:#ff0000\">*At bedside,</span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">IV Calcium Gluconate (push slowly!)</span></li><li><span style=\"color:#ff0000\">Trach tray* </span></li></ul>"
+      },
+      {
+       "id": "38f874a761",
+       "prompt": "Adrenal gland",
+       "promptHtml": "<p>Adrenal gland</p>",
+       "answerHtml": "<ul class=\"l0\"><li><i>Sit </i><b><i>on top of the kidneys</i></b></li><li><i>H</i><b><i>elp the body adapt to stress</i></b></li></ul><p><i>Adrenal Cortex = </i><b><i>outside layer</i></b><i> of the adrenal glands</i></p><p>Function (<span style=\"color:#ff00ff\">sugar, salt, sex</span>)</p><ul class=\"l0\"><li><i>Produces </i><mark style=\"background-color:#ffff00\"><b><i>corticosteroid </i></b></mark><i>hormones</i></li></ul><ol class=\"l0\" start=\"1\"><li><mark style=\"background-color:#ffff00\"><b><i>Glucocorticoids</i></b></mark></li></ol><ol class=\"l1\" start=\"1\"><li><b><i>Cortisol </i></b><i>helps </i></li></ol><ol class=\"l2\" start=\"1\"><li><i>↑ Increase BG</i></li><li><i>Stress response</i></li><li><i>Affects metabolism, inflammation, &amp; immunity</i></li></ol><ol class=\"l0\" start=\"2\"><li><mark style=\"background-color:#ffff00\"><b><i>Mineralocorticoids</i></b></mark></li></ol><ol class=\"l1\" start=\"1\"><li><b><i>Aldosterone -</i></b></li></ol><ol class=\"l2\" start=\"1\"><li><i>Retain Sodium &amp; Water - Excretes K</i></li><li><i>Regulate BP &amp; blood volume</i></li></ol><ol class=\"l0\" start=\"3\"><li><mark style=\"background-color:#ffff00\"><b><i>Androgens</i></b></mark></li></ol><ol class=\"l1\" start=\"1\"><li><i>Pubic &amp; Axillary hair</i></li><li><i>Libido</i></li><li><i>Sexual development</i></li></ol>"
+      },
+      {
+       "id": "b6c86125f8",
+       "prompt": "Normal pathway of Hypothalamus → pituitary → adrenal glands",
+       "promptHtml": "<p>Normal pathway of </p><p>Hypothalamus → pituitary → adrenal glands</p>",
+       "answerHtml": "<p><i>HC</i></p><p><i>CPA</i></p><p><i>AAC</i></p><p><b><i>Hypothalamus </i></b><i>→ releases </i><mark style=\"background-color:#00ff00\"><b><i>CRH </i></b></mark><i>(corticotropin release hormone) </i></p><p><mark style=\"background-color:#00ff00\"><b><i>CRH </i></b></mark><i>tells </i><b><i>pituitary </i></b><i>to → release some </i><mark style=\"background-color:#0000ff;color:#ffffff\"><b><i>ACTH </i></b></mark></p><p><i>(adrenocorticotropic hormone) </i></p><p><mark style=\"background-color:#0000ff;color:#ffffff\"><b><i>ACTH </i></b></mark> <i>tells → </i><b><i>adrenal glands</i></b><i> → make more </i><mark style=\"background-color:#ff0000;color:#ffffff\"><b><i>CORTISOL</i></b></mark></p>"
+      },
+      {
+       "id": "25047e2d32",
+       "prompt": "Hyperaldosteronism",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>Hyperaldosteronism</b></span></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b><i>↑ Aldosterone</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>AL</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>A = Adds Sodium &amp; Water IN</i></b></mark></p><p><mark style=\"background-color:#ffff00\"><b><i>L = Lets Potassium OUT</i></b></mark></p><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hypertension</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">HA</span></li></ul><ul class=\"l0\"><li><span style=\"color:#0000ff\">Hypokalemia </span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dysrhythmias </span></li><li><span style=\"color:#ff0000\">Weakness</span></li><li><span style=\"color:#ff0000\">Cramps</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Metabolic Alkalosis </span>= very common</li></ul><p><u>Nursing Considerations</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid salt substitutes</span> (have potassium)</li></ul><p>In <mark style=\"background-color:#ffff00\">males</mark>, can cause</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Gynecomastia</span> (benign breast enlargement)</li><li>↓ Libido </li><li>Erectile Dysfunction</li></ul><p>In <mark style=\"background-color:#ffff00\">women</mark>, can cause</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Menstrual changes</span></li></ul><p><mark style=\"background-color:#00ff00\">Adrenalectomy </mark></p><ul class=\"l0\"><li>Premedicate w/ <mark style=\"background-color:#00ffff\">spironolactone</mark> or <mark style=\"background-color:#00ffff\">replace K</mark></li></ul><p><mark style=\"background-color:#00ffff\">Antihypertensive </mark>meds</p><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>BP</li><li>Electrolytes</li></ul><ul class=\"l1\"><li>Potassium levels</li></ul><ul class=\"l0\"><li>ABGs</li></ul><p><mark style=\"background-color:#00ff00\">↓ Low-sodium diet</mark> education</p>"
+      },
+      {
+       "id": "150d9beafd",
+       "prompt": "Cushing Syndrome",
+       "promptHtml": "<p><span style=\"color:#ff0000\"><b>Cushing Syndrome</b></span></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b>Cushion of ↑ Cortisol</b></mark></p><p><mark style=\"background-color:#ffff00\">Cushing’s </mark><mark style=\"background-color:#ffff00\"><b>Disease</b></mark></p><ul class=\"l0\"><li>D/t - Pituitary <b>ACTH </b>excess </li><li>(Adrenocorticotropic hormone - tells the adrenals to make more cortisol)</li></ul><p><mark style=\"background-color:#ffff00\">Cushing’s </mark><mark style=\"background-color:#ffff00\"><b>Syndrome</b></mark></p><ul class=\"l0\"><li>D/t <b>Adrenal tumor</b> or <b>Steroid </b>use</li></ul><p><u>SIGNS</u></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hypertension</span></li><li><span style=\"color:#ff0000\">Hyperglycemia</span></li><li><span style=\"color:#ff0000\">Osteoporosis </span></li><li><span style=\"color:#ff0000\">Poor wound healing</span></li><li><span style=\"color:#ff0000\">Hirsutism </span></li></ul><ul class=\"l1\"><li>Excess facial hair (female)</li></ul><p><u>DIAGNOSTICS</u></p><p><mark style=\"background-color:#00ff00\">Late-night salivary cortisol </mark></p><ul class=\"l0\"><li>They will have <b>↑ Cortisol</b> levels</li><li>[Normally, cortisol levels should be low ↓]</li></ul><p><mark style=\"background-color:#00ffff\">Dexamethasone</mark><mark style=\"background-color:#ffff00\"> suppression</mark></p><ul class=\"l0\"><li>They still have <b>↑ Cortisol </b></li><li>[Normally, the body should stop/decrease cortisol production when given dexamethasone] </li></ul><p><mark style=\"background-color:#00ff00\">24-hour urinary free cortisol </mark></p><ul class=\"l0\"><li>They will have <b>↑ Cortisol</b> levels</li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#ffff00\">Depends on the cause</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Transsphenoidal </mark>removal of pituitary tumor</li><li><mark style=\"background-color:#00ffff\">Adrenalectomy</mark></li><li><mark style=\"background-color:#00ffff\">Radiation</mark></li></ul><p><mark style=\"background-color:#00ff00\">Exogenous steroid management </mark></p><ul class=\"l0\"><li>If someone is taking steroids, you need to <span style=\"color:#ff0000\"><b>TAPER </b></span>THEM DOWN </li></ul><p><u>NURSING ACTIONS</u></p><p>Acute <mark style=\"background-color:#00ff00\">monitoring</mark></p><ul class=\"l0\"><li>Weight</li><li><span style=\"color:#ff0000\">Glucose</span></li></ul><p><span style=\"color:#ff0000\">Infection</span>/<b>skin breakdown</b> &amp; <b>VTE prevention</b></p><ul class=\"l0\"><li>↑ Cortisol can </li></ul><ul class=\"l1\"><li>Affect your <b>immune </b>function</li><li>Put you in a <span style=\"color:#ff0000\">hypercoagulable state</span></li></ul><p>Postoperative complications</p><ul class=\"l0\"><li>Prone to <span style=\"color:#ff0000\">dehydration, confusion, fatigue</span></li></ul><p><mark style=\"background-color:#00ff00\">Emotional support</mark></p><ul class=\"l0\"><li>Body image disturbances</li><li>Sexual function changes</li><li>Affects Libido &amp; Sexual characteristics</li></ul>"
+      },
+      {
+       "id": "e1287b1c6c",
+       "prompt": "Addison Disease",
+       "promptHtml": "<p><span style=\"color:#0000ff\"><b>Addison Disease</b></span></p>",
+       "answerHtml": "<p><span style=\"color:#0000ff\">ADD, need to ADD Cortisol</span></p><p><mark style=\"background-color:#ffff00\">↓ Cortisol</mark></p><p><mark style=\"background-color:#ffff00\">Primary Adrenal Insufficiency </mark></p><ul class=\"l0\"><li><b>Adrenal cortex damage</b></li></ul><ul class=\"l1\"><li>↓ Cortisol</li><li>↓ Aldosterone</li><li>↓ Adrenal androgens</li></ul><p><mark style=\"background-color:#ffff00\">Secondary / Central</mark></p><ul class=\"l0\"><li>Issue w/ the <b>pituitary</b></li><li>↓ Pituitary ACTH</li><li>↓ Cortisol</li><li>↓ Adrenal androgens</li><li>Aldosterone usually preserved</li></ul><ul class=\"l1\"><li>[because Aldosterone is part of RAAS]</li></ul><p><u>CAUSES</u></p><ul class=\"l0\"><li>Infections</li></ul><ul class=\"l1\"><li>TB</li><li>Fungal</li><li>HIV</li></ul><ul class=\"l0\"><li>Cancer</li><li>Adrenal damage / removal</li></ul><p><u>SIGNS</u></p><p>Onset is <b>gradual</b></p><ul class=\"l0\"><li><b>Fatigue</b></li><li><b>Weakness</b></li><li>Craving salt</li><li><b>↓ Appetite</b></li><li><b>Weight loss</b></li><li><b>Orthostatic Hypotension</b></li></ul><ul class=\"l1\"><li>D/t ↓ Water &amp; Sodium (↓ in circulating volume)</li></ul><ul class=\"l0\"><li>Cramps</li><li>Depression</li><li>Abdominal pain</li><li>↓ Libido</li><li>Muscle weakness</li></ul><p><span style=\"color:#0000ff\"><u>Primary Addison’s</u></span></p><ul class=\"l0\"><li><b>Dizziness</b></li><li><b>Thirst</b></li></ul><ul class=\"l1\"><li>D/t ↓ aldosterone</li></ul><p><span style=\"color:#0000ff\"><u>Secondary Addison’s</u></span></p><ul class=\"l0\"><li><b>Bronze hyper-pigmentation</b></li></ul><ul class=\"l1\"><li>Seen with ↑ACTH</li></ul><p><u>DIAGNOSTICS</u></p><p>ACTH stimulates → adrenal glands to produce more ↑ cortisol</p><p><mark style=\"background-color:#00ff00\"><u>ACTH stimulation test</u></mark></p><p><b>Primary</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↑ ACTH</mark></li><li><mark style=\"background-color:#ffff00\"><b>Poor / no </b></mark><mark style=\"background-color:#ffff00\">cortisol response</mark></li><li>[Cortisol is still low because the <b>adrenal is damaged</b> &amp; doesn’t respond]</li></ul><p><b>Secondary / Central</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ or normal ACTH</mark></li><li><mark style=\"background-color:#ffff00\">↓ Cortisol </mark></li><li>[There is usually a problem in the brain: <b>pituitary/hypothalamus</b>]</li></ul><p><mark style=\"background-color:#00ff00\"><u>CRH Stimulation Test</u></mark></p><p>[To figure out if the <b>Secondary/Central </b>problem is from the <b>pituitary </b>OR <b>hypothalamus</b>]</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ ACTH = </mark><mark style=\"background-color:#ffff00;color:#ff0000\">pituitary </mark><mark style=\"background-color:#ffff00\">problem!</mark></li><li><mark style=\"background-color:#ffff00\">↑ ACTH = </mark><mark style=\"background-color:#ffff00;color:#ff0000\">hypothalamus </mark><mark style=\"background-color:#ffff00\">problem!</mark></li><li>No cortisol response</li></ul><p><mark style=\"background-color:#00ff00\">Monitor - Electrolytes, Renal panel</mark></p><p><u>Primary problem</u> =</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">↓ BG </mark></li><li><mark style=\"background-color:#ffff00\">↓ Na </mark></li><li><mark style=\"background-color:#ffff00\">↑ K </mark></li><li>[Aldosterone is also being affected</li><li>[So we’re losing sodium, retaining potassium, and have low BG d/t lack of cortisol]</li></ul><p><mark style=\"background-color:#00ff00\">EKG</mark></p><ul class=\"l0\"><li>D/t <b>Hyperkalemia</b></li><li>Monitor for <span style=\"color:#ff0000\">arrhythmias </span></li></ul><p><mark style=\"background-color:#00ff00\">Imaging</mark></p><ul class=\"l0\"><li>CT (3D imaging)</li><li>MRI (soft tissue)</li><li>[Both check for <b>adrenal abnormalities]</b></li></ul><p><u>TREATMENT</u></p><p><mark style=\"background-color:#00ffff\">Steroids</mark></p><p><span style=\"color:#ff0000\">Long-term risks of steroid use</span></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Immunosuppressant</span></li><li>↑ Hyperglycemia</li><li>↑Hypertension</li><li>Delayed healing</li><li>Muscle &amp; bone loss</li><li>Cushing-like changes</li><li>Adrenal suppression</li></ul><p><mark style=\"background-color:#00ff00\">Pt education</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Never stop steroids abruptly</span> !</li></ul><p><u>NURSING ACTIONS</u></p><p><mark style=\"background-color:#00ff00\">Stress-dose steroids</mark></p><ul class=\"l0\"><li>Increase <b>↑ in stress</b> = <b>↑ their dose</b> of steroids</li></ul><p>Emergency preparedness</p><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">IM hydrocortisone </mark></li></ul><p><mark style=\"background-color:#00ff00\">Patient education</mark></p><ul class=\"l0\"><li>Severe vomiting/diarrhea, weakness, confusion, altered LOC, can’t keep steroids down → Seek <span style=\"color:#ff0000\">emergency care</span>!</li></ul>"
+      },
+      {
+       "id": "16463bb8d2",
+       "prompt": "Addisonian Crisis",
+       "promptHtml": "<p><span style=\"color:#0000ff\"><b>Addisonian Crisis</b></span></p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Stress</li><li>Infection</li><li>Missed steroids</li></ul><ul class=\"l1\"><li>Or stopping them abruptly</li></ul><p><u>More severe SIGNS than Addison’s</u></p><ul class=\"l0\"><li>Severe hypotension</li><li>Vomiting</li><li>Weakness</li><li>Confusion</li></ul><p><b>Supportive</b> treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Steroids</mark></li><li><mark style=\"background-color:#00ff00\">Fluid resuscitations</mark></li></ul><ul class=\"l1\"><li>To support their BP</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Glucose </mark>monitoring</li></ul>"
+      }
+     ]
+    }
+   ],
+   "key": "1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0",
+   "sourceDocId": "1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0"
+  }
+ ],
+ "cardCount": 175
+}
