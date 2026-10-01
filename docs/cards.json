@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-01T02:03:13+00:00",
+ "generatedAt": "2026-10-01T02:07:10+00:00",
  "decks": [
   {
    "title": "NS30A Final",
-   "generatedAt": "2026-10-01T02:03:13+00:00",
+   "generatedAt": "2026-10-01T02:07:10+00:00",
    "cardCount": 231,
    "sections": [
     {
@@ -1403,8 +1403,8 @@
      ]
     },
     {
-     "name": "Unit 5 - Growth Factors",
-     "group": "Unit 5 - Growth Factors",
+     "name": "Growth Factors",
+     "group": "Unit 5 - Cancer",
      "cards": [
       {
        "id": "6bb4a81c74",
@@ -1427,8 +1427,8 @@
      ]
     },
     {
-     "name": "Unit 5 - Chemotherapy",
-     "group": "Unit 5 - Chemotherapy",
+     "name": "Chemotherapy",
+     "group": "Unit 5 - Cancer",
      "cards": [
       {
        "id": "1fd0c74c65",
@@ -1457,8 +1457,8 @@
      ]
     },
     {
-     "name": "Unit 5 - Oncologic Emergencies",
-     "group": "Unit 5 - Oncologic Emergencies",
+     "name": "Oncologic Emergencies",
+     "group": "Unit 5 - Cancer",
      "cards": [
       {
        "id": "eb48212a33",
