@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-09-30T06:26:11+00:00",
+ "generatedAt": "2026-10-01T02:03:13+00:00",
  "decks": [
   {
    "title": "NS30A Final",
-   "generatedAt": "2026-09-30T06:26:11+00:00",
-   "cardCount": 175,
+   "generatedAt": "2026-10-01T02:03:13+00:00",
+   "cardCount": 231,
    "sections": [
     {
      "name": "Dosage Calculation",
@@ -1215,11 +1215,414 @@
        "answerHtml": "<p><span style=\"color:#ff0000\">Life threatening emergency</span>!</p><p><u>TRIGGERS</u></p><ul class=\"l0\"><li>Stress</li><li>Infection</li><li>Missed steroids</li></ul><ul class=\"l1\"><li>Or stopping them abruptly</li></ul><p><u>More severe SIGNS than Addison’s</u></p><ul class=\"l0\"><li>Severe hypotension</li><li>Vomiting</li><li>Weakness</li><li>Confusion</li></ul><p><b>Supportive</b> treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">IV hydrocortisone</mark></li><li><mark style=\"background-color:#00ffff\">[Prednisone]</mark></li><li><mark style=\"background-color:#00ff00\">Fluid resuscitations</mark></li></ul><ul class=\"l1\"><li>To support their BP</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Glucose </mark>monitoring</li></ul>"
       }
      ]
+    },
+    {
+     "name": "Unit 5 - Cancer",
+     "group": "Unit 5 - Cancer",
+     "cards": [
+      {
+       "id": "b4d0af58b9",
+       "prompt": "Proto-oncogenes",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Proto-oncogenes</mark></p>",
+       "answerHtml": "<p>Promote normal cell <b>growth </b>&amp; <b>division </b>&amp; <b>maturation</b></p><ul class=\"l0\"><li>Mutation: <mark style=\"background-color:#ffff00\"><u>oncogene</u></mark></li></ul>"
+      },
+      {
+       "id": "4147d22dae",
+       "prompt": "Tumor suppressor genes:",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Tumor suppressor genes:</mark></p>",
+       "answerHtml": "<p><b>Slow growth</b> and <b>prevent abnormal cell division</b></p>"
+      }
+     ]
+    },
+    {
+     "name": "Tumor Markers",
+     "group": "Unit 5 - Cancer",
+     "cards": [
+      {
+       "id": "163babc470",
+       "prompt": "CEA Carcino embryonic antigen",
+       "promptHtml": "<p>CEA</p><ul class=\"l0\"><li>Carcino embryonic antigen </li></ul>",
+       "answerHtml": "<p><b>Colorectal</b>, breast, lung, pancreas</p>"
+      },
+      {
+       "id": "86a2eab199",
+       "prompt": "AFP Alpha feta protein",
+       "promptHtml": "<p>AFP</p><ul class=\"l0\"><li>Alpha feta protein </li></ul>",
+       "answerHtml": "<p>Liver, testicular</p>"
+      },
+      {
+       "id": "106864f35d",
+       "prompt": "CA-125",
+       "promptHtml": "<p>CA-125</p>",
+       "answerHtml": "<p>Ovarian</p>"
+      },
+      {
+       "id": "048e3558a7",
+       "prompt": "CA-19-9",
+       "promptHtml": "<p>CA-19-9</p>",
+       "answerHtml": "<p>Pancreatic &amp; gallbladder <i>[biliary cancers]</i></p>"
+      },
+      {
+       "id": "f8044689c5",
+       "prompt": "PSA Prostate specific antigen",
+       "promptHtml": "<p>PSA</p><ul class=\"l0\"><li>Prostate specific antigen </li></ul>",
+       "answerHtml": "<p>Prostate</p>"
+      },
+      {
+       "id": "23fd12b50a",
+       "prompt": "CA-15-3 and CA-27-29",
+       "promptHtml": "<p>CA-15-3 and CA-27-29</p>",
+       "answerHtml": "<p>Breast</p>"
+      },
+      {
+       "id": "ec97b8dfb3",
+       "prompt": "TNM Classification System",
+       "promptHtml": "<p>TNM Classification System</p>",
+       "answerHtml": "<p>Cancer stage does <b>NOT decrease</b> but it can INCREASE if the disease progresses</p><p>T</p><ul class=\"l0\"><li>Primary <b>Tumor </b>size and local extent (T0-T4)</li></ul><p>N</p><ul class=\"l0\"><li>Regional lymph <b>node </b>involvement (N0-N3)</li></ul><p>M</p><ul class=\"l0\"><li>Distant <b>metastasis </b>(M0 or M1)</li></ul>"
+      },
+      {
+       "id": "111ede6aee",
+       "prompt": "CAUTION: Warning Signs of Cancer",
+       "promptHtml": "<p>CAUTION: Warning Signs of Cancer</p>",
+       "answerHtml": "<p>C -  Change in bowel or bladder habits</p><p>A -   A sore that does not heal</p><p>U -   Unusual bleeding or discharge</p><p>T -   Thickening or lump in breast or elsewhere</p><p>I  -   Indigestion or difficulty swallowing</p><p>O  - Obvious change in wart or mole</p><p>N -  Nagging cough or hoarseness</p><p>Sore that won’t heal = tumor is leeching nutrients needed for basic repair, from nearby tissues</p><p>Unusual bleeding = angiogenesis d/t tumor creating new fragile, leaky blood vessels that leak easily</p>"
+      },
+      {
+       "id": "adde101efb",
+       "prompt": "The ONLY definitive diagnosis of cancer",
+       "promptHtml": "<p>The ONLY definitive diagnosis of cancer</p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">*Evaluation of the tissue sample done by a pathologist = only definitive diagnosis of cancer*</span></p><ul class=\"l0\"><li>Pathologist determines whether the cells are benign/malignant </li><li>They will look at the histology &amp; grade</li></ul><ul class=\"l1\"><li>Identify tissue/cell type</li><li>Grade = determines degree of cell differentiation </li></ul>"
+      },
+      {
+       "id": "6e878811a4",
+       "prompt": "PET Scan",
+       "promptHtml": "<p>PET Scan</p>",
+       "answerHtml": "<p>Pt education <b>before </b>PET scan</p><ul class=\"l0\"><li>Fast 4-6 hrs prior</li><li>Can’t receive any dextrose containing fluids/consume sugary food/drinks the <b>day before</b></li></ul><ul class=\"l1\"><li>High BG can interfere w/ uptake of blood glucose &amp; reduce imaging quality </li></ul><ul class=\"l0\"><li>They will check BG before test</li></ul><ul class=\"l1\"><li>Hyperglycemic = might reschedule PET scan</li></ul><ul class=\"l0\"><li><b>NO strenuous exercise</b> 24 hours prior</li></ul><ul class=\"l1\"><li>Active muscles burn up glucose</li></ul><ul class=\"l0\"><li>Remove metal objects</li></ul><p>Before </p><ul class=\"l0\"><li>Pt receives IV injection of glucose </li></ul><ul class=\"l1\"><li>30 - 60 min uptake (they have to wait) </li></ul><ul class=\"l0\"><li>Scan takes 20-45 min</li></ul><ul class=\"l1\"><li>VERY still during! </li></ul><p>After</p><ul class=\"l0\"><li>Hydrate to eliminate radioactive glucose </li><li>Resume normal activities </li><li>Radiation should leave body within 24 hrs </li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Tumors",
+     "group": "Unit 5 - Cancer",
+     "cards": [
+      {
+       "id": "57b6466eb9",
+       "prompt": "Lung Cancer",
+       "promptHtml": "<p>Lung Cancer</p>",
+       "answerHtml": "<p>S&amp;S</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Dyspnea</span></li></ul><p>Risks</p><ul class=\"l0\"><li>Cigarette smoking </li><li>Asbestos, coal dust, 2nd hand smoke, occupational exposure  </li></ul><p><u>2 types of lung cancers</u></p><ul class=\"l0\"><li><b>Non Small Cell Lung Cancer</b></li></ul><ul class=\"l1\"><li>Slower growth </li><li>Patient can have surgery</li></ul><ul class=\"l0\"><li><b>Small Cell Lung Cancer </b></li></ul><ul class=\"l1\"><li>Rapid early spread</li><li>Usually Pt needs chemo &amp; radiation </li></ul>"
+      },
+      {
+       "id": "04fc7acd86",
+       "prompt": "Prostate Cancer",
+       "promptHtml": "<p>Prostate Cancer</p>",
+       "answerHtml": "<p><u>S&amp;S</u></p><p><span style=\"color:#ff0000\">Lumbral sacral pain</span></p><ul class=\"l0\"><li>[Sign that cancer metastasized to spine/pelvis]</li></ul><p><mark style=\"background-color:#00ff00\">Nursing Interventions</mark></p><ul class=\"l0\"><li>Monitor urinary function/retention </li><li>Discuss ED &amp; incontinence </li></ul><p>Treatment</p><ul class=\"l0\"><li><b>Radical Prosthetectomy</b> [removal of prostate gland] </li><li><b>Brachytherapy </b>[radioactive seeds]</li></ul><p>Risk </p><ul class=\"l0\"><li>Increases with age </li><li>Family history </li></ul><p>Modifiable Risks </p><ul class=\"l0\"><li>Diets high in processed red meat</li><li>High fat dairy products</li><li>Low intake of fruit/veggies </li></ul><p>Similar S&amp;S for Pts w/ enlarged prostates</p>"
+      },
+      {
+       "id": "5709c390d6",
+       "prompt": "Colorectal Cancer",
+       "promptHtml": "<p>Colo<b>rectal</b> Cancer</p>",
+       "answerHtml": "<p><i>[Cancer of the colon OR rectum] </i></p><p>S&amp;S</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">String like BMs</span></li><li><span style=\"color:#ff0000\">Hematochezia</span></li></ul><p>Diagnostics </p><ul class=\"l0\"><li>Colonoscopy</li></ul><ul class=\"l1\"><li>Start at age <span style=\"color:#ff00ff\">45</span>-75</li><li>Gold standard, repeat every <span style=\"color:#ff00ff\">10 years! </span></li></ul><ul class=\"l0\"><li>Barium enema </li></ul><ul class=\"l1\"><li>Every <span style=\"color:#ff00ff\">5 years</span></li></ul><ul class=\"l0\"><li>CT </li></ul><ul class=\"l1\"><li>Every <span style=\"color:#ff00ff\">5 years</span></li></ul><ul class=\"l0\"><li>Fecal tests</li></ul><ul class=\"l1\"><li>Fecal occult blood test <span style=\"color:#ff00ff\">every year</span></li><li>Fecal immunochemical test <span style=\"color:#ff00ff\">every year</span></li><li>Stool DNA - every <span style=\"color:#ff00ff\">3 years</span></li></ul><p>Treatment</p><ul class=\"l0\"><li>Surgery (may have radiation prior)</li></ul><ul class=\"l1\"><li>Main tx for <b>localized </b>dz</li><li>Possible <b>bowel resection </b></li></ul><ul class=\"l0\"><li>Radiation</li></ul><ul class=\"l1\"><li>Common for <b>rectal cancer</b> to shrink tumor sizes BEFORE surgery</li></ul><ul class=\"l0\"><li>Chemo</li></ul><p>Nursing Interventions</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Ostomy care</mark> (if bowel resection/bowel diversion) </li></ul><p>Risks</p><ul class=\"l0\"><li>Increases w/ age</li><li>Family hx</li><li>IBD</li><li>Obesity</li><li>Smoking</li><li>Certain dietary patterns </li></ul>"
+      },
+      {
+       "id": "9d94155f0e",
+       "prompt": "Breast Cancer",
+       "promptHtml": "<p>Breast Cancer</p>",
+       "answerHtml": "<p>Risks </p><ul class=\"l0\"><li>Increases w/ age</li><li>Family hx</li><li>Prolonged estrogen exposure </li><li>Mutations in 2 tumor suppressing genes </li></ul><ul class=\"l1\"><li>BRCA1 &amp; BRCA2</li><li>(Braca 1 &amp; Braca 2)</li></ul><p>Modifiable Risk Factors</p><ul class=\"l1\"><li>Sedentary lifestyle</li><li>Obesity</li><li>Smoking</li><li>Etoh</li><li>Night shift</li><li>Use of hair dyes/straighteners </li></ul><p>S&amp;S</p><ul class=\"l0\"><li>Painless breast/axillary lump</li></ul><ul class=\"l1\"><li>Hard, irregular, nonmobile &amp; nontender </li></ul><p>Treatment</p><ul class=\"l0\"><li><b>Modified radical mastectomy </b>= Remove breast &amp; lymph nodes</li></ul>"
+      },
+      {
+       "id": "7f3c703dd5",
+       "prompt": "Lymphedema",
+       "promptHtml": "<p>Lymphedema </p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ff00\">Teach</mark></p><ul class=\"l0\"><li>Protect arm</li></ul><ul class=\"l1\"><li>From cuts, burns, insect bites</li></ul><ul class=\"l0\"><li>Monitor for infection</li><li>Report new/worsening redness/swelling/warmth/fever</li></ul><ul class=\"l1\"><li>Can indicate <span style=\"color:#ff0000\">cellulitis </span>!</li></ul><ul class=\"l0\"><li>Maintain good skin hygiene</li><li>ROM exercises </li><li>Wear compression sleeve</li></ul><p><mark style=\"background-color:#00ff00\">Nursing </mark></p><ul class=\"l0\"><li>Assessing both arms &amp; comparing difference </li><li>Monitor for signs of infection</li><li>Reduce edema &amp; promote lymphatic drainage as much as possible</li><li><span style=\"color:#ff0000\">No BP/venipunctures/IV lines on the side of mastectomy/lymph node removal → for the REST of their LIFE!</span></li></ul><ul class=\"l1\"><li>If access isn’t possible on non-affected side - look at facility policy </li></ul>"
+      },
+      {
+       "id": "917e1e5a6f",
+       "prompt": "Brain Cancer",
+       "promptHtml": "<p>Brain Cancer</p>",
+       "answerHtml": "<p>S&amp;S</p><ul class=\"l0\"><li>N/V</li><li><span style=\"color:#ff0000\">Neuro impairments</span></li></ul><ul class=\"l1\"><li>Weakness</li></ul><ul class=\"l0\"><li>Changes in motor, sensory, speech, visual, &amp; personality/cognitive function</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Memory, balance, proprioception (body’s internal GPS), general LOC</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Seizures → </span><mark style=\"background-color:#00ff00\">Seizure precautions!</mark></li></ul>"
+      },
+      {
+       "id": "7e45b6c629",
+       "prompt": "Bone Cancer",
+       "promptHtml": "<p>Bone Cancer</p>",
+       "answerHtml": "<p>“Osteosarcoma”</p><p>S&amp;S</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Persistent bone pain </span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Localized</span></li><li><span style=\"color:#ff0000\">Worse at night/with activity </span></li></ul><ul class=\"l2\"><li>[Inflammatory markers peak at night when the body is at rest]</li></ul><ul class=\"l0\"><li>Swelling / mass</li><li>Decreased mobility</li><li><span style=\"color:#ff0000\">Pathologic fractures</span></li></ul><p><mark style=\"background-color:#00ff00\">Nursing</mark></p><ul class=\"l0\"><li>Follow <b>weight bearing restrictions</b> as ordered by doctor</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Gynecologic Cancers",
+     "group": "Unit 5 - Cancer",
+     "cards": [
+      {
+       "id": "31d948704a",
+       "prompt": "Cervical Cancer",
+       "promptHtml": "<p>Cervical Cancer</p>",
+       "answerHtml": "<p>S&amp;S</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Postcoital bleeding</span></li></ul><p>Diagnosis</p><ul class=\"l0\"><li>Colposcopy w/ biopsy</li></ul>"
+      },
+      {
+       "id": "2be338514d",
+       "prompt": "Uterine (Endometrial) Cancer",
+       "promptHtml": "<p>Uterine (Endometrial) Cancer</p>",
+       "answerHtml": "<p>S&amp;S</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Postmenopausal bleeding</span></li></ul>"
+      },
+      {
+       "id": "0ad65332d7",
+       "prompt": "Ovarian Cancer",
+       "promptHtml": "<p>Ovarian Cancer</p>",
+       "answerHtml": "<p>S&amp;S</p><ul class=\"l0\"><li>Bloating</li><li>Abdominal/pelvic pain</li><li>Early satiety (feeling full)</li></ul><p>Diagnostics </p><ul class=\"l0\"><li>CA-125</li></ul><p>Treatment</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Cytoreductive surgery</mark></li></ul><ul class=\"l1\"><li><b>Remove </b>as much of <b>tumor </b>as possible THEN </li><li>Chemo &amp; radiation </li><li>Targeted therapy</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Hematologic Cancer",
+     "group": "Unit 5 - Cancer",
+     "cards": [
+      {
+       "id": "55c72e1626",
+       "prompt": "Leukemia",
+       "promptHtml": "<p>Leukemia</p>",
+       "answerHtml": "<ul class=\"l0\"><li>A cancer of the blood forming tissues, especially <b>the </b><mark style=\"background-color:#ffff00\"><b>bone marrow</b></mark></li><li>Abnormal WBC that <b>crowd out </b>normal blood cell production</li><li>Acute = </li></ul><ul class=\"l1\"><li>Fast &amp; immature cells </li></ul><ul class=\"l0\"><li>Chronic =</li></ul><ul class=\"l1\"><li>Slower, more mature cells  </li></ul><p>S&amp;S</p><ul class=\"l0\"><li>Fever</li><li>Night sweats</li><li>Frequent <b>infections</b></li><li><b>Anemia</b></li></ul><ul class=\"l1\"><li><b>Fatigue</b></li><li><b>Weakness</b></li></ul><ul class=\"l0\"><li><b>Thrombocytopenia</b></li></ul><ul class=\"l1\"><li><b>Bleeding</b></li><li><b>Bruising</b></li><li><b>Petechiae</b></li></ul><ul class=\"l0\"><li>Abnormal WBC count</li></ul><p>Nursing</p><ul class=\"l0\"><li>Monitor for <span style=\"color:#ff0000\">Tumor Lysis Syndrome</span></li></ul>"
+      },
+      {
+       "id": "5115fe498d",
+       "prompt": "Multiple Myeloma",
+       "promptHtml": "<p>Multiple Myeloma</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Malignancy of the <b>plasma cells</b> in the <b>bone marrow</b></li><li>Abnormal plasma cells produce protein cells &amp; they<b> damage the bone</b> &amp; interfere w/ normal blood cell production </li></ul><p>Manifestations</p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>CRAB</b></span></li></ul><ul class=\"l1\"><li>hyper<b>C</b>alcemia</li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Dysrhythmias </span></li><li><span style=\"color:#ff0000\">Confusion</span></li><li>D/t bone degradation </li></ul><ul class=\"l1\"><li><b>R</b>enal failure</li></ul><ul class=\"l2\"><li>Calcium deposits into the kidneys </li></ul><ul class=\"l1\"><li><b>A</b>nemia</li></ul><ul class=\"l2\"><li>Myeloma cells crowd out normal bone marrow</li><li>Reduce RBC production</li></ul><ul class=\"l1\"><li><b>B</b>one lesions</li></ul><ul class=\"l2\"><li>Loss of calcium &amp; bone breakdown </li></ul><ul class=\"l0\"><li>Pathologic fractures</li><li><span style=\"color:#ff0000\">Persistent skeletal pain</span> [back / pelvic / rib pain]</li></ul><p>Diagnosis</p><ul class=\"l0\"><li>Bone marrow biopsy </li></ul><ul class=\"l1\"><li>Confirms abnormal plasma cell proliferation</li></ul><ul class=\"l0\"><li><b>Serum &amp; urine studies</b> to identify cancer protein </li></ul><ul class=\"l1\"><li>Looking for proteins:</li></ul><ul class=\"l2\"><li><mark style=\"background-color:#ffff00\">Light chains / Bence Jones proteins</mark></li></ul><ul class=\"l3\"><li>[Fragments of abnormal antibodies the myeloma cells are pumping out]</li></ul><ul class=\"l0\"><li>Imaging</li></ul><ul class=\"l1\"><li>To find bone lesions</li></ul><p>Treatment (supportive management based on affected organs)</p><ul class=\"l0\"><li>Corticosteroids</li><li>Chemotherapy</li><li>Immunotherapy</li><li>Targeted therapy</li><li>HSCT</li></ul><ul class=\"l1\"><li><b>Hematopoietic Stem Cell Transplant</b></li></ul><ul class=\"l0\"><li>Kyphoplasty</li></ul><ul class=\"l1\"><li>Cement is injected into vertebral compression areas</li></ul><ul class=\"l0\"><li>Hydration</li></ul><ul class=\"l1\"><li>When appropriate </li><li>D/t hypercalcemia causing dehydration </li></ul><p>Monitor</p><ul class=\"l0\"><li>Kidney function</li><li>Calcium levels</li><li>Anemia</li><li>Infection</li><li><span style=\"color:#ff0000\">Fracture risk</span></li></ul><ul class=\"l1\"><li>Be careful when transferring these Pts because their bones fracture very easily!</li></ul>"
+      },
+      {
+       "id": "8931701f2e",
+       "prompt": "Hodgkin & Non-Hodgkin Lymphoma",
+       "promptHtml": "<p>Hodgkin &amp; Non-Hodgkin Lymphoma</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Cancers that begin w/ </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#ffff00\"><b>Lymphocytes </b></mark></li></ul><ul class=\"l2\"><li>(WBC involved in immune function)</li></ul><ul class=\"l1\"><li>Also involves spleen, bone marrow, other organs </li></ul><p>Hodgkin &amp; Non-Hodgkin have similar manifestations, BUT </p><ul class=\"l0\"><li>Different in the type of cell </li><li>Way that they spread</li></ul><p><mark style=\"background-color:#ffff00\"><b><u>Hodgkin Lymphoma</u></b></mark></p><ul class=\"l0\"><li>Characterized by<b> Reed Sternberg cells</b></li><li>More common in younger people </li><li><b>Spreads in predictable way</b></li></ul><ul class=\"l1\"><li>From 1 lymph node group to → next one</li></ul><ul class=\"l0\"><li>Highly responsive to treatment</li><li>Frequently curable</li></ul><p><mark style=\"background-color:#ffff00\"><b><u>Non-Hodgkin Lymphoma</u></b></mark></p><ul class=\"l0\"><li>Many different B &amp; T cell cancers </li><li>More common in older adults</li><li><b>Less predictable spread</b></li><li>Can involve more tissues outside the lymph nodes</li></ul><p>Manifestations</p><ul class=\"l0\"><li>Painless lymphadenopathy</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Painless, Swollen lymph nodes</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Fever </span>&gt; 100.4 F</li><li><span style=\"color:#ff0000\">Night sweats</span></li><li><span style=\"color:#ff0000\">Weight loss</span></li></ul><ul class=\"l1\"><li>&gt; 10% of body weight in 6 months</li></ul><ul class=\"l0\"><li>[Fever, night sweats, &amp; wt loss = tumor has become hypermetabolic]</li><li>Fatigue</li></ul><p>Diagnose</p><ul class=\"l0\"><li>Lymph node biopsy </li><li>PET scan</li></ul><ul class=\"l1\"><li>For staging</li></ul><ul class=\"l0\"><li>CT scan</li></ul><ul class=\"l1\"><li>For staging</li></ul><p>Treatment</p><ul class=\"l0\"><li>Chemotherapy ± Radiation</li><li>Immunotherapy / HSCT</li></ul>"
+      },
+      {
+       "id": "78686b9f7a",
+       "prompt": "What is debulking?",
+       "promptHtml": "<p>What is debulking?</p>",
+       "answerHtml": "<p>Removing as much of the tumor as possible</p>"
+      }
+     ]
+    },
+    {
+     "name": "Unit 5 - Growth Factors",
+     "group": "Unit 5 - Growth Factors",
+     "cards": [
+      {
+       "id": "6bb4a81c74",
+       "prompt": "Granulocyte Colony Stimulating Factor (G-CSF)",
+       "promptHtml": "<p>Granulocyte Colony Stimulating Factor (G-CSF)</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Filgrastim (Neupogen)</mark></p><ul class=\"l0\"><li>Stimulates neutrophil/<b>WBC</b> production </li></ul><p>Use</p><ul class=\"l0\"><li>Prevent / treat <b>neutropenia </b>post-chemo</li></ul><p>SE</p><ul class=\"l0\"><li>Bone pain</li><li>N / V</li></ul>"
+      },
+      {
+       "id": "344ea85e7d",
+       "prompt": "Erythropoiesis-Stimulating Agent (ESAs)",
+       "promptHtml": "<p>Erythropoiesis-Stimulating Agent (ESAs)</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Epoetin Alfa (Epogen)</mark></p><ul class=\"l0\"><li>Stimulates <b>RBC </b>production → helps decrease the # of blood transfusions</li></ul><p>Use</p><ul class=\"l0\"><li>Treat chemo/cancer induced <b>anemia</b></li></ul><p>SE</p><ul class=\"l0\"><li>↑ BP</li><li>Thrombosis</li><li>HA</li></ul>"
+      },
+      {
+       "id": "5f04e8a7dd",
+       "prompt": "Interleukin-11 (IL-11)",
+       "promptHtml": "<p>Interleukin-11 (IL-11)</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Oprelvekin (Neumega)</mark></p><ul class=\"l0\"><li>Stimulates <b>platelet </b>production</li></ul><p>Use</p><ul class=\"l0\"><li>Prevent severe <b>thrombocytopenia</b></li></ul><p>SE</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Fluid retention</span></li></ul><ul class=\"l1\"><li>[promotes sodium/water retention]</li></ul><ul class=\"l0\"><li>Edema</li><li>Dyspnea</li><li>↑ HR</li><li>Nausea</li><li>Mouth sores</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Unit 5 - Chemotherapy",
+     "group": "Unit 5 - Chemotherapy",
+     "cards": [
+      {
+       "id": "1fd0c74c65",
+       "prompt": "Adverse effects",
+       "promptHtml": "<p>Adverse effects</p>",
+       "answerHtml": "<p>Altered Taste (<span style=\"color:#ff0000\">Dysgeusia</span>)</p><ul class=\"l0\"><li>Meat can taste<b> bitter / metallic</b> with chemo</li></ul><ul class=\"l1\"><li>Frequent oral care before meals</li><li>Hydration</li><li>Try diff types of seasonings</li><li>Use plastic utensils!</li></ul><ul class=\"l0\"><li>Food aversions</li></ul><ul class=\"l1\"><li>Avoid foods w/ strong odors</li></ul><ul class=\"l0\"><li>Zinc supplementation may help</li></ul><p><u>Cancer Wasting Syndrome (</u><mark style=\"background-color:#ffff00\"><u>Cachexia</u></mark><u>)</u></p><p>Common w/ pancreatic / upper GI cancers</p><ul class=\"l0\"><li><b>Tumor changes the body’s metabolism</b></li><li>→ Chronic inflammation</li><li><b>Inflammatory cytokines </b>released</li><li>→ Increased metabolism / suppressed appetite</li><li>Body breaks down own muscle/fat for energy</li><li>Tumor also consumes nutrients needed by the body </li></ul><p>Nursing:</p><ul class=\"l0\"><li>Nutritional supplements can <b>PREVENT </b>but not REVERSE cachexia </li><li><mark style=\"background-color:#00ffff\">Megestrol acetate</mark> (Megace)</li><li><mark style=\"background-color:#00ffff\">dronabinol </mark>(Marinol) </li></ul>"
+      },
+      {
+       "id": "c1dd7d471c",
+       "prompt": "Teaching",
+       "promptHtml": "<p>Teaching</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Practice </mark><mark style=\"background-color:#ffff00\"><b>safe food handling</b></mark></p><ul class=\"l0\"><li>Well-<b>cooked</b> meats &amp; veggies</li><li><b>Pasteurized </b>dairy, canned foods</li><li><b>Peeled </b>fruits &amp; cooked items</li><li><b>Hand hygiene</b></li><li><b>Wash </b>fruits/veggies well</li></ul><p>Avoid high-risk foods [be careful when eating these]</p><ul class=\"l0\"><li>Raw fruits/veggies, salads</li><li>Unpasteurized cheese, deli meats</li><li>Raw rish/rushi, soft-boiled eggs</li></ul>"
+      },
+      {
+       "id": "ebe19623de",
+       "prompt": "Chemo Precautions",
+       "promptHtml": "<p>Chemo Precautions</p>",
+       "answerHtml": "<p>Chemo Precautions</p><ul class=\"l0\"><li>Handle all <b>body fluids </b>with caution</li></ul><ul class=\"l1\"><li>Urine, stool, blood, vomit, etc</li></ul><ul class=\"l0\"><li>Designated hazard waste containers [for ANYTHING with body fluids</li></ul><ul class=\"l1\"><li><b>Yellow bin</b></li></ul><ul class=\"l0\"><li>At least<span style=\"color:#ff00ff\"> 48 hours AFTER</span> administration </li></ul><ul class=\"l1\"><li>Some facilities require for up to <b>7 days</b> </li></ul><ul class=\"l0\"><li>Wear chemo gloves / <b>double gloves </b>when handling body fluids</li><li>Gown / PPE </li><li><b>Close the lid </b>before flushing </li></ul><ul class=\"l1\"><li>Flush <b>twice</b></li></ul>"
+      },
+      {
+       "id": "9c3620ec33",
+       "prompt": "Difference between Chemo & Radiation",
+       "promptHtml": "<p>Difference between Chemo &amp; Radiation</p>",
+       "answerHtml": "<p>Chemo = Systemic poison for rapidly ACTIVE dividing cells</p><p>Radiation = For <b>LOCALIZED </b>cancers</p>"
+      }
+     ]
+    },
+    {
+     "name": "Unit 5 - Oncologic Emergencies",
+     "group": "Unit 5 - Oncologic Emergencies",
+     "cards": [
+      {
+       "id": "eb48212a33",
+       "prompt": "[Bone Marrow Suppression]",
+       "promptHtml": "<p>[Bone Marrow Suppression]</p>",
+       "answerHtml": "<p>(Myelosuppression)</p><p>Anemia</p><ul class=\"l0\"><li>↓ <mark style=\"background-color:#ffff00\">RBC </mark></li><li>Severe <b>fatigue</b></li></ul><p>Neutropenia</p><ul class=\"l0\"><li>↓ WBC</li><li><b>Infection </b>risk!</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Fever = medical emergency</span>!</li></ul><p>Thrombocytopenia</p><ul class=\"l0\"><li>↓ Platelet</li><li><b>Bleeding </b>risk!</li></ul><p>Nadir = Lowest blood counts</p><ul class=\"l0\"><li>Typically occur <span style=\"color:#ff00ff\">7-14 days AFTER</span> chemotherapy</li><li>Monitor CBC closely</li></ul>"
+      },
+      {
+       "id": "bcce5b7bb3",
+       "prompt": "Superior Vena Cava Syndrome",
+       "promptHtml": "<p>Superior Vena Cava Syndrome</p>",
+       "answerHtml": "<p><u>Obstructive (tumor)</u></p><p>S&amp;S</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Facial &amp; periorbital edema</span></li><li>Distended veins of the head, neck, chest</li><li>HA</li><li>Confusion / Seizures</li><li>Dyspnea</li><li>Cough</li><li>Upper extremity swelling</li><li>Upper body discoloration</li></ul><p>Labs/Findings</p><ul class=\"l0\"><li>Signs of upper body venous congestion</li><li>Imaging may identify obstruction / mass in the mediastinum</li></ul><p>Nursing</p><ul class=\"l0\"><li>Elevate HOB</li><li>Assess airway / respiratory status</li><li>Oxygenation</li><li>Steroids</li><li>Chemo / radiation</li><li>Stenting</li><li>Anticoagulants</li></ul>"
+      },
+      {
+       "id": "1a54b00e7e",
+       "prompt": "Third Spacing Syndrome",
+       "promptHtml": "<p>Third Spacing Syndrome</p>",
+       "answerHtml": "<p><u>Obstructive (tumor)</u></p><ul class=\"l0\"><li>Fluid shifts from ← vascular space to → interstitial / abdominal cavity</li></ul><p>S&amp;S:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Edema</span></li><li><span style=\"color:#ff0000\">Hypovolemia</span></li></ul><ul class=\"l1\"><li>Low BP</li><li>High HR</li><li>Low UOP</li></ul><p>Treatment:</p><ul class=\"l0\"><li>Replace fluids/electrolytes w/ volume expanders → <mark style=\"background-color:#00ffff\">Albumin </mark></li></ul><ul class=\"l1\"><li>Protein that pulls fluid into intravascular space </li></ul><ul class=\"l0\"><li>Monitor for <span style=\"color:#ff0000\">fluid overload </span></li></ul><ul class=\"l1\"><li>HTN</li><li>SOB</li></ul>"
+      },
+      {
+       "id": "c64ebd7d76",
+       "prompt": "GI Obstruction",
+       "promptHtml": "<p>GI Obstruction</p>",
+       "answerHtml": "<p><u>Obstructive (tumor)</u></p><ul class=\"l0\"><li>Tumor compresses / blocks part of GI tract</li></ul><p>S&amp;S</p><ul class=\"l0\"><li>N / V</li><li>Constipation, trouble passing stools</li><li>Abdominal distention </li><li>Absent bowel sounds</li></ul><ul class=\"l1\"><li>High pitched bowel sounds</li></ul><p>Treatment</p><ul class=\"l0\"><li>NPO</li><li>NG tube for decompression</li><li>Fluids / electrolyte replacement</li><li>Nausea / pain management</li><li>Surgery</li></ul>"
+      },
+      {
+       "id": "ef23a194ab",
+       "prompt": "Spinal Cord Compression",
+       "promptHtml": "<p>Spinal Cord Compression</p>",
+       "answerHtml": "<p><u>Obstructive (tumor)</u></p><p><i>Neurologic emergency!</i></p><ul class=\"l0\"><li><i>D/t tumor growth, in </i><b><i>epidural space</i></b><i> → spinal cord compression</i></li><li><i>Associated w/ cancers of </i></li></ul><ul class=\"l1\"><li><i>Breast</i></li><li><i>Lungs</i></li><li><i>Prostate</i></li><li><i>GI</i></li><li><i>Kidney</i></li></ul><p>S&amp;S</p><ul class=\"l0\"><li>Severe, persistent localized back pain</li><li>Weakness</li><li>Difficulty walking</li><li>Paresthesias</li><li>Bowel/bladder dysfunction</li></ul><p>Nursing</p><ul class=\"l0\"><li><b>Prompt treatment</b>!</li></ul><ul class=\"l1\"><li>Delayed tx can cause permanent paralysis &amp; loss of bowel/bladder function </li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">New back pain</span> or <span style=\"color:#ff0000\">Neuro changes</span>?</li></ul><ul class=\"l1\"><li>Evaluated immediately! </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Corticosteroids</mark></li></ul><ul class=\"l1\"><li>To reduce edema in the spinal cord</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Radiation</mark></li><li>Surgical decompression</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Laminectomy</mark></li></ul><ul class=\"l2\"><li>Remove a piece of the bones</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Pain control</mark></li><li><mark style=\"background-color:#00ff00\">Activity limitations</mark></li></ul><ul class=\"l1\"><li>So the Pt doesn’t hurt themselves</li></ul>"
+      },
+      {
+       "id": "0514c4e597",
+       "prompt": "Hypercalcemia",
+       "promptHtml": "<p>Hypercalcemia</p>",
+       "answerHtml": "<p><u>Metabolic (usually d/t bone metastasis)</u></p><p>S&amp;S</p><ul class=\"l0\"><li>Confusion</li><li>Weakness</li><li>Polyuria</li><li><b>ECG changes</b></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Dysrhythmias </span></li></ul><ul class=\"l0\"><li>Dehydration</li></ul><p>Nursing</p><ul class=\"l0\"><li>IV hydration</li><li>Calcium-lowering agents</li><li>Treat cancer</li></ul>"
+      },
+      {
+       "id": "026a1a0fa6-2",
+       "prompt": "SIADH",
+       "promptHtml": "<p>SIADH</p>",
+       "answerHtml": "<p><u>Metabolic (usually d/t bone metastasis)</u></p><p>S&amp;S</p><ul class=\"l0\"><li>Hyponatremia</li><li>Confusion</li><li>Seizures</li><li>Weight gain without edema</li></ul><p>Nursing</p><ul class=\"l0\"><li>Fluid restriction</li><li>Careful sodium correction</li><li>Treat cancer</li></ul>"
+      },
+      {
+       "id": "a149537d69",
+       "prompt": "DIC",
+       "promptHtml": "<p>DIC</p>",
+       "answerHtml": "<p><u>Metabolic (usually d/t bone metastasis)</u></p><p>→ Disseminated = Widespread, affecting everything</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Widespread clotting AND bleeding at the same time</span></li><li><b>↑ </b>D-dimer (hallmark)</li></ul><p>Nursing</p><ul class=\"l0\"><li>1st = Treat <b>underlying cause</b> <span style=\"color:#ff0000\">urgently</span></li><li>Blood products: <mark style=\"background-color:#00ffff\">FFP, platelets, cryoprecipitate, RBCs</mark></li><li>Continuous <mark style=\"background-color:#00ff00\">bleeding/clotting assessment</mark></li><li>Hemodialysis if AKI</li><li>Assess </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Tissue damage/ischemia</mark></li><li><mark style=\"background-color:#00ff00\">Neurological status</mark></li></ul><ul class=\"l0\"><li>D/t stroke risk</li></ul>"
+      },
+      {
+       "id": "53552a7aac",
+       "prompt": "Septic Shock",
+       "promptHtml": "<p>Septic Shock</p>",
+       "answerHtml": "<p><u>Metabolic (usually d/t bone metastasis)</u></p><p>S&amp;S</p><ul class=\"l0\"><li>Fever</li><li>Hypotension</li><li>Bleeding</li><li>Organ hypoperfusion</li></ul><p>Nursing</p><ul class=\"l0\"><li>Early antibiotics &amp; fluids</li><li>Blood products (DIC)</li><li>Treat source</li></ul>"
+      },
+      {
+       "id": "6387ac2c92",
+       "prompt": "Tumor Lysis Syndrome",
+       "promptHtml": "<p>Tumor Lysis Syndrome</p>",
+       "answerHtml": "<p><i>Metabolic Emergency!</i></p><ul class=\"l0\"><li><i>Happens w/ cancer because during chemo/radiation there’s </i><b><i>fast destruction of cancer cells &amp; they </i></b><b><i><u>break open</u></i></b><i> &amp; </i><b><i>release </i></b><i>tons of Potassium, Phosphate, &amp; acids that become Uric Acid in the blood</i></li></ul><ul class=\"l1\"><li><i>Usually happens </i><span style=\"color:#ff00ff\"><i>24-48 hrs</i></span><i> after treatment begins</i></li><li><i>Can continue for several days</i></li></ul><p><mark style=\"background-color:#ffff00\"><i>Manifestations (of these electrolyte imbalances)</i></mark></p><ul class=\"l0\"><li><i>↑ Hyperkalemia</i></li><li><i>↑ Hyperphosphatemia</i></li><li><i>↑ Hyperurecemia </i></li></ul><ul class=\"l1\"><li><i>Deposits into the kidney → signs of </i><span style=\"color:#ff0000\"><i>AKI</i></span></li></ul><ul class=\"l0\"><li><i>↓ Hypocalcemia</i></li></ul><p><i>Treatment</i></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\"><i>IV hydration</i></mark></li></ul><ul class=\"l1\"><li><i>To maintain renal perfusion/UOP</i></li><li><i>Severe fluid overload d/t AKI?</i></li></ul><p><i>→ </i><mark style=\"background-color:#00ff00\"><i>Dialysis</i></mark><i>!</i></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\"><i>Allopurinol </i></mark><i>medication</i></li></ul><ul class=\"l1\"><li><i>[normally a GOUT med]</i></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\"><i>Monitor </i></mark></li></ul><ul class=\"l1\"><li><i>Labs</i></li><li><i>Cardiac rhythms</i></li></ul><ul class=\"l0\"><li><i>Correct imbalances</i></li><li><mark style=\"background-color:#00ff00\"><i>Fall / Seizure precautions</i></mark></li></ul><ol class=\"l0\" start=\"1\"><li>Rapid Tumor Cell Death</li></ol><ul class=\"l0\"><li>Occurs after initiating cytotoxic therapy</li></ul><ol class=\"l0\" start=\"2\"><li>Intracellular Contents Released</li></ol><ul class=\"l0\"><li>Potassium, phosphate, &amp; uric acid surge into the bloodstream</li></ul><ol class=\"l0\" start=\"3\"><li>Metabolic Derangements</li></ol><ul class=\"l0\"><li>In the blood</li><li>↑ K</li><li>↑ Phos</li><li>↑ Uric Acid</li><li>↓ Ca</li></ul><ol class=\"l0\" start=\"4\"><li>End-Organ Complications</li></ol><ul class=\"l0\"><li>Cardiac arrhythmias &amp; acute kidney injury may occur</li></ul>"
+      },
+      {
+       "id": "03b68568f4",
+       "prompt": "Cardiac Tamponade",
+       "promptHtml": "<p>Cardiac Tamponade</p>",
+       "answerHtml": "<p><u>Infiltrative </u></p><ul class=\"l0\"><li>Malignant cells invade other organs/blood vessels</li></ul><p>[Pericardial effusion]</p><ul class=\"l0\"><li>Fluid accumulates in the pericardial sack → starts to compress the heart</li><li>Pt will have <span style=\"color:#ff0000\">Beck’s Triad</span></li></ul><ul class=\"l1\"><li><b>Hypotension</b></li><li><b>JVD</b></li><li><b>Muffled heart sounds</b></li><li>Chest pain</li><li>Pressure</li><li>Dyspnea</li><li>Anxiety</li></ul><p>Nursing</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Pericardiocentesis</mark></li></ul><ul class=\"l1\"><li>Insert a needle into that pericardial sac &amp; drain the pericardial fluid</li></ul>"
+      },
+      {
+       "id": "fc0cf2c732",
+       "prompt": "Carotid Artery Rupture",
+       "promptHtml": "<p>Carotid Artery Rupture</p>",
+       "answerHtml": "<p><u>Infiltrative </u></p><ul class=\"l0\"><li>Malignant cells invade other organs/blood vessels</li><li>Happens after radiation therapy / head&amp;neck surgery</li><li>Common in head&amp;neck cancer</li></ul><ul class=\"l1\"><li>Blood vessels are weak/fragile &amp; prone to this</li></ul><ul class=\"l0\"><li><b>Sentinel bleed</b> = Slight little bit of oozing from the carotid artery</li><li>→ it has a <span style=\"color:#ff0000\">massive hemorrhage</span> or arterial blow out / <b>rupture</b></li><li>Rapid blood loss → leading to shock </li></ul><p>Nursing</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Emergent treatment!</span></li><li>Maintain airway </li><li><mark style=\"background-color:#00ff00\">Control the bleeding</mark></li><li>Emergency <b>surgical </b>endovascular repair</li><li>Supportive management</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Unit 6",
+     "group": "Unit 6",
+     "cards": [
+      {
+       "id": "a3d414a4da",
+       "prompt": "NSAID considerations",
+       "promptHtml": "<p>NSAID considerations</p>",
+       "answerHtml": "<p>Nursing Considerations</p><ul class=\"l0\"><li>Take w/ food</li><li>Monitor</li></ul><ul class=\"l1\"><li>Renal function</li><li>BP</li></ul><ul class=\"l0\"><li>Bleeding risk ↑ w/ anticoagulants</li><li>Celecoxib = </li></ul><ul class=\"l1\"><li>Less GI irritation (still bleeding risk) </li></ul><p>*Use the <b>lowest effective dose</b> for the <b>shortest duration</b> to reduce GI, renal, &amp; cardiovascular adverse effects*</p><ul class=\"l0\"><li>Adjust dose based on how Pt responds</li><li>Don’t take NSAIDs around the clock!</li></ul><ul class=\"l1\"><li>SEs</li></ul><ul class=\"l2\"><li>Stomach irritation</li><li>Gastric ulcers</li><li>GI bleeding</li><li>Kidney injury</li><li>Fluid retention</li><li>Increase BP</li></ul><p>NSAIDs</p><ul class=\"l0\"><li>Affect COX1 &amp; COX2</li></ul><ul class=\"l1\"><li><b>COX1 </b>= enzyme responsible for <b>protective lining of </b><span style=\"color:#ff0000\"><b>stomach</b></span></li></ul><ul class=\"l2\"><li>Has role in regulating platelets </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">COX2 = enzyme involved w/ inflammation</mark></li></ul><ul class=\"l0\"><li>NSAIDS block COX1/2 </li></ul><p>- Reduce inflammation </p><p>- Stomach is NOT protected</p><p>- Platelets aren’t as efficient </p><ul class=\"l0\"><li>Teach</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Bleeding risk </mark>(esp. if on anticoagulant)</li></ul><ul class=\"l2\"><li>↑ risk of GI bleeding, ulcers, </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Report/monitor</mark></li></ul><ul class=\"l2\"><li>Unusual bruising, fall &amp; hit their head, look at stools (black/tarry stools),</li></ul><ul class=\"l0\"><li>Inquire about OTC meds! </li></ul>"
+      },
+      {
+       "id": "a15a881b70",
+       "prompt": "OA",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><u>OA</u></mark></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Degenerative Joint Disease </mark></p><ul class=\"l0\"><li>NOT a normal part of aging!</li></ul><p><u>Patho</u></p><p>Healthy Cartilage</p><ul class=\"l0\"><li>Smooth, lubricated joint surface</li></ul><p>Cartilage Breakdown</p><ul class=\"l0\"><li>Progressive breakdown &amp; wear → <i>Where </i><span style=\"color:#ff0000\"><i>osteoarthritis begins</i></span><i>!</i></li></ul><p>Joint Changes</p><ul class=\"l0\"><li>Formation of <b>osteophytes </b>(bone spurs)</li></ul><p>Musculoskeletal Effects</p><ul class=\"l0\"><li>Limited ROM &amp; pain</li></ul><p><u>Joints</u></p><ul class=\"l0\"><li>Affects weight bearing joints </li></ul><ul class=\"l1\"><li><b>Hips, knees</b></li></ul><ul class=\"l0\"><li><b>Pain w/ activity</b></li></ul><ul class=\"l1\"><li>Improves w/ rest in <mark style=\"background-color:#00ff00\">early </mark>stages!</li><li><span style=\"color:#ff0000\">Late </span>= Pain can happen even during <b>rest</b>/at <b>night</b></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Sleep disturbances </span></li></ul><ul class=\"l0\"><li>Osteoarthritis of the <b>hip</b></li></ul><ul class=\"l1\"><li>Pain that radiates to → buttock, groin, thighs, knees</li></ul><ul class=\"l0\"><li>Joint stiffness </li></ul><ul class=\"l1\"><li><b>After prolonged periods of sitting/inactivity </b></li></ul><ul class=\"l0\"><li>Morning stiffness ( <span style=\"color:#ff00ff\">&lt; 30 min</span>)</li><li>Excess activity can <b>increase swelling</b> at joints</li><li><span style=\"color:#ff0000\">Crepitus</span></li></ul><ul class=\"l1\"><li><b>Grading/cracking/grinding sound</b> when they move their joints</li><li>Usually <b>asymmetric</b>! </li></ul><ul class=\"l0\"><li>Decreased ROM</li></ul><p><u>Deformities</u></p><ul class=\"l0\"><li>Herberden nodes (DIP)</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Distal </span>interphalangeal joints </li><li><b>END </b>of the fingertip</li></ul><ul class=\"l0\"><li>Bouchard nodes (PIP)</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Proximal </span>interphalangeal joints</li><li><b>Middle </b>finger joint</li><li>[Both of these will be enlarged, swollen, red, tender] </li></ul><ul class=\"l0\"><li>Osteoarthritis of the knees </li></ul><ul class=\"l1\"><li>Bow-legged (Genu Varum)</li><li>Knock-kneed (Genu Valgum) </li></ul><p><u>Diagnostics / Labs</u></p><p><b>X-ray</b></p><ul class=\"l0\"><li><b>Joint space narrowing </b>(as cartilage disappears)</li></ul><p>[<span style=\"color:#ff0000\">No</span> blood test can confirm osteoarthritis]</p><p><u>Pharm</u></p><p><mark style=\"background-color:#00ffff\">Disease-Modifying Osteoarthritis Drugs </mark>(DMOARDs)</p><ul class=\"l0\"><li>[These are still being studied to see if they can slow down joint damage or support cartilage itself]</li></ul><p><mark style=\"background-color:#00ffff\">Eucalyptus oil, Menthol, Camphor creams</mark></p><ul class=\"l0\"><li>Reduce discomfort [warm/cool sensation]</li></ul><p><mark style=\"background-color:#00ffff\">Salicylate Creams / Aspercreme</mark> - Topical</p><ul class=\"l0\"><li>Provide <b>temporary </b>relief to location it’s applied</li></ul><p><mark style=\"background-color:#00ffff\">Diclofenac Gel </mark></p><ul class=\"l0\"><li><b>Topical </b>NSAID!</li></ul><p>NSAIDs</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">naproxen </mark>(Aleve)</li></ul><ul class=\"l1\"><li>non-selective</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">ibuprofen </mark>(Advil)</li></ul><ul class=\"l1\"><li>non-selective</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">celecoxib </mark>(Celebrex)</li></ul><ul class=\"l1\"><li>Selective <span style=\"color:#ff0000\">COX-2</span> inhibitor</li></ul><p>NSAID safety</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid </span>combining topical &amp; oral NSAIDs</li><li>Monitor <span style=\"color:#ff0000\">GI bleeding</span> &amp; <span style=\"color:#ff0000\">renal effects</span></li></ul><p><u>Nursing / Teaching</u></p><ul class=\"l0\"><li><b>Balance </b>activity &amp; rest</li><li><mark style=\"background-color:#00ff00\">Braces/splints/walkers</mark></li><li><span style=\"color:#ff0000\">Heat </span>= reduces stiffness</li><li><span style=\"color:#0000ff\">Cold </span>= reduces pain/swelling</li></ul>"
+      },
+      {
+       "id": "7f424d88bb",
+       "prompt": "RA",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><u>RA</u></mark></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><u>Patho</u></mark></p><p>Stage 1</p><ul class=\"l0\"><li>Autoimmune Synovial Inflammation</li></ul><ul class=\"l1\"><li><b>Immune complexes</b> form</li><li>Synovial <span style=\"color:#ff0000\">inflammation</span></li><li><span style=\"color:#ff0000\">Cytokine </span>release</li></ul><p>Stage 2</p><ul class=\"l0\"><li><b>Pannus </b>Formation</li></ul><ul class=\"l1\"><li>Synovial membrane thickens</li><li><span style=\"color:#ff0000\">Granulation tissue</span> develops</li><li>Cartilage invasion</li></ul><p>Stage 3</p><ul class=\"l0\"><li>Cartilage &amp; Bone <span style=\"color:#ff0000\">Destruction</span></li></ul><ul class=\"l1\"><li>Enzyme release</li><li><span style=\"color:#ff0000\">Cartilage erosion</span></li><li>Fibrous ankylosis (stiffening of the joint, limiting ROM)</li></ul><p>Stage 4</p><ul class=\"l0\"><li>Joint Deformity</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Bony ankylosis </span></li><li>Joint fusion</li><li>Permanent disability</li></ul><p><mark style=\"background-color:#ffff00\"><u>S&amp;S</u></mark></p><ul class=\"l0\"><li>Pain increased w/ movement</li><li>Improve somewhat w/ rest</li><li><span style=\"color:#ff0000\">Morning stiffness </span>lasting <span style=\"color:#ff00ff\">MORE than 1 hr</span></li></ul><p><mark style=\"background-color:#ffff00\"><u>Joints</u></mark></p><p>Symmetrical </p><ul class=\"l0\"><li><span style=\"color:#ff9900\"><b>MCP </b></span>(metacarpophalangeal) = <span style=\"color:#ff9900\"><b>knuckle </b></span></li><li><span style=\"color:#ff9900\"><b>PIP </b></span>(proximal interphalangeal) = <span style=\"color:#ff9900\"><b>middle </b></span><span style=\"color:#ff9900\">joints</span> of all <span style=\"color:#ff9900\"><b>fingers</b></span></li><li><span style=\"color:#0000ff\"><b>MTP </b></span>(metatarsal phalanges) = joint where the <span style=\"color:#0000ff\"><b>toes meet the foot</b></span></li><li>Hand joints “<span style=\"color:#ff9900\"><b>spindle</b></span>”</li></ul><ul class=\"l1\"><li>D/t synovial hypertrophy &amp; thickening of joint</li></ul><p><span style=\"color:#ff0000\">Subluxation</span></p><ul class=\"l0\"><li>1 bone partially slips out of normal position</li></ul><p><img src=\"img/60d085ee64d5.png\" alt=\"\" loading=\"lazy\"></p><p><span style=\"color:#ff0000\">Ulnar drift </span>[Knuckes]</p><ul class=\"l0\"><li>Fingers deviate TOWARD the middle finger </li></ul><p><span style=\"color:#ff0000\">Hallux Valgus</span> = </p><ul class=\"l0\"><li>Big toe leans toward the 2nd toe - causes painful bony bump on inner side of foot</li></ul><p><img src=\"img/00963c835d29.png\" alt=\"\" loading=\"lazy\"></p><p><span style=\"color:#ff0000\">Boutonnière </span></p><ul class=\"l0\"><li>Distal joint is hyperextended</li><li>PIP joint = flexed (<b>middle</b> joints of fingers)</li></ul><p><span style=\"color:#ff0000\">Swan-Neck Deformity</span></p><ul class=\"l0\"><li>Hyperextension of the PIP (<b>middle</b> joints of fingers)</li><li>Flexion of the DIP (<b>distal</b> fingertip joint)</li></ul><p><b><u>Extra-articular </u></b><u>(</u><mark style=\"background-color:#ffff00\"><u>Systemic</u></mark><u>) S&amp;S:</u></p><ul class=\"l0\"><li>Fever, fatigue, weight loss</li><li>Rheumatoid nodules</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Firm, nontender bumps </span>over pressure points (ex: elbows)</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Sjögren syndrome</span></li></ul><ul class=\"l1\"><li>Damages <i>lacrimal/salivary</i> ducts (<b>dry eyes/mouth</b>)</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Atherosclerosis</span></li></ul><ul class=\"l1\"><li>Increases chance of <b>heart attack/stroke</b></li><li>[d/t chronic inflammation damaging endothelial lining of blood vessels]</li></ul><ul class=\"l0\"><li>Felty syndrome</li></ul><ul class=\"l1\"><li>Rare, causes enlarged spleen &amp; low WBC count</li></ul><ul class=\"l2\"><li>Risk for <span style=\"color:#ff0000\">infection</span></li></ul><ul class=\"l0\"><li>↑ CRP</li></ul><ul class=\"l1\"><li>C-reactive protein: Inflammatory marker</li><li>High level = high degree of inflammation</li></ul><p><mark style=\"background-color:#ffff00\"><u>Diagnostics</u></mark></p><p>Blood tests</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Rheumatoid Factor</span> (RF)</li></ul><ul class=\"l1\"><li>Doesn’t guarantee diagnosis</li><li>Negative doesn’t mean they don’t have it</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Anti-CCP Antibodies</span></li></ul><ul class=\"l1\"><li>Anti-cyclic citrullinated peptide = antibodies that are more specific to RA than RF</li><li>If BOTH Anti-CCP &amp; RF are present + symptoms = diagnosis is strongly supported</li></ul><ul class=\"l0\"><li>ANA, ESR, &amp; CRP</li></ul><ul class=\"l1\"><li>ANA = AntiNuclear Antibodies (indicate autoimmune activity)</li><li>ESR = Erythrocyte Sedimentation Rate </li><li>CRP = C Reactive Protein</li></ul><ul class=\"l2\"><li>(ESR &amp; CRP = inflammatory markers &amp; indicate how active the dz is &amp; if it’s responding to treatment) </li></ul><p><span style=\"color:#ff0000\">Synovial Fluid Analysis</span></p><ul class=\"l0\"><li><b>Cloudy</b>, straw-colored fluid</li><li><b>↑ WBCs</b></li></ul><ul class=\"l1\"><li>[because it’s an active cellular war zone]</li></ul><ul class=\"l0\"><li>Flecks of fibrin</li><li>↑ MMP-3</li></ul><ul class=\"l1\"><li>Matrix metalloproteinase-3 = enzyme that contributes to cartilage destruction</li></ul><p><mark style=\"background-color:#ffff00\"><u>Surgery</u></mark></p><ul class=\"l0\"><li><b>Synovectomy</b></li></ul><ul class=\"l1\"><li>Removes inflamed synovial lining of joint</li></ul><ul class=\"l0\"><li><b>Arthroplasty </b>for advanced disease</li></ul><ul class=\"l1\"><li>Replace the damaged joint w/ artificial joint </li></ul><p><mark style=\"background-color:#ffff00\"><u>Pharmacology</u></mark></p><p>DMARDS:</p><p><mark style=\"background-color:#00ffff\">Methotrexate </mark>(Rheumatrex)</p><ul class=\"l0\"><li>1st line for RA</li></ul><p>Purpose</p><ul class=\"l0\"><li>Slows RA progression</li><li>Prevents joint erosion &amp; deformity</li><li>Does <b>not </b>provide immediate pain relief</li></ul><p>Monitor</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Bone marrow suppression</span></li></ul><ul class=\"l1\"><li>Increased infection risk</li><li>Monitor <mark style=\"background-color:#00ff00\">CBC</mark></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Liver toxicity</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Avoid etoh</span>!</li><li><span style=\"color:#ff0000\">Report </span>severe fatigue, R abdominal pain</li></ul><ul class=\"l0\"><li>Renal function</li></ul><p>Patient teaching</p><ul class=\"l0\"><li>Taken <mark style=\"background-color:#00ff00\">once weekly</mark>, not daily</li></ul><ul class=\"l1\"><li>[Daily use is toxic &amp; can be fatal]</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">NO live vaccines! </span></li></ul><p>SE:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">GI discomfort</span></li><li><span style=\"color:#ff0000\">Mouth sores</span></li></ul><ul class=\"l1\"><li>Treat w/ → Folic acid</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid pregnancy</span> </li></ul><ul class=\"l1\"><li>R/O pregnancy BEFORE starting med!</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid alcohol</span></li><li>Report </li></ul><ul class=\"l1\"><li>Signs of infection</li><li>SOB</li><li>Nausea</li><li>Persistent mouth sores</li><li>Fever</li><li>Bleeding</li></ul><p>Biologic Response Modifiers…..</p><p>RESUME HERE</p>",
+       "images": 2
+      },
+      {
+       "id": "1635cf1efa",
+       "prompt": "Osteomyelitis",
+       "promptHtml": "<p>Osteomyelitis</p>",
+       "answerHtml": "<p>Severe bone infection</p><ul class=\"l0\"><li>Involves <b>bone, bone marrow</b>, &amp; sometimes <b>surrounding tissue</b></li><li><i>Staphylococcus aureus</i> = main bacteria</li></ul><p><u>Etiology</u></p><p>Hematogenous Spread</p><ul class=\"l0\"><li><b>Blood-borne spread</b> from infection elsewhere in the body [indirect route]</li></ul><p>Direct Inoculation</p><ul class=\"l0\"><li>D/t <b>Trauma, surgery,</b> <b>open fractures, around prosthetic joint</b> → bone</li></ul><p>Contiguous Spread</p><ul class=\"l0\"><li>From <b>adjacent infected soft tissue, </b><b><i>infected joint, diabetic foot ulcer, pressure injury </i></b></li></ul><p><u>Patho</u></p><ol class=\"l0\" start=\"1\"><li>Infection &amp; pressure</li></ol><ul class=\"l0\"><li>Bacteria invade bone</li><li><b>Inflammation &amp; pressure ↑</b></li></ul><ol class=\"l0\" start=\"2\"><li>Bone Ischemia &amp; Necrosis</li></ol><ul class=\"l0\"><li>Compressed blood vessels</li><li>↓ bone blood flow</li></ul><ol class=\"l0\" start=\"3\"><li><span style=\"color:#ff0000\"><b>Sequestrum </b></span>Formation</li></ol><ul class=\"l0\"><li><span style=\"color:#ff0000\">Dead bone separates</span> from living bone</li><li>Poor immune &amp; antibiotic response</li></ul><ol class=\"l0\" start=\"4\"><li>Chronic Infection</li></ol><ul class=\"l0\"><li>Sequestrum <b>reservoir</b></li><li>Persistent infection</li><li>Sinus tract &amp; drainage form</li></ul><p><span style=\"color:#ff0000\"><i>[Antibiotic can’t reach the infection once the </i></span><span style=\"color:#ff0000\"><b><i>sequestrum </i></b></span><span style=\"color:#ff0000\"><i>forms</i></span><i>]</i></p><p><mark style=\"background-color:#ffff00\"><u>S&amp;S</u></mark></p><p>Acute</p><ul class=\"l0\"><li>Duration</li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">&lt; 1 month</span></li></ul><ul class=\"l0\"><li>Pain</li></ul><ul class=\"l1\"><li>Pain <span style=\"color:#ff0000\">worsens </span>w/ activity &amp; is <span style=\"color:#ff0000\">NOT </span>relieved by rest</li></ul><ul class=\"l0\"><li>Local</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Swelling, warmth, tenderness</span>, ↓ ROM [d/t pain/inflammation]</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Systemic</span></li></ul><ul class=\"l1\"><li>Fever, chills, night sweats, malaise</li><li>Restlessness, nausea, fatigue</li></ul><ul class=\"l0\"><li>Wound</li></ul><ul class=\"l1\"><li>Late: drainage may develop </li></ul><p>Chronic</p><ul class=\"l0\"><li>Duration</li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">&gt; 1 month</span>, persistent, recurrent</li></ul><ul class=\"l0\"><li>Pain</li></ul><ul class=\"l1\"><li>Persistent localized <b>bone pain</b></li></ul><ul class=\"l0\"><li>Local</li></ul><ul class=\"l1\"><li><b><i>Tissue changes</i></b><i> → </i><b><i>granulation tissue</i></b><i> gets replaced by → </i><b><i>scar tissue </i></b></li><li><i>Scar tissue = </i><span style=\"color:#ff0000\"><i>poor blood supply &amp; makes it hard for antibiotics to get to the infection</i></span></li></ul><ul class=\"l0\"><li>Wound</li></ul><ul class=\"l1\"><li><b>Sinus tract</b> &amp; recurrent <b>drainage</b></li></ul><p><mark style=\"background-color:#ffff00\"><u>Diagnostics</u></mark></p><p>Labs</p><ul class=\"l0\"><li>↑ WBC</li><li>↑ ESR</li><li>↑ CRP</li><li>Biopsy of <b>bone</b>/<span style=\"color:#ff0000\">deep</span> soft tissue</li></ul><p>MRI </p><ul class=\"l0\"><li>Detect <b>bone marrow edema</b> &amp; how <b>nearby tissues</b> are involved</li></ul><p><mark style=\"background-color:#ffff00\"><u>Pharmacology</u></mark></p><p><mark style=\"background-color:#00ffff\">Vancomycin</mark></p><ul class=\"l0\"><li><b>MRSA </b>coverage</li><li><mark style=\"background-color:#00ff00\">Monitor peak/trough levels</mark></li></ul><ul class=\"l1\"><li>Trough = med is effectively killing the bacteria  </li><li>Peak = to ensure they’re getting therapeutic levels &amp; not toxic</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Nephrotoxicity </span></li></ul><ul class=\"l1\"><li>Monitor BUN, creatinine</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Administer SLOW into IV</mark></li></ul><ul class=\"l1\"><li>Fast administration causes <span style=\"color:#ff0000\">Red Man Syndrome</span></li></ul><ul class=\"l0\"><li>Pt will take it for 4-6 weeks, can be discharged w/ PICC line &amp; self administer the med </li></ul><p><mark style=\"background-color:#00ffff\">Aminoglycosides</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Gentamycin &amp; Tobramycin</mark></li></ul><ul class=\"l1\"><li><b>Gram-negative</b> coverage</li><li><mark style=\"background-color:#00ff00\">Monitor peak / trough levels</mark></li><li><span style=\"color:#ff0000\">Ototoxicity </span>&amp; <span style=\"color:#ff0000\">nephrotoxicity </span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Oto </span>= ringing in the ears, hearing changes, balance problems, dizziness, </li><li><span style=\"color:#ff0000\">Nephro </span>= reduced UOP</li></ul><p>*High dose antibiotics, esp vanco/aminoglycosides can increase Pt’s risk for </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">C.Diff, oral thrush / fungal </span>infections </li><li>[monitor for secondary super infections!]</li></ul><p><mark style=\"background-color:#00ffff\">Fluoroquinolones</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Ciprofloxacin</mark></li><li>Good bone penetration</li><li><b>Oral </b>step-down therapy</li><li><span style=\"color:#ff0000\">Tendon rupture</span> / tendonitis </li></ul><ul class=\"l1\"><li>If Pt likes to exercise = Pt needs to take it easy or stop exercising if tendons are getting sore </li></ul><ul class=\"l0\"><li>Take med w/ lots of <mark style=\"background-color:#00ff00\">water</mark></li><li>Do <span style=\"color:#ff0000\">NOT </span>take w/ calcium, iron, mag, antacids [reduces absorption]</li><li><span style=\"color:#ff0000\">Photosensitivity </span></li></ul><p><mark style=\"background-color:#ffff00\"><u>Nursing</u></mark></p><ul class=\"l0\"><li>Long IV antibiotic therapy</li><li>Provide support, this is a <span style=\"color:#ff0000\">chronic </span>condition!</li></ul><p>Pain</p><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Analgesics</mark></li></ul><ul class=\"l2\"><li>NSAIDs, opioids </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Muscle relaxants</mark></li><li><mark style=\"background-color:#00ff00\">Splints</mark></li></ul><ul class=\"l2\"><li>To reduce pain &amp; immobilize infected bone</li></ul><p>Infection control</p><ul class=\"l1\"><li>Sterile wound care</li></ul><p>Monitor therapy</p><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Peak / trough levels</mark></li><li>Toxicity</li></ul><p>Education</p><ul class=\"l0\"><li>Recurrence</li><li>Home antibiotics</li><li>How to do a <mark style=\"background-color:#00ff00\">sterile dressing change</mark></li><li><mark style=\"background-color:#00ff00\">Wound care </mark></li></ul><p>Mobility</p><ul class=\"l0\"><li>Repositioning</li><li>Splint / boot</li><li>PT / OT</li></ul><p>*Someone w/ osteomyelitis, esp in lower extremities </p><p>→ Support foot in <mark style=\"background-color:#00ff00\">neutral position, wear </mark><mark style=\"background-color:#00ff00\"><b>boot</b></mark>, otherwise they can develop </p><p>→ <span style=\"color:#ff0000\">Foot drop </span>[contracture of Achille’s Tendon]</p><ul class=\"l0\"><li>[Foot is stuck pointing down &amp; can <b>permanently alter their gait</b>!</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Unit 7",
+     "group": "Unit 7",
+     "cards": [
+      {
+       "id": "8079cf5ba6",
+       "prompt": "Meniere’s Disease (Idiopathic Endolymphatic Hydrops)",
+       "promptHtml": "<p>Meniere’s Disease</p><p>(Idiopathic Endolymphatic Hydrops)</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Tiny structural problem in inner ear</li><li>Inside inner ear, <b>fluid overproduces/fails to drain</b> → creates intense build up of pressure</li></ul><p>→ Pressure = </p><p><span style=\"color:#ff0000\">Gradual sensorineural hearing loss</span></p><p><span style=\"color:#ff0000\">Tinnitus</span></p><p><span style=\"color:#ff0000\">Episodic vertigo</span></p><ul class=\"l0\"><li>“<b>Drop attacks</b>” → Pressure gets so intense that the brain receives a screaming signal that the body is being whirled to the floor </li><li>→ <span style=\"color:#ff0000\">Pt physically collapses </span></li><li>[Brain is trying to compensate for a fall that isn’t actually happening] </li><li>Administer CNS depressant [<mark style=\"background-color:#00ffff\">antihistamine, anticholinergic, benzodiazepines</mark>]</li><li><b>Fall </b>precautions!</li><li>Low stimulation [dark, quiet room, <span style=\"color:#ff0000\">stimulation can worsen vertigo</span>]</li></ul><p><u>Diagnostics</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Glycerol test </mark></li></ul><ul class=\"l1\"><li>→ [<b>sugar</b> alcohol <b>drink</b>] → <b>osmotic diuretic</b> that increases osmotic pressure in blood stream → <b>pulling fluid out of ears</b> [&amp; body]</li><li>Perform serial audiograms [hearing test] </li></ul><ul class=\"l2\"><li>Hearing &amp; speech improves? → Diagnosis of Meniere’s Disease</li></ul><p><u>Nursing</u></p><ul class=\"l0\"><li>Daily <mark style=\"background-color:#00ffff\">diuretics </mark></li></ul><p>Teach</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">NO </span>swimming underwater, ladders/elevated platforms</li></ul>"
+      },
+      {
+       "id": "59992f5230",
+       "prompt": "Delirium",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Delirium</mark></p>",
+       "answerHtml": "<p><span style=\"color:#ff0000\">Acute</span> confusion that develops over <span style=\"color:#ff00ff\">hours → days </span></p><p><mark style=\"background-color:#ffff00\"><u>Patho</u></mark></p><ul class=\"l0\"><li>Multi system failure d/t </li><li><span style=\"color:#ff0000\">Impaired cerebral oxygen metabolism</span> </li><li>→ neurons suddenly <b>cannot extract/utilize oxygen </b>effectively </li><li>→ total <b>neurotransmitter chaos</b></li><li>↓ <b>Acetylcholine </b>plummets </li><li>↑ <b>Dopamine </b>spikes</li><li>Brain’s ability to filter information shatters </li></ul><p>There’s a lot of potential, <mark style=\"background-color:#ffff00\">reversible </mark>causes:</p><p>D -  Dementia, dehydration</p><p>E -  Electrolyte imbalances, emotional stress</p><p>L -   Lung, liver, heart, kidney, brain</p><p>I -   Infection, intensive care unit (ICU)</p><p>R -  Rx drugs</p><p>I -   Injury, immobility</p><p>U -  Untreated pain, unfamiliar environment</p><p>M -  Metabolic disorders</p><p><mark style=\"background-color:#ffff00\"><u>S&amp;S</u></mark></p><p><span style=\"color:#ff0000\">Hallmark = Impaired attention </span></p><ul class=\"l0\"><li>Impaired speech  </li></ul><ul class=\"l1\"><li>Rapid, rambling, disorganized, incoherent </li></ul><p>↑ Hyperactive </p><ul class=\"l0\"><li>Pts are <span style=\"color:#ff0000\">visibly distressed</span></li></ul><p>↓ Hypoactive </p><ul class=\"l0\"><li>Pt’s seem <span style=\"color:#ff0000\">sleepy </span>rather than confused</li><li></li></ul><p>↕ Mixed</p><ul class=\"l0\"><li>Alternate between hyperactive &amp; hypoactive</li><li>Loss of <b>appetite </b></li><li>Disorganized <b>thinking</b></li><li>As it progresses → <span style=\"color:#ff0000\">misperceptions, misinterpretations, hallucinations </span></li></ul><p><mark style=\"background-color:#ffff00\"><u>Diagnostics </u></mark></p><p>CAM Tool- <b>Confusion Assessment Method </b>(CAM) scoring</p><p><span style=\"color:#ff0000\">2 things </span>need to be present:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">[Acute fluctuating onset </span></li><li><span style=\"color:#ff0000\">Severe inattention]</span></li></ul><p><mark style=\"background-color:#ffff00\"><u>Pharmacology</u></mark></p><p>*Meds ONLY if Pt is SEVERELY AGITATED!*</p><p><mark style=\"background-color:#00ffff\">Haloperidol</mark></p><ul class=\"l0\"><li>Antipsychotic </li></ul><p>SE:</p><ul class=\"l0\"><li>Significant sedation</li><li>Hypotension</li><li>Falls</li><li><span style=\"color:#ff0000\">Extrapyramidal </span>SE </li><li>(involuntary motor issues d/t the med blocking dopamine pathways)</li><li><span style=\"color:#ff0000\">QT interval prolongation </span></li><li>(get <mark style=\"background-color:#00ff00\">baseline EKG </mark>before starting this med) </li></ul><p><mark style=\"background-color:#00ffff\">dexmedotomidine</mark> (Precedex)</p><ul class=\"l0\"><li>Use in Pt’s who are on ventilators &amp; agitated/delirious</li><li>Interfering w/ wean/extubating the Pt  </li></ul><p><mark style=\"background-color:#00ff00\">Monitor</mark></p><ul class=\"l0\"><li>Bradycardia </li><li>Hypotension </li></ul><p><mark style=\"background-color:#00ffff\">Benzodiazepines</mark> </p><ul class=\"l0\"><li>Be careful w/ these! They may worsen confusion/sedation in a delirious patient </li><li>[Not generally used for routine delirium management]</li><li>Can be used if Pt is delirious d/t <b>withdrawing for etoh/benzodiazepines</b> </li></ul>"
+      },
+      {
+       "id": "840c874511",
+       "prompt": "Dementia",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Dementia</mark></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\"><u>Patho</u></mark></p><p>Neuronal damage → Synaptic dysfunction → Cognitive decline</p><p><span style=\"color:#ff0000\">Damage </span>to <b>neurons &amp; brain</b> pathways <span style=\"color:#ff0000\">disrupt communication</span>, leading to progressive cognitive &amp; functional decline</p><p><mark style=\"background-color:#ffff00\"><u>Etiology</u></mark></p><ul class=\"l0\"><li>Most types are <span style=\"color:#ff0000\">permanent </span>&amp; get worse over time</li><li><mark style=\"background-color:#00ff00\">Memory loss &amp; confusion may improve</mark> if there’s a treatable/reversible cause</li></ul><p><mark style=\"background-color:#ffff00\"><u>REVERSIBLE Causes</u></mark></p><ul class=\"l0\"><li>Severe <span style=\"color:#ff0000\">depression</span></li><li>Heavy <span style=\"color:#ff0000\">etoh </span>use</li><li>Normal pressure <span style=\"color:#ff0000\">hydrocephalus</span></li></ul><ul class=\"l1\"><li><i>→ This improves w/ a shunt</i></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Infection </span></li></ul><ul class=\"l1\"><li>Meningitis, encephalitis, UTI</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Head injury</span></li><li><span style=\"color:#ff0000\">Vitamin B12</span> deficiency </li><li><span style=\"color:#ff0000\">Medication </span>side effects / drug toxicity</li><li>Metabolic disorders</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Hypothyroidism </span>can mimic dementia</li></ul>"
+      },
+      {
+       "id": "7ebc0d03e9",
+       "prompt": "Alzheimer’s Causes / Risk Factors Patho Onset Reversible? Priority Nursing Focus Pharm - Drug classes & know specific meds",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Alzheimer’s</mark></p><p>Causes / Risk Factors</p><p>Patho</p><p>Onset</p><p>Reversible?</p><p>Priority Nursing Focus</p><p>Pharm - Drug classes &amp; know specific meds</p>",
+       "answerHtml": "<p>Chronic, progressive, <span style=\"color:#ff0000\">IRREVERSIBLE </span>neurodegenerative disorder</p><p><mark style=\"background-color:#ffff00\"><u>Patho</u></mark></p><ul class=\"l0\"><li><b>Beta Amyloid Plaque</b> trigger → <span style=\"color:#ff0000\">inflammation </span>&amp; <span style=\"color:#ff0000\">disrupt communication</span> → spread to areas of the brain → affects cognitive function</li><li>Abnormal <b>Tau proteins</b> → causes <b>Neurofibral Tangles</b></li><li>Tangles = <span style=\"color:#ff0000\">disrupt </span>intracellular <span style=\"color:#ff0000\">transport </span>&amp; cause → n<span style=\"color:#ff0000\">euron to die!</span></li><li>Dead neurons → <b>cortical atrophy</b> (brain shrinks)</li></ul><p><mark style=\"background-color:#ffff00\"><u>S&amp;S</u></mark></p><p>Mild =</p><ul class=\"l0\"><li>Loss of <b>recent </b>memories</li></ul><p>Moderate =</p><ul class=\"l0\"><li>Loss of <b>remote/long </b>&amp; recent </li></ul><p><span style=\"color:#ff0000\">Retrogenesis</span></p><ul class=\"l0\"><li>Functional decline in <b>reverse order</b> of normal childhood development</li><li><u>Mild </u></li></ul><ul class=\"l1\"><li>Ages <span style=\"color:#ff00ff\">8-12</span></li><li>Difficulty w/ <span style=\"color:#ff0000\">complex </span>tasks</li></ul><ul class=\"l2\"><li>Finances, meds, planning, driving </li></ul><ul class=\"l1\"><li><b>Basic self-care</b> mostly preserved</li></ul><ul class=\"l0\"><li><u>Moderate</u></li></ul><ul class=\"l1\"><li>Ages <span style=\"color:#ff00ff\">2-7</span></li><li>Needs <b>help w/ daily activities </b></li></ul><ul class=\"l2\"><li>Dressing, bathing, hygiene, ADLs,</li></ul><ul class=\"l1\"><li>Benefits from simple, familiar activities </li></ul><ul class=\"l2\"><li><mark style=\"background-color:#00ff00\">Simple puzzles, sorting, music, familiar household tasks provide enjoyment &amp; sense of success </mark></li></ul><ul class=\"l0\"><li><u>Severe</u></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">~1 year</span></li><li>Total dependence</li><li>Limited communication/mobility</li></ul><p><mark style=\"background-color:#00ff00\">Nursing application for </mark><mark style=\"background-color:#00ff00\"><b>Retrogenesis</b></mark></p><ul class=\"l0\"><li>Do NOT to treat the adult patient like a child </li><li>Maintain dignity, respect, &amp; adult identity </li></ul><p><mark style=\"background-color:#ffff00\"><u>Diagnosis</u></mark></p><p>[table at the end]</p><ul class=\"l0\"><li>ONLY definitive diagnosis = brain autopsy at DEATH [<span style=\"color:#ff0000\">plaques/tangles</span>]</li><li><mark style=\"background-color:#00ff00\">MMSE -</mark> Baseline screening</li><li><mark style=\"background-color:#00ff00\">MoCa </mark>- (Montreal Cognitive Assessment) Clock drawing test</li><li><mark style=\"background-color:#00ff00\">PET scan</mark></li></ul><ul class=\"l1\"><li>Brain metabolism</li><li>Amyloid deposition </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">CT / MRI</mark></li></ul><ul class=\"l1\"><li>Cortical atrophy</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">CSF Biomarkers</mark></li></ul><ul class=\"l1\"><li>↓ 𝛃-amyloid, ↑ tau proteins</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Genetic testing</mark></li></ul><ul class=\"l1\"><li>APOE-Ɛ4, PSEN₁/₂ (selected cases)</li></ul><p><mark style=\"background-color:#ffff00\"><u>Pharmacology</u></mark></p><p>Cholinesterase Inhibitors </p><p><mark style=\"background-color:#00ffff\">donepezil (Aricept) </mark></p><p>Mechanism</p><ul class=\"l0\"><li><b>↑ </b>Acetylcholine by <span style=\"color:#ff0000\">inhibiting cholinesterase</span></li><li><mark style=\"background-color:#ffff00\">Prevent acetylcholine breakdown</mark> to allow <b>acetylcholine </b>to <mark style=\"background-color:#00ff00\">carry messages between neurons</mark> for a much longer time </li></ul><p><u>Side effects</u></p><p>[More acetylcholine <span style=\"color:#ff0000\">stimulates the GI tract</span> → N/V/etc]</p><ul class=\"l0\"><li>N / V</li><li>Diarrhea</li><li>Loss of appetite</li><li>Weight loss</li></ul><p>[<span style=\"color:#ff0000\">Anticholinergic</span> effects slow down the heart rate]</p><ul class=\"l0\"><li>Bradycardia</li><li>Dizziness</li><li>Syncope</li></ul><p>Monitor</p><ul class=\"l0\"><li>Pulse </li><li>Weight </li><li>Hydration status</li></ul><p>Implement<mark style=\"background-color:#00ff00\"> fall precautions</mark>! </p><p><mark style=\"background-color:#00ffff\">Rivastigmine</mark></p><p><mark style=\"background-color:#00ffff\">Galantamine</mark></p><ul class=\"l0\"><li>Used for mild to moderate Alzheimer’s </li></ul><p>N-methyl-D-aspartate (NMDA) antagonist:</p><p><mark style=\"background-color:#00ffff\">memantine (Namenda)</mark></p><p>Mechanism</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Blocks the action of glutamate </span></li></ul><p>Monitor</p><ul class=\"l0\"><li>Increased <span style=\"color:#ff0000\">fall risk</span>!</li></ul><ul class=\"l1\"><li>Esp. when first starting this med</li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">Renal function </span></li></ul><p>*May be used in combination w/ a cholinesterase inhibitor*</p><p><mark style=\"background-color:#00ff00\">Treating depression</mark> can improve mood &amp; can improve their cognitive functioning!</p><p><u>Antidepressants</u>:</p><p>1st Line =</p><ul class=\"l0\"><li>SSRIs:</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">fluoxetine</mark></li><li><mark style=\"background-color:#00ffff\">sertraline</mark></li><li><mark style=\"background-color:#00ffff\">citalopram</mark></li></ul><ul class=\"l0\"><li>Additional options:</li><li><mark style=\"background-color:#00ffff\">Trazodone</mark></li></ul><p>Indication</p><ul class=\"l0\"><li>Depression &amp; anxiety</li><li>↑ mood &amp; cognitive functioning</li></ul><p><mark style=\"background-color:#00ffff\">Citalopram</mark></p><ul class=\"l0\"><li>Can affect the QT interval </li><li>Consider Pt’s cardiac history &amp; other meds that might prolong QT interval </li></ul><ul class=\"l1\"><li>Ex: <b>Psych meds</b> can affect cardiac rhythm </li></ul><p><mark style=\"background-color:#00ffff\">Trazadone </mark></p><ul class=\"l0\"><li>Antidepressant that can be ordered when there’s sleep disorders → med causes <span style=\"color:#ff0000\">sedation</span></li></ul><ul class=\"l1\"><li>Also causes → ortho hypotension </li><li>Monitor</li></ul><ul class=\"l2\"><li>Dizziness</li><li>Prevent falls</li></ul><p><b>Antipsychotics </b>only to → reduce behaviors that create danger/significant distress </p><p><mark style=\"background-color:#00ffff\">risperidone</mark></p><p><mark style=\"background-color:#00ffff\">quetiapine</mark></p><p><mark style=\"background-color:#00ffff\">olanzapine</mark></p><ul class=\"l0\"><li>Can be given <mark style=\"background-color:#00ff00\">IM</mark>, if the Pt is agitated &amp; doesn’t want to take oral pills </li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Unit 8",
+     "group": "Unit 8",
+     "cards": [
+      {
+       "id": "a0b5534386",
+       "prompt": "Factors that increase Vulnerability",
+       "promptHtml": "<p>Factors that increase Vulnerability</p>",
+       "answerHtml": "<p>Age</p><ul class=\"l0\"><li>Very young &amp; older adults have higher risks</li></ul><p>Health Status</p><ul class=\"l0\"><li>Chronic illness &amp; weak immunity increase vulnerability </li></ul><p>Disability</p><ul class=\"l0\"><li>Facing accessibility &amp; healthcare barriers</li></ul><p>Life Experiences</p><ul class=\"l0\"><li>Effects of trauma &amp; chronic stress</li></ul><p>Coping &amp; Resilience</p><ul class=\"l0\"><li>Ability to adapt to &amp; manage stressors</li></ul>"
+      },
+      {
+       "id": "64993d1f4d",
+       "prompt": "Levels of Prevention",
+       "promptHtml": "<p>Levels of Prevention</p>",
+       "answerHtml": "<p>Primary = <b>Prevent Disease</b></p><ul class=\"l0\"><li>Before disease occurs</li></ul><p>Secondary = <b>Detect Early</b></p><ul class=\"l0\"><li>Early disease / risk detection</li></ul><p>Tertiary = Manage Disease</p><ul class=\"l0\"><li>Disease <b>already present</b></li></ul>"
+      },
+      {
+       "id": "4623f9efb3",
+       "prompt": "Home Health Care (HHC) Requirements",
+       "promptHtml": "<p>Home Health Care (HHC) Requirements</p>",
+       "answerHtml": "<p>*Patient must meet all criteria*</p><p>Homebound</p><ul class=\"l0\"><li>Leaving home requires considerable effort</li></ul><p>Skilled Need</p><ul class=\"l0\"><li>Intermittent skilled nursing or therapy required</li></ul><p>Support System</p><ul class=\"l0\"><li>Adequate caregiver present at home</li></ul><p>Eligible</p><ul class=\"l0\"><li>Meets payer &amp; program requirements</li></ul><p>[If a Pt needs 24 hour assistance w/ ADLs, this is a different type of support that they’ll need]</p>"
+      }
+     ]
     }
    ],
    "key": "1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0",
    "sourceDocId": "1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0"
   }
  ],
- "cardCount": 175
+ "cardCount": 231
 }
