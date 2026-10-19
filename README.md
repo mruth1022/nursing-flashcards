@@ -55,6 +55,10 @@ git add -A && git commit -m "Add <test name>" && git push
   (e.g. "Heart Failure"). Each runs until the next heading row or the end of that table. Leave the
   answer cell empty and the row is only a label; give it an answer and it is also a card. If a doc
   uses just one heading level, those rows are plain sections with no units.
+* **A Heading 1 paragraph between tables also works as a unit.** If the table below it has its own
+  Heading 2 rows, the paragraph becomes the unit and any rows before the first Heading 2 appear as
+  "General" in it. A table with no heading rows of its own just becomes a plain section named after
+  the paragraph above it.
 * Cards that sit directly under a unit heading with no section heading show up as "General" in
   that unit. A table with no heading rows at all gets a name from `--sections` (one name per table
   in document order) or, failing that, "Part N".

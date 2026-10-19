@@ -10,6 +10,10 @@ Usage:
 Rules:
   * Every <table> becomes cards. Column 1 = prompt, column 2 = answer.
     An optional column 3 is used as a label/tag for the card.
+  * A real Heading paragraph between tables is the unit for the table below it when
+    that table has its own heading rows (e.g. Heading 1 "Intrapartum" above a table
+    whose rows include Heading 2 "Labor"). Rows before the first heading row then
+    appear as "General" in that unit.
   * Sections: a row whose prompt cell is a heading (Heading 1-4) starts a new
     section that runs until the next heading row or the end of the table. When
     two heading levels are used, the higher one (e.g. Heading 1 "Unit 1") is a
@@ -405,6 +409,7 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
     sections: dict[str, dict] = {}
     order: list[str] = []
     current_heading: str | None = None
+    current_heading_real = False   # True when it is a real Heading 1-4 paragraph, not a bold-line guess
     table_index = 0
     seen_ids: dict[str, int] = {}
 
@@ -430,7 +435,7 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
     group_level = min(used_levels) if len(used_levels) >= 2 else None
 
     def walk(node: Node):
-        nonlocal current_heading, table_index
+        nonlocal current_heading, current_heading_real, table_index
         for child in node.children:
             if child.is_text:
                 continue
@@ -440,21 +445,27 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
                     name = section_names[table_index - 1].strip()
                 else:
                     name = current_heading or f"Part {table_index}"
-                _consume_table(child, name)
+                _consume_table(child, name, current_heading if current_heading_real else None)
                 continue
             if _is_heading_like(child, styles):
                 text = child.plain_text()
                 if text:
                     current_heading = text
+                    current_heading_real = child.tag in HEADING_TAGS
                 continue
             walk(child)
 
-    def _consume_table(table: Node, default_name: str):
+    def _consume_table(table: Node, default_name: str, above_heading: str | None = None):
         rows = [tr for tr in table.iter() if tr.tag == "tr" and _owning_table(tr) is table]
         first = True
         wide_warned = False
-        group: str | None = None
-        cards = section_cards(default_name)
+        # A real heading paragraph above a table that has its own sub-heading rows is that table's unit.
+        has_sub = any(
+            (tds := [td for td in tr.children if td.tag in ("td", "th")]) and tds[0].plain_text() and heading_level(tds[0]) is not None
+            for tr in rows
+        )
+        group: str | None = above_heading if has_sub else None
+        cards = section_cards(default_name, group)
         for tr in rows:
             cells = [td for td in tr.children if td.tag in ("td", "th")]
             if not cells:

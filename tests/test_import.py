@@ -232,6 +232,39 @@ class UnitGroupingTests(unittest.TestCase):
         self.assertTrue(all("group" not in s for s in deck["sections"]))
 
 
+HEADING_ABOVE_DOC = """
+<html><body>
+<h1>Conception</h1>
+<table><tbody>
+<tr><td><h2>Preembryonic</h2></td><td></td></tr>
+<tr><td>Gametogenesis</td><td>Meiosis</td></tr>
+</tbody></table>
+<h1>Intrapartum</h1>
+<table><tbody>
+<tr><td>5 Ps</td><td>Powers</td></tr>
+<tr><td><h2>Labor</h2></td><td></td></tr>
+<tr><td>Effacement</td><td>Thinning</td></tr>
+</tbody></table>
+<h1>Medications</h1>
+<table><tbody>
+<tr><td>BP meds</td><td>Labetalol</td></tr>
+</tbody></table>
+</body></html>
+"""
+
+
+class HeadingAboveTableTests(unittest.TestCase):
+    def test_heading_above_table_with_subheadings_is_the_unit(self):
+        deck, _ = import_doc.extract(HEADING_ABOVE_DOC)
+        got = [(s.get("group"), s["name"], [c["prompt"] for c in s["cards"]]) for s in deck["sections"]]
+        self.assertEqual(got, [
+            ("Conception", "Preembryonic", ["Gametogenesis"]),
+            ("Intrapartum", "Intrapartum", ["5 Ps"]),
+            ("Intrapartum", "Labor", ["Effacement"]),
+            (None, "Medications", ["BP meds"]),
+        ])
+
+
 class MainMergeTests(unittest.TestCase):
     def test_reimport_replaces_same_doc_and_keeps_others(self):
         with tempfile.TemporaryDirectory() as td:

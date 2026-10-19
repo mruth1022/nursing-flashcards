@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-01T02:07:10+00:00",
+ "generatedAt": "2026-10-19T00:28:06+00:00",
  "decks": [
   {
    "title": "NS30A Final",
@@ -1622,7 +1622,1336 @@
    ],
    "key": "1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0",
    "sourceDocId": "1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0"
+  },
+  {
+   "title": "OB Part 1 Flashcards",
+   "generatedAt": "2026-10-19T00:28:06+00:00",
+   "cardCount": 193,
+   "sections": [
+    {
+     "name": "Dosage Calculation",
+     "group": "Dosage Calculation",
+     "cards": [
+      {
+       "id": "a180175f8a",
+       "prompt": "When calculating the rate on an IV pump, what do you round to?",
+       "promptHtml": "<p>When calculating the rate on an IV pump, what do you round to?</p>",
+       "answerHtml": "<p>Tenths</p><ul class=\"l1\"><li>Except for pediatric, which is always to the <span style=\"color:#ff0000\">hundredths </span>place</li></ul>"
+      },
+      {
+       "id": "6362c9102f",
+       "prompt": "If a “drop factor” (eg: 15 gtt/mL) is provided, what are they asking for?",
+       "promptHtml": "<p>If a “<mark style=\"background-color:#ff9900\">drop factor</mark>” (eg: <mark style=\"background-color:#ff9900\">15 gtt/mL</mark>) is provided, what are they asking for?</p>",
+       "answerHtml": "<p>It means the question is asking for a manual IV flow rate in <mark style=\"background-color:#ff9900\">gtt/min</mark>, since this applies only when using gravity and drip chambers</p>"
+      },
+      {
+       "id": "711c7e5999",
+       "prompt": "Drops per minute",
+       "promptHtml": "<p>Drops per minute</p>",
+       "answerHtml": "<p><img src=\"img/d016e5b9f2f9.png\" alt=\"\" loading=\"lazy\">= <mark style=\"background-color:#ff9900\">gtt/min</mark> </p><p>[AKA: <mark style=\"background-color:#ff9900\">Drip Rate</mark> - <mark style=\"background-color:#ff9900\">Manual infusion using gravity]</mark></p><p>*Round to a <span style=\"color:#ff0000\">whole number</span>*</p><p>Ex: </p><p>Order: 50 mL over 30 minutes</p><p>The drop factor is 10 gtt/mL</p><ul class=\"l0\"><li>Calculate the IV flow rate. What would the infusion rate or flow rate be in drops per minute (gtts/min) administering this antibiotic in 30 minutes?</li></ul><p><img src=\"img/9881fcf4e4df.png\" alt=\"\" loading=\"lazy\">= 16.6 gtt/min → 17 gtt/min</p>",
+       "images": 2
+      },
+      {
+       "id": "75bbc7f24a",
+       "prompt": "Calculating Hours of Infusion",
+       "promptHtml": "<p>Calculating Hours of Infusion</p>",
+       "answerHtml": "<p>Time calculation is expressed in hours:</p><p>“Infuse over 6.6 hours” → 6 hours and 0.6 min → 0.6 x 60 min = 36 minutes</p><ul class=\"l0\"><li>6.6 hours = Infuse over =<b>6 hours and 36 minutes</b></li></ul>"
+      },
+      {
+       "id": "cb5ce727f4",
+       "prompt": "Milliliter/Hour mL/hr",
+       "promptHtml": "<p>Milliliter/Hour </p><p>mL/hr</p>",
+       "answerHtml": "<p><img src=\"img/1e6a313529c4.png\" alt=\"\" loading=\"lazy\"></p><p><img src=\"img/7b8f572004c5.png\" alt=\"\" loading=\"lazy\">x <img src=\"img/32db388e637a.png\" alt=\"\" loading=\"lazy\"></p><p>*Round to the <span style=\"color:#ff0000\">tenths </span>place*</p><p>[IV Fluid Bolus Question]</p><p>Ex: The provider orders a fluid bolus of 20 mL/kg of 0.9% normal saline IV to be infused over 90 minutes. The client’s weight is 147 lbs.</p><ol class=\"l0\" start=\"1\"><li>How many milliliters will be administered for the bolus? </li><li>Calculate the flow rate?</li><li>66.818 kg —&gt; 66.8 kg x 20 mL = 1,336 mL</li><li>90 minutes = 1.5 hours —&gt; 1,336 mL/1.5 hours =890.667→890.7 mL/hr</li></ol>",
+       "images": 3
+      },
+      {
+       "id": "499590731e",
+       "prompt": "Infusion Time",
+       "promptHtml": "<p>Infusion Time</p>",
+       "answerHtml": "<p>Infusion time = <img src=\"img/da1d7e9c721d.png\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "7954f09909",
+       "prompt": "Flow Rates",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Flow Rates</mark></p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#ffff00\">mL/hr</mark></p><p>[<mark style=\"background-color:#ffff00\">How fast the fluid is running</mark>]</p><p>(Calculate dosage based on weight BEFORE calculating flow rate)</p>",
+       "images": 1
+      },
+      {
+       "id": "a9a7994601",
+       "prompt": "Infusion Titrations",
+       "promptHtml": "<p>Infusion Titrations</p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\">= <mark style=\"background-color:#ffff00\">mL/hr </mark></p><p>Calculate the lower flow rate</p><p>Calculate the higher flow rate</p>",
+       "images": 1
+      },
+      {
+       "id": "16bd8e0b8a",
+       "prompt": "Heparin Infusion/Drip",
+       "promptHtml": "<p>Heparin Infusion/Drip</p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#ffff00\">mL/hr</mark></p><p>Ex: The order is to infuse 1,000 units per hour from the solution shown in Figure 22-13 (Pg. 448). You will infuse this on an electronic infusion device that can be programmed to the tenth.</p><p><img src=\"img/21cb0433384e.png\" alt=\"\" loading=\"lazy\"> = 25 mL/hr</p><p><img src=\"img/3b7faf56d3b5.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#00ffff\">units/hr</mark></p><p>Ex: </p><p>Order: An IV of 500 mL containing 20,000 units heparin is running at 28 mL/hr.</p><p>Calculate the units/hr infusing</p><p><img src=\"img/268ab22caf5f.png\" alt=\"\" loading=\"lazy\"> = 1,120 units/hr</p>",
+       "images": 4
+      },
+      {
+       "id": "d89598c37f",
+       "prompt": "Insulin Drip",
+       "promptHtml": "<p>Insulin Drip</p>",
+       "answerHtml": "<p><img src=\"img/60f882d96408.png\" alt=\"\" loading=\"lazy\"> = <mark style=\"background-color:#ffff00\">mL/hr</mark></p><p>Ex: Prepare an insulin drip of 50 units regular insulin in 100 mL NS. Administer the insulin drip at 6 units/hr. As the nurse preparing this insulin drip, you will add 50 units of regular insulin to the IV bag of 100 mL NS. You will need to label this bag. Refer to Figure 22-24 (Pg. 456).</p><p><img src=\"img/98e67d26c942.png\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 2
+      },
+      {
+       "id": "2c8b87ac57",
+       "prompt": "Titration Medication (mcg/min)",
+       "promptHtml": "<p>Titration Medication (mcg/min)</p>",
+       "answerHtml": "<p><img src=\"img/71458be13baf.png\" alt=\"\" loading=\"lazy\"></p><p>Ex: A maintenance dose of 16 mcg/min has been ordered using 6 mg in 300 mL of normal saline. Calculate the flow rate.</p><p><img src=\"img/1454ffc53895.png\" alt=\"\" loading=\"lazy\"></p><p>960 mcg —&gt; 0.96 mg/hr</p><p><img src=\"img/6b2b3c6a92fd.png\" alt=\"\" loading=\"lazy\">48 mL/hr</p>",
+       "images": 3
+      }
+     ]
+    },
+    {
+     "name": "Preembryonic Stage",
+     "group": "Conception & Fetal Development",
+     "cards": [
+      {
+       "id": "71169a223c",
+       "prompt": "What is Gametogenesis",
+       "promptHtml": "<p>What is </p><ul class=\"l0\"><li><b>Gametogenesis</b></li></ul>",
+       "answerHtml": "<ul class=\"l0\"><li>Development of Ova &amp; Sperm</li><li>Meiosis halves the number (46 → 23)</li></ul>"
+      },
+      {
+       "id": "a11a23f85d",
+       "prompt": "When do females have all the ova they need?",
+       "promptHtml": "<p>When do <b>females </b>have all the <b>ova </b>they need?</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">30th week of gestation</span></p>"
+      },
+      {
+       "id": "99520cbfbf",
+       "prompt": "Spematogenesis for Males?",
+       "promptHtml": "<p><b>Spematogenesis </b>for Males?</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Begins in <b>puberty</b></li><li>Requires <span style=\"color:#ff00ff\">70 days</span> to complete &amp; continues throughout life, gradually declines w/ age</li></ul>"
+      },
+      {
+       "id": "c534d3bf70",
+       "prompt": "Blastocyst",
+       "promptHtml": "<p><b>Blastocyst </b></p>",
+       "answerHtml": "<p>Fluid filled space in morula → which forms the embryo &amp; amnion </p><ul class=\"l0\"><li><b>Inner </b>cell mass → develops into <b>fetus</b></li><li><b>Outer </b>cell mass → develops into fetal <b>membranes</b></li></ul>"
+      },
+      {
+       "id": "d7353edea6",
+       "prompt": "Implantation Why is location important?",
+       "promptHtml": "<p><b>Implantation</b></p><p>Why is <b>location </b>important?</p>",
+       "answerHtml": "<p>Trophoblast attaches to → <b>endometrium </b>in fundus (<b>upper uterine segment = best!</b>)</p><ul class=\"l0\"><li>Blood supply</li><li>Uterine lining is thicker, preventing placenta from attaching too deeply</li><li>Limits blood loss after</li></ul>"
+      },
+      {
+       "id": "77b55e0460",
+       "prompt": "How long does sperm & ovum last?",
+       "promptHtml": "<p>How long does <b>sperm </b>&amp; <b>ovum </b>last?</p>",
+       "answerHtml": "<p>Sperm</p><ul class=\"l0\"><li>No longer than <span style=\"color:#ff00ff\">24 hours</span>, but some up to <span style=\"color:#ff00ff\">80 hours</span></li></ul><p>Ovum </p><ul class=\"l0\"><li>No longer than <span style=\"color:#ff00ff\">24 hours after released</span></li></ul>"
+      },
+      {
+       "id": "56b9a79165",
+       "prompt": "Trophoblast forms the?",
+       "promptHtml": "<p><b>Trophoblast </b>forms the?</p>",
+       "answerHtml": "<p>Placenta</p>"
+      },
+      {
+       "id": "48823ceee3",
+       "prompt": "Embryoblast forms the?",
+       "promptHtml": "<p><b>Embryoblast </b>forms the?</p>",
+       "answerHtml": "<p>Embryo</p>"
+      },
+      {
+       "id": "4b83caa0b9",
+       "prompt": "Female needs these hormones for the eggs to be release",
+       "promptHtml": "<p>Female needs these <b>hormones </b>for the <b>eggs </b>to be release</p>",
+       "answerHtml": "<p>Pituitary gland releases:</p><ul class=\"l0\"><li>Follicle stimulating hormones</li><li>Luteinizing hormone</li></ul>"
+      },
+      {
+       "id": "eb610ebe74",
+       "prompt": "What hormones support pregnancy?",
+       "promptHtml": "<p>What hormones <b>support </b>pregnancy?</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Progesterone </li><li>Estrogen </li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Embryonic Stage",
+     "group": "Conception & Fetal Development",
+     "cards": [
+      {
+       "id": "bd0f0bb19b",
+       "prompt": "Chorion forms the?",
+       "promptHtml": "<p><b>Chorion </b>forms the?</p>",
+       "answerHtml": "<p>Trophoblast / Fetus forms the → <b>Chorion</b>: </p><ul class=\"l0\"><li>Outer layer forms chorionic villi, then outer layer of amniotic sac (chorion) &amp; fetal portion of placenta</li><li><mark style=\"background-color:#ffff00\">Decidua Basalis </mark>= <b>Maternal </b>side of placenta in between uterus &amp; conceptus</li></ul>"
+      },
+      {
+       "id": "3f7c18281c",
+       "prompt": "Amnion forms the?",
+       "promptHtml": "<p><b>Amnion </b>forms the?</p>",
+       "answerHtml": "<p>Ectoderm forms the → <b>Amnion</b></p><ul class=\"l0\"><li>Forms <b>inner layer</b> of <b>amniotic sac</b></li><li>Forms from ectoderm (germ layer)</li><li>Amniotic fluid contained within</li><li>[Amniotic fluid protects the baby!]</li></ul>"
+      },
+      {
+       "id": "73c52899ac",
+       "prompt": "4 - 8 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">4 - 8 weeks</span> gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Heart </b>begins to <b>beat</b></li><li>Brain differentiates</li><li>Formation of lungs</li><li>Organs develop</li><li>2 layers in amniotic sac </li><li>Can see <b>facial features</b></li></ul>"
+      },
+      {
+       "id": "da375dbbaf",
+       "prompt": "6 - 8 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">6 - 8 weeks</span> gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Rotation of intestines</li><li>Facial features continue to develop</li><li>Heart development complete</li><li>Resembles a human</li><li><b>Testes </b>or <b>ovaries </b>begin to develop</li></ul>"
+      },
+      {
+       "id": "373626248f",
+       "prompt": "9 - 12 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">9 - 12 weeks</span> gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Sexual differentiation</b></li><li>Active <b>digestion </b>system</li><li><b>Face </b>&amp; <b>neck </b>well formed</li><li>Urogenital tract complete</li><li>RBCs produced in liver</li><li><b>Urine </b>production</li><li>Well formed <b>limbs </b>&amp; <b>digits</b></li><li>Less susceptible to <b>teratogens</b></li></ul>"
+      },
+      {
+       "id": "6e3384a9a5",
+       "prompt": "13 - 16 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">13 - 16</span> weeks gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Mom can feel quickening </li></ul><ul class=\"l1\"><li>(light fetal movement)</li></ul><ul class=\"l0\"><li>Head is smaller in proportion to their body</li></ul>"
+      },
+      {
+       "id": "adfa196ba1",
+       "prompt": "16 - 24 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">16 -</span> <span style=\"color:#ff00ff\">24 weeks</span> gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Fine hair called <mark style=\"background-color:#ffff00\"><b>lanugo</b></mark>, develops</li><li><mark style=\"background-color:#ffff00\"><b>Meconium</b></mark> produced</li><li>Fetal movement, called <b>quickening</b>, felt by mother</li></ul><ul class=\"l1\"><li>[felt around <span style=\"color:#ff00ff\">18-20 weeks</span>]</li></ul><ul class=\"l0\"><li><b>Vernix Caseosa</b>, a <b>white cheesy</b> greasy film on skin </li><li><b>Alveoli </b>forms in lungs</li><li><b>Surfactant </b>begins forming</li></ul><p>*<span style=\"color:#ff00ff\">24 weeks</span> = best lowest for preterm*</p>"
+      },
+      {
+       "id": "177604ca9f",
+       "prompt": "28 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">28 weeks</span> gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Rapid <mark style=\"background-color:#ffff00\"><b>brain</b></mark><b> development</b></li><li>Eyelids open &amp; close</li><li>Gas exchange &amp; ability of the lungs improves so that <b>extra uterine life may be sustained</b></li></ul>"
+      },
+      {
+       "id": "a8e21c248b",
+       "prompt": "29 - 36 weeks",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">29 - 36 </span>weeks</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Survival improves more drastically = they are the \"great pretenders\" &amp; seem like they will deliver ok but have issues</li><li>Under 36 weeks - might go to NICU to get a stent to make sure they're feeding well</li><li>Lung/feeding issues, need to gain weight, practice breathing]</li><li>[<mark style=\"background-color:#00ff00\">RSV vaccine</mark> - give while mom is pregnant to protect fetus when born</li><li>Give by 36 weeks [<span style=\"color:#ff00ff\">2 weeks</span> before birth]</li></ul>"
+      },
+      {
+       "id": "d3d1c2352c",
+       "prompt": "38 - 40 weeks gestation",
+       "promptHtml": "<p><span style=\"color:#ff00ff\">38 - 40</span> weeks gestation</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Lanugo &amp; vernix lessened</li><li><b>Antibody </b>transfer from mother → to fetus</li><li>Immunoglobulin G</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Placenta",
+     "group": "Conception & Fetal Development",
+     "cards": [
+      {
+       "id": "d1a91cced9",
+       "prompt": "Timeframe of function",
+       "promptHtml": "<p><b>Timeframe </b>of function</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Begins functioning at <span style=\"color:#ff00ff\">week 3-4</span></li><li>Fully functional at <span style=\"color:#ff00ff\">12 weeks</span></li><li>Increases in size until <span style=\"color:#ff00ff\">20 weeks</span></li></ul>"
+      },
+      {
+       "id": "390672e20e",
+       "prompt": "Maternal Side",
+       "promptHtml": "<p><b>Maternal </b>Side</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Consists of <b>decidua basalis</b></li><li><span style=\"color:#ff0000\">Red </span>&amp; flesh like (Dirty Duncan)</li></ul>"
+      },
+      {
+       "id": "217df5b5e8",
+       "prompt": "Fetal Side",
+       "promptHtml": "<p><b>Fetal </b>Side</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Covered w/ <b>amnion</b></li><li>Shiny &amp; <span style=\"color:#666666\"><b>gray </b></span>(Shiny Shultz)</li></ul>"
+      },
+      {
+       "id": "025ad026d7",
+       "prompt": "Placenta functions",
+       "promptHtml": "<p>Placenta functions</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Maternal &amp; Fetal <b>circulation</b></li><li><b>Gas </b>exchange</li><li><b>Nutrient </b>transfer</li><li><b>Waste </b>removal</li><li><b>Antibody </b>transfer</li></ul><ul class=\"l1\"><li>Transports gamma-globulin (<b>IGG</b>) to give infant passive immunity at birth</li></ul><ul class=\"l0\"><li>Endocrine function (<b>Hormone</b> production)</li></ul><ul class=\"l1\"><li>Human chorionic gonadotropin (<b>HCG</b>)</li><li><b>Progesterone</b>, <b>estrogen</b></li><li>Human placental lactogen (<b>HPL</b>)</li><li><b>Relaxin </b></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Kleihauer-Betke Test</mark>: Check to see if the baby's blood is in the mom's blood → If someone is bleeding preterm</li><li><mark style=\"background-color:#00ff00\">PKU </mark>→ tests for metabolic issues (if we test right away, we can treat them - if we don't catch PKU, issues w/ neurological growth &amp; can be fatal)</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Amniotic Fluid",
+     "group": "Conception & Fetal Development",
+     "cards": [
+      {
+       "id": "c80492812b",
+       "prompt": "Functions",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Functions</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Cushions fetus</b> from trauma</li><li>Maintains constant body <b>temperature </b>of fetus</li><li>Permits <b>symmetric </b>growth</li><li><b>Protects umbilical cord </b>from compression</li><li>Promotes fetal <b>movement</b></li><li>Increases in volume as pregnancy progresses to reach approximately <span style=\"color:#ff00ff\">700-800 mL</span> at term (1 L per Pelone)</li></ul>"
+      },
+      {
+       "id": "393ae73da5",
+       "prompt": "What is it made out of?",
+       "promptHtml": "<p>What is it made out of?</p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Maternal blood</b> across amnion</li><li>Fetal <b>urine</b></li></ul>"
+      },
+      {
+       "id": "d400bae5bf",
+       "prompt": "Oligohydramnios",
+       "promptHtml": "<p><b>Oligohydramnios</b></p>",
+       "answerHtml": "<p>↓ Too little amniotic fluid </p>"
+      },
+      {
+       "id": "d3124cc88a",
+       "prompt": "Polyhydramnios",
+       "promptHtml": "<p><b>Polyhydramnios</b></p>",
+       "answerHtml": "<p>↑ Too much amniotic fluid </p>"
+      },
+      {
+       "id": "50f538f99f",
+       "prompt": "Fetal exchange across skin?",
+       "promptHtml": "<p>Fetal exchange across skin?</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Exchange across fetal skin is <b>possible</b>, but only for <b>small lipid soluble gases</b> </li><li>Most goes thru <i>chorion/amnion </i></li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Fetal Circulation",
+     "group": "Conception & Fetal Development",
+     "cards": [
+      {
+       "id": "468e340892",
+       "prompt": "Umbilical Cord",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Umbilical Cord</mark></p>",
+       "answerHtml": "<p>Formation = from amnion</p><p>Function [circulation &amp; take waste!]</p><ul class=\"l0\"><li>1 <span style=\"color:#ff0000\">vein</span></li></ul><ul class=\"l1\"><li>Carries <span style=\"color:#ff0000\">oxygenated </span>blood TO → the fetus</li></ul><ul class=\"l0\"><li>2 <span style=\"color:#0000ff\">arteries</span></li></ul><ul class=\"l1\"><li>Carries <span style=\"color:#0000ff\">deoxygenated </span>blood FROM the fetus </li></ul><ul class=\"l0\"><li>[need AT LEAST 1 vein &amp; 1 artery to be compatible w/ life]</li><li><b>Wharton’s Jelly</b></li></ul><ul class=\"l1\"><li>Specialized connective tissue that <b>surrounds </b>the umbilical cord to <b>prevent compression</b></li></ul><p><img src=\"img/f29bd1ed4a47.png\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "f225680197",
+       "prompt": "Ductus Venosus",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Ductus Venosus</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff0000\">Oxygenated </span>blood from the <b>placenta </b>enters the fetal circulation through the <span style=\"color:#ff0000\">umbilical </span><span style=\"color:#ff0000\"><b>vein</b></span></li><li>About ⅓ of the blood is directed away from the <mark style=\"background-color:#ffff00\"><b>liver</b></mark> into → the ductus venosus → which connects to the <mark style=\"background-color:#ffff00\"><b>IVC</b></mark> (inferior vena cava)</li><li>Closes w/ <b>cord clamp</b> </li><li>Permanent closure occurs at <span style=\"color:#ff00ff\">3-4 weeks</span></li></ul>"
+      },
+      {
+       "id": "5cd4f5e20e",
+       "prompt": "Foramen Ovale",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Foramen Ovale</mark></p>",
+       "answerHtml": "<p><b>O</b>vale → [hole in the wall] </p><ul class=\"l0\"><li>Flap valve in the septum <b>between the </b><mark style=\"background-color:#ffff00\"><b>R &amp; L Atria</b></mark></li><li>Blood flows into the R atrium &amp; 50-60% crosses the foramen ovale to the → Left Atrium</li><li>Usually closes <span style=\"color:#ff00ff\">1-2 hours after birth</span></li></ul>"
+      },
+      {
+       "id": "6f67bdde73",
+       "prompt": "Ductus Arteriosus",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Ductus Arteriosus</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Connects the <mark style=\"background-color:#ffff00\"><b>pulmonary artery</b></mark> &amp; the → <mark style=\"background-color:#ffff00\"><b>descending aorta</b></mark> </li><li>[to bypass the lungs]</li><li>[can cause a <span style=\"color:#ff0000\">murmur </span>if not closed after birth]</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Hereditary & Environmental Influences",
+     "group": "Conception & Fetal Development",
+     "cards": [
+      {
+       "id": "2d5fdfc0df",
+       "prompt": "Mono-mono",
+       "promptHtml": "<p>Mono-mono</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Same chorion &amp; same amnion</li><li>They’re in the <b>same sac </b>together</li><li>Watch them closely </li><li>Can pull each other’s cords, etc</li><li><b>Cord entanglement</b></li></ul><p><img src=\"img/c24c09ff6492.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "5da1eab0f9",
+       "prompt": "Autosomal Dominant",
+       "promptHtml": "<p><b>Autosomal Dominant</b></p>",
+       "answerHtml": "<p>When a single gene is capable of producing phenotype</p><ul class=\"l0\"><li>Ex: Neurofibromatosis, Huntington’s disease</li></ul>"
+      },
+      {
+       "id": "7b1acde61a",
+       "prompt": "Autosomal Recessive",
+       "promptHtml": "<p><b>Autosomal Recessive</b></p>",
+       "answerHtml": "<p>When 2 copies of abnormal gene are necessary to produce phenotype</p><ul class=\"l0\"><li>Ex: Phenylketonuria (PKU), Cystic Fibrosis</li></ul>"
+      },
+      {
+       "id": "a6eb37aff2",
+       "prompt": "X Linked Inheritance",
+       "promptHtml": "<p><b>X Linked Inheritance</b></p>",
+       "answerHtml": "<p>Those associated w/ the altered genes present on the X chromosome</p><ul class=\"l0\"><li>Ex: Colorblindness </li></ul>"
+      },
+      {
+       "id": "8580745db1",
+       "prompt": "Multifactorial Inheritance",
+       "promptHtml": "<p><b>Multifactorial Inheritance</b> </p>",
+       "answerHtml": "<p>Some of the most common birth defects</p><ul class=\"l0\"><li>Ex: Heart defects, neural tube defects (anencephaly, cleft lip/palate, pyloric stenosis) </li></ul>"
+      },
+      {
+       "id": "65acd59f58",
+       "prompt": "Teratogen examples",
+       "promptHtml": "<p>Teratogen examples</p>",
+       "answerHtml": "<p>Etoh, drugs, infections, CMV, HSV, cytomegalovirus, parvovirus, syphilis, chalymadia, varicella, zika, toxoplasmosis, mercury, tetracycline, tobacco, warfarin </p>"
+      },
+      {
+       "id": "a2c7fbe9e5",
+       "prompt": "Mosaicism",
+       "promptHtml": "<p><b>Mosaicism </b></p>",
+       "answerHtml": "<p>Chromosomal abnormalities that do not show up in every cell &amp; only some cells carry abnormalities</p>"
+      },
+      {
+       "id": "73e1ffeeb8",
+       "prompt": "Polyploidy",
+       "promptHtml": "<p><b>Polyploidy </b></p>",
+       "answerHtml": "<p>Increase in haploid sets (23)</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Incompatible w/ life → Spontaneous abortion</span></li><li>Ex: Fragile X</li></ul>"
+      },
+      {
+       "id": "7dbed652cc",
+       "prompt": "Monosomies",
+       "promptHtml": "<p><b>Monosomies </b></p>",
+       "answerHtml": "<p>1 copy of particular chromosome</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Incompatible w/ life → Spontaneous abortion</span></li><li>Ex: Turner Syndrome</li></ul>"
+      },
+      {
+       "id": "b966f62e1f",
+       "prompt": "Trisomies",
+       "promptHtml": "<p><b>Trisomies </b></p>",
+       "answerHtml": "<p>3 of a particular chromosome</p><ul class=\"l0\"><li>Ex: Trisomy 21 Down’s Syndrome</li></ul>"
+      },
+      {
+       "id": "369c22b5f5",
+       "prompt": "Trisomy 21",
+       "promptHtml": "<p>Trisomy 21</p>",
+       "answerHtml": "<p>Down’s Syndrome</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">↑ Risk</span> increases w/ maternal age (mom &amp; dad!)</li></ul><p><mark style=\"background-color:#ffff00\">Common characteristics: </mark></p><ul class=\"l0\"><li>Small, low set <b>ears</b></li><li>Hyper<b>flexibility</b></li><li>Muscle <b>hypotonia</b></li><li>Wide spaced <b>eyes</b></li><li>Ulnar loop of <b>second digit</b></li><li><b>Simian crease </b></li><li><b>Flat </b>facial profile</li><li>Open <b>mouth </b>w/ protruding tongue</li><li>Broad, short <b>fingers </b></li><li><i>More susceptive to </i><b><i>infection/cardiac issues</i></b><i> &amp; need further tests done </i></li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Antepartum & Adaptations to Pregnancy",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "a765ec1cb2",
+       "prompt": "Vena Caval Syndrome",
+       "promptHtml": "<p>Vena Caval Syndrome</p>",
+       "answerHtml": "<ul class=\"l0\"><li>The gravid uterus compresses the <b>vena cava</b> when the woman is supine</li><li>This ↓ reduces blood flow<b> returning to the heart </b>&amp; may cause → <span style=\"color:#0000ff\">maternal hypotension</span></li><li>Have them lay in the <mark style=\"background-color:#00ff00\">LEFT side-lying position</mark></li></ul>"
+      },
+      {
+       "id": "859a439ccc",
+       "prompt": "Ptyalism",
+       "promptHtml": "<p><b>Ptyalism </b></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Excessive salivation </li></ul>"
+      },
+      {
+       "id": "463d69596d",
+       "prompt": "Integumentary adaptation",
+       "promptHtml": "<p>Integumentary adaptation</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Hyperpigmentation</li></ul><ul class=\"l1\"><li><b>Cholasma </b>= “mask of pregnancy”</li><li><b>Linea nigra</b></li><li>Breast / areolas get darker</li></ul><ul class=\"l0\"><li><b>Striae gravidarum </b>(stretch marks)</li></ul>"
+      },
+      {
+       "id": "2cdbfb1384",
+       "prompt": "Lordosis",
+       "promptHtml": "<p><b>Lordosis</b></p>",
+       "answerHtml": "<p>Increase in curvature of spine</p>"
+      },
+      {
+       "id": "a9e52d6393",
+       "prompt": "Waddle gait",
+       "promptHtml": "<p><b>Waddle </b>gait </p>",
+       "answerHtml": "<p>D/t <b>relaxin </b>hormone</p>"
+      },
+      {
+       "id": "5b10d6c4be",
+       "prompt": "Diastasis recti",
+       "promptHtml": "<p>Diastasis recti </p>",
+       "answerHtml": "<p><i>Separation of rectus abdominis muscles </i></p>"
+      },
+      {
+       "id": "a8205f761d",
+       "prompt": "Endocrine adaptation",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Endocrine adaptation</mark></p>",
+       "answerHtml": "<p>Thyroid</p><ul class=\"l0\"><li>Promotes <b>fetal neurologic</b> development</li></ul><p>Pituitary</p><ul class=\"l0\"><li>Promotes <b>breast </b>development &amp; <b>lactation</b></li><li>Oxytocin → leads to <b>contractions</b>, before &amp; after</li><li>ADH = helps w/ <b>water balance</b></li></ul><p>Pancreas</p><ul class=\"l0\"><li>Insulin production</li></ul><p>Adrenal</p><ul class=\"l0\"><li>Cortisol increased</li><li><i>↑ hPL increases during 2nd half of pregnancy</i></li></ul><ul class=\"l1\"><li><i>Which causes mother to → produce more insulin </i></li></ul><ul class=\"l0\"><li><i>If mother has normal beta cells in Islets of Langerhans, there is no problem meeting demands for increased insulin</i></li><li><i>If she does </i><b><i>NOT </i></b><i>have adequate number of </i><b><i>beta</i></b><i> cells</i></li><li><b><i>She may be unable to produce enough insulin</i></b><i> &amp; will develop → glucose intolerance during pregnancy</i> </li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Placental Hormones",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "bb4491c264",
+       "prompt": "hCG",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">hCG</mark></p>",
+       "answerHtml": "<p>Human Chorionic Gonadotropin (<mark style=\"background-color:#ffff00\">hCG</mark>)</p><ul class=\"l0\"><li>Maintains <mark style=\"background-color:#ffff00\"><b>corpus luteum</b></mark> → which secretes: <b>progesterone </b>&amp; <b>estrogen</b></li><li>Produced by <b>trophoblastic cells</b> surrounding the <b>embryo </b></li><li><b>Earliest </b>hormone for pregnancy test </li></ul>"
+      },
+      {
+       "id": "929c0c4e94",
+       "prompt": "hPL",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">hPL</mark></p>",
+       "answerHtml": "<p> Also called “<b>H</b>uman <b>P</b>lacental <b>L</b>actogen”</p><ul class=\"l0\"><li>Prepares mammary glands for <b>lactation</b></li><li>May act as a <b>growth hormone</b></li><li><mark style=\"background-color:#ffff00\"><b>Insulin antagonist </b></mark></li></ul><ul class=\"l1\"><li>Alters ability to use insulin</li></ul><ul class=\"l0\"><li>↑ Increase <b>free fatty acids </b>for <b>maternal energy </b>needs </li><li>↓ Decrease maternal <b>metabolism </b>of <b>glucose </b>for <b>fetal growth</b></li></ul><ul class=\"l1\"><li>[To prevent the baby from growing too fast/big]</li></ul><p><i>*The main purpose*</i></p><ul class=\"l0\"><li><i>Increase the availability of glucose to the fetus &amp; divert away from mother</i></li></ul>"
+      },
+      {
+       "id": "c44b218e5b",
+       "prompt": "Relaxin",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Relaxin</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Acts synergistically w/ <b>progesterone </b>to maintain pregnancy</li><li>Produced by the <mark style=\"background-color:#ffff00\"><b>corpus luteum</b></mark></li><li>↑ Increases <b>flexibility </b>of pubic symphysis</li></ul><ul class=\"l1\"><li>[helps during delivery so baby can come out]</li></ul><ul class=\"l0\"><li><b>Softens </b>connective tissue of cervix</li></ul><ul class=\"l1\"><li>[help w/ <b>dilation</b>/thinning]</li></ul><ul class=\"l0\"><li>↓ Suppresses release of <b>oxytocin </b></li></ul><ul class=\"l1\"><li>[suppresses contractions]</li></ul>"
+      },
+      {
+       "id": "49bd626171",
+       "prompt": "Progesterone",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Progesterone</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>The “hormone of pregnancy” produced by <b>corpus luteum</b></li><li>Supports the <b>endometrium </b>of uterus for fetal survival</li><li>Causes <b>thickening of uterine lining</b> for implantation</li><li>↓ Inhibits uterine <b>contractility</b></li><li>Development of <b>breasts </b>for lactation</li></ul>"
+      },
+      {
+       "id": "c2fb46b57c",
+       "prompt": "Estrogen",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Estrogen</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Promotes <b>enlargement </b>of genitals, uterus, &amp; breasts</li><li>↑ Increases <b>vascularity</b></li><li><b>Relaxation </b>of pelvic ligaments &amp; joints</li><li>Hyper<b>pigment</b>ation</li><li>Aids in development of <b>ductal system</b> of breasts</li></ul><ul class=\"l1\"><li>[milk!]</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Signs of Pregnancy",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "8617a2232a",
+       "prompt": "Presumptive signs",
+       "promptHtml": "<p>Presumptive signs</p>",
+       "answerHtml": "<p>Signs that the <b>mother </b>can perceive:</p><ul class=\"l0\"><li>Fatigue</li><li>Breast tenderness / enlargement</li></ul><ul class=\"l1\"><li><i>Influenced by estrogen &amp; progesterone </i></li></ul><ul class=\"l0\"><li>Nausea &amp; vomiting</li><li>Amenorrhea [no period]</li><li>Urinary frequency</li><li>Hyperpigmentation of skin</li><li>Fetal movements </li></ul><ul class=\"l1\"><li>[usually around 16 weeks]</li></ul>"
+      },
+      {
+       "id": "d53c4f0655",
+       "prompt": "Probable signs",
+       "promptHtml": "<p>Probable signs</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Braxton Hicks contractions</li><li>Positive pregnancy test</li></ul><ul class=\"l1\"><li><i>Measure level of HCG → usually detectable in serum </i><span style=\"color:#ff00ff\"><i>11 days after conception</i></span></li></ul><ul class=\"l0\"><li>Abdominal enlargement</li><li>Ballottement</li></ul><ul class=\"l1\"><li><i>[</i><b><i>baby moving</i></b><i>] [When the HCP pushes upon the cervix during a pelvic exam &amp; feels a </i><b><i>rebound </i></b><i>from a floating fetus]</i></li></ul><ul class=\"l0\"><li><b>Goodell’s sign</b></li></ul><ul class=\"l1\"><li><b>Soft</b>ening of cervix</li></ul><ul class=\"l0\"><li>Hegar’s sign</li></ul><ul class=\"l1\"><li>Softening of lower uterine segment</li></ul><ul class=\"l0\"><li><b>Chadwick’s sign</b></li></ul><ul class=\"l1\"><li><span style=\"color:#9900ff\">Purple </span>coloration of cervix [sometimes labia] </li></ul>"
+      },
+      {
+       "id": "ead8a2e14c",
+       "prompt": "Positive signs",
+       "promptHtml": "<p>Positive signs</p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Ultrasound </b>verification of fetus</li><li>Fetal <b>movement </b>felt by provider</li><li><b>Auscultation </b>of fetal heart tones</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Prenatal (Etc)",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "732abff33c",
+       "prompt": "GBS Lab Test",
+       "promptHtml": "<p>GBS Lab Test</p>",
+       "answerHtml": "<p>GBS (Group Beta Step):</p><ul class=\"l0\"><li>Check at <span style=\"color:#ff00ff\">36 weeks</span></li><li>If you test positive +, will always test positive</li></ul>"
+      },
+      {
+       "id": "7dd56e9073",
+       "prompt": "GTPAL",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">GTPAL</mark></p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">G = Gravida</mark></p><ul class=\"l0\"><li><b>Total # of pregnancies</b> regardless of the duration</li><li>Includes <mark style=\"background-color:#ffff00\"><b>current pregnancy </b></mark></li></ul><p>“<mark style=\"background-color:#ffff00\">TPAL</mark>” may be used:</p><ul class=\"l0\"><li>T = <b>Term </b></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">&gt; 38 weeks - 42 weeks</span></li></ul><ul class=\"l0\"><li>P = <b>Preterm </b></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">20 - 37</span> weeks at birth</li></ul><ul class=\"l0\"><li>A = <b>Abortions</b></li></ul><ul class=\"l1\"><li>Termination of pregnancy before viability: <span style=\"color:#ff00ff\">20 weeks</span></li><li>Spontaneous OR elective</li></ul><ul class=\"l0\"><li>L = <b>Living </b>children</li></ul><p>*If Pt has <b>twins </b>= they count as<b> 1 pregnancy</b> &amp; 1 delivery*</p><p>[P = Para</p><ul class=\"l0\"><li>Total births beyond the period of viability: <span style=\"color:#ff00ff\">20 weeks</span>]</li></ul>"
+      },
+      {
+       "id": "e7d2864edf",
+       "prompt": "Determining Estimated Date of Confinement (EDC)",
+       "promptHtml": "<p>Determining Estimated Date of Confinement (<b>EDC</b>)</p>",
+       "answerHtml": "<p><mark style=\"background-color:#ffff00\">Nagele’s Rule: To determine </mark><mark style=\"background-color:#ffff00\"><b>due date</b></mark></p><ul class=\"l0\"><li>Add <span style=\"color:#ff00ff\">9 months</span> to <b>1st day</b> of LMP (last menstrual period)</li><li>Add <span style=\"color:#ff00ff\">7 days</span></li></ul>"
+      },
+      {
+       "id": "d9575e2cff",
+       "prompt": "Standard Follow Up Visits",
+       "promptHtml": "<p>Standard Follow Up Visits</p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff00ff\">Every 4 weeks</span> up to <span style=\"color:#ff00ff\">28 weeks gestation</span></li><li><span style=\"color:#ff00ff\">Every 2 weeks</span> from <span style=\"color:#ff00ff\">29-36 weeks</span></li><li><span style=\"color:#ff00ff\">Every week</span> from <span style=\"color:#ff00ff\">37 weeks to Birth</span></li></ul>"
+      },
+      {
+       "id": "ba495a533f",
+       "prompt": "Fundal Height",
+       "promptHtml": "<p>Fundal Height</p>",
+       "answerHtml": "<p>The distance in cm from the <b>top of the pubic bone</b> [pubic symphysis] to → the <b>top of the uterus </b>[top of fundus]</p><ul class=\"l0\"><li>If the fundal height = 24 cm → they are ~24 weeks gestation! </li><li><b>Investigate </b>if there is a major discrepancy w/ fundal height</li><li><mark style=\"background-color:#00ff00\">Empty bladder prior!</mark></li></ul>"
+      },
+      {
+       "id": "b212a370be",
+       "prompt": "Patient Education for Self Care",
+       "promptHtml": "<p>Patient Education for Self Care</p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid </span>hot tubs &amp; saunas </li><li><b>Dental care</b> is important!</li></ul><ul class=\"l1\"><li>[susceptible for infection/heart disease]</li></ul><ul class=\"l0\"><li>Breast care</li></ul><ul class=\"l1\"><li>Wear supportive bras</li></ul><ul class=\"l0\"><li>Sexual activity </li></ul><ul class=\"l1\"><li>Safe to have sex</li></ul><ul class=\"l0\"><li>Travel</li></ul><ul class=\"l1\"><li>Consult w/ HCP before travel</li></ul><ul class=\"l0\"><li>Rest</li><li>Exercise</li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">30 minutes or more</span> of <b>moderate </b>exercise a day </li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">Contraindicated </span>in high risk pregnancies </li></ul>"
+      },
+      {
+       "id": "2d3ffab17e",
+       "prompt": "Ambivalence",
+       "promptHtml": "<p><b>Ambivalence</b></p>",
+       "answerHtml": "<p>Conflicting emotions regarding pregnancy</p><ul class=\"l0\"><li>Are they happy / scared about it?</li></ul>"
+      },
+      {
+       "id": "c539fce5c7",
+       "prompt": "Introversion",
+       "promptHtml": "<p><b>Introversion</b></p>",
+       "answerHtml": "<p>Focusing on oneself</p>"
+      },
+      {
+       "id": "98c9ace906",
+       "prompt": "Couvade Syndrome",
+       "promptHtml": "<p>Couvade Syndrome</p>",
+       "answerHtml": "<p><i><u>Partner</u></i><i> undergoes a sympathetic response to pregnancy</i></p><ul class=\"l0\"><li><b>Weight gain</b> (they may eat as much as the pregnant partner)</li><li><b>Food aversions</b></li></ul>"
+      },
+      {
+       "id": "522e3c9e3c",
+       "prompt": "Siblings reaction to pregnancy",
+       "promptHtml": "<p>Siblings reaction to pregnancy</p>",
+       "answerHtml": "<p>Reaction = <b>age dependent </b></p>"
+      },
+      {
+       "id": "8ecc6066ca",
+       "prompt": "Nutritional needs",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Nutritional</mark> needs</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Prenatal vitamin</li></ul><ul class=\"l1\"><li><i>Still continues AFTER the pregnancy is over </i></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\"><b>Folic acid</b></mark></li></ul><ul class=\"l1\"><li>Prevents neural tube defects</li><li>[for <b>brain </b>&amp; <b>spinal cord</b>]</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\"><b>Ferrous Sulfate</b></mark></li></ul><ul class=\"l1\"><li><i>(can help w/ fatigue &amp; PPH)</i></li><li><b><i>Hemoglobin</i></b><i>!</i></li></ul><ul class=\"l0\"><li>Calorie needs</li></ul><ul class=\"l1\"><li>Each woman has <b>different calorie needs</b> based on height and weight </li></ul>"
+      },
+      {
+       "id": "9a565d7ac8",
+       "prompt": "Weight Gain",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Weight Gain</mark></p>",
+       "answerHtml": "<p>Weight gain = Based on <b>pre-pregnancy</b> weight</p><ul class=\"l0\"><li>Average weight = should gain <span style=\"color:#ff00ff\">25-35 lbs</span></li><li>↓ Underweight (BMI <span style=\"color:#ff00ff\">&lt; 18.5</span>) = should gain <span style=\"color:#ff00ff\">28-40 lbs</span></li><li>↑ Overweight (BMI = <span style=\"color:#ff00ff\">25-29.9</span>) = should gain <span style=\"color:#ff00ff\">15-25 lbs</span></li><li>↑↑ Obese (BMI <span style=\"color:#ff00ff\">≧ 30</span>) = should gain <span style=\"color:#ff00ff\">11-20 lbs</span></li></ul><p>[keep these frames in mind &amp; know that no one is going to be the same]</p>"
+      },
+      {
+       "id": "a7b284d971",
+       "prompt": "Ultrasound",
+       "promptHtml": "<p>Ultrasound</p>",
+       "answerHtml": "<p><b><i>Prior </i></b><i>to performing ultrasound, </i><mark style=\"background-color:#00ff00\"><i>have patient drink fluids</i></mark></p><p>1st trimester</p><ul class=\"l0\"><li>Confirm pregnancy</li><li>Verify <b>location!!</b> of pregnancy </li><li>Determine gestational <b>age</b></li><li>Identify markers for <b>abnormalities</b></li></ul><p>2nd trimester</p><ul class=\"l0\"><li>Assess fetus </li></ul><ul class=\"l1\"><li>Viability, <b>anatomy </b>(kidneys), gestational <b>growth</b></li><li><i>(Heart rate) </i></li></ul><p>3rd trimester</p><ul class=\"l0\"><li>Assess fetus</li></ul><ul class=\"l1\"><li>Viability, gestational <b>growth</b>, <b>position </b>(good for delivery?)</li></ul><ul class=\"l2\"><li><i>Large baby? Might deliver earlier than planned</i></li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Diagnostic Tests",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "49e8cb11b8",
+       "prompt": "AFP",
+       "promptHtml": "<p><b>AFP</b></p>",
+       "answerHtml": "<p><b>Alpha-fetoprotein:</b></p><ul class=\"l0\"><li><i>Glycoprotein</i> associated w/ <b>neural tube defects </b></li><li>[can detect Down’s Syndrome]</li><li>Performed at <span style=\"color:#ff00ff\">16-18 weeks</span></li></ul>"
+      },
+      {
+       "id": "0272a0e6c7",
+       "prompt": "Amniocentesis",
+       "promptHtml": "<p><b>Amniocentesis</b></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Transabdominal puncture of amniotic sac to obtain a sample of amniotic fluid</li><li>Used to detect chromosomal <b>abnormalities</b>, neural tube defects, &amp; lung maturity </li><li><i>(usually done if they see something abnormal)</i></li><li><i>↓ Low levels of AFP =</i></li></ul><ul class=\"l1\"><li><i>Chromosomal abnormalities such as </i><b><i>trisomy 21</i></b></li></ul><ul class=\"l0\"><li><i>↑ Elevated levels of AFP =</i></li></ul><ul class=\"l1\"><li><i>Neural tube defects such as </i><b><i>spina bifida</i></b> </li></ul><ul class=\"l2\"><li><i>(meninges protrude from spinal cap)</i></li></ul><ul class=\"l0\"><li>Performed w/ <b>ultrasound</b></li><li>Pt must <mark style=\"background-color:#00ff00\">empty bladder prior</mark></li><li><mark style=\"background-color:#00ffff\">Rhogam</mark> if necessary</li><li><i>Might cause </i><span style=\"color:#ff0000\"><i>fetal death</i></span></li></ul>"
+      },
+      {
+       "id": "819c09b0d6",
+       "prompt": "Non Stress Test",
+       "promptHtml": "<p>Non Stress Test</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Indications:</li></ul><ul class=\"l1\"><li>Diabetic</li><li>Known chromosomal abnormality </li></ul><ul class=\"l0\"><li>Indirect measurement of uteroplacental function</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">[have them eat first]</mark></li><li>[Do they feel the fetus moving?]</li></ul><ul class=\"l0\"><li>Heart rate accelerations w/ fetal movement</li><li>Reactive vs Non-reactive, Appropriate for gestational age</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\"><i>Reactive</i></mark><i> if you have accelerations</i></li><li><span style=\"color:#ff0000\"><i>Non-reactive</i></span><i> if you do NOT have accelerations</i></li><li><i>Appropriate for gestational age (if </i><span style=\"color:#ff00ff\"><i>28 weeks </i></span><i>or older)</i></li></ul><ul class=\"l2\"><li><i>If younger, it’ll be non-reactive, which is appropriate for gestational age (under 28 weeks)</i></li></ul><p><i>Over </i><span style=\"color:#ff00ff\"><i>28 weeks</i></span> </p><ul class=\"l0\"><li>AT LEAST <span style=\"color:#ff00ff\">2 accelerations</span>, increasing <span style=\"color:#ff00ff\">15 bpm x 15 seconds</span><i>= good acceleration! </i></li></ul><ul class=\"l1\"><li><i>Once you see this, you want 15 by 15 FROM THERE ON OUT</i></li></ul><p><i>Under </i><span style=\"color:#ff00ff\"><i>28 weeks</i></span></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\"><i>10 bpm x 10</i></span> <span style=\"color:#ff00ff\"><i>sec </i></span><i>= okay </i></li></ul>"
+      },
+      {
+       "id": "13ec6e37ee",
+       "prompt": "Contraction Stress Test",
+       "promptHtml": "<p>Contraction Stress Test</p>",
+       "answerHtml": "<p>Diagnostic procedure to determine <b>fetal heart rate</b> response under <b>stress</b></p><p><i>(use </i><mark style=\"background-color:#00ffff\"><i>oxytocin</i></mark><i> to see what’s going on) </i></p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Late </b></span>fetal heart rate <span style=\"color:#ff0000\"><b>decelerations </b></span>= <span style=\"color:#ff0000\"><b>+ Positive </b></span></li></ul><ul class=\"l1\"><li>Occurring w/ contractions, associated w/ <span style=\"color:#ff0000\">poorer fetal outcomes </span></li><li><i>(after the</i><b><i> mid-point</i></b><i> of the contraction, baby’s HR will go down!)</i></li><li><i>Sign that something is going on w/ the placenta/uterus </i></li></ul><ul class=\"l2\"><li><i>Maybe </i><mark style=\"background-color:#00ff00\"><i>deliver</i></mark><i> or </i><mark style=\"background-color:#00ff00\"><i>watch</i></mark><i> them for a bit</i></li><li><mark style=\"background-color:#00ff00\"><i>Find out </i></mark><i>what’s causing this! </i></li><li><mark style=\"background-color:#00ff00\"><i>Treatment</i></mark></li></ul><ul class=\"l3\"><li><mark style=\"background-color:#00ff00\"><i>IV</i></mark><i> &amp; start </i><mark style=\"background-color:#00ffff\"><i>pitosin</i></mark><i>, start slowly, keep tabs on patient! </i></li></ul><ul class=\"l0\"><li><b>No </b>late <b>decelerations </b>= <mark style=\"background-color:#00ff00\"><b>- Negative</b></mark> = HAPPY BABY 😀</li></ul><p><img src=\"img/3f08beb49531.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "73a42f5e1b",
+       "prompt": "Fetal Movement",
+       "promptHtml": "<p>Fetal Movement</p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\">10 movements</span> within <span style=\"color:#ff00ff\">2 hr</span> period</p><ul class=\"l0\"><li>↓ Decreased fetal movement = associated w/ <span style=\"color:#0000ff\">fetal hypoxia</span></li></ul><ul class=\"l1\"><li><i>Need to </i><span style=\"color:#ff0000\"><i>see HCP</i></span><i> &amp; get a </i><mark style=\"background-color:#00ff00\"><i>non-stress test</i></mark><i>!</i></li></ul>"
+      },
+      {
+       "id": "bfe4c0d8d2",
+       "prompt": "Biophysical Profile",
+       "promptHtml": "<p><b>Biophysical Profile</b></p>",
+       "answerHtml": "<p>Real time <b>ultrasound</b> which applies score to follow assessments:</p><ul class=\"l0\"><li>Body <b>movements </b>(2 points)</li><li>Fetal <b>tone </b>(2 points)</li><li>Fetal <b>breathing </b>(2 points)</li><li><b>Amniotic fluid</b> index (2 points)</li><li>NST (2 points)</li></ul><ul class=\"l1\"><li>Non Stress Test</li><li><b>FHR</b></li></ul><p><i>Score </i><span style=\"color:#ff00ff\"><i>under 6 </i></span><i>→ need further work done</i></p><ul class=\"l0\"><li><i>Maybe prolonged monitoring, stay in the hospital, IV fluids, get induced</i></li></ul><p><i>BPP is done a lot if someone has a NST that’s abnormal all of a sudden</i></p>"
+      }
+     ]
+    },
+    {
+     "name": "Prenatal (Etc 2)",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "7bf2d0a33c",
+       "prompt": "LIVES acronym",
+       "promptHtml": "<p>LIVES acronym</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Listen</li><li>Inquire about needs &amp; concerns</li><li>Validate</li><li>Enhance safety</li><li>Support</li></ul>"
+      },
+      {
+       "id": "7d6a6a0ca0",
+       "prompt": "Abortion Care / Meds",
+       "promptHtml": "<p><b>Abortion </b>Care / Meds</p>",
+       "answerHtml": "<p>Nursing</p><ul class=\"l0\"><li><b>Bed rest</b></li><li><b>Abstinence</b> from coitus</li></ul><p>Meds</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Misoprostol </mark>(Cytotec)</li><li><mark style=\"background-color:#00ffff\">Mifeprostol</mark></li><li><mark style=\"background-color:#00ffff\">Dinoprostone </mark>(Cervidil) - expensive</li><li><mark style=\"background-color:#00ffff\">Rho(D) Immune Globulin </mark>(RhoGAM)</li><li>[Laminaria - opens up the uterus/cervix - natural evacuation of uterus]</li></ul><p>New research that there needs to be <mark style=\"background-color:#00ff00\">more follow up</mark> on SAB patients</p>"
+      },
+      {
+       "id": "67e8213a4c",
+       "prompt": "Ectopic Pregnancy",
+       "promptHtml": "<p><b>Ectopic </b>Pregnancy</p>",
+       "answerHtml": "<p>Treatments</p><ul class=\"l0\"><li>Surgery</li><li><mark style=\"background-color:#00ffff\">Methotrexate</mark></li><li><mark style=\"background-color:#00ffff\">Rhogam </mark>(if necessary)</li></ul><p><mark style=\"background-color:#00ff00\">Nursing care</mark></p><ul class=\"l0\"><li>Support them</li><li>Make sure they don’t go into shock/sepsis</li><li><b>Why </b>did it happen?</li></ul><ul class=\"l1\"><li>Blockage?</li><li>Further work up on the reproductive system?</li></ul>"
+      },
+      {
+       "id": "9b747edf57",
+       "prompt": "Preterm Labor",
+       "promptHtml": "<p>Preterm Labor</p>",
+       "answerHtml": "<p>Preterm = anything that happens <b>before term</b>: <span style=\"color:#ff00ff\">37 weeks</span>! </p><p><b>FFN </b>= Fetal Fibronectin </p><ul class=\"l0\"><li>Swab in cervical area/vagina</li><li>Checking for the <b>glue </b>that holds the pregnancy together</li></ul><p><i>Medications are off-labeled:</i></p><p><mark style=\"background-color:#00ffff\"><i>Terbutaline </i></mark></p><p><mark style=\"background-color:#00ffff\"><i>Magnesium Sulfate</i></mark></p><p><mark style=\"background-color:#00ffff\"><i>Nifidepine</i></mark></p><p><mark style=\"background-color:#00ffff\"><i>Indomethacin</i></mark><i> (to decrease the pressure in the uterus) </i></p>"
+      }
+     ]
+    },
+    {
+     "name": "Complications",
+     "group": "Antepartum & Adaptations to Pregnancy",
+     "cards": [
+      {
+       "id": "4b02c1d334",
+       "prompt": "Placenta Previa",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Placenta Previa</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Placenta implants </mark><mark style=\"background-color:#ffff00\"><b>over cervix</b></mark></li><li>Higher risk for <span style=\"color:#ff0000\">previous c/s</span> (c-section)</li><li><span style=\"color:#ff0000\"><u>** PAINLESS bright red bleeding **</u></span></li></ul><p><mark style=\"background-color:#00ff00\">Nursing</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">NO EXAM!</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\"><i>Ultrasound first</i></mark><i>! Don’t want to cause more bleeding</i></li><li><i>However, if someone is pushing &amp; you see bright red bleeding → </i><b><i>exam</i></b></li></ul><ul class=\"l0\"><li>Monitor fetal status</li><li>Education of what can happen</li></ul><ul class=\"l1\"><li><i>If at home &amp; start bleeding → go to the hospital</i></li></ul><ul class=\"l0\"><li>Start 2 IVs</li></ul><p>Classifications:</p><ul class=\"l0\"><li>Total (<b>Complete</b>) placental previa</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Avoid </span>delivering vaginally!</li></ul><ul class=\"l0\"><li><b>Partial </b>placental previa</li><li><b>Marginal </b>placenta previa</li><li><b>Low lying </b>placenta previa </li></ul><ul class=\"l1\"><li>They can deliver vaginally, but watch closely!</li><li>Will get more ultrasounds throughout pregnancy </li></ul><p><img src=\"img/06972a0f676d.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "066ece7ae9",
+       "prompt": "Abruptio Placenta",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Abruptio Placenta</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff0000\">PAINFUL </span>w/ <span style=\"color:#980000\">dark red bleeding</span> </li><li>Fetal <span style=\"color:#ff0000\">distress </span>or <span style=\"color:#ff0000\">absent</span></li><li><span style=\"color:#ff0000\">(decels, variability)</span></li></ul><p><mark style=\"background-color:#00ff00\">Nursing</mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">NO EXAMS</span>!</li><li>Monitor</li><li>IV</li><li>Oxygen</li><li>Turn off <mark style=\"background-color:#00ffff\">oxytocin</mark>!</li><li>Possible immediate <b>delivery </b></li><li><b>Separation</b> of placenta from uterus</li></ul><ul class=\"l1\"><li>Usually r/t meds, HTN, etc</li></ul><ul class=\"l0\"><li>Occurs after <span style=\"color:#ff00ff\">20 weeks</span> gestation</li><li>1/100 births</li><li>High <b>mortality </b>rate</li></ul><ul class=\"l1\"><li><i>For baby &amp; mom! </i></li></ul><ul class=\"l0\"><li><i>[may be caused by </i><b><i>cocaine</i></b><i>]</i></li></ul><p>Effects to <b>mother</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">C/S</span></li><li><span style=\"color:#ff0000\">Hemorrhage</span></li></ul><p>Effects to <b>fetus</b></p><ul class=\"l0\"><li>↓ Low birth <b>weight</b></li><li><b>Preterm </b>delivery</li><li><span style=\"color:#0000ff\">Asphyxia</span></li><li><span style=\"color:#ff0000\">Stillbirth</span></li></ul><p><img src=\"img/fe46842d0649.jpg\" alt=\"\" loading=\"lazy\"></p><p><img src=\"img/4babffa5c672.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 2
+      },
+      {
+       "id": "56cb486284",
+       "prompt": "Gestational HTN",
+       "promptHtml": "<p>Gestational HTN</p>",
+       "answerHtml": "<ul class=\"l0\"><li>BP &gt; <span style=\"color:#ff00ff\">140/90</span></li><li>Onset <span style=\"color:#ff00ff\">&gt; 20 weeks</span></li></ul>"
+      },
+      {
+       "id": "ade285bd65",
+       "prompt": "Preeclampsia",
+       "promptHtml": "<p>Preeclampsia </p>",
+       "answerHtml": "<p>BP &gt; <span style=\"color:#ff00ff\">140/90</span> + ≥ 1 (any of these listed below)</p><ul class=\"l0\"><li>Proteinuria</li><li>Cr &gt; 1.1 or ↑ 2x</li><li>Thrombocytopenia</li><li>Elevated AST/ALT</li><li>Pulmonary edema</li><li>Cerebral / visual symptoms</li></ul><p>S&amp;S:</p><ul class=\"l0\"><li>Blurred <span style=\"color:#ff0000\">vision / </span>Seeing <span style=\"color:#ff0000\">stars</span></li><li>Ongoing <span style=\"color:#ff0000\">HA</span></li><li><span style=\"color:#ff0000\">Swelling / Epigastric </span>pain</li></ul>"
+      },
+      {
+       "id": "6adfc5f347",
+       "prompt": "Eclampsia",
+       "promptHtml": "<p>Eclampsia</p>",
+       "answerHtml": "<p>Preeclampsia + <span style=\"color:#ff0000\">Seizures</span>!</p>"
+      },
+      {
+       "id": "03027e2458",
+       "prompt": "HELLP",
+       "promptHtml": "<p>HELLP</p>",
+       "answerHtml": "<p><b>H </b>: Hemolysis of RBC</p><p><b>EL</b> : Elevated liver enzymes </p><p><b>LP</b> : Low platelet count</p><ul class=\"l0\"><li>[Can cause them to go into DIC when they deliver/bleed]</li></ul><ul class=\"l1\"><li>Thrombocytopenia</li><li>Elevated AST/ALT</li><li>Hemolysis</li></ul>"
+      },
+      {
+       "id": "aa223832eb",
+       "prompt": "Nursing Management of HTN Disorders",
+       "promptHtml": "<p>Nursing Management of <b>HTN Disorders</b></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Assessment</li><li>Timely treatment</li></ul><ul class=\"l1\"><li><i>Make sure they stay consistent w/ appts!</i></li></ul><ul class=\"l0\"><li>Urine protein</li><li>Labs</li><li>Creatinine clearance ratio</li></ul><ul class=\"l1\"><li>24 hr urine test</li></ul><ul class=\"l0\"><li>Education</li></ul><ul class=\"l1\"><li>Tell them to come in if they have</li></ul><ul class=\"l2\"><li><span style=\"color:#ff0000\">HA</span></li><li><span style=\"color:#ff0000\">Epigastric pain</span></li><li><span style=\"color:#ff0000\">Severe heartburn</span></li><li><span style=\"color:#ff0000\">Spots in their eyes</span></li></ul><ul class=\"l0\"><li>Medications</li></ul><ul class=\"l1\"><li><b>Anti hypertensives</b></li></ul><ul class=\"l2\"><li><mark style=\"background-color:#00ffff\"><i>Nifedipine</i></mark></li><li><mark style=\"background-color:#00ffff\"><i>Labetalol </i></mark></li><li><i>(any med to lower their BP)</i></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Magnesium Sulfate</mark> (Anti-seizure! <i>- Need to be hospitalized)</i></li></ul><ul class=\"l2\"><li><i>[she doesn't mention the stuff below]</i></li><li><i>When given</i></li><li><i>How given</i></li><li><i>Levels: </i><span style=\"color:#ff00ff\"><i>4-7</i></span><i> meq/L</i></li><li><i>Effects</i></li><li><i>RN response to </i><span style=\"color:#ff0000\"><i>Deep Tendon Reflexes</i></span></li><li><mark style=\"background-color:#00ffff\"><i>Calcium Gluconate </i></mark></li></ul>"
+      },
+      {
+       "id": "491bf12e2a",
+       "prompt": "Coombs Test",
+       "promptHtml": "<p><b>Coombs </b>Test</p>",
+       "answerHtml": "<p>Check <b>baby’s </b>blood at birth </p><ul class=\"l0\"><li>Looking for blood incompatibility </li></ul><p><b>Indirect </b>Coombs Test → Check <b>mom’s </b>blood</p>"
+      },
+      {
+       "id": "06c178259f",
+       "prompt": "Rh Factor Incompatibility",
+       "promptHtml": "<p>Rh Factor Incompatibility </p>",
+       "answerHtml": "<p><span style=\"color:#ff00ff\"><i>2nd baby </i></span><i>gets affected if you have a </i><b><i>negative mom</i></b><i>! </i></p><ul class=\"l0\"><li><i>After the 1st pregnancy, they get Anti-Rh antibodies</i></li><li><i>Administer </i><mark style=\"background-color:#00ffff\"><i>Rhogam </i></mark><i>at (she doesn’t mention the timeframe?)</i></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\"><i>28 weeks</i></span><i> &amp; </i><span style=\"color:#ff00ff\"><i>72 hrs</i></span><i> postpartum</i></li><li><b><i>Any risk of bleeding</i></b><i> during pregnancy</i></li></ul>"
+      },
+      {
+       "id": "9e5a58e705",
+       "prompt": "Gestational DM",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Gestational DM</mark></p>",
+       "answerHtml": "<p>1st trimester</p><ul class=\"l0\"><li>↑ Increase in <b>estrogen</b> &amp; <b>progesterone</b></li></ul><p>2nd trimester</p><ul class=\"l0\"><li><b>↑</b> Increase in <b>hPL</b></li></ul><p>3rd trimester</p><ul class=\"l0\"><li>↑ Increase in <b>insulin</b> requirements</li><li>May see <b>polyhydramnios </b>from fetal urination (<b>hyperglycemia</b>)</li></ul>"
+      },
+      {
+       "id": "59e25ad8a6",
+       "prompt": "Glucose Tolerance Test",
+       "promptHtml": "<p>Glucose Tolerance Test</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Performed at <span style=\"color:#ff00ff\">24-28 weeks</span></li><li>1 hour vs 3 hour</li></ul><ul class=\"l1\"><li>Normal for <b>1 hour</b> = <span style=\"color:#ff00ff\">&lt; 140</span></li></ul><ul class=\"l2\"><li><i>If 1 hour is abnormal → come back &amp; do a 3 hour test</i></li></ul>"
+      },
+      {
+       "id": "9f52e264db",
+       "prompt": "DM Nursing Management",
+       "promptHtml": "<p>DM <mark style=\"background-color:#00ff00\">Nursing</mark> Management</p>",
+       "answerHtml": "<p>Evaluation of fetal status</p><ul class=\"l0\"><li>Fetal movements</li></ul><ul class=\"l1\"><li><b><i>Kick counts</i></b><i> are important!</i></li></ul><ul class=\"l0\"><li>Ultrasounds</li><li>NST, Biophysical profile</li><li>Alpha Fetoprotein <i>at </i><span style=\"color:#ff00ff\"><i>16 week mark</i></span> (detect abnormalities)</li></ul>"
+      },
+      {
+       "id": "10bac6ed3e",
+       "prompt": "Anemia",
+       "promptHtml": "<p>Anemia</p>",
+       "answerHtml": "<p>If someone is anemic before labor, they have less reserve for their blood loss</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Hemoglobin is at least </mark><mark style=\"background-color:#ffff00;color:#ff00ff\">11 </mark></li><li><mark style=\"background-color:#ffff00\">Hematocrit is at least </mark><mark style=\"background-color:#ffff00;color:#ff00ff\">33</mark></li></ul><p>Maternal effects / Clinical manifestations:</p><ul class=\"l0\"><li>Fatigue / pallor</li><li>Infection</li><li>Healing</li><li>Poor intolerance for blood loss</li><li>Increased risk for<span style=\"color:#ff0000\"> infection / hemorrhage</span> !</li></ul><p>Fetal effects:</p><ul class=\"l0\"><li>↓ Low birth weight</li><li><b>Neural tube</b> defects</li><li>↓ Lower iron stores at birth</li></ul>"
+      },
+      {
+       "id": "252abe2bc1",
+       "prompt": "Torch Testing",
+       "promptHtml": "<p>Torch Testing</p>",
+       "answerHtml": "<p><b><u>T</u></b>oxoplasmosis</p><p><b><u>O</u></b>ther</p><ul class=\"l0\"><li>Syphilis (RPR test)</li><li>HIV</li><li>Varicella (chickenpox)</li><li>Parvovirus B19 (Fifth’s disease)</li><li>Coxsackivirus (hand, foot, &amp; mouth disease)</li></ul><p><b><u>R</u></b>ubella: German measles</p><p><b><u>C</u></b>ytomegalovirus</p><p><b><u>H</u></b>erpes, Hepatitis B</p><p><mark style=\"background-color:#00ff00\"><i>Pre-screen</i></mark><i> them to make sure they don't have any of these! </i></p>"
+      },
+      {
+       "id": "de15f907dc",
+       "prompt": "Group B Streptococcus (GBS)",
+       "promptHtml": "<p>Group B Streptococcus (GBS)</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Colonized in pregnant woman</li><li>May cause <span style=\"color:#ff0000\">UTI </span>or <u>no symptoms</u> </li><li>Tested at <span style=\"color:#ff00ff\">35-37 weeks</span></li><li>If positive → Antibiotics in labor</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Ampicillin</mark> / <mark style=\"background-color:#00ffff\">Penicillin</mark></li><li><mark style=\"background-color:#00ffff\">Clindamycin</mark> if allergic </li></ul><ul class=\"l0\"><li>[Administer at least 2 doses at least 4 hrs before birth…]</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Intrapartum",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "41866236f3",
+       "prompt": "5 P’s of Labor",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">5 P’s of Labor</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Powers</b></li><li><b>Passage</b></li><li><b>Passenger</b></li><li>Position</li><li><b>Psyche</b></li></ul>"
+      },
+      {
+       "id": "7dcb043f66",
+       "prompt": "Powers",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Powers</mark></p>",
+       "answerHtml": "<p>Uterine <b>Contractions</b></p><ul class=\"l0\"><li>Thrust baby toward cervix</li><li>Thins &amp; dilates cervix</li><li>Measured by</li></ul><ul class=\"l1\"><li>Frequency</li><li>Duration</li><li>Intensity</li></ul><p>Intra-Abdominal Pressure</p><ul class=\"l0\"><li>Voluntary muscle contractions</li><li>Pushing</li></ul>"
+      },
+      {
+       "id": "00dc84391c",
+       "prompt": "Powers / Contractions",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Powers / Contractions</mark></p>",
+       "answerHtml": "<p>Goal = <span style=\"color:#ff00ff\">5 in 10 min!</span></p><ul class=\"l0\"><li>Tachysystole &gt; 5 in 10 min</li><li><b>Duration </b>= When the contraction starts &amp; finishes</li><li><b>Frequency </b>= Beginning of 1 contraction → to the <b>beginning of the next contraction</b></li><li><b>Intensity </b>= Baseline → Top of contraction = <b>Nadir / Acme</b></li></ul><ul class=\"l1\"><li>[external monitor can NOT measure intensity - only INTERNAL monitors]</li></ul><p>Want contractions to be around <span style=\"color:#ff00ff\">40 - 60 mmHg</span> when they’re on an IUPC</p><ul class=\"l0\"><li> (so you know that they’re strong enough to push the baby out)</li></ul><p><img src=\"img/ea7b51b680a8.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "8c500546db",
+       "prompt": "Passage",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Passage</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>False <b>pelvis</b> vs True <b>pelvis</b></li></ul><ul class=\"l1\"><li>False = top, above the pelvic brim</li><li>True = bottom &amp; <b>part the baby has to go through </b></li></ul><ul class=\"l0\"><li>Pelvic shape</li><li>Soft tissues</li></ul><ul class=\"l1\"><li>Cervix [needs to dilate, might have 2]</li><li>Pelvic floor muscles [may be weak]</li><li>Vagina</li></ul><p><u>Pelvic Shape</u></p><p>Gynecoid</p><ul class=\"l0\"><li><b>Most favorable</b></li><li>50% of women</li></ul><p>Anthropoid</p><ul class=\"l0\"><li>25% of women</li><li><b>Favorable</b></li></ul><p>Android</p><ul class=\"l0\"><li>20% of women</li><li>Funnel shape</li><li><span style=\"color:#ff0000\">Not </span>favorable</li></ul><p>Platypelloid</p><ul class=\"l0\"><li>5% of women</li><li><span style=\"color:#ff0000\"><b>Least </b></span><span style=\"color:#ff0000\">favorable</span></li></ul><p><img src=\"img/3b54e2969e5b.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "276d7da9a2",
+       "prompt": "Passenger",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Passenger</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Fetal head</li><li>Fetal <b>attitude </b></li></ul><ul class=\"l1\"><li>[<b>position</b> that the baby is in]</li></ul><ul class=\"l0\"><li>Fetal lie </li></ul><ul class=\"l1\"><li>[transverse/breech/etc]</li></ul><ul class=\"l0\"><li>Fetal presentation</li><li>Fetal position</li><li>Fetal station</li><li>Fetal engagement </li></ul><ul class=\"l1\"><li>[when the baby is coming down]</li></ul><ul class=\"l0\"><li>Cardinal movements of labor</li></ul>"
+      },
+      {
+       "id": "2ca8bf28eb",
+       "prompt": "Fetal Head",
+       "promptHtml": "<p>Fetal Head</p>",
+       "answerHtml": "<p>[if the baby is looking DOWN, it’s easier for them to come out]</p><ul class=\"l0\"><li>Largest &amp; least compressible</li><li>Sutures not fused</li><li>Fontanelles</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#ffff00\">Anterior</mark>: Soft spot</li></ul><ul class=\"l2\"><li><b>Diamond </b>shaped [4 sutures]</li><li>Measures 1-4 cm</li><li>Remains open <span style=\"color:#ff00ff\">12-18 months</span></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#ffff00\">Posterior</mark>:</li></ul><ul class=\"l2\"><li><b>Triangular </b>[3 sutures]</li><li>Measures 1-2 cm</li><li>Closes <span style=\"color:#ff00ff\">8-12 weeks</span></li></ul><ul class=\"l0\"><li>Molding [looks like a cone head]</li></ul><ul class=\"l1\"><li>Elongated shape of skull r/t overlapping of cranial bones</li></ul><ul class=\"l0\"><li>Caput succedaneum (right in picture)</li></ul><ul class=\"l1\"><li><b>Fluid </b>collected under scalp</li></ul><ul class=\"l2\"><li>Crosses sutures</li><li>Usually benign</li></ul><ul class=\"l0\"><li>Cephalohematoma (left in picture)</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Blood </span>collected b/w periosteum &amp; bone</li></ul><ul class=\"l2\"><li>Does not cross sutures</li><li>Generally reabsorbed [but <mark style=\"background-color:#00ff00\">monitor </mark>this]</li></ul>"
+      },
+      {
+       "id": "14213152b2",
+       "prompt": "Fetal Lie",
+       "promptHtml": "<p><i>Fetal Lie</i></p>",
+       "answerHtml": "<p><i>[Relationship of spine of fetus → to spine of mother]</i></p><p><img src=\"img/ccd3feb8e4fa.jpg\" alt=\"\" loading=\"lazy\"></p><p><i>Longitudinal = most ideal!</i></p>",
+       "images": 1
+      },
+      {
+       "id": "66add0ed3c",
+       "prompt": "Presentation",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Presentation</mark></p>",
+       "answerHtml": "<p>Cephalic</p><ul class=\"l0\"><li><b>Vertex [head!]= Complete flexion </b>[head tucked in]</li><li>Military = Moderate flexion </li><li>Brow = Poor flexion, slight extension </li><li>Face = Full extension</li></ul><p>Breech [butt/feet are coming down]</p><ul class=\"l0\"><li>Frank = Very flexible, legs flexed high</li><li>Complete = Knees folded</li><li>Single Footling </li><li>Double Footling </li></ul>"
+      },
+      {
+       "id": "8a967288a4",
+       "prompt": "External Cephalic Version (ECV)",
+       "promptHtml": "<p>External Cephalic Version (ECV)</p>",
+       "answerHtml": "<p>- Doctor externally pushes on the uterus to turn the baby</p><p>- Use an ultrasound</p><p>- Possible epidural or pain meds/ give <mark style=\"background-color:#00ffff\">terbutaline </mark>(to relax uterus)  </p><p>- Works if the baby is moveable - Might put a binder on the mom to keep the baby down</p><p>- Or induce]</p><p><img src=\"img/17cf3030a219.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "d554348bb7",
+       "prompt": "Position",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Position</mark></p>",
+       "answerHtml": "<p><i>Describes the relationship of a given point on presenting part of fetus to a designated point on maternal pelvis</i></p>"
+      },
+      {
+       "id": "2678253d04",
+       "prompt": "Psyche",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Psyche</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li><i>Education regarding procedures</i></li><li><i>Support from family</i></li><li><i>Sense of mastery [help them feel empowered - give them confidence]</i></li><li><i>Trust in staff</i></li><li><i>Knowledge is power</i></li><li><i>Positive reaction to pregnancy</i></li><li><i>Personal control</i></li><li><i>Preparation for childbirth</i></li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Labor",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "a17f5df2dc",
+       "prompt": "Premonitory Signs of Labor",
+       "promptHtml": "<p>Premonitory Signs of Labor</p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Cervical</b> changes</li></ul><ul class=\"l1\"><li>Softening &amp; <b>dilation</b></li><li><mark style=\"background-color:#ffff00\">[cervical dilation = true labor!]</mark></li></ul><ul class=\"l0\"><li>Lightening</li></ul><ul class=\"l1\"><li>Fetal presenting part descends into pelvis</li><li>[their stomach feels lighter because the baby moved down]</li></ul><ul class=\"l0\"><li>Nesting</li></ul><ul class=\"l1\"><li>Sudden increase in energy before labor</li></ul><ul class=\"l0\"><li>Bloody show</li></ul><ul class=\"l1\"><li>[cervix is probably dilating]</li></ul><ul class=\"l0\"><li>Braxton Hicks contractions</li><li>Increased vaginal secretions</li><li>Spontaneous rupture of membranes (SROM)</li></ul><ul class=\"l1\"><li>[AKA when their <b>water breaks</b> = <mark style=\"background-color:#00ff00\">mom needs to go to the hospital</mark> if this happens!]</li></ul><p>5-1-1 Rule or 4-1-1 Rule</p><ul class=\"l0\"><li><i>2nd baby = 5-1-1 </i></li><li><i>U/C </i><span style=\"color:#ff00ff\"><i>every 5 min, </i></span><i>lasting </i><span style=\"color:#ff00ff\"><i>1 min, </i></span><i>for at least</i><span style=\"color:#ff00ff\"><i> 1 hour</i></span></li><li><i>1st baby = 411 = </i></li><li><i>U/C </i><span style=\"color:#ff00ff\"><i>every 4 minutes, </i></span><i>lasting </i><span style=\"color:#ff00ff\"><i>1 min, </i></span><i>for at least </i><span style=\"color:#ff00ff\"><i>1 hr</i></span></li></ul>"
+      },
+      {
+       "id": "105cabb9ae",
+       "prompt": "1st stage of Labor",
+       "promptHtml": "<p>1st stage of Labor</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Onset of labor</li><li><b>Cervical change</b> &amp; contractions until pushing (10 cm)</li></ul><p><b>Latent Phase </b></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">0-3 cm</span> [book]</li><li><span style=\"color:#ff00ff\">0-6</span> [ACOG]</li></ul><p><b>Active Phase</b></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">4-7 cm</span></li><li>7-8 [ACOG]</li></ul><p><b>Transition Phase</b></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">8-10 cm</span></li><li>9-10 [ACOG]</li></ul><p>[Stage 1 ends at 10 cm dilation &amp; 100% effacement]</p>"
+      },
+      {
+       "id": "daeed11339",
+       "prompt": "2nd stage of Labor",
+       "promptHtml": "<p>2nd stage of Labor</p>",
+       "answerHtml": "<p><b>Pushing </b>(10 cm) to birth</p>"
+      },
+      {
+       "id": "9915ce9ad2",
+       "prompt": "3rd stage of Labor",
+       "promptHtml": "<p>3rd stage of Labor</p>",
+       "answerHtml": "<p><b>Placental </b>delivery</p>"
+      },
+      {
+       "id": "77ebbbc9dc",
+       "prompt": "4th stage of labor",
+       "promptHtml": "<p>4th stage of labor</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Placenta to end of <b>recovery </b>&amp; breastfeeding</li><li>(Stable &amp; transfer to PP)</li></ul>"
+      },
+      {
+       "id": "bb678658b2",
+       "prompt": "Maternal Response to Labor",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Maternal Response to Labor</mark></p>",
+       "answerHtml": "<p>1st stage (Latent)</p><ul class=\"l0\"><li>Excited, talkative</li></ul><p>2nd stage (Active)</p><ul class=\"l0\"><li>Inwardly focused</li></ul><p>3rd stage (Transitional)</p><ul class=\"l0\"><li>Feels loss of control</li><li>[pain, top of their head is going to fly off, “what did you do to me?”]</li></ul>"
+      },
+      {
+       "id": "5345ad4005",
+       "prompt": "Cardinal Movements",
+       "promptHtml": "<p>Cardinal Movements</p>",
+       "answerHtml": "<p>Fetal movements to pass through birth canal</p><ul class=\"l0\"><li><b>Engagement</b></li><li><b>Descent</b></li><li>Flexion</li><li>Internal rotation</li><li>Extension</li><li>External rotation</li><li>Expulsion</li></ul><p>Mnemonic = every damn fetus in europe eats eggs</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Baby needs to </mark><mark style=\"background-color:#ffff00\"><b>engage </b></mark><mark style=\"background-color:#ffff00\">&amp; </mark><mark style=\"background-color:#ffff00\"><b>descend </b></mark><mark style=\"background-color:#ffff00\">into the pelvis</mark></li></ul>"
+      },
+      {
+       "id": "cfd61956d5",
+       "prompt": "Interventions",
+       "promptHtml": "<p><mark style=\"background-color:#00ff00\">Interventions</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Anticipatory guidance </li><li>Ambulation &amp; positioning PRN</li><li>Fluids</li><li>Assess contractions q <span style=\"color:#ff00ff\">15-30 min</span></li><li>Sterile vaginal exams PRN</li><li>Voiding [keep bladder empty]</li><li>VS q <span style=\"color:#ff00ff\">30-60 min</span></li><li>Auscultate FHR q<span style=\"color:#ff00ff\"> 30 min</span></li><li>Assess amniotic fluid if ROM</li><li>IV therapy</li><li>Med administration</li><li>Assist for <mark style=\"background-color:#00ff00\">effective breathing</mark></li></ul><ul class=\"l1\"><li>Do NOT yell → “Dont push”</li><li>[Tell them to “<b>Blow out the birthday candles</b>”]</li></ul><ul class=\"l0\"><li>Assist MD/CNM</li></ul>"
+      },
+      {
+       "id": "2b33952c09",
+       "prompt": "Leopold’s Maneuvers",
+       "promptHtml": "<p>Leopold’s Maneuvers</p>",
+       "answerHtml": "<p>Method to determine fetal:</p><ul class=\"l0\"><li>Presentation</li><li>Position</li><li>Lie</li></ul><p><mark style=\"background-color:#ffff00\">4 Maneuvers</mark></p><ul class=\"l0\"><li>1st: Determine fetal presentation</li><li>2nd: Determine position</li><li>3rd: Determine engagement</li><li>4th: Determine attitude </li></ul>"
+      },
+      {
+       "id": "89d9d67599",
+       "prompt": "Cervical dilation",
+       "promptHtml": "<p>Cervical dilation</p>",
+       "answerHtml": "<p>0 - 10 cm</p>"
+      },
+      {
+       "id": "0696cb9e71",
+       "prompt": "Cervical effacement",
+       "promptHtml": "<p>Cervical effacement</p>",
+       "answerHtml": "<p>0 - 100%</p><ul class=\"l0\"><li>Thinning of cervix</li></ul>"
+      },
+      {
+       "id": "8973a0184c",
+       "prompt": "Fetal Station",
+       "promptHtml": "<p>Fetal Station</p>",
+       "answerHtml": "<p><i>[Fetal station is where the fetal head is in regards to the mother’s pelvis. The higher up in the pelvis, the more negative the number.</i></p><ul class=\"l0\"><li><i>0 = Good sign that the baby can make it through</i></li><li><i>The further out the head is the higher the number</i></li><li><i>- 3 [</i><span style=\"color:#ff0000\"><i>cord can prolapse</i></span><i> if the doctor ruptures the membranes here!]</i></li><li><i>- 2</i></li><li><i>- 1</i></li><li><i>0 = Ischial spine</i></li><li><i>+1</i></li><li><i>+2</i></li><li><i>+3 = baby is coming out</i></li><li><i>You usually want to delay pushing until head is at least +2 station</i></li></ul>"
+      },
+      {
+       "id": "2d1e519a09",
+       "prompt": "Tocodynamometer",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">Tocodynamometer </mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Measures <b>U/C</b> &amp; is placed on<b> top of fundus</b></li><li>[only measures frequency &amp; duration of U/C]</li></ul>"
+      },
+      {
+       "id": "4c16a5c4cc",
+       "prompt": "EFM (External Fetal Monitoring) / Ultrasound",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\">EFM (External Fetal Monitoring) / Ultrasound</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Records <b>FHR </b>&amp; is placed over <b>back </b>of <b>fetus</b></li></ul>"
+      },
+      {
+       "id": "572c8d389a",
+       "prompt": "Cervical Exams",
+       "promptHtml": "<p>Cervical Exams</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Dilation (0 - 10)</li><li>Effacement (0 - 100)</li><li>Station (-3 to +3)</li></ul>"
+      },
+      {
+       "id": "46b82b92b8",
+       "prompt": "Internal Monitoring",
+       "promptHtml": "<p>Internal Monitoring</p>",
+       "answerHtml": "<p>[Prior - Cervix must be DILATED &amp; membranes must be BROKEN]</p><p>IUPC [intrauterine pressure catheter]</p><ul class=\"l0\"><li>Measures <b>U/C pressure</b> directly</li></ul><p>FSE [fetal scalp electrode]</p><ul class=\"l0\"><li>Measures FHR pattern directly</li></ul><ul class=\"l1\"><li>FSE criteria</li></ul><ul class=\"l2\"><li>Ruptured membranes</li><li>Cervical dilation</li><li>Presenting part engaged</li><li>Skilled practitioner </li></ul><ul class=\"l1\"><li>Try to avoid unless:</li></ul><ul class=\"l2\"><li>Mom has increased BMI &amp; can’t get FHR</li><li>Baby has a lot of decels</li><li>[weigh risks vs benefits!]</li></ul>"
+      },
+      {
+       "id": "b2c8e564be",
+       "prompt": "Variability",
+       "promptHtml": "<p>Variability </p>",
+       "answerHtml": "<p>Normal FHR: <span style=\"color:#ff00ff\">110 - 160 bpm</span></p><ul class=\"l0\"><li>[for greater than <b>10 minutes</b>]</li></ul><p><mark style=\"background-color:#00ff00\">Absent = </mark><mark style=\"background-color:#00ff00;color:#ff00ff\">0</mark><mark style=\"background-color:#00ff00\"> bpm</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Watch!</mark></li></ul><p><mark style=\"background-color:#00ff00\">Minimal = </mark><mark style=\"background-color:#00ff00;color:#ff00ff\">1 -5</mark><mark style=\"background-color:#00ff00\"> bpm</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Watch!</mark></li></ul><p>Moderate = <span style=\"color:#ff00ff\">6 - 25</span> bpm </p><ul class=\"l0\"><li>Good!:)</li></ul><p>Marked = <span style=\"color:#ff00ff\">&gt; 25 bpm</span></p><p><i>*Hard to see variability</i><span style=\"color:#ff00ff\"><i> under 28 weeks</i></span><i> - but once you DO </i><b><i>see variability</i></b><i>, you will </i><b><i>ALWAYS </i></b><i>see it from there on out*</i></p>"
+      },
+      {
+       "id": "ied34c4797",
+       "prompt": "[Image] Moderate Variability",
+       "promptHtml": "<p><img src=\"img/ada95a62f1a3.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p>Moderate Variability</p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "f98542c349",
+       "prompt": "Categories of Fetal Heart Tones",
+       "promptHtml": "<p>Categories of Fetal Heart Tones</p>",
+       "answerHtml": "<p>Category I</p><ul class=\"l0\"><li>No decelerations</li><li>Normal baseline</li><li>Accelerations <span style=\"color:#ff00ff\">15 x 15</span></li><li>Moderate Variability </li><li>*Good to go - <mark style=\"background-color:#00ff00\"><b>Green</b></mark> light*</li></ul><p>Category II</p><ul class=\"l0\"><li>Can contain decelerations</li><li>Requires further <b>monitoring </b>&amp; <b>evaluation</b></li><li>*Yay or Uh-Oh - Make some changes - <mark style=\"background-color:#ffff00\"><b>Yellow</b></mark> light*</li></ul><ul class=\"l1\"><li>Turn the Pt</li><li>Amnioinfusion</li><li>IV fluids</li><li>Oxygen [don’t give as much]</li></ul><p>Category III</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Late </span>decelerations</li><li><span style=\"color:#ff0000\">Abnormal </span>baseline</li><li><b>Recurrent </b>decelerations</li><li><span style=\"color:#ff0000\">Minimal </span>to <span style=\"color:#ff0000\">absent </span>variability </li></ul><ul class=\"l1\"><li><b>Sinusoidal</b></li></ul><ul class=\"l2\"><li>Can be d/t→ fetal anemia / meds</li></ul><ul class=\"l0\"><li>*<b>Stop</b> - <mark style=\"background-color:#ff0000\">Red</mark> light*</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">Expedite delivery!</span> </li></ul><ul class=\"l2\"><li>C/S</li><li>Vacuum extraction, etc</li></ul><p>Sinusoidal = perfect squiggle line]</p><p><img src=\"img/bc46601ca531.png\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "880500e499",
+       "prompt": "Interventions for Fetal Hypoxia",
+       "promptHtml": "<p>Interventions for Fetal Hypoxia</p>",
+       "answerHtml": "<p>[always do the <b>LEAST invasive</b> measure 1st!]</p><ul class=\"l0\"><li>Position change (lateral)</li><li>Turn off any <mark style=\"background-color:#00ffff\">oxytocin</mark> or remove inducing measures (remove <mark style=\"background-color:#00ffff\">cervidil</mark>)</li><li>IV fluid increase</li><li>Oxygen via mask (not used much anymore, but can be)</li><li>Contact HCP</li><li>Possible C/S</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Strips",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "7772cb17cb",
+       "prompt": "Fetal Strip Top? Bottom? Time of each box?",
+       "promptHtml": "<p>Fetal Strip</p><ul class=\"l0\"><li>Top?</li><li>Bottom?</li><li>Time of each box?                        </li></ul>",
+       "answerHtml": "<p>Baby on TOP ↑</p><p>Mom on BOTTOM ↓</p><p><br>Each box = <span style=\"color:#ff00ff\">10 seconds</span></p>"
+      },
+      {
+       "id": "d9a92d592f",
+       "prompt": "Accelerations",
+       "promptHtml": "<p>Accelerations</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Increase in heart rate from baseline</li><li><span style=\"color:#ff00ff\">15 x 15</span> minimal increase</li><li>May last up to <span style=\"color:#ff00ff\">10 minutes</span></li><li>Occurs w/ movement or stimulation [such as a vaginal exam]</li><li>A <b>positive </b>finding!</li></ul><p><img src=\"img/52cf9fd18da5.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "23c8a75eb4",
+       "prompt": "Decelerations",
+       "promptHtml": "<p><i>Decelerations</i></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Drop from baseline FHR</li><li><b>Parasympathetic</b> CNS</li><li>Categories</li></ul><ul class=\"l1\"><li>Early</li><li>Late</li><li>Variable</li><li>Prolonged [greater than <span style=\"color:#ff00ff\">8 minutes - </span>need to do something at the<span style=\"color:#ff00ff\"> 6 minute </span>mark<span style=\"color:#ff00ff\">!</span>]</li></ul>"
+      },
+      {
+       "id": "66b29379cf",
+       "prompt": "Early Decelerations",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Early </b></mark><mark style=\"background-color:#ffff00\">Decelerations</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Nadir occurs w/ peak of U/C</li><li>Head compression</li><li>Not ominous</li></ul><p> <img src=\"img/30c076f8662c.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "images": 1
+      },
+      {
+       "id": "82aea31aa6",
+       "prompt": "Late Decelerations",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Late </b></mark><mark style=\"background-color:#ffff00\">Decelerations</mark></p>",
+       "answerHtml": "<ul class=\"l0\"><li>Nadir occurs after U/C</li><li>Utero<span style=\"color:#ff0000\">placental insufficiency</span></li><li>Ominous for <span style=\"color:#ff0000\">fetal acidosis</span></li></ul><ul class=\"l1\"><li>If<span style=\"color:#ff0000\"> continuous </span>&amp;<span style=\"color:#ff0000\"> subtle = not good!</span></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark>:</li></ul><ul class=\"l1\"><li>Reposition mom to <b>L side</b></li><li>IV </li><li>Face mask w/ O2</li><li>Turn off Oxytocin/Pitocin!</li></ul><p> <img src=\"img/a42bdd338b6e.jpg\" alt=\"\" loading=\"lazy\">  </p>",
+       "images": 1
+      },
+      {
+       "id": "f5a03ddb04",
+       "prompt": "Variable Decelerations",
+       "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Variable </b></mark><mark style=\"background-color:#ffff00\">Decelerations</mark></p>",
+       "answerHtml": "<p>[decel looks like a → <b>V / carrot top</b>]</p><ul class=\"l0\"><li>Nadir occurs at various time</li><li>Abrupt </li></ul><ul class=\"l1\"><li>Baseline - Nadir in <span style=\"color:#ff00ff\">&lt; 15 sec</span></li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Cord compression</b></span></li><li>May be <span style=\"color:#ff0000\">ominous </span>[if they keep getting deeper..]</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">→ Deliver!</span></li><li>[give <mark style=\"background-color:#00ff00\">amnioinfusion</mark> to increase the fluid cushion &amp; improve cord compression]</li></ul><p> <img src=\"img/ac254fbb01c3.jpg\" alt=\"\" loading=\"lazy\"> </p>",
+       "images": 1
+      },
+      {
+       "id": "i969c70467",
+       "prompt": "[Image] Early decel",
+       "promptHtml": "<p><img src=\"img/9c41bec2fb5d.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p>Early decel</p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "i7d8419de5",
+       "prompt": "[Image] Late decel",
+       "promptHtml": "<p><img src=\"img/8803c8aab8b0.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p>Late decel</p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "ie44478e7f",
+       "prompt": "[Image] Variable decel",
+       "promptHtml": "<p><img src=\"img/ac254fbb01c3.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "answerHtml": "<p>Variable decel</p>",
+       "imagePrompt": true,
+       "images": 1
+      },
+      {
+       "id": "aaf38d5e8e",
+       "prompt": "Pain Interventions",
+       "promptHtml": "<p>Pain Interventions </p>",
+       "answerHtml": "<ul class=\"l0\"><li>Anticipation / education</li><li>Birth plan</li><li>Non-pharmacological relief</li></ul><ul class=\"l1\"><li>Heat packs, cold packs, counter pressure, shaking the apple tree, moving them, walk, bounce on birthing ball</li></ul><ul class=\"l0\"><li>Pharmacologic pain relief </li></ul><ul class=\"l1\"><li>[nitrous, medication, epidural]</li></ul>"
+      },
+      {
+       "id": "512b67bd18",
+       "prompt": "Nonpharmacological Pain Measures",
+       "promptHtml": "<p>Nonpharmacological Pain Measures</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Labor support</li><li>Hypobirthing</li><li>Hydrotherapy</li></ul><ul class=\"l1\"><li>Tub delivery</li></ul><ul class=\"l0\"><li>Ambulation</li><li>Position changes</li><li>Acupuncture &amp; acupressure</li></ul><ul class=\"l1\"><li>[pain in their pelvis, ligament pain]</li></ul><ul class=\"l0\"><li>Apply heat &amp; cold</li><li>Imagery</li><li>Massage</li><li>Breathing techniques </li></ul>"
+      },
+      {
+       "id": "ee5ccd9456",
+       "prompt": "Pharmacological Pain Relief",
+       "promptHtml": "<p>Pharmacological Pain Relief</p>",
+       "answerHtml": "<p>Narcotics</p><ul class=\"l0\"><li>Stadol [old-fashioned]</li><li>Nubain [old-fashioned]</li><li><mark style=\"background-color:#00ffff\">Fentanyl</mark></li><li><b>1st</b> doses are the<b> most effective</b></li></ul><ul class=\"l1\"><li>[Helps them <b>deal </b>w/ the contraction but it’ll still be there]</li></ul><ul class=\"l0\"><li>Narcotics can cause <span style=\"color:#ff0000\">neonatal respiratory depression</span> if given within <span style=\"color:#ff00ff\">3 hrs of delivery</span></li><li>Effective <mark style=\"background-color:#00ff00\">if mother is able to doze between contractions</mark></li><li><mark style=\"background-color:#00ffff\">Nitrous Oxide</mark> = Inhalant, specific parameters</li></ul><ul class=\"l1\"><li>[has to be <b>on their face</b> &amp; they need to <b>be in control</b> of it - it can make staff fall asleep if they let it out into the room]</li></ul>"
+      },
+      {
+       "id": "80a5257542",
+       "prompt": "Epidural Nursing Interventions",
+       "promptHtml": "<p>Epidural </p><ul class=\"l0\"><li>Nursing Interventions</li></ul>",
+       "answerHtml": "<ul class=\"l0\"><li>Placement in <b>1st/2nd</b> stage by anesthesiologist</li><li>Block nerve impulses T10 to S5</li><li>Single dose, <b>continuous </b>or bolus dose (top-off)</li></ul><p><mark style=\"background-color:#00ff00\"><u>Nursing Interventions</u></mark><u>: Epidural</u></p><ul class=\"l0\"><li>Test dose symptoms</li><li><b>Preload </b>w/ fluid bolus to prevent low B/P</li><li><b>BP </b>assessment (doesn’t mention? → peripheral vasoconstrictor may be given)</li><li>Assess to assure correct placement</li></ul><ul class=\"l1\"><li>[make sure mom is not lying on her back too much &amp; reposition frequently] </li></ul><ul class=\"l0\"><li>Dermatone levels</li><li>Positioning for laboring patient</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Labor Induction",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "ed2d450ff5",
+       "prompt": "Indications for inducing",
+       "promptHtml": "<p>Indications for inducing</p>",
+       "answerHtml": "<p>Inducing = Increases risk of C/S</p><p>[Make sure they’re inducing for the <b>right reasons</b>!</p><ul class=\"l0\"><li>Cervix is softening &amp; they’re prepared to be induced]</li></ul><p>Why induce?</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">BP elevated</span></li><li><span style=\"color:#ff0000\">Cholestasis</span></li><li><span style=\"color:#ff0000\">Large gestational baby</span></li><li><span style=\"color:#ff0000\">Diabetic </span></li></ul>"
+      },
+      {
+       "id": "595dfc4c4b",
+       "prompt": "”Arrive Trial”",
+       "promptHtml": "<p><i>”Arrive Trial”</i></p>",
+       "answerHtml": "<p>[“Arrive Trial” - seemed to increase c-section rate </p><ul class=\"l0\"><li>Doctors would deliver at 39 weeks</li><li>[delivering under 39 weeks is now discouraged]</li></ul>"
+      },
+      {
+       "id": "069f60052c",
+       "prompt": "Nonpharmacologic Induction",
+       "promptHtml": "<p>Nonpharmacologic Induction</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Sexual intercourse</li></ul><ul class=\"l1\"><li>[because sperm has prostaglandins]</li></ul><ul class=\"l0\"><li>Nipple stimulation</li><li>Herbs</li></ul>"
+      },
+      {
+       "id": "5e54a9afa3",
+       "prompt": "Mechanical Induction",
+       "promptHtml": "<p>Mechanical Induction</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Foley catheter        </li></ul><ul class=\"l1\"><li>2 balloons - fill it up &amp; puts pressure on the cervix</li><li>Once mom is 3 cm → it will come out</li></ul><ul class=\"l0\"><li>Laminaria [for still births or inductions, but rare]</li></ul>"
+      },
+      {
+       "id": "d76d3c2b8f",
+       "prompt": "Surgical Induction",
+       "promptHtml": "<p>Surgical Induction</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Amniotomy</li><li>Stripping membranes</li></ul>"
+      },
+      {
+       "id": "348af48226",
+       "prompt": "Pharmacologic Induction",
+       "promptHtml": "<p>Pharmacologic Induction</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Dinoprostone (Cervidil)</mark></li></ul><ul class=\"l1\"><li>Used to ripen the cervix</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Misoprostol (cytotec)</mark></li></ul><ul class=\"l1\"><li>Used to ripen the cervix </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Oxytocin [Pitocin]</mark></li></ul><ul class=\"l1\"><li>Used BEFORE labor </li></ul><ul class=\"l2\"><li>Induction or Augmentation (chemical boost to stalled labor) </li></ul><ul class=\"l1\"><li>AFTER labor (4th stage)</li></ul><ul class=\"l2\"><li>To make the uterus forcefully clamp down &amp; stop PPH</li></ul><ul class=\"l1\"><li>High Alert Med!</li></ul><ul class=\"l2\"><li>[Very potent med &amp; can cause uterine tachysystole]</li></ul><p><mark style=\"background-color:#00ff00\">Nursing Considerations</mark></p><ul class=\"l0\"><li>EFM</li><li>Contraindications</li><li>Policy for administering these medications</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "2nd Stage of Labor",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "a359a4201d",
+       "prompt": "What happens in the 2nd stage?",
+       "promptHtml": "<p>What happens in the 2nd stage?</p>",
+       "answerHtml": "<ul class=\"l0\"><li>10 cm dilated = <b>Birth </b>of labor</li><li>Spontaneous pushing </li></ul><ul class=\"l1\"><li><b>Open </b>glottis pushing = <b>exhaling </b>&amp; pushing</li></ul><ul class=\"l0\"><li>Directed pushing</li></ul><ul class=\"l1\"><li><b>Closed </b>glottis pushing = <b>holding their breath</b> &amp; pushing</li></ul><ul class=\"l0\"><li><b>Laboring down</b> </li></ul><ul class=\"l1\"><li>[letting the baby come down on it’s own]</li></ul>"
+      },
+      {
+       "id": "d1724f7814",
+       "prompt": "Assessments & Interventions",
+       "promptHtml": "<p>Assessments &amp; Interventions</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ff00\">Assessments</mark></p><ul class=\"l0\"><li>VS</li><li>FHR</li><li>Sterile vaginal exams</li></ul><ul class=\"l1\"><li><b>Limit vaginal exams</b></li></ul><ul class=\"l0\"><li>Amniotic fluid</li></ul><p><mark style=\"background-color:#00ff00\">Interventions</mark></p><ul class=\"l0\"><li>Encourage <b>rest </b>in between contractions</li><li><b>Encourage </b>pushing</li><li><b>Assist </b>w/ pushing</li><li><b>Praise</b></li><li>Call doctor</li><li>Prepare baby warmer: O2, suction</li><li>Cleanse perineum [w/ betadine, not always done]</li><li>Assist MD/CNM</li></ul>"
+      },
+      {
+       "id": "c36406b0d6",
+       "prompt": "Episiotomy",
+       "promptHtml": "<p>Episiotomy </p>",
+       "answerHtml": "<p>[we try not to do this anymore]</p><ul class=\"l0\"><li>Incision in perineum</li><li>Midline vs Mediolateral</li><li>Lacerations</li></ul><ul class=\"l1\"><li>1st degree = Skin</li><li>2nd degree = Perineal muscles</li><li>3rd degree = Anal sphincter muscle</li><li>4th degree = Rectal wall</li></ul>"
+      },
+      {
+       "id": "123b9d8696",
+       "prompt": "Vacuum extraction",
+       "promptHtml": "<p>Vacuum extraction</p>",
+       "answerHtml": "<p>Vacuum extraction</p><ul class=\"l0\"><li>Indications for?</li></ul><ul class=\"l1\"><li>To prevent a c-section</li><li>[count how long it’s <b>on the head</b> &amp; when you <b>take it off</b>]</li><li>If it pops off <span style=\"color:#ff00ff\">3 times</span> → C section</li></ul><ul class=\"l0\"><li>Nursing management</li><li>Neonatal risk</li><li>Maternal risk</li></ul><p>[baby needs to be almost crowning, at <span style=\"color:#ff00ff\">+1 or +2 station</span> at least, to use!!!]</p>"
+      },
+      {
+       "id": "82029d8009",
+       "prompt": "C/S",
+       "promptHtml": "<p>C/S</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Indications for?</li><li>NTSV</li><li>Elective [try to avoid elective!]</li><li>Impact for family</li><li>Pre-op care</li></ul><ul class=\"l1\"><li>Water broke? → vaginal prep w/ <b>betatine </b></li><li>Water did NOT break? → abdominal prep w/ <b>chlorhexidine </b></li></ul><ul class=\"l0\"><li>Intra-op care</li><li>Post-op care</li></ul><p><b><span style=\"color:#666666\"><u>Cesarean Birth</u></span></b></p><ul class=\"l0\"><li>Surgical delivery</li><li>33% of births</li><li>Higher risks</li><li><b>Incision types:</b></li></ul><ul class=\"l1\"><li>Classical [they <b>MUST </b>deliver C/S after this!]</li><li>Low transverse [you want this - can do a <b>TOLAC </b>after if the hospital allows this]</li></ul><ul class=\"l0\"><li>Operation</li><li><mark style=\"background-color:#00ffff\">Medications</mark></li></ul><ul class=\"l1\"><li>Antiemetics</li><li>Antacids</li><li>Prophylactic antibiotics</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Interventions</mark></li></ul><ul class=\"l1\"><li>Education!!</li><li>IV</li><li>Labs</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Post Op</mark></li></ul><ul class=\"l1\"><li>Vital signs</li><li>Fundal assessment</li><li>Lochia</li><li>LOC</li><li>VTE prophylaxis</li></ul><ul class=\"l2\"><li>SCDs</li><li><mark style=\"background-color:#00ff00\">Enoxaparin </mark></li></ul>"
+      },
+      {
+       "id": "733adb8c5a",
+       "prompt": "VBAC",
+       "promptHtml": "<p>VBAC</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Vaginal Birth After Cesarean (VBAC)</li><li>Trial of Labor After Cesarean (TOLAC)</li><li>Must have lower abdominal uterine incision (low transverse)</li><li>Risk for<span style=\"color:#ff0000\"> uterine rupture</span></li><li>Contraindications</li></ul><ul class=\"l1\"><li>Previous classical uterine incision</li><li>Inadequate pelvis</li><li>Inadequate staff (OB, anesthesia, RN)</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "3rd Stage of Labor",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "1ff8d773d4",
+       "prompt": "Placental Separation & Interventions",
+       "promptHtml": "<p>Placental Separation &amp; Interventions</p>",
+       "answerHtml": "<p>Placental Separation:</p><ul class=\"l0\"><li>10-30 min after infant delivery</li><li>Uterus rises upward</li><li>Cord lengthens</li><li>Sudden trickle of <b>blood</b></li><li>Uterus changes shape to <b>globular</b></li></ul><p><mark style=\"background-color:#00ff00\"><u>Interventions</u></mark></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Do NOT pull on cord!!!</span></li><li><mark style=\"background-color:#ffff00\">Know signs of placental separation</mark></li></ul><ul class=\"l1\"><li>Globular shaped uterus</li><li>Rise of fundus in abdomen</li><li>Sudden increase in blood flow</li><li>Further protrusion of umbilical cord</li></ul><ul class=\"l0\"><li>Assist w/ delivery</li><li>Advocate for skin to skin</li><li>Provide newborn care</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "4th Stage of Labor",
+     "group": "Intrapartum",
+     "cards": [
+      {
+       "id": "77ebbbc9dc-2",
+       "prompt": "4th stage of labor",
+       "promptHtml": "<p>4th stage of labor</p>",
+       "answerHtml": "<ul class=\"l0\"><li>1 - 4 hrs after birth</li><li><b>Bonding </b>of mom &amp; baby</li><li><b>Skin </b>to skin</li><li><b>Breastfeeding </b>encouraged</li><li>Vital signs</li><li><mark style=\"background-color:#00ff00\">Assessing Fundus:</mark></li></ul><ul class=\"l1\"><li>Located around umbilicus </li><li>Firm, midline, &amp; below umbilicus = Normal</li><li><span style=\"color:#ff0000\">Boggy </span>= <mark style=\"background-color:#00ff00\">Massage until firm</mark></li></ul><ul class=\"l2\"><li><mark style=\"background-color:#ffff00\">*Empty bladder 1st!</mark></li><li><mark style=\"background-color:#ffff00\">Check fundus q </mark><mark style=\"background-color:#ffff00;color:#ff00ff\">15 min</mark></li></ul>"
+      },
+      {
+       "id": "35dfc3e3ae",
+       "prompt": "Nursing Interventions",
+       "promptHtml": "<p>Nursing Interventions</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ff00\">Nursing</mark>:</p><ul class=\"l0\"><li>Administer <mark style=\"background-color:#00ffff\">oxytocin [Pitocin]</mark> (IV or IM)</li></ul><ul class=\"l1\"><li>To make the uterus forcefully clamp down &amp; stop PPH</li></ul><ul class=\"l0\"><li>Assess</li></ul><ul class=\"l1\"><li>VS</li><li>Lochia</li><li>Fundus</li></ul><ul class=\"l0\"><li>Fundal massage</li><li>Promote bonding &amp; breastfeeding</li><li>Apply ice to perineum </li><li>Examining placenta &amp; fetal membranes for intactness the 2nd time</li><li><mark style=\"background-color:#ffff00\">Assessing for any perineal trauma, such as the following:</mark></li></ul><ul class=\"l1\"><li><b>Firm </b>fundus w/ <span style=\"color:#ff0000\">bright red</span> blood trickling = <span style=\"color:#ff0000\">Laceration</span></li><li><span style=\"color:#ff0000\">Boggy </span>fundus w/ <span style=\"color:#e06666\">red </span>blood flowing = <span style=\"color:#ff0000\">Uterine atony</span></li><li><span style=\"color:#ff0000\">Boggy </span>fundus w/ <span style=\"color:#980000\">dark blood</span> &amp; <span style=\"color:#980000\">clots </span>= <span style=\"color:#ff0000\">Retained placenta</span></li></ul><ul class=\"l0\"><li>Inspecting the perineum for condition of episiotomy</li></ul><p>[when assessing perineum → REDA: redness, edema/ecchymosis, discharge, approximation: edges of wound]  </p>"
+      },
+      {
+       "id": "b067eef7c4",
+       "prompt": "Dysfunctional Labor",
+       "promptHtml": "<p>Dysfunctional Labor</p>",
+       "answerHtml": "<p>Dystocia = Difficult / obstructed labor</p><ul class=\"l0\"><li>Any problems w/ the 5 P’s!</li></ul><ul class=\"l1\"><li>Powers</li><li>Passenger</li><li>Passageway</li><li>Psyche</li><li>Position</li></ul>"
+      },
+      {
+       "id": "7dcb043f66-2",
+       "prompt": "Powers",
+       "promptHtml": "<p>Powers</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Hypertonic contractions = Uterus does NOT relax (<span style=\"color:#ff0000\">tachysystole</span>, over <span style=\"color:#ff00ff\">5 contractions in a 20 minute</span> window)</li><li>Hypotonic contractions = Weak contractions</li></ul><ul class=\"l1\"><li>[can occur d/t <span style=\"color:#ff0000\">dehydration </span>&amp; can <span style=\"color:#ff0000\">↑ FHR</span>!]</li></ul><ul class=\"l0\"><li>Precipitous labor = Frequent strong contractions resulting in delivery <span style=\"color:#ff00ff\">&lt; 3 hrs</span></li><li>Ineffective pushing</li></ul>"
+      },
+      {
+       "id": "276d7da9a2-2",
+       "prompt": "Passenger",
+       "promptHtml": "<p>Passenger</p>",
+       "answerHtml": "<ul class=\"l0\"><li><b>Macrosomia </b>- CPD <i>(cephalopelvic disproportion)</i></li><li>Multiple gestation (<b>twins</b>)</li><li>[Occiput Posterior position - sunny side up]</li><li>Malpresentation:</li></ul><ul class=\"l1\"><li>Breech</li><li>Face</li><li>Brow</li></ul>"
+      },
+      {
+       "id": "76f01f2fbd",
+       "prompt": "Passageway: Shoulder Dystocia",
+       "promptHtml": "<p>Passageway: Shoulder Dystocia</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Difficult delivery of the shoulders</li><li>Shoulder width is &gt; pelvic diameter</li><li>Women at risk:</li></ul><ul class=\"l1\"><li>Diabetes</li><li>Obesity</li><li>Hx of macrosomic infant</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark></li></ul><ul class=\"l1\"><li><b>Drop the head of the bed</b>! [this gives them a wider pelvis]</li><li>Hyperextend their <b>legs back towards abdomen</b> &amp; legs all the way down </li><li>Sometimes have to push down on the pubic symphysis</li></ul><ul class=\"l2\"><li>[Get the shoulder under the pubic symphysis] </li></ul><ul class=\"l0\"><li>Treatment = <mark style=\"background-color:#00ff00\">McRobert’s Maneuver</mark></li></ul><p><u>Nursing Diagnosis:</u></p><p>Maternal</p><ul class=\"l0\"><li>Pain</li><li>Fatigue</li><li>Failed vaginal delivery</li></ul><p>Fetal</p><ul class=\"l0\"><li>Injury</li><li>Gas exchange [anoxic]</li><li>Infection</li></ul>"
+      },
+      {
+       "id": "2678253d04-2",
+       "prompt": "Psyche",
+       "promptHtml": "<p>Psyche</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Loss of control for precipitous labor</li><li>Fear</li><li>Anxiety</li><li>Fatigue</li><li>Nurse should provide <b>emotional </b>&amp; physical <b>support </b>to patient and family</li></ul>"
+      },
+      {
+       "id": "7779013047",
+       "prompt": "NTSV",
+       "promptHtml": "<p>NTSV</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Nulliparous</li><li>Term</li><li>Singleton</li><li>Vertex</li><li>Initiative to decrease Primary C-sections</li><li>Implications to future pregnancies</li></ul>"
+      },
+      {
+       "id": "662d82860b",
+       "prompt": "Preterm Birth",
+       "promptHtml": "<p>Preterm Birth</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Birth between <span style=\"color:#ff00ff\">20 - 37 weeks</span></li><li>12% of deliveries in US are preterm</li><li>Highest infant mortality</li></ul><ul class=\"l1\"><li>85% of mortalities</li></ul><p>Diagnostics:</p><ul class=\"l0\"><li><b>Fetal Fibronectin</b>:</li></ul><ul class=\"l1\"><li>Glycoprotein produced by chorion that acts like <b>glue </b>that holds the cervix together</li><li>Should <b>not </b>normally be detected b/w <span style=\"color:#ff00ff\">24-34 weeks</span> gestation</li><li><span style=\"color:#0000ff\">Negative </span>detection is strong predictor of <b>no labo</b>r in<span style=\"color:#ff00ff\"> 2 weeks</span></li><li>Nothing in vagina for <b>24 hours</b> prior to sample [outdated]</li></ul>"
+      },
+      {
+       "id": "16d21ac3a4",
+       "prompt": "Preterm S&S",
+       "promptHtml": "<p>Preterm S&amp;S</p>",
+       "answerHtml": "<p>Patient may complain of:</p><ul class=\"l0\"><li>Backache</li><li>Cramping</li><li>Bleeding</li><li>Pelvic or abdominal pain</li><li>Pelvic pressure</li><li>Diarrhea</li><li>Urinary frequency</li></ul>"
+      },
+      {
+       "id": "ae3719ae50",
+       "prompt": "Nursing Care for PROM",
+       "promptHtml": "<p>Nursing Care for PROM</p>",
+       "answerHtml": "<p>Maternal risks:</p><ul class=\"l0\"><li>Chorioamnionitis (III: intra-amniotic infection &amp; inflammation) </li><li>Abruptio placenta</li><li>DIC</li></ul><p>Fetal risks</p><ul class=\"l0\"><li>Prematurity</li><li>Infection</li></ul><p><u>Nursing Care for PROM</u></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark> of <b>chorioamnionitis</b></li></ul><ul class=\"l1\"><li>IV antibiotics</li><li>Delivery </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark> if <b>no</b> chorioamnionitis</li></ul><ul class=\"l1\"><li>Hospital / bed rest</li><li>Monitor VS / WBC</li><li>FHR monitoring</li><li>Tocolytics [uterine RELAXANTS]</li></ul><ul class=\"l2\"><li><mark style=\"background-color:#00ffff\">Indomethacin (Indocin)</mark></li><li><mark style=\"background-color:#00ffff\">Nifedipine</mark></li><li><mark style=\"background-color:#00ffff\">Terbutaline</mark></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Betamethasone </mark>(celestone) - 24-34 weeks gestation at least 48 hours before birth</li><li><mark style=\"background-color:#00ffff\">Magnesium Sulfate</mark> for neuroprotection for 24 hrs</li></ul><ul class=\"l0\"><li>Nursing</li></ul><ul class=\"l1\"><li>No vaginal exams: Sterile speculum</li></ul>"
+      },
+      {
+       "id": "49f7a22a34",
+       "prompt": "Post Dates Pregnancy",
+       "promptHtml": "<p>Post Dates Pregnancy</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Pregnancy after <span style=\"color:#ff00ff\">42 weeks</span></li><li>Risks:</li></ul><ul class=\"l1\"><li>Macrosomic infant</li><li>C/S</li><li><span style=\"color:#ff0000\">Dystocia</span></li></ul><ul class=\"l2\"><li>[more susceptible to this]</li></ul><ul class=\"l1\"><li>Trauma</li><li>Hemorrhage</li><li>Low APGAR scores</li><li>Brachial plexus injury to infant</li></ul>"
+      },
+      {
+       "id": "b1a9670058",
+       "prompt": "Cord Prolapse",
+       "promptHtml": "<p>Cord Prolapse</p>",
+       "answerHtml": "<ul class=\"l0\"><li><span style=\"color:#ff0000\">OB emergency!</span></li><li>Symptoms</li></ul><ul class=\"l1\"><li>Severe variable decelerations after ROM</li><li>Palpation of cord in vagina</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark></li></ul><ul class=\"l1\"><li>Prevention: Hospital if SROM - No ROM at high station</li><li>Check FHT ASAP after ROM !!!</li><li>Emergency</li><li>Knee chest position</li><li>Sterile finger <b>pushes presenting part</b></li><li>IV, O2, Foley</li><li>C/S</li></ul><ul class=\"l2\"><li>[<b>transfer them</b> ASAP to the OR]</li></ul>"
+      },
+      {
+       "id": "3703fe13d9",
+       "prompt": "OB Emergencies",
+       "promptHtml": "<p>OB Emergencies</p>",
+       "answerHtml": "<p>Emergencies</p><ul class=\"l0\"><li>Placenta previa</li><li>Placental abruption</li><li>Uterine rupture</li><li>Uterine inversion</li></ul><p><mark style=\"background-color:#00ff00\">Interventions</mark></p><ul class=\"l0\"><li>Assess FHR</li><li>Position change, fluid bolus, turn off oxytocin</li><li>Emergency C/S</li></ul>"
+      },
+      {
+       "id": "e8b882fbc4",
+       "prompt": "Amnioinfusion",
+       "promptHtml": "<p>Amnioinfusion</p>",
+       "answerHtml": "<p>Amnioinfusion:</p><ul class=\"l0\"><li>Solution introduced to uterus through IUPC</li><li>Severe variable deceleration</li><li>Thick meconium</li><li>Oligohydramnios</li></ul>"
+      }
+     ]
+    },
+    {
+     "name": "Medications",
+     "cards": [
+      {
+       "id": "2d410d2ef1",
+       "prompt": "Blood Pressure Medications",
+       "promptHtml": "<p>Blood Pressure Medications</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Nifedipine</mark></li><li><mark style=\"background-color:#00ffff\">Labetalol</mark></li><li><mark style=\"background-color:#00ffff\">Hydralazine</mark></li></ul>"
+      },
+      {
+       "id": "3a35ddd43d",
+       "prompt": "HTN Disorders",
+       "promptHtml": "<p>HTN Disorders</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Magnesium Sulfate</mark> = <mark style=\"background-color:#ffff00\">Anti-seizure</mark>!</p><p>→ tx for <mark style=\"background-color:#00ff00\">eclampsia</mark></p>"
+      },
+      {
+       "id": "37d1c83d5e",
+       "prompt": "Abortion Meds",
+       "promptHtml": "<p>Abortion Meds</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Misoprostol </mark>(Cytotec)</li><li><mark style=\"background-color:#00ffff\">Mifeprostol</mark></li><li><mark style=\"background-color:#00ffff\">Dinoprostone </mark>(Cervidil) - expensive</li><li><mark style=\"background-color:#00ffff\">Rho(D) Immune Globulin </mark>(RhoGAM)</li><li>[Laminaria - opens up the uterus/cervix - natural evacuation of uterus]</li></ul>"
+      },
+      {
+       "id": "67e8213a4c-2",
+       "prompt": "Ectopic pregnancy",
+       "promptHtml": "<p>Ectopic pregnancy</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Methotrexate</mark></li><li><mark style=\"background-color:#00ffff\">Rhogam </mark>(if necessary)</li></ul>"
+      },
+      {
+       "id": "9b747edf57-2",
+       "prompt": "Preterm labor",
+       "promptHtml": "<p>Preterm labor</p>",
+       "answerHtml": "<p><i>Medications are off-labeled:</i></p><p><mark style=\"background-color:#00ffff\"><i>Terbutaline </i></mark></p><p><mark style=\"background-color:#00ffff\"><i>Magnesium Sulfate</i></mark></p><p><mark style=\"background-color:#00ffff\"><i>Nifidepine</i></mark></p><p><mark style=\"background-color:#00ffff\"><i>Indomethacin</i></mark><i> (to decrease the pressure in the uterus) </i></p>"
+      },
+      {
+       "id": "de15f907dc-2",
+       "prompt": "Group B Streptococcus (GBS)",
+       "promptHtml": "<p>Group B Streptococcus (GBS)</p>",
+       "answerHtml": "<ul class=\"l0\"><li>Colonized in pregnant woman</li><li>May cause <span style=\"color:#ff0000\">UTI </span>or <u>no symptoms</u> </li><li>Tested at <span style=\"color:#ff00ff\">35-37 weeks</span></li><li>If positive → Antibiotics in labor</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Ampicillin</mark> / <mark style=\"background-color:#00ffff\">Penicillin</mark></li><li><mark style=\"background-color:#00ffff\">Clindamycin</mark> if allergic </li></ul><ul class=\"l0\"><li>[Administer at least <span style=\"color:#ff00ff\">2 doses</span> at least <span style=\"color:#ff00ff\">4 hrs apart</span> before birth!]</li></ul>"
+      },
+      {
+       "id": "8a967288a4-2",
+       "prompt": "External Cephalic Version (ECV)",
+       "promptHtml": "<p>External Cephalic Version (ECV)</p>",
+       "answerHtml": "<p>- Doctor externally pushes on the uterus to turn the baby</p><p>- Use an ultrasound</p><p>- Possible epidural or pain meds/ give <mark style=\"background-color:#00ffff\">terbutaline </mark>(to relax uterus)  </p><p>- Works if the baby is moveable - Might put a binder on the mom to keep the baby down</p><p>- Or induce]</p><p><img src=\"img/17cf3030a219.jpg\" alt=\"\" loading=\"lazy\"></p>",
+       "images": 1
+      },
+      {
+       "id": "880500e499-2",
+       "prompt": "Interventions for Fetal Hypoxia",
+       "promptHtml": "<p>Interventions for Fetal Hypoxia</p>",
+       "answerHtml": "<p>[always do the <b>LEAST invasive</b> measure 1st!]</p><ul class=\"l0\"><li>Position change (lateral)</li><li>Turn off any <mark style=\"background-color:#00ffff\">oxytocin</mark> or remove inducing measures (remove <mark style=\"background-color:#00ffff\">cervidil</mark>)</li><li>IV fluid increase</li><li>Oxygen via mask (not used much anymore, but can be)</li><li>Contact HCP</li><li>Possible C/S</li></ul>"
+      },
+      {
+       "id": "ee5ccd9456-2",
+       "prompt": "Pharmacological Pain Relief",
+       "promptHtml": "<p>Pharmacological Pain Relief</p>",
+       "answerHtml": "<p>Narcotics</p><ul class=\"l0\"><li>Stadol [old-fashioned]</li><li>Nubain [old-fashioned]</li><li><mark style=\"background-color:#00ffff\">Fentanyl</mark></li><li><b>1st</b> doses are the<b> most effective</b></li></ul><ul class=\"l1\"><li>[Helps them <b>deal </b>w/ the contraction but it’ll still be there]</li></ul><ul class=\"l0\"><li>Narcotics can cause <span style=\"color:#ff0000\">neonatal respiratory depression</span> if given within <span style=\"color:#ff00ff\">3 hrs of delivery</span></li><li>Effective <mark style=\"background-color:#00ff00\">if mother is able to doze between contractions</mark></li><li><mark style=\"background-color:#00ffff\">Nitrous Oxide</mark> = Inhalant, specific parameters</li></ul><ul class=\"l1\"><li>[has to be <b>on their face</b> &amp; they need to <b>be in control</b> of it - it can make staff fall asleep if they let it out into the room]</li></ul>"
+      },
+      {
+       "id": "348af48226-2",
+       "prompt": "Pharmacologic Induction",
+       "promptHtml": "<p>Pharmacologic Induction</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Dinoprostone (Cervidil)</mark></li></ul><ul class=\"l1\"><li>Used to ripen the cervix</li><li>[can also be given vaginally]</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Misoprostol (cytotec)</mark></li></ul><ul class=\"l1\"><li>Used to ripen the cervix </li><li>[many <b>routes</b>! Vaginally, orally, rectally, etc]</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Oxytocin [Pitocin]</mark></li></ul><ul class=\"l1\"><li>Used BEFORE labor </li></ul><ul class=\"l2\"><li>Induction or Augmentation (chemical boost to stalled labor) </li></ul><ul class=\"l1\"><li>AFTER labor (4th stage)</li></ul><ul class=\"l2\"><li>To make the uterus forcefully clamp down &amp; stop PPH</li><li><mark style=\"background-color:#ffff00\">*Skin to skin [&amp; breast feeding] gives natural oxytocin!*</mark></li></ul><ul class=\"l1\"><li>High Alert Med!</li></ul><ul class=\"l2\"><li>[Very potent med &amp; can cause uterine tachysystole]</li></ul><p><mark style=\"background-color:#00ff00\">Nursing Considerations</mark></p><ul class=\"l0\"><li>EFM</li><li>Contraindications</li><li>Policy for administering these medications</li><li><i>*Warm temp helps w/ bleeding</i></li><li><i>QBL</i></li></ul><ul class=\"l1\"><li><i>&gt; 500 mL for Vaginal birth</i></li><li><i>&gt; 1,000 mL for C-Section*</i></li></ul>"
+      },
+      {
+       "id": "82029d8009-2",
+       "prompt": "C/S",
+       "promptHtml": "<p>C/S</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Medications</mark></li></ul><ul class=\"l1\"><li>Antiemetics</li><li>Antacids</li><li>Prophylactic antibiotics</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Interventions</mark></li></ul><ul class=\"l1\"><li>Education!!</li><li>IV</li><li>Labs</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Post Op</mark></li></ul><ul class=\"l1\"><li>Vital signs</li><li>Fundal assessment</li><li>Lochia</li><li>LOC</li><li>VTE prophylaxis</li></ul><ul class=\"l2\"><li>SCDs</li><li><mark style=\"background-color:#00ff00\">Enoxaparin </mark></li></ul>"
+      },
+      {
+       "id": "ae3719ae50-2",
+       "prompt": "Nursing Care for PROM",
+       "promptHtml": "<p>Nursing Care for PROM</p>",
+       "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark> of <b>chorioamnionitis</b></li></ul><ul class=\"l1\"><li>IV antibiotics</li><li>Delivery </li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Treatment</mark> if <b>no</b> chorioamnionitis</li></ul><ul class=\"l1\"><li>Hospital / bed rest</li><li>Monitor VS / WBC</li><li>FHR monitoring</li><li>Tocolytics [uterine RELAXANTS]</li></ul><ul class=\"l2\"><li><mark style=\"background-color:#00ffff\">Indomethacin (Indocin)</mark></li><li><mark style=\"background-color:#00ffff\">Nifedipine</mark></li><li><mark style=\"background-color:#00ffff\">Terbutaline</mark></li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">Betamethasone </mark>(celestone) - 24-34 weeks gestation at least 48 hours before birth</li><li><mark style=\"background-color:#00ffff\">Magnesium Sulfate</mark> for neuroprotection for 24 hrs</li></ul><ul class=\"l0\"><li>Nursing</li></ul><ul class=\"l1\"><li><b>No vaginal exams</b>: Sterile speculum</li></ul>"
+      },
+      {
+       "id": "2636c566a9",
+       "prompt": "Meds for PPH",
+       "promptHtml": "<p>Meds for PPH</p>",
+       "answerHtml": "<p><mark style=\"background-color:#00ffff\">Oxytocin</mark></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">10-40 units</span> titrated </li><li>IV infusion</li><li>SE:</li></ul><ul class=\"l1\"><li>None</li><li>N/V</li><li>Water intoxication (<span style=\"color:#0000ff\">hyponatremia</span>) w/ prolonged IV use</li><li><span style=\"color:#0000ff\">↓ BP</span> &amp; <span style=\"color:#ff0000\">↑ HR</span> w/ high doses, esp. IV push</li></ul><p><mark style=\"background-color:#00ffff\">Methylergonovine </mark></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">0.2 mg</span></li><li><mark style=\"background-color:#ffff00\">IM</mark></li><li>q<span style=\"color:#ff00ff\">2-4</span> hrs (<span style=\"color:#ff00ff\">1</span> dose only effective)</li><li>SE:</li></ul><ul class=\"l1\"><li>N/V</li><li>Severe HTN</li></ul><ul class=\"l0\"><li>Contraindications</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">HTN</span></li><li><span style=\"color:#ff0000\">Preeclampsia</span></li><li><span style=\"color:#ff0000\">Heart disease</span></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\"><b>Refrigerate </b></mark><mark style=\"background-color:#00ff00\">&amp; protect from </mark><mark style=\"background-color:#00ff00\"><b>light</b></mark></li></ul><p><mark style=\"background-color:#00ffff\">Carboprost</mark></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">250 mcg</span></li><li><mark style=\"background-color:#ffff00\">IM</mark></li><li>q<span style=\"color:#ff00ff\">15-90</span> min (<span style=\"color:#ff00ff\">3</span> doses only effective)</li><li>SE:</li></ul><ul class=\"l1\"><li>N/V</li><li>Diarrhea</li><li>Fever (transient, short)</li><li>HA</li><li>Chills</li><li>Shivering</li><li>HTN</li><li><span style=\"color:#ff0000\">Bronchospasms</span></li></ul><ul class=\"l0\"><li>Contraindications:</li></ul><ul class=\"l1\"><li>Hepatic dz</li><li><span style=\"color:#ff0000\">Asthma</span></li><li>HTN</li><li>Active cardiac/pulmonary disease</li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Refrigerate </mark></li></ul><p><mark style=\"background-color:#00ffff\">Misoprostol</mark></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">600-800 mcg</span></li><li><mark style=\"background-color:#ffff00\">SL</mark> or <mark style=\"background-color:#ffff00\">PO</mark></li><li><span style=\"color:#ff00ff\">1</span> dose!</li><li>SE:</li></ul><ul class=\"l1\"><li>N/V</li><li>Diarrhea</li><li>Shivering</li><li>Fever (transient, short)</li><li>HA</li></ul><ul class=\"l0\"><li>Contraindications:</li></ul><ul class=\"l1\"><li>Allergy to <span style=\"color:#ff0000\">prostaglandin</span></li></ul><p>Tranexamic Acid (<mark style=\"background-color:#00ffff\">TXA</mark>)</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">1 gm</span></li><li>IV infusion over <span style=\"color:#ff00ff\">10 min</span></li><li><span style=\"color:#ff00ff\">1</span> dose within <span style=\"color:#ff00ff\">3 hrs</span></li></ul><ul class=\"l1\"><li><b>2nd </b>dose if bleeding after <span style=\"color:#ff00ff\">30 min</span> OR bleeding resumes <span style=\"color:#ff00ff\">within 24 hrs</span> of 1st dose <b>completion</b></li></ul><ul class=\"l0\"><li>SE:</li></ul><ul class=\"l1\"><li>N/V</li><li>Diarrhea</li><li><span style=\"color:#0000ff\">↓ Hypotension </span>if given too fast</li></ul><ul class=\"l0\"><li>Contraindications:</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">DVTs, thromboembolism, clots, etc.</span></li></ul>"
+      }
+     ]
+    }
+   ],
+   "key": "1MrV1cQzMBQNr17dsGNeLcuDhDQiK6kmmAzwwjg36R-M",
+   "sourceDocId": "1MrV1cQzMBQNr17dsGNeLcuDhDQiK6kmmAzwwjg36R-M"
   }
  ],
- "cardCount": 231
+ "cardCount": 424
 }
