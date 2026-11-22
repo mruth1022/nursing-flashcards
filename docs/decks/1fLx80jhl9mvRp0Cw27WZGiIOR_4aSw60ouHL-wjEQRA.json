@@ -1,0 +1,833 @@
+{
+ "title": "Custom - Psych Exam 2 Flashcards",
+ "generatedAt": "2026-11-22T21:03:09+00:00",
+ "cardCount": 125,
+ "sections": [
+  {
+   "name": "[Meds]",
+   "group": "[Meds]",
+   "cards": [
+    {
+     "id": "4a67c2e158",
+     "prompt": "1st Gen - Antipsychotics Typical / Conventional DISADVANTAGE → More EPS! ←",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\">1st Gen - Antipsychotics</mark></p><p>Typical / Conventional</p><p><span style=\"color:#ff0000\">DISADVANTAGE </span></p><p>→ More <span style=\"color:#ff0000\">EPS!</span> ←</p>",
+     "answerHtml": "<p><b>ACTION</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">block dopamine </span>D2</li></ul><p><b>NAMES</b></p><p><u>High potency: </u></p><p><mark style=\"background-color:#00ffff\">haloperidol </mark>(Haldol) → [<mark style=\"background-color:#ff9900\">Tourette tics</mark>] → works <mark style=\"background-color:#00ff00\">immediately</mark>] → <span style=\"color:#ff0000\">raised prolactin</span></p><p>fluphenazine (Prolixin), </p><p>thiothixene (Navane), </p><p>pimozide (Orap). →<mark style=\"background-color:#ff9900\"> Tourette tics</mark></p><p><u>Low potency:</u> </p><p>chlorpromazine (Thorazine), → <mark style=\"background-color:#ff9900\">nausea/intractable hiccups </mark></p><p>thioridazine (Mellaril) </p><p><b>TIMING</b></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">~1-2 weeks </span>for changes</li><li><span style=\"color:#ff00ff\">6-12 week</span> trials during stabilization</li></ul><p><b>USES</b></p><ul class=\"l0\"><li><b>Schizophrenia</b>, </li><li>acute psychosis, </li><li><b>mania</b>, </li><li>agitation;</li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><b>EPS</b> (dystonia, pseudoparkinsonism, akathisia) </li><li><b>tardive dyskinesia</b></li></ul><p>[mainly with high potency] </p><ul class=\"l0\"><li>anticholinergic effects, </li><li><mark style=\"background-color:#ffff00;color:#ff0000\">sedation</mark>, </li><li>orthostatic hypotension, </li><li>photosensitivity and skin discoloration (low potency),</li><li>lowered seizure threshold,</li><li><b>raised prolactin </b>(galactorrhea, amenorrhea, sexual dysfunction - esp w/ <mark style=\"background-color:#00ffff\">haloperidol</mark>) </li><li><span style=\"color:#ff0000\">QTc prolongation </span></li><li><i>[Might cause </i><span style=\"color:#ff0000\"><i>emotional numbness]</i></span></li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>AIMS at least every <span style=\"color:#ff00ff\">3–6 months;</span> </li><li>temperature (NMS); </li><li>orthostatic BP; </li><li><mark style=\"background-color:#00ff00\">ECG </mark>if cardiac risk; </li><li>watch for EPS from the first dose </li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Antipsychotics cause <span style=\"color:#ff0000\">sedation</span></li></ul><ul class=\"l1\"><li>→ <span style=\"color:#ff0000\"><b>fall risk!</b></span></li></ul><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Rise slowly; </mark></li><li><mark style=\"background-color:#00ff00\">sunscreen </mark>and protective clothing;</li><li><span style=\"color:#ff0000\">report </span>stiffness, restlessness, tongue or face movements; </li><li><mark style=\"background-color:#ffff00\">do not stop abruptly; </mark></li><li><span style=\"color:#ff0000\">avoid alcohol </span></li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Fever + rigidity + confusion </span>(<span style=\"color:#ff0000\"><b>NMS</b></span>); </li><li>laryngeal spasm or oculogyric crisis (<b>acute dystonia</b>); </li><li>new tongue/lip movements (<b>TD</b>)</li></ul>"
+    },
+    {
+     "id": "d61367cf2b",
+     "prompt": "2nd Gen - Antipsychotics Atypical DISADVANTAGE = More metabolic effects",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\">2nd Gen - Antipsychotics</mark></p><p>Atypical</p><p>DISADVANTAGE =</p><ul class=\"l0\"><li>More <span style=\"color:#ff0000\">metabolic effects</span></li></ul>",
+     "answerHtml": "<p><b>ACTION:</b></p><ul class=\"l0\"><li>Block </li><li><span style=\"color:#ff0000\">Serotonin</span></li><li><span style=\"color:#ff0000\">Glutamate</span></li><li>Dopamine</li></ul><p><b>NAMES</b></p><ul class=\"l0\"><li>Risperidone (Risperdal), </li><li>olanzapine (Zyprexa), </li><li>quetiapine (<mark style=\"background-color:#00ffff\">Seroquel</mark>), → <mark style=\"background-color:#ff9900\">Elderly </mark>use it to help them <mark style=\"background-color:#ff9900\">sleep</mark></li><li>ziprasidone (Geodon), → <span style=\"color:#ff0000\">DRESS rash</span> [<span style=\"color:#ff0000\">fever, swollen lymphs, rash</span>] → with <mark style=\"background-color:#00ff00\">350 cal of food </mark></li><li><b>aripiprazole </b>(<mark style=\"background-color:#00ffff\">Abilify</mark>), </li><li>paliperidone (Invega), </li><li>lurasidone (<mark style=\"background-color:#00ffff\">Latuda</mark>), → <mark style=\"background-color:#ff9900\"><b>Bipolar </b></mark><mark style=\"background-color:#ff9900\">w/ </mark><mark style=\"background-color:#ff9900\"><b>psychosis </b></mark>[IM] → with <mark style=\"background-color:#00ff00\">350 cal of food </mark></li><li>asenapine (Saphris), </li><li>brexpiprazole (Rexulti), </li><li>cariprazine (<mark style=\"background-color:#00ffff\">Vraylar</mark>) → <mark style=\"background-color:#ff9900\"><b>schizoaffective </b></mark>disorder, helps w/ <mark style=\"background-color:#ff9900\"><b>psychosis</b></mark><b>, </b><mark style=\"background-color:#00ff00\">Less likely</mark> to cause weight gain</li></ul><p><b>USES</b></p><ul class=\"l0\"><li><b>Schizophrenia</b>, </li><li>bipolar <b>mania </b>and maintenance, </li><li>adjunct in depression, </li><li>autism irritability </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Metabolic syndrome</b></span>: </li><li><b>weight gain</b> (worst with clozapine and olanzapine, up to 20 lb in 1 year), </li><li>May give <mark style=\"background-color:#00ffff\">metformin</mark> to help</li><li>type 2 <span style=\"color:#ff0000\">diabetes </span>(FDA: all atypicals raise risk), </li><li>dyslipidemia; </li><li><mark style=\"background-color:#00ff00\">less EPS and TD than typicals; </mark></li><li><span style=\"color:#ff0000\"><b>prolactin rise</b></span></li><li><span style=\"color:#ff0000\"><b>orthostasis</b></span>; </li><li><span style=\"color:#ff0000\">QTc</span>;</li><li><i>[Might cause </i><span style=\"color:#ff0000\"><i>emotional numbness]</i></span></li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li><b>Weight </b>/ BMI </li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">monthly × </span><span style=\"color:#ff00ff\"><b>3</b></span><span style=\"color:#ff00ff\"> months</span> then <span style=\"color:#ff00ff\">quarterly</span>;</li><li>[Overweight = BMI <span style=\"color:#ff00ff\">&gt; 25</span>]</li><li>[BAD = cholesterol <span style=\"color:#ff00ff\">&gt; 200</span>]</li></ul><ul class=\"l0\"><li>waist circumference; </li><li>BP, </li><li>fasting <b>glucose</b>, </li></ul><ul class=\"l1\"><li>[prediabetes = <span style=\"color:#ff00ff\">over 100</span></li><li>[Diabetic = <span style=\"color:#ff00ff\">&gt; 126</span>]</li></ul><ul class=\"l0\"><li>fasting <b>lipids </b>at baseline, <span style=\"color:#ff00ff\">within 3 months</span>, then <span style=\"color:#ff00ff\">yearly </span></li><li><span style=\"color:#ff00ff\">[Normal HgbA1C</span></li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">&lt; 5.6 / 5.7</span></li></ul><ul class=\"l2\"><li><span style=\"color:#ff00ff\">[5.7 - 6.5 = Prediabetic</span></li><li><span style=\"color:#ff00ff\">6.5 &gt; is Diabetic]</span></li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Diet and exercise</mark> from day one; </li><li><span style=\"color:#ff0000\">Report</span></li></ul><ul class=\"l1\"><li><b>thirst</b>, </li><li>frequent <b>urination</b>,</li><li>weight <b>gain</b>; </li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">smoking </span>changes blood levels of some agents </li><li>Antipsychotics cause <span style=\"color:#ff0000\">sedation</span></li></ul><ul class=\"l1\"><li>→ <span style=\"color:#ff0000\"><b>fall risk!</b></span></li><li><mark style=\"background-color:#00ff00\">Rise slowly</mark></li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Polyuria/polydipsia/fatigue (<span style=\"color:#ff0000\">hyperglycemia</span>); </li><li><span style=\"color:#ff0000\">NMS </span>signs; </li><li><b>boxed warning: increased </b><span style=\"color:#ff0000\"><b>death </b></span><b>in </b><span style=\"color:#ff0000\"><b>elderly</b></span><b> with </b><span style=\"color:#ff0000\"><b>dementia-related psychosis</b></span> </li></ul>"
+    },
+    {
+     "id": "eeb52543ac",
+     "prompt": "2nd Gen (Atypical) - Antipsychotics Clozapine",
+     "promptHtml": "<p>2nd Gen <mark style=\"background-color:#00ffff\">(Atypical) - Antipsychotics</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\"><b>Clozapine</b></mark> </li></ul>",
+     "answerHtml": "<p><b>NAME</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Clozapine</mark></li></ul><p><b>USES</b></p><ul class=\"l0\"><li>reserved for <span style=\"color:#ff0000\">treatment-resistant illness</span></li><li><b>Schizophrenia</b> that <span style=\"color:#ff0000\">failed</span> other antipsychotics; </li><li>reduces recurrent <span style=\"color:#ff0000\">suicidal behavior</span> in schizophrenia/schizoaffective disorder </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\"><b>Agranulocytosis</b></span><b>/severe neutropenia</b> (cumulative 1-year incidence about 1.3%, most often weeks 4–10; highest risk first 18 weeks); </li><li>seizures; </li><li>myocarditis; </li><li>orthostatic hypotension; </li><li><b>hypersalivation</b>; </li><li>severe weight gain; </li><li>constipation; </li><li>tachycardia; </li><li>fever </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Blood counts before starting, <b>weekly for 6 months, every 2 weeks for months 6–12, then monthly</b> </li><li>the book states <span style=\"color:#ff00ff\">weekly × 6 months</span> then every <span style=\"color:#ff00ff\">2 weeks</span>, and continue for <span style=\"color:#ff00ff\">4 weeks after stopping </span></li><li><span style=\"color:#1f1f1f\">Start only if </span><mark style=\"background-color:#ffff00;color:#1f1f1f\"><b>WBC &gt;3,500/mm³</b></mark><span style=\"color:#1f1f1f\">; monitor 3×/week if WBC 3,500–5,000; </span></li><li><span style=\"color:#ff0000\"><b>stop</b></span><span style=\"color:#1f1f1f\"><b> if WBC &lt;3,500 or granulocytes &lt;1,500</b></span><span style=\"color:#1f1f1f\">; </span></li></ul><ul class=\"l1\"><li><span style=\"color:#1f1f1f\">agranulocytosis = granulocytes </span><span style=\"color:#1f1f1f\"><b>&lt;500/mm³</b></span><span style=\"color:#1f1f1f\"> (often &lt;200)</span></li></ul><ul class=\"l0\"><li><span style=\"color:#1f1f1f\">[Normal ANC 1,500-8,000]</span></li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Informed <b>consent </b>about blood draws; </li><li><span style=\"color:#ff0000\">report </span>sore throat, fever, flu-like symptoms, lethargy <b>immediately</b>; </li><li><mark style=\"background-color:#00ff00\">change positions slowly;</mark> </li><li><span style=\"color:#ff0000\">avoid alcohol; </span></li><li><mark style=\"background-color:#ffff00\">do not stop abruptly; </mark></li><li><span style=\"color:#ff0000\">seizures </span>can occur, so<span style=\"color:#ff0000\"> no driving early</span> in titration </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Any <span style=\"color:#ff0000\">fever </span>or <span style=\"color:#ff0000\">sore throat</span>: <b>hold dose until a count is obtained</b> </li><li>chest pain/dyspnea (myocarditis); </li><li>seizure; </li><li>severe constipation/abdominal distension (ileus) </li></ul>"
+    },
+    {
+     "id": "6c6fd9f522",
+     "prompt": "Long-acting injectable (LAI/depot) antipsychotics",
+     "promptHtml": "<p><b>Long-acting injectable (LAI/depot) </b><mark style=\"background-color:#00ffff\"><b>antipsychotics</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Haloperidol decanoate </mark>(q3–4 wk),</li><li><mark style=\"background-color:#00ffff\">fluphenazine </mark>decanoate (q2–3 wk), </li><li><mark style=\"background-color:#00ffff\">risperidone </mark>(Risperdal Consta q2 wk; Perseris monthly SC) → <span style=\"color:#ff0000\"><b>prolactin rise</b></span></li><li>paliperidone (Invega Sustenna monthly), </li><li>aripiprazole (<b>Abilify</b> Maintena; Aristada), </li><li><mark style=\"background-color:#00ffff\">olanzapine </mark>(Relprevv q2–4 wk) → can cause <span style=\"color:#ff0000\">post-injection delirium/sedation syndrome </span></li></ul><p><b>USES</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Maintenance for patients with poor adherence</span>; </li><li>steady blood levels between injections </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Same as the oral drug; </mark></li><li>injection-site pain/inflammation; </li><li>depot use is a <span style=\"color:#ff0000\">risk factor for NMS </span></li><li><i>(general knowledge:</i><span style=\"color:#ff00ff\"><i> 3-hour observation required</i></span><i>)</i></li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Same as oral; </li><li>inspect injection site</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Keep every injection appointment; </li><li>side effects may<span style=\"color:#ff00ff\"> last weeks </span>after a dose</li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Oil-based (haloperidol, fluphenazine decanoate): </li></ul><ul class=\"l1\"><li><b>at least 21-gauge needle, dry needle, deep IM Z-track, do not massage, rotate sites</b> </li></ul>"
+    },
+    {
+     "id": "50f20ddd9a",
+     "prompt": "SSRIs",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>SSRIs</b></mark></p>",
+     "answerHtml": "<p><b>TIMING</b></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">~2 weeks</span> to take effect (full effect in about <span style=\"color:#ff00ff\">~6 weeks</span>)</li><li>Continue <span style=\"color:#ff00ff\">6-12 months after remission</span></li></ul><p><b>NAMES</b></p><ul class=\"l0\"><li>Fluoxetine (<mark style=\"background-color:#00ffff\">Prozac</mark>), </li><li>sertraline (<mark style=\"background-color:#00ffff\">Zoloft</mark>), → <mark style=\"background-color:#ff9900\">PTSD </mark></li><li>paroxetine (<mark style=\"background-color:#00ffff\">Paxil</mark>), → <mark style=\"background-color:#ff9900\">PTSD </mark>→ <span style=\"color:#ff0000\">insomnia </span>or <span style=\"color:#ff0000\">sedation</span></li><li>citalopram (Celexa), </li><li>escitalopram (<mark style=\"background-color:#00ffff\">Lexapro</mark>), </li><li>fluvoxamine (Luvox) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li><b>Depression</b>, </li><li>anxiety disorders, </li><li>OCD, </li><li>eating disorders </li><li><b>panic</b>, </li><li><b>Social phobia,</b></li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Nausea, </li><li>Headache,</li><li>anxiety/jitteriness early, diarrhea, </li><li><b>sexual dysfunction</b> (anorgasmia, ejaculation problems), </li><li>sweating; </li><li><span style=\"color:#0000ff\">hyponatremia </span>in older adults <i>(general knowledge)</i>; </li><li><b>serotonin syndrome</b> in combination </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Suicidal thinking, especially early and with dose changes (<b>boxed warning</b> for children, adolescents, young adults); </li><li>mood; </li><li><mark style=\"background-color:#00ff00\">sodium </mark>in older adults </li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Takes 1–4+ weeks for effect (some improvement in about 7 days, full relief may take several weeks); </li><li>take in the morning unless sedating; </li><li><b>never stop abruptly—</b><mark style=\"background-color:#ffff00\"><b>taper</b></mark> (discontinuation syndrome); </li><li><span style=\"color:#ff0000\">no → </span>St. John's wort, triptans, or other serotonergic drugs without approval </li><li><b>at least 14 days between an MAOI and an SSRI</b> </li><li><span style=\"color:#ff00ff\">(5 weeks after</span> stopping fluoxetine before an MAOI) </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Agitation </span>+ fever + tremor/<span style=\"color:#ff0000\">clonus</span> + <span style=\"color:#ff0000\">diaphoresis </span>+ <span style=\"color:#ff0000\">hyperreflexia </span>+ diarrhea (<b>serotonin syndrome</b>); </li><li>new suicidal ideation or sudden \"energy\" in a depressed patient <i>(general knowledge)</i>; </li></ul>"
+    },
+    {
+     "id": "9bb3e28323",
+     "prompt": "SNRIs",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>SNRIs</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Venlafaxine (<mark style=\"background-color:#00ffff\">Effexor</mark>), →  <span style=\"color:#ff0000\">discontinuation is notoriously unpleasant </span></li><li>desvenlafaxine (Pristiq), </li><li>duloxetine (Cymbalta), → <mark style=\"background-color:#ff9900\">neuropathic pain</mark></li><li>levomilnacipran (Fetzima)</li><li><b>nefazodone: boxed warning for liver failure</b> </li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Depression, </li><li>anxiety, </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>SSRI-like effects <b>plus dose-related increase in blood pressure</b> </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li><b>Blood pressure</b>, especially with hypertension history</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Taper </mark>slowly </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Sustained hypertension; </li><li>serotonin syndrome;</li></ul>"
+    },
+    {
+     "id": "66d7d5eb0e",
+     "prompt": "TCAs",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>TCAs</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Amitriptyline (Elavil), </li><li>imipramine (Tofranil), </li><li>nortriptyline (Pamelor), → <mark style=\"background-color:#00ff00\">blood levels</mark></li><li>desipramine (Norpramin), </li><li>doxepin (Sinequan), </li><li><mark style=\"background-color:#00ffff\">clomipramine </mark>(Anafranil) → <mark style=\"background-color:#ff9900\">OCD</mark></li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Depression (now second-line), </li><li>chronic <b>pain </b>and <b>insomnia </b>at low dose </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Sedation, </li><li><b>orthostatic hypotension</b>,</li><li><b>anticholinergic effects</b> (dry mouth, constipation, urinary retention, blurred vision, confusion), </li><li><b>cardiotoxicity</b> (conduction delay, arrhythmia), </li><li>seizures, </li><li>weight gain </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Baseline <mark style=\"background-color:#00ff00\">ECG</mark>, especially in older or cardiac patients <i>(general knowledge)</i>; </li><li>orthostatic <mark style=\"background-color:#00ff00\">BP</mark>; </li><li>blood levels exist for some TCAs </li></ul><ul class=\"l1\"><li>(e.g., <mark style=\"background-color:#00ffff\">nortriptyline </mark>50–150 ng/mL) </li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Give at bedtime if sedating </li><li><mark style=\"background-color:#00ff00\">rise slowly; </mark></li><li>fluids/fiber for constipation; </li><li><b>high lethality in overdose—dispense limited supplies to suicidal patients</b> </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Contraindicated </span>with 2nd-degree AV block </li><li><span style=\"color:#ff0000\">overdose </span>= arrhythmias, seizures, coma; fever/sore throat (blood dyscrasia)</li></ul><p>*Antidote = <mark style=\"background-color:#00ffff\"><b>IV sodium bicarbonate</b></mark> for QRS widening (commonly &gt;100 ms), dysrhythmias, or hypotension; plus airway, cardiac monitoring, charcoal only if the airway is protected, benzodiazepines for seizures; avoid physostigmine and flumazenil</p><ul class=\"l0\"><li>Boyd lists induced emesis and gastric lavage*</li></ul>"
+    },
+    {
+     "id": "a38c3b0748",
+     "prompt": "MAOIs",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>MAOIs</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Phenelzine (Nardil), </li><li>tranylcypromine (Parnate), </li><li>isocarboxazid (Marplan), </li><li>selegiline <mark style=\"background-color:#00ff00\">transdermal </mark>(<mark style=\"background-color:#00ffff\">Emsam</mark>) →<span style=\"color:#ff00ff\"> 6 mg/24 h</span> patch is the <mark style=\"background-color:#ffff00\">only dose with no diet restriction </mark></li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Treatment-resistant or atypical <b>depression</b></li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Orthostatic hypotension </li><li>(falls in older adults), dizziness, </li><li>insomnia, </li><li>weight gain, </li><li>sexual dysfunction, </li><li>edema; </li><li><b>hypertensive crisis</b> with <span style=\"color:#ff0000\">tyramine </span>or <span style=\"color:#ff0000\">sympathomimetics</span></li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Lying and standing <mark style=\"background-color:#00ff00\">BP</mark>; </li><li>diet adherence</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li><b>Tyramine-restricted diet</b> </li></ul><ul class=\"l1\"><li>(see Lab/Emergency sections) during use and for <span style=\"color:#ff00ff\">at least 2 weeks after stopping</span> (enzyme inhibition takes at least 2 weeks to resolve); </li></ul><ul class=\"l0\"><li><span style=\"color:#ff0000\">avoid OTC cold remedies, </span></li><li>diet pills, </li><li>decongestants; </li><li><mark style=\"background-color:#00ff00\">tell every provider and dentist; </mark></li><li><span style=\"color:#ff0000\"><b>no meperidine</b></span> </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Sudden <span style=\"color:#ff0000\">severe </span>occipital <span style=\"color:#ff0000\">headache</span>, </li><li>stiff neck, </li><li>palpitations, </li><li>chest pain, </li><li>sweating, </li><li>vomiting,</li><li><span style=\"color:#ff0000\">HTN </span>= <span style=\"color:#ff0000\"><b>hypertensive crisis</b></span> </li></ul><p>*Antidote = <mark style=\"background-color:#00ffff\"><b>phentolamine </b></mark>[for HTN crisis]</p>"
+    },
+    {
+     "id": "1815054952",
+     "prompt": "Atypical antidepressants",
+     "promptHtml": "<p><b>Atypical </b><mark style=\"background-color:#00ffff\"><b>antidepressants</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Bupropion </mark>(Wellbutrin; Zyban for <mark style=\"background-color:#ff9900\"><b>smoking</b></mark>), → <mark style=\"background-color:#ff9900\">ADHD</mark>, when <mark style=\"background-color:#ff9900\">sexual side effects </mark>are a problem </li></ul><ul class=\"l1\"><li>[do <span style=\"color:#ff0000\">NOT </span>take Wellbutrin &amp; Zyban together]</li></ul><ul class=\"l0\"><li>mirtazapine (Remeron), → take at <b>bedtime</b></li><li>trazodone (Desyrel), </li><li>vilazodone (Viibryd), </li><li>vortioxetine (Trintellix, formerly Brintellix),</li><li>esketamine nasal spray (Spravato) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Depression</li></ul><p><mark style=\"background-color:#00ffff\">Bupropion</mark>: </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">SE</span></li><li>activation, </li><li>insomnia, </li><li>appetite loss, </li><li><span style=\"color:#ff0000\"><b>seizures </b></span><b>(contraindicated in seizure disorders and eating disorders)</b> = <span style=\"color:#ff0000\">HOLD</span>!</li><li>rarely psychosis;</li><li>low sexual dysfunction. </li></ul><p><mark style=\"background-color:#00ffff\">Mirtazapine</mark>: </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">SE</span></li><li>Sedation,</li><li>appetite </li><li>weight gain. </li></ul><p><mark style=\"background-color:#00ffff\">Trazodone</mark>: </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">SE</span></li><li>sedation, </li><li>orthostasis, </li><li><b>Priapism = </b><span style=\"color:#ff0000\"><b>HOLD</b></span><b>!</b> </li></ul><p><mark style=\"background-color:#00ffff\">Esketamine</mark>: </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">SE</span>:</li><li>dissociation, </li><li>sedation, </li><li>BP rise, </li><li>abuse potential </li><li><mark style=\"background-color:#00ff00\">Nursing</mark></li></ul><ul class=\"l1\"><li>given only under supervision, </li><li><mark style=\"background-color:#00ff00\">BP </mark>before and after, </li><li>observe after dose; </li><li><span style=\"color:#ff0000\">no food</span> <span style=\"color:#ff00ff\">2 h</span> before, </li><li><span style=\"color:#ff0000\">no liquids</span> <span style=\"color:#ff00ff\">30 min</span> before </li><li>No driving</li></ul>"
+    },
+    {
+     "id": "175113e26e",
+     "prompt": "Mood Stabilizer Lithium",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>Mood Stabilizer</b></mark></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\"><b>Lithium</b></mark></li></ul>",
+     "answerHtml": "<p><b>TIMING</b></p><ul class=\"l0\"><li>Takes </li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">Days → weeks</span></li><li>onset <span style=\"color:#9900ff\">5–7 </span>days to <span style=\"color:#ff00ff\">2 weeks;</span> </li></ul><p><b>NAMES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\"><b>Lithium</b></mark> (Eskalith, Lithobid)</li><li>Lithium carbonate; </li><li>lithium citrate liquid</li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Gold standard for acute <b>mania </b>and <b>bipolar </b>maintenance; </li><li>reduces suicide risk </li></ul><p><b>ADVERSE EFFECTS</b></p><p><u>Common</u>: </p><ul class=\"l0\"><li>thirst, </li><li>metallic taste, </li><li>polyuria, </li><li>fine hand tremor, </li><li>nausea, </li><li>mild diarrhea, </li><li>weight gain (~20%), </li><li><b>acne</b>, </li><li><b>psoriasis flare;</b> </li></ul><p><u>Long-term:</u> </p><ul class=\"l0\"><li><span style=\"color:#0000ff\"><b>hypothyroidism</b></span> (after <span style=\"color:#ff00ff\">6–18 months</span>), </li><li>kidney damage, <span style=\"color:#ff0000\">hypercalcemia</span>; </li><li><span style=\"color:#ff0000\">teratogen </span></li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li><b>Serum level </b><span style=\"color:#ff00ff\"><b>12 hours after last dose</b></span> (<span style=\"color:#ff0000\">hold</span> the morning dose until drawn); </li><li>levels <span style=\"color:#ff00ff\">2x weekly</span> in acute phase, every<span style=\"color:#ff00ff\"> 2–3 months</span> in maintenance; </li><li><b>creatinine, TSH/thyroid, CBC every</b><span style=\"color:#ff00ff\"><b> 6 months</b></span></li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Keep <b>sodium and fluid intake steady</b>; drink adequate fluids (2–3 L/day) </li><li>dehydration from heat, exercise, fever, vomiting, or diarrhea raises levels; </li><li><span style=\"color:#ff0000\">avoid </span></li><li><span style=\"color:#ff0000\">NSAIDs</span>, </li><li><span style=\"color:#ff0000\">thiazide diuretics, </span></li><li>ACE inhibitors unless prescriber approves; </li><li>avoid pregnancy and breastfeeding; </li><li><mark style=\"background-color:#ffff00\">abrupt stop causes relapse</mark> in almost half </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Toxicity</span> =  hold dose, draw level, call prescriber:</li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\"><b>Coarse tremor</b></span><b>, </b></li><li><span style=\"color:#ff0000\"><b>vomiting</b></span><b>, </b></li><li><b>severe diarrhea, </b></li><li><b>drowsiness, </b></li><li><span style=\"color:#ff0000\"><b>ataxia</b></span><b>, </b></li><li><b>slurred speech, </b></li><li><b>confusion</b> </li></ul>"
+    },
+    {
+     "id": "fe220cbc43",
+     "prompt": "Anticonvulsant mood stabilizers Mood Stabilizer + Antidepressant = Protect against manic switching",
+     "promptHtml": "<p><b>Anticonvulsant </b><mark style=\"background-color:#00ffff\"><b>mood stabilizers</b></mark></p><p><mark style=\"background-color:#00ffff\">Mood Stabilizer</mark> + <mark style=\"background-color:#00ffff\">Antidepressant </mark>=</p><p><mark style=\"background-color:#00ff00\">Protect against </mark><mark style=\"background-color:#00ff00\"><b>manic switching</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Divalproex/valproic acid (<mark style=\"background-color:#00ffff\">Depakote</mark>, Depakene),  → <mark style=\"background-color:#ff9900\"><b>Bipolar </b></mark><mark style=\"background-color:#ff9900\">mania, mixed and rapid-cycling episodes</mark></li><li><mark style=\"background-color:#00ffff\">carbamazepine </mark>(Tegretol, Equetro), → <mark style=\"background-color:#ff9900\">lithium nonresponders</mark></li><li>lamotrigine (Lamictal); → <mark style=\"background-color:#ff9900\">bipolar depression</mark> and maintenance</li></ul><p>also used: </p><ul class=\"l0\"><li>oxcarbazepine (Trileptal), </li><li>topiramate (Topamax), </li><li>gabapentin (Neurontin) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li><b>Bipolar</b></li><li>Tx resistant <b>depression</b></li></ul><p><mark style=\"background-color:#00ffff\"><b>Valproate</b></mark>: </p><p><span style=\"color:#ff0000\">SE</span></p><ul class=\"l0\"><li>GI upset, </li><li>tremor, </li><li>sedation, </li><li>weight gain, </li><li>hair loss, </li><li>thrombocytopenia; </li><li><b><u>boxed</u></b><b>: </b></li></ul><ul class=\"l1\"><li><b>hepatotoxicity, teratogenicity, </b></li><li><b>Pancreatitis</b>.</li></ul><p><mark style=\"background-color:#00ff00\">MONITOR</mark></p><ul class=\"l0\"><li>baseline <b>LFTs </b>and <b>CBC </b>with platelets; </li></ul><ul class=\"l1\"><li>level <span style=\"color:#ff00ff\">weekly </span>until stable, then every <span style=\"color:#ff00ff\">6 months; </span></li></ul><ul class=\"l0\"><li><b>amylase </b>if abdominal pain.</li><li>Level =</li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">50 - 100</span></li></ul><p><mark style=\"background-color:#00ffff\"><b>Carbamazepine</b></mark><mark style=\"background-color:#00ffff\">: </mark></p><p><span style=\"color:#ff0000\">SE</span></p><ul class=\"l0\"><li>dizziness, </li><li>drowsiness, </li><li>nausea; </li><li><b>boxed: aplastic anemia, </b><span style=\"color:#ff0000\"><b>agranulocytosis</b></span>; hyponatremia (SIADH); </li><li>severe rash; </li><li>many <span style=\"color:#ff0000\">drug interactions </span>(induces its own metabolism and <span style=\"color:#ff0000\">lowers </span>oral contraceptive levels). </li></ul><p><mark style=\"background-color:#00ff00\">MONITOR</mark></p><ul class=\"l0\"><li><b>LFTs </b>and <b>CBC </b>with differential at baseline, </li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">1 month, 3 months, 6 months, then yearly; </span></li><li>levels <b>monthly </b>until stable; </li></ul><ul class=\"l0\"><li><b>Sodium </b></li><li>Level =</li></ul><ul class=\"l1\"><li><span style=\"color:#ff00ff\">8 - 12</span></li></ul><p><span style=\"color:#ff0000\">REPORT</span></p><ul class=\"l0\"><li>Use w/ <b>non-hormonal birth control </b></li></ul><p><span style=\"color:#ff0000\">HOLD</span></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00;color:#ff0000\">RASH</mark></li><li><mark style=\"background-color:#ffff00;color:#ff0000\">Fever / sore throat</mark></li></ul><p><mark style=\"background-color:#00ffff\"><b>Lamotrigine</b></mark>: </p><p><span style=\"color:#ff0000\">SE</span></p><ul class=\"l0\"><li><b>boxed: life-threatening rash (Stevens–Johnson)</b>, usually weeks 2–8 </li></ul><p>TEACHING</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Dose must be lowered</span> if <mark style=\"background-color:#00ffff\">valproate </mark>is added</li></ul><p><span style=\"color:#ff0000\">REPORT &amp; HOLD</span></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00;color:#ff0000\">Rash</mark></li></ul><p><span style=\"color:#ff0000\">*Report FOR ALL*</span></p><ul class=\"l0\"><li>fever, </li><li>sore throat, </li><li>bruising, </li><li>petechiae, </li><li>jaundice, </li><li>abdominal pain; </li></ul><p><mark style=\"background-color:#ffff00\"><b>RED FLAGS = HOLD &amp; CALL MD</b></mark></p><ul class=\"l0\"><li>Jaundice, dark urine, RUQ pain (liver); </li><li>severe abdominal pain radiating to the back with vomiting (pancreatitis); </li></ul>"
+    },
+    {
+     "id": "fde7caa9e7",
+     "prompt": "Benzodiazepines (anxiolytic and sedative–hypnotic)",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>Benzodiazepines</b></mark> </p><p>(<b>anxiolytic</b> and <b>sedative–hypnotic</b>)</p>",
+     "answerHtml": "<p><b>TIMING</b></p><ul class=\"l0\"><li>Oral = <span style=\"color:#ff00ff\">30-60 min</span> to take effect</li><li>IV = <span style=\"color:#ff00ff\">15-30 min</span> or quicker</li></ul><p><u>ANXIOLYTIC</u></p><ul class=\"l0\"><li>Lorazep<b>am</b> (<mark style=\"background-color:#00ffff\">Ativan</mark>), →  for etoh withdrawal / older adults / liver disease</li><li>alprazol<b>am</b> (<mark style=\"background-color:#00ffff\">Xanax</mark>), </li><li>diazep<b>am</b> (<mark style=\"background-color:#00ffff\">Valium</mark>), </li><li>chlor<b>diaze</b>poxide (<mark style=\"background-color:#00ffff\"><b>Librium</b></mark>), </li><li>clonazep<b>am</b> (Klonopin), </li><li>oxazep<b>am</b> (Serax), → for older adults / liver disease</li><li>clorazepate (Tranxene); </li></ul><p><u>HYPNOTICS</u>: </p><ul class=\"l0\"><li>temazep<b>am</b> (Restoril), </li><li>triazol<b>am</b> (Halcion), </li><li>flurazep<b>am</b> (Dalmane) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Short-term</mark> <b>anxiety </b>and panic, </li><li>alcohol withdrawal, agitation, </li><li>akathisia, </li><li>insomnia, </li><li>seizures </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Drowsiness</span>, </li><li>impaired memory and coordination, </li><li>ataxia, </li><li>\"hangover,\" </li><li><span style=\"color:#ff0000\"><b>falls and confusion in older adults</b></span> (paradoxical agitation),</li><li>tolerance and <span style=\"color:#ff0000\"><b>dependence</b></span>; </li><li>dangerous with alcohol and opioids; </li><li><span style=\"color:#ff0000\">birth defects</span> risk </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Sedation level, </li><li>respiratory status when combined with other CNS depressants, </li><li>fall risk, </li><li>signs of misuse</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Avoid alcohol and driving;</span> </li><li><b>do not stop abruptly—</b><mark style=\"background-color:#ffff00\"><b>taper</b></mark>; </li><li><mark style=\"background-color:#00ff00\">short-term use only</mark>; </li><li><span style=\"color:#ff0000\">DON’T </span>drive!</li><li>May affect ability to <span style=\"color:#ff0000\">swallow</span></li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><p><span style=\"color:#ff0000\"><u>Withdrawal / Abrupt stop </u></span><u>after long use</u> → </p><ul class=\"l0\"><li>rebound anxiety, </li><li>tremor, </li><li>sweating, </li><li>rising BP, </li><li><span style=\"color:#ff0000\"><b>seizures</b></span> </li><li>respiratory depression when <span style=\"color:#ff0000\">mixed with alcohol/opioids; </span></li></ul><p>*antidote = <mark style=\"background-color:#00ffff\"><b>flumazenil</b></mark></p>"
+    },
+    {
+     "id": "9ff31cc079",
+     "prompt": "Nonbenzodiazepine anxiolytic, Buspirone (BuSpar) 5-HT1A action",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>Non</b></mark><mark style=\"background-color:#00ffff\">benzodiazepine </mark><mark style=\"background-color:#00ffff\"><b>anxiolytic</b></mark><mark style=\"background-color:#00ffff\">,</mark> </p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\"><b>Buspirone</b></mark> (BuSpar)</li></ul><p>5-HT1A action</p>",
+     "answerHtml": "<p><b>NAME</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\"><b>Buspirone</b></mark> (BuSpar)</li></ul><p><b>TIMING</b></p><ul class=\"l0\"><li>Response after<span style=\"color:#ff00ff\"> 2–4 weeks</span> of regular dosing</li></ul><p><b>ACTION</b></p><ul class=\"l0\"><li>5-HT1A action</li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Generalized <b>anxiety </b>disorder; </li><li>anxiety with depression;</li><li>no effect on panic </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><b>Dizziness</b>, </li><li><b>drowsiness</b>, </li><li><b>nausea</b>, </li><li><b>headache</b>, </li><li><b>excitement</b>; </li><li>no sedation, no dependence, no abuse potential </li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li><b>Not PRN</b>—must be taken regularly, usually <span style=\"color:#ff00ff\">TID</span>;  </li><li>does not prevent benzodiazepine withdrawal, so <mark style=\"background-color:#00ff00\">switching must be gradual; </mark></li><li>avoid large amounts of <span style=\"color:#ff0000\">grapefruit juice </span></li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Digoxin toxicity </span></li></ul><ul class=\"l1\"><li>(buspirone displaces digoxin) </li></ul>"
+    },
+    {
+     "id": "aacc12c61e",
+     "prompt": "Antihistamine anxiolytic Hydroxyzine (Vistaril, Atarax)",
+     "promptHtml": "<p><b>Antihistamine anxiolytic</b></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Hydroxyzine </mark>(Vistaril, Atarax)</li></ul>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Hydroxyzine </mark>(Vistaril, Atarax)</li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Anxiety, </li><li>itching, </li><li>nausea, </li><li>sleep </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Sedation, </li><li>dizziness, </li><li>anticholinergic effects, </li><li>possible QTc prolongation </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Sedation; </li><li><span style=\"color:#ff0000\">avoid in older adults</span></li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Non-habit-forming alternative to benzodiazepines</li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Confusion in older adults</li></ul>"
+    },
+    {
+     "id": "5f0cf90c2f",
+     "prompt": "Other hypnotics",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Other hypnotics</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Zolpidem (<mark style=\"background-color:#00ffff\">Ambien</mark>), </li><li>eszopiclone (<mark style=\"background-color:#00ffff\">Lunesta</mark>), </li><li>zaleplon (Sonata); </li><li>ramelteon (Rozerem), </li><li>melatonin; </li><li>suvorexant (Belsomra); </li><li>doxylamine (Unisom) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Insomnia</li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Next-day drowsiness, </li><li>complex sleep behaviors (sleep-driving, sleepwalking) with \"Z-drugs\" </li><li>dizziness</li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Fall risk, </span></li><li>sleep pattern</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Take immediately before bed with 7–8 hours available; </li><li><span style=\"color:#ff0000\">no alcohol; </span></li><li><mark style=\"background-color:#00ff00\">short-term use</mark> </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Complex sleep behaviors</li></ul>"
+    },
+    {
+     "id": "22f101b9c9",
+     "prompt": "NMDA antagonist",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>NMDA antagonist</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Memantine </mark>(Namenda); </li><li>memantine + donepezil (Namzaric) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Moderate to severe <b>Alzheimer </b>disease </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Dizziness, </li><li>headache, </li><li>confusion, </li><li>constipation </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Cognition, </li><li>ADLs</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Many <span style=\"color:#ff0000\">drug interactions</span>—check all new drugs </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Worsening confusion</li></ul>"
+    },
+    {
+     "id": "94ba45f944",
+     "prompt": "Cholinesterase inhibitors Takes weeks",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>Cholinesterase inhibitors</b></mark></p><p>Takes <span style=\"color:#ff00ff\">weeks</span></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Donepezil (Aricept), → usually at <b>bedtime </b></li><li>rivastigmine (Exelon, oral or patch), </li><li>galantamine (Razadyne) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li>Alzheimer disease; <mark style=\"background-color:#00ff00\">delays decline,</mark> does not restore lost function, so start early </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li><b>Nausea, </b></li><li><b>vomiting, </b></li><li><b>diarrhea</b>, </li><li>weight loss; </li><li>bradycardia and syncope </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Weight, </li><li>GI tolerance, </li><li>pulse</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Long-term <mark style=\"background-color:#00ffff\">NSAID </mark>use raises <span style=\"color:#ff0000\">ulcer risk; </span></li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>Syncope, </li><li>slow pulse, </li><li>GI bleeding</li></ul>"
+    },
+    {
+     "id": "7f7209f113",
+     "prompt": "Anticholinergics / antiparkinson agents for EPS",
+     "promptHtml": "<p><b>Anticholinergics / antiparkinson agents </b></p><p><mark style=\"background-color:#00ff00\"><b>for EPS</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li>Benztropine (Cogentin), </li><li>trihexyphenidyl (Artane), </li><li>biperiden; </li><li>diphenhydramine (Benadryl); </li><li>amantadine (Symmetrel) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li><b>EPS</b></li><li>Acute dystonia (IM/IV <mark style=\"background-color:#00ffff\">benztropine </mark>or <mark style=\"background-color:#00ffff\">diphenhydramine</mark>), </li><li>pseudoparkinsonism; </li><li>less effective for akathisia </li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Dry mouth, </li><li>blurred vision, </li><li>constipation, </li><li>urinary retention, </li><li>raised eye pressure, </li><li>confusion and delirium in older adults; </li><li>can be abused for euphoria </li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li>Bowel and bladder function,</li><li>mental status, </li><li>intraocular pressure in glaucoma</li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Sugar-free candy and sips of water, </li><li>fiber and fluids, </li><li>void regularly, </li><li><b>sunglasses </b></li><li><mark style=\"background-color:#ffff00\">taper</mark>—abrupt stop can cause <b>cholinergic rebound</b> </li></ul><ul class=\"l1\"><li>(vomiting, sweating, nightmares)</li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><p><span style=\"color:#ff0000\"><b><u>anticholinergic crisis</u></b></span> = </p><ul class=\"l0\"><li>Hot, </li><li>dry, </li><li>flushed, </li><li>confused, </li><li>dilated pupils </li><li>urinary retention; </li><li>eye pain</li></ul>"
+    },
+    {
+     "id": "2dfe794205",
+     "prompt": "Beta blockers",
+     "promptHtml": "<p><mark style=\"background-color:#00ffff\"><b>Beta blockers</b></mark></p>",
+     "answerHtml": "<p><b>NAMES</b></p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">Propranolol </mark>(Inderal) </li></ul><p><b>USES</b></p><ul class=\"l0\"><li><b>Akathisia</b>; </li><li>performance/situational anxiety; → <i>can take </i><span style=\"color:#ff00ff\"><i>30-60 min</i></span><i> before something, like public speaking</i></li><li>lithium tremor;</li><li>adjunct for aggression</li><li>PTSD</li></ul><p><b>ADVERSE EFFECTS</b></p><ul class=\"l0\"><li>Hypotension, </li><li>bradycardia, </li><li>fatigue; </li><li>masks hypoglycemia;</li><li><span style=\"color:#ff0000\">bronchospasm </span>in ASTHMA! [contraindicated]</li></ul><p><b>MONITORING / LABS</b></p><ul class=\"l0\"><li><b>HR</b></li><li><b>BP</b></li></ul><p><b>TEACHING</b></p><ul class=\"l0\"><li>Do not stop abruptly [<mark style=\"background-color:#ffff00\">TAPER</mark>]</li></ul><ul class=\"l1\"><li>(rebound tachycardia) </li></ul><p><b>RED FLAGS = HOLD &amp; CALL MD</b></p><ul class=\"l0\"><li>HR &lt;50–60 or symptomatic hypotension </li><li>wheezing</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Psychopharmacology & Psychobiology",
+   "group": "Psychopharmacology & Psychobiology",
+   "cards": [
+    {
+     "id": "48da3e52bb",
+     "prompt": "Excitatory vs. inhibitory transmitter:",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Excitatory vs. inhibitory transmitter</b></mark>:</p>",
+     "answerHtml": "<p>excitatory raises the chance a neuron fires; </p><p>inhibitory lowers it. </p><p>GABA is the main inhibitory and glutamate the main excitatory transmitter </p>"
+    },
+    {
+     "id": "1e53fe9ebd",
+     "prompt": "Hypofrontality:",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Hypofrontality</b></mark>: </p>",
+     "answerHtml": "<p>Reduced frontal-lobe activity/metabolism seen in <b>schizophrenia</b></p>"
+    },
+    {
+     "id": "287dc115fd",
+     "prompt": "Tuberoinfundibular tract:",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Tuberoinfundibular tract</b></mark><mark style=\"background-color:#ffff00\">:</mark> </p>",
+     "answerHtml": "<p>dopamine pathway that normally restrains prolactin; blockade raises prolactin</p>"
+    },
+    {
+     "id": "47750689a4",
+     "prompt": "Benzodiazepine-GABA-chloride channel complex",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Benzodiazepine-GABA-chloride channel complex</b></mark></p>",
+     "answerHtml": "<p>Receptor complex that benzodiazepines enhance, increasing chloride entry and neuronal inhibition </p>"
+    }
+   ]
+  },
+  {
+   "name": "Schizophrenia",
+   "group": "Schizophrenia",
+   "cards": [
+    {
+     "id": "f3034c7a70",
+     "prompt": "Dystonic reaction",
+     "promptHtml": "<p>Dystonic reaction</p>",
+     "answerHtml": "<p><span style=\"color:#ff0000\">Oculogyric crisis</span></p><ul class=\"l0\"><li>dystonic reaction with upward deviation of the <b>eyes </b>and <b>neck </b>spasm </li></ul><p>(Torticollis</p><ul class=\"l0\"><li>Twisted neck</li></ul><p>Retrocollis</p><ul class=\"l0\"><li>Retracted neck) </li></ul>"
+    },
+    {
+     "id": "b4b99c3a16",
+     "prompt": "Schizophrenia biology",
+     "promptHtml": "<p>Schizophrenia biology</p>",
+     "answerHtml": "<ul class=\"l0\"><li>dopamine dysfunction, </li><li>glutamate/GABA (PCP model),</li><li>hypofrontality, </li><li>gut-brain inflammation </li></ul>"
+    },
+    {
+     "id": "2d8ecc18f6",
+     "prompt": "Schizophrenia - how it can present",
+     "promptHtml": "<p>Schizophrenia - how it can <mark style=\"background-color:#ffff00\">present</mark></p>",
+     "answerHtml": "<p>Neurocognitive impairment in <span style=\"color:#ff0000\">memory</span>, <span style=\"color:#ff0000\">vigilance</span>, and <span style=\"color:#ff0000\">executive function</span> can exist on its own, </p><p>even when positive symptoms are in remission, and it predicts poor functional outcome </p><p><mark style=\"background-color:#ffff00\">Disorganized symptoms:</mark> </p><p>(confused <b>speech </b>and disorganized <b>behavior </b>- naming objects wrong) make it </p><p><span style=\"color:#ff0000\">hard to understand</span> and <span style=\"color:#ff0000\">respond to everyday sights and sounds</span> </p>"
+    },
+    {
+     "id": "f3794290a4",
+     "prompt": "Psychosis:",
+     "promptHtml": "<p><b>Psychosis</b>:</p>",
+     "answerHtml": "<p>*POSITIVE S&amp;S*</p><p>A state in which a person experiences </p><ul class=\"l0\"><li>hallucinations, </li><li>delusions, </li></ul><p>or </p><ul class=\"l0\"><li>disorganized thoughts, </li><li>speech, </li></ul><p>Or</p><ul class=\"l0\"><li>behavior; </li></ul><p>the <span style=\"color:#ff0000\">key diagnostic feature</span> of schizophrenia spectrum disorders. </p>"
+    },
+    {
+     "id": "f25406f417",
+     "prompt": "Prodromal Phase",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Prodromal Phase</mark></p>",
+     "answerHtml": "<p><span style=\"color:#ff0000\">autism </span>= <span style=\"color:#ff0000\">higher likelihood</span> of getting diagnosed w/ schizophrenia</p><p>tension and nervousness, </p><p>poor appetite, </p><p>difficulty concentrating, </p><p>disturbed sleep, </p><p>decreased enjoyment, </p><p>restlessness, </p><p>forgetfulness, </p><p>depression, </p><p>social withdrawal, </p><p>feeling laughed at, </p><p>more thinking about religion, </p><p>feeling bad for no reason, </p><p>hearing voices or seeing things</p><p><u>Childhood Signs:</u></p><p>delayed speech and motor milestones, </p><p>poor social adjustment, and weaker academic performance (</p>"
+    },
+    {
+     "id": "1f46dc0c42",
+     "prompt": "Levels of Intensity of Hallucinations",
+     "promptHtml": "<p>Levels of Intensity of Hallucinations</p>",
+     "answerHtml": "<p>Levels of Intensity of Hallucinations\" </p><p>Stage I </p><ul class=\"l0\"><li>(comforting, moderate anxiety, nonpsychotic) </li></ul><p>Stage II </p><ul class=\"l0\"><li>(condemning, severe anxiety), </li></ul><p>Stage III </p><ul class=\"l0\"><li>(controlling: the person gives in and follows the hallucination, now psychotic), </li></ul><p>Stage IV </p><ul class=\"l0\"><li>(conquering, panic level: hallucinations interwoven with delusions, strong potential for suicide or homicide).</li></ul>"
+    },
+    {
+     "id": "8dc672f1ee",
+     "prompt": "Strategies for Working with Hallucinations",
+     "promptHtml": "<p>Strategies for Working with <mark style=\"background-color:#00ff00\">Hallucinations</mark></p>",
+     "answerHtml": "<ul class=\"l0\"><li>listen for at least 15 minutes, </li><li>chart when hallucinations occur to find triggers, </li><li>link content to unmet needs, </li><li><mark style=\"background-color:#00ff00\">reducing anxiety i</mark>s the key to interrupting hallucinations.</li></ul>"
+    },
+    {
+     "id": "3e72f0d06f",
+     "prompt": "Tx for Schizophrenia",
+     "promptHtml": "<p><mark style=\"background-color:#00ff00\">Tx</mark> for Schizophrenia</p>",
+     "answerHtml": "<p>1st = </p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">antipsychotics </mark>\"to inhibit dopamine and other neurotransmitters\" </li></ul><p>Then</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">ECT</mark></li></ul><p>Then </p><ul class=\"l0\"><li>psychosocial interventions (counseling, behavior therapy, cognitive interventions, psychoeducation)</li></ul>"
+    },
+    {
+     "id": "c68a4fd9f7",
+     "prompt": "Risk factors for Schizophrenia",
+     "promptHtml": "<p>Risk factors for Schizophrenia </p>",
+     "answerHtml": "<ul class=\"l0\"><li><b>heritability of about 40%</b>, </li><li>serotonin and norepinephrine involvement, </li><li><b>GABA receptor stimulation</b>, </li><li>dysfunction of the <b>benzodiazepine-GABA-chloride ion channel complex</b>,</li><li><b>HPA axis and inflammatory response in the microbiome-gut-brain axis</b></li><li><b>dopamine dysfunction</b> (tied to cognitive dysfunction and treatment of positive symptoms), </li><li><b>glutamate and GABA</b> (the PCP model of psychosis), neurodevelopmental loss of synapse development, </li><li><b>Hypofrontality</b></li><li><b>inflammatory cytokines through the gut-brain axis</b></li></ul>"
+    },
+    {
+     "id": "f3abb3f87f",
+     "prompt": "Negative S&S of Schizophrenia",
+     "promptHtml": "<p><span style=\"color:#0000ff\"><b>Negative </b></span>S&amp;S of Schizophrenia</p>",
+     "answerHtml": "<p>Ambivalent</p><ul class=\"l0\"><li>2 opposing feelings at the same time</li><li><b>Indecisive </b></li></ul><p>Avolition</p><ul class=\"l0\"><li><b>Lack of interest or motivation</b> in initiating and sustaining goal-directed behavior; a negative symptom of schizophrenia often mistaken for laziness, and the real barrier behind poor hygiene or missed appointments</li><li>[<span style=\"color:#ff0000\">NOT</span> a lost skill! → a <span style=\"color:#ff0000\">barrier</span>]</li></ul><p>Catatonia</p><ul class=\"l0\"><li>A psychomotor disturbance that includes <b>stupor</b>, <b>mutism</b>, <b>negativism</b>, <b>posturing</b>, <b>waxy flexibility</b>, and <b>repetitive </b>behavior; may require treatment with <mark style=\"background-color:#00ffff\">lorazepam </mark>or <mark style=\"background-color:#00ff00\">ECT</mark>.</li><li><mark style=\"background-color:#ffff00\"><b>Stereotypy</b></mark>: Repetitive, purposeless, idiosyncratic movements performed over and over; a catatonic symptom.</li></ul><p>Alexithymia</p><ul class=\"l0\"><li>A personality trait marked by <b>difficulty identifying and expressing one's own emotions</b>, with concrete, externally oriented thinking; associated with somatic symptom disorder.</li></ul><p>Flat affect</p><p>Anhedonia</p><ul class=\"l0\"><li>Unable to feel <b>pleasure </b></li></ul><p>Alogia</p><ul class=\"l0\"><li>Poverty of <b>speech</b></li></ul>"
+    },
+    {
+     "id": "d94bdc0114",
+     "prompt": "Parkinsonian tx",
+     "promptHtml": "<p>Parkinsonian <mark style=\"background-color:#00ff00\">tx</mark></p>",
+     "answerHtml": "<p>Reduce dose</p><p><mark style=\"background-color:#00ffff\">Anticholinergic</mark></p>"
+    },
+    {
+     "id": "0d7d7cda26",
+     "prompt": "Dystonic reaction tx (oculogyric crisis, torticollis, retrocollis)",
+     "promptHtml": "<p>Dystonic reaction <mark style=\"background-color:#00ff00\">tx</mark></p><p>(oculogyric crisis, torticollis, retrocollis)</p>",
+     "answerHtml": "<p>IV or IM </p><p><mark style=\"background-color:#00ffff\">Benzotropine </mark>or <mark style=\"background-color:#00ff00\">diphenhydramine</mark></p>"
+    },
+    {
+     "id": "ad4028f329",
+     "prompt": "Akathisia tx",
+     "promptHtml": "<p>Akathisia <mark style=\"background-color:#00ff00\">tx</mark></p>",
+     "answerHtml": "<p>[EPS! → <span style=\"color:#ff0000\">inability to sit still</span>] </p><p>Reduce the dose</p><p><mark style=\"background-color:#00ff00\">Propranolol </mark>sometimes added</p>"
+    },
+    {
+     "id": "2c94926a3f",
+     "prompt": "Treatment for: TD Dystonia Akathisia [late onset/challenging to treat]",
+     "promptHtml": "<p><mark style=\"background-color:#00ff00\">Treatment </mark>for:</p><p>TD</p><p>Dystonia</p><p>Akathisia</p><p>[late onset/challenging to treat]</p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ffff\">Valbenazine </mark> &amp;</p><p><mark style=\"background-color:#00ffff\">Deutetrabenazine</mark></p><p>[FDA-approved agents for tardive dyskinesia that reduce dopamine transport into storage vesicles]</p>"
+    },
+    {
+     "id": "09732d61b7",
+     "prompt": "Interactions! (Antidepressants + ?)",
+     "promptHtml": "<p>Interactions! (Antidepressants + ?)</p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ffff\">Antidepressants </mark>+ <mark style=\"background-color:#00ffff\">Olanzapine &amp; Clozapine</mark></p><p><u>Antidepressants:</u></p><p>fluvoxamine (Luvox), </p><p>fluoxetine (Prozac), </p><p>paroxetine (Paxil) </p>"
+    },
+    {
+     "id": "09732d61b7-2",
+     "prompt": "Interactions! (Antipsychotics + ?)",
+     "promptHtml": "<p>Interactions!  (Antipsychotics + ?)</p>",
+     "answerHtml": "<p>Antipsychotics + <span style=\"color:#ff0000\">Nicotine</span></p><p>[the <span style=\"color:#ff0000\">tobacco smoke</span> causes interaction!</p><p>Nicotine gum/patch/etc is ok]</p>"
+    },
+    {
+     "id": "09732d61b7-3",
+     "prompt": "Interactions! (Psychiatric Meds + ?)",
+     "promptHtml": "<p>Interactions! (Psychiatric Meds + ?)</p>",
+     "answerHtml": "<p>Psychiatric Meds + <span style=\"color:#ff0000\">Grapefruit juice</span></p><p>Buspirone (BuSpar) </p><p>Quetiapine (Seroquel), </p><p>Lurasidone (Latuda), </p><p>Ziprasidone (Geodon) </p><p>Benzodiazepines </p><p>(Diazepam, </p><p>Midazolam, </p><p>Triazolam, </p><p>Alprazolam) </p><p>Carbamazepine (Tegretol)</p><p>Trazodone </p>"
+    },
+    {
+     "id": "c48c661700",
+     "prompt": "Cholinergic Rebound Antidote",
+     "promptHtml": "<p>Cholinergic Rebound <mark style=\"background-color:#00ff00\">Antidote</mark></p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ffff\"><b>physostigmine</b></mark> </p><p>is the reversal agent (injected, rapid, short-acting) </p><p>Cholinergic rebound =</p><p>(vomiting, excessive sweating, vivid dreams, nightmares); <span style=\"color:#ff0000\">taper</span>.</p>"
+    },
+    {
+     "id": "a929063867",
+     "prompt": "Metonymic Speech",
+     "promptHtml": "<p><b>Metonymic </b>Speech</p>",
+     "answerHtml": "<p>using words with <b>similar meanings </b>interchangeably</p>"
+    },
+    {
+     "id": "5eb0b7e18d",
+     "prompt": "Stilted language",
+     "promptHtml": "<p><b>Stilted </b>language</p>",
+     "answerHtml": "<p>overly and inappropriately <b>formal </b>speech </p>"
+    }
+   ]
+  },
+  {
+   "name": "Schizophrenia Spectrum (diagnosis)",
+   "group": "Schizophrenia",
+   "cards": [
+    {
+     "id": "03ae7e5757",
+     "prompt": "Brief psychotic disorder",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Brief psychotic disorder</mark></p>",
+     "answerHtml": "<p>At least <span style=\"color:#ff00ff\">1 day</span>, BUT </p><p><span style=\"color:#ff00ff\">less than </span><span style=\"color:#ff00ff\"><b>1</b></span><span style=\"color:#ff00ff\"> month</span></p><p>Sudden onset; </p><p>full return to baseline; </p><p>may follow a severe stressor; high suicide risk in younger patients</p>"
+    },
+    {
+     "id": "d96036987d",
+     "prompt": "Schizophreniform",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Schizo</mark><mark style=\"background-color:#ffff00\"><b>phreniform</b></mark></p>",
+     "answerHtml": "<p>At least <span style=\"color:#ff00ff\">1 month</span>, BUT </p><p><span style=\"color:#ff00ff\"><b>less </b></span><span style=\"color:#ff00ff\">than </span><span style=\"color:#ff00ff\"><b>6</b></span><span style=\"color:#ff00ff\"> months</span></p><p><b>Same features as schizophrenia</b>; </p><p>about 1/3 recover, </p><p>about 2/3 progress to schizophrenia</p>"
+    },
+    {
+     "id": "b74072b447",
+     "prompt": "Schizophrenia (summary)",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Schizophrenia (summary)</mark></p>",
+     "answerHtml": "<p>Continuous signs for </p><p><span style=\"color:#ff00ff\">at least </span><span style=\"color:#ff00ff\"><b>6</b></span><span style=\"color:#ff00ff\"> months</span>, with </p><p>at least </p><p><span style=\"color:#ff00ff\"><b>1</b></span><span style=\"color:#ff00ff\"> month of </span><span style=\"color:#ff00ff\"><b>active </b></span><span style=\"color:#ff00ff\">symptoms</span></p><p>Functional <span style=\"color:#ff0000\">decline </span>in </p><p>work, self-care, relationships</p>"
+    },
+    {
+     "id": "ba3d21b4f0",
+     "prompt": "Diagnosis of Schizophrenia",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Diagnosis </mark>of <mark style=\"background-color:#ffff00\">Schizophrenia</mark></p>",
+     "answerHtml": "<p><u>Definition of Schizophrenia:</u></p><p>Severe, chronic disorder of </p><ul class=\"l0\"><li>thought, </li><li>perception, </li><li>behavior </li></ul><p><mark style=\"background-color:#ffff00;color:#ff00ff\"><b>2</b></mark> <mark style=\"background-color:#ffff00\">(or more)</mark> of the following, each present for a <mark style=\"background-color:#ffff00\">significant portion of time during a </mark><mark style=\"background-color:#ffff00;color:#ff00ff\"><b>1-month</b></mark><mark style=\"background-color:#ffff00\"> period</mark> (or less if successfully treated). <mark style=\"background-color:#ffff00\">At least </mark><mark style=\"background-color:#ffff00;color:#ff00ff\"><b>1 </b></mark>of these must be (1), (2), or (3):</p><ol class=\"l0\" start=\"1\"><li><b>Delusions</b></li><li><b>Hallucinations</b></li><li><b>Disorganized speech</b> (e.g., frequent derailment or incoherence)</li><li>Grossly disorganized or catatonic behavior</li><li>Negative symptoms (i.e., diminished emotional expression or avolition)</li></ol><p>For a significant portion of the time <b>since the onset</b> of the disturbance, <mark style=\"background-color:#ffff00\"><b>level of functioning</b></mark><mark style=\"background-color:#ffff00\"> in </mark><mark style=\"background-color:#ffff00;color:#ff00ff\"><b>1 </b></mark><mark style=\"background-color:#ffff00;color:#ff00ff\">or more</mark> major areas, such as <b>work</b>, interpersonal <b>relations</b>, or <b>self-care</b>, <mark style=\"background-color:#ffff00\">is markedly </mark><mark style=\"background-color:#ffff00;color:#ff0000\"><b>below</b></mark> <mark style=\"background-color:#ffff00\">the level achieved prior to the onset</mark> (or when the onset is in childhood or adolescence, there is failure to achieve expected level of interpersonal, academic, or occupational functioning).</p><p>Continuous signs of the <mark style=\"background-color:#ffff00\">disturbance persist for at least </mark><mark style=\"background-color:#ffff00;color:#ff00ff\"><b>6 months</b></mark>. This 6-month period must include <mark style=\"background-color:#ffff00\">at least </mark><mark style=\"background-color:#ffff00;color:#ff00ff\"><b>1 month</b></mark> of symptoms (or less if successfully treated) that <mark style=\"background-color:#ffff00\">meet Criterion A</mark> (i.e., active-phase symptoms) and may include periods of <span style=\"color:#9900ff\">prodromal or residual symptoms. </span>During these prodromal or residual periods, the signs of the disturbance may be manifested by <b>only negative symptoms</b> or by <span style=\"color:#ff00ff\"><b>two</b></span><b> or more symptoms listed in Criterion A</b> present in an attenuated form (e.g., odd beliefs and unusual perceptual experiences).</p><p><span style=\"color:#ff0000\"><b>Schizoaffective</b></span><span style=\"color:#ff0000\"> disorder and </span><span style=\"color:#ff0000\"><b>depressive </b></span></p><p>or </p><p><span style=\"color:#ff0000\"><b>bipolar</b></span><span style=\"color:#ff0000\"> disorder with psychotic </span>features </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">have been ruled out</span> because either </li><li>(<span style=\"color:#ff00ff\">1</span>) <b>no</b> major <b>depressive</b> or <b>manic</b> episodes <b>have</b> <b>occurred</b> <b>concurrently</b> with the active-phase symptoms or </li><li>(<span style=\"color:#ff00ff\">2</span>) <mark style=\"background-color:#ffff00\">if</mark> mood episodes have occurred during active-phase symptoms, they have been <b>present for a minority</b> of the total duration of the active and residual periods of the illness.</li></ul><p>The <span style=\"color:#ff0000\">disturbance</span> is <span style=\"color:#ff0000\">not attributable</span> to the physiologic effects of a <span style=\"color:#ff0000\"><b>substance</b></span> (e.g., a drug of abuse, a medication) or <span style=\"color:#ff0000\">another </span><span style=\"color:#ff0000\"><b>medical</b></span> <span style=\"color:#ff0000\"><b>condition</b></span>.</p><p>If there is a history of <span style=\"color:#ff0000\"><b>autism</b></span> spectrum disorder or a <span style=\"color:#ff0000\"><b>communication disorder</b></span> of childhood onset, the additional diagnosis of schizophrenia is made <mark style=\"background-color:#ffff00\">only if prominent delusions or hallucinations,</mark> <mark style=\"background-color:#ffff00\">in addition to the other required symptoms </mark>of schizophrenia, are also present for <mark style=\"background-color:#ffff00\">at least </mark><mark style=\"background-color:#ffff00;color:#ff00ff\">1 month</mark> (or less if successfully treated).</p>"
+    },
+    {
+     "id": "fcb538a4fd",
+     "prompt": "Delusional disorder",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Delusional disorder</mark></p>",
+     "answerHtml": "<p><b>Delusions</b> for at least <span style=\"color:#ff00ff\">1 month</span></p><p><b>Well-systematized delusions</b>,</p><ul class=\"l0\"><li>behavior is <b>not </b>bizarre, </li><li><b>functioning intact</b> apart from the delusion</li></ul><p><u>Delusions</u></p><p><mark style=\"background-color:#ffff00\"><b>erotomanic</b></mark> </p><ul class=\"l0\"><li>(a higher-status person loves me), </li></ul><p><b>grandiose</b>, <b>jealous</b> </p><ul class=\"l0\"><li>(partner unfaithful)</li></ul><p><b>Persecutory</b></p><p><b>Somatic</b></p><p><b>Mixed</b>. </p><p>The patient usually lives with the delusion for years and <span style=\"color:#ff0000\">rarely seeks </span><span style=\"color:#ff0000\">treatment </span></p>"
+    },
+    {
+     "id": "7e6a1520d5",
+     "prompt": "Schizoaffective",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Schizoaffective</mark></p>",
+     "answerHtml": "<p>All <span style=\"color:#ff00ff\"><b>3</b></span> must be met!</p><ol class=\"l0\" start=\"1\"><li>Both <b>Psychosis </b>and a<b> Major Mood Episode </b>Occur <b>Together:</b></li></ol><ul class=\"l0\"><li>At some point during the illness, the patient experiences <b>Criterion A symptoms of schizophrenia</b> (hallucinations, delusions, disorganized speech, grossly disorganized/catatonic behavior, or negative symptoms) <b>at the exact same time</b> as a <b>major depressive episode</b> or a <b>manic episode</b>.</li></ul><ol class=\"l0\" start=\"2\"><li><b>The \"2-Week Psychosis-Alone\" Rule (Separates it from Mood Disorders):</b></li></ol><ul class=\"l0\"><li>Over the lifetime of the illness, the patient must have had <b>delusions or hallucinations for at least </b><span style=\"color:#ff00ff\"><b>2 consecutive weeks </b></span><mark style=\"background-color:#ffff00\"><b>in the complete absence of a major mood episode</b></mark> (meaning their mood was stable/euthymic, yet they were still actively hallucinating or delusional).</li><li><i>Why this matters:</i> If a patient <i>only</i> hallucinates or has delusions when they are severely depressed or acutely manic—and the psychosis completely vanishes once their mood stabilizes—they have <b>Major Depressive Disorder or Bipolar Disorder with psychotic features</b>, <i>not</i> schizoaffective disorder.</li></ul><ol class=\"l0\" start=\"3\"><li><b>The \"Majority of the Time\" Rule (Separates it from Schizophrenia):</b></li></ol><ul class=\"l0\"><li>Symptoms of a major mood episode (<mark style=\"background-color:#ffff00\">depression or mania</mark>) must be present for the <b>majority (</b><mark style=\"background-color:#ffff00\"><b>more than 50%</b></mark><b>)</b> of the total active and residual duration of the illness.</li><li><i>Why this matters:</i> Someone with plain schizophrenia might occasionally feel sad or have brief mood swings, but if mood episodes dominate most of their illness timeline, it becomes schizoaffective disorder.</li></ul><p><span style=\"color:#ff0000\">_______________________________________</span></p><p><b>Better </b>long-term outcome and <b>social functioning</b> than schizophrenia </p><ul class=\"l0\"><li>Intense symptom exacerbation</li></ul><p>Alternating w/</p><ul class=\"l0\"><li>Periods of adequate psychosocial functioning</li></ul><p>Sometimes</p><ul class=\"l0\"><li>Psychosis </li></ul><p>and/or</p><ul class=\"l0\"><li>Mood disturbance</li></ul><p>More likely to experience</p><ul class=\"l0\"><li>Persistent psychosis [compared to Bipolar]</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Neurotransmitters",
+   "group": "Neurotransmitters",
+   "cards": [
+    {
+     "id": "6b4f4e48ab",
+     "prompt": "Dopamine",
+     "promptHtml": "<p>Dopamine</p>",
+     "answerHtml": "<p><b>Psychosis </b>&amp; <b>Mood</b></p><p>↓ Dopamine =</p><p><span style=\"color:#0000ff\">Parkinson Disease</span></p><p>↑ Dopamine =</p><p><span style=\"color:#ff0000\">Schizophrenia</span></p>"
+    },
+    {
+     "id": "b51dc086b6",
+     "prompt": "Serotonin",
+     "promptHtml": "<p>Serotonin</p>",
+     "answerHtml": "<p><b>Depressed </b>mood &amp; <b>Psychosis</b></p><p>↓ Serotonin =</p><p><span style=\"color:#0000ff\">Mania</span></p><p>↑ Serotonin =</p><p><span style=\"color:#ff0000\">Depression</span></p><p><span style=\"color:#ff0000\">Insomnia</span></p>"
+    },
+    {
+     "id": "cfae6b6476",
+     "prompt": "Norepinephrine",
+     "promptHtml": "<p>Norepinephrine</p>",
+     "answerHtml": "<p><b>Mood </b>&amp; <b>Anxiety</b></p><p>Dysfunction = <b>Anxiety / Depression</b></p>"
+    },
+    {
+     "id": "64c9588f85",
+     "prompt": "GABA",
+     "promptHtml": "<p>GABA</p>",
+     "answerHtml": "<p><b>Anxiety</b></p><p>[Inhibitory transmitter:</p><p>Contributes to seizure, agitation, &amp; anxiety control]</p>"
+    },
+    {
+     "id": "ed28d63f81",
+     "prompt": "Glutamate",
+     "promptHtml": "<p>Glutamate</p>",
+     "answerHtml": "<p><b>Memory </b>&amp; <b>Cognition</b></p><p>↓ Glutamate = </p><p><span style=\"color:#0000ff\"><b>Alzheimer </b></span><span style=\"color:#0000ff\">dz</span></p><p><span style=\"color:#0000ff\"><b>Down </b></span><span style=\"color:#0000ff\">syndrome</span></p><p><span style=\"color:#0000ff\">Paralysis</span></p><p>↑ Glutamate =</p><p><span style=\"color:#ff0000\">Spasms</span></p>"
+    },
+    {
+     "id": "d584009275",
+     "prompt": "Gut-brain axis theory",
+     "promptHtml": "<p>Gut-brain axis theory</p>",
+     "answerHtml": "<p>Dysregulation of gut-microbiome signaling to the CNS as a contributor to depressive symptoms</p><p>two-way signaling among </p><ul class=\"l0\"><li>gut bacteria, </li><li>the immune system, </li><li>the HPA axis, </li><li>the brain</li></ul>"
+    },
+    {
+     "id": "f00c9dd696",
+     "prompt": "Anxiety Disorders are d/t which neurotransmitters? [Panic OCD PTSD}",
+     "promptHtml": "<p>Anxiety Disorders are d/t which <b>neurotransmitters</b>?</p><p>[Panic </p><p>OCD</p><p>PTSD}</p>",
+     "answerHtml": "<p><b>Panic </b></p><ul class=\"l0\"><li>serotonin, </li><li>norepinephrine, </li><li>GABA</li><li>HPA axis; </li></ul><p><b>OCD </b></p><ul class=\"l0\"><li>serotonin; </li></ul><p><b>PTSD </b></p><ul class=\"l0\"><li>norepinephrine (hyperarousal)</li><li>dopamine.</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Mood Disorders",
+   "group": "Mood Disorders",
+   "cards": [
+    {
+     "id": "d5d5e0346c",
+     "prompt": "Tx for Bipolar Disorder",
+     "promptHtml": "<p>Tx for <b>Bipolar </b>Disorder</p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ff00\">ECT </mark></p><p>&amp;</p><p>coupling of medication with <mark style=\"background-color:#00ffff\">antidepressants </mark>to protect against manic switch or rapid cycling</p>"
+    },
+    {
+     "id": "f143567e95",
+     "prompt": "What makes Bipolar worse?",
+     "promptHtml": "<p>What makes Bipolar worse?</p>",
+     "answerHtml": "<p><span style=\"color:#ff0000\">Kindling </span>and <span style=\"color:#ff0000\">allostatic load</span> are bipolar-specific concepts frequently tested together: \"episodes beget episodes,\" and over time less stress is needed to trigger one.</p><p>Kindling:</p><p>A theory of bipolar disorder in which repeated subthreshold stressors in a genetically predisposed person produce mood episodes of increasing intensity over time; each episode sensitizes the brain to the next, until episodes eventually occur with little or no outside stressor.</p>"
+    },
+    {
+     "id": "c538411729",
+     "prompt": "Mood Disorder Tx",
+     "promptHtml": "<p>Mood Disorder <mark style=\"background-color:#00ff00\">Tx</mark></p>",
+     "answerHtml": "<p><b>combination therapies</b> for <span style=\"color:#ff0000\">severe </span>or <span style=\"color:#ff0000\">recurrent depression </span>are recommended: </p><p>psychotherapy, </p><p>medication, </p><p>ECT, </p><p>light therapy, </p><p>repetitive TMS side by side</p>"
+    },
+    {
+     "id": "aad87b98d1",
+     "prompt": "Phases for Mood Disorders",
+     "promptHtml": "<p>Phases for Mood Disorders</p>",
+     "answerHtml": "<p><u>Phase Sequence:</u></p><p>Acute</p><p>Continuation</p><p>Maintenance</p><p>Discontinuation </p><p>Goal = return to <mark style=\"background-color:#00ff00\">euthymia</mark></p>"
+    },
+    {
+     "id": "14dde01203",
+     "prompt": "At risk for Suicide",
+     "promptHtml": "<p>At risk for Suicide</p>",
+     "answerHtml": "<p>Youth w/</p><ul class=\"l0\"><li>anxiety </li><li>somatic complaints</li><li>Irritable mood</li></ul><p>Geriatric</p><ul class=\"l0\"><li>Highest risk!</li><li>Respond slowly to treatment</li><li>S&amp;S confused w/ demantia/stroke</li></ul>"
+    },
+    {
+     "id": "f7905f489c",
+     "prompt": "Hypomania S&S",
+     "promptHtml": "<p><span style=\"color:#0000ff\">Hypomania </span><span style=\"color:#ff0000\">S&amp;S</span></p>",
+     "answerHtml": "<p><b>DIGFAST </b>mnemonic for hypomania: </p><p><b>Distract</b>ibility, </p><p><b>Impulsivity</b>, </p><p><b>Grandiosity</b>, </p><p>Flight of <b>ideas</b>, </p><p><b>Activity </b>increase, </p><p>Sleep <b>deficit</b>, </p><p><b>Talkative</b>ness</p>"
+    },
+    {
+     "id": "044826957f",
+     "prompt": "What meds are used for Mood Disorders & Comorbidities?",
+     "promptHtml": "<p>What <mark style=\"background-color:#00ffff\">meds </mark>are used for </p><ul class=\"l0\"><li>Mood Disorders &amp; Comorbidities? </li></ul>",
+     "answerHtml": "<p>antipsychotics, </p><p>antidepressants, </p><p>mood stabilizers, </p><p>anxiolytics</p>"
+    },
+    {
+     "id": "de32fa5933",
+     "prompt": "Low Tyramine Diet for MAOIs",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Low Tyramine Diet for MAOIs</mark></p>",
+     "answerHtml": "<p><span style=\"color:#ff0000\"><b>AVOID</b></span><b>:</b></p><ul class=\"l0\"><li><b>Aged or mature cheeses:</b> cheddar, blue, brie, Swiss, parmesan, Romano, provolone, Colby, processed American cheese </li><li><b>Cured, fermented, aged, dried, pickled, or smoked meats and fish:</b> salami, pepperoni, summer sausage, bologna, dried or pickled herring, anchovies, smoked fish, caviar, chicken or beef <b>liver</b> (especially if not fresh), meats prepared with tenderizers, meat extracts </li><li><b>Alcohol:</b> <b>tap (draft) and unpasteurized beer</b>, <b>red wine (especially Chianti)</b>, sherry, vermouth, liqueurs, some alcohol-free and reduced-alcohol beers </li><li><b>Soy and fermented condiments:</b> soy sauce, miso, fermented bean curd and tofu, teriyaki, fish and shrimp sauces</li><li><b>Sauerkraut, kimchi, and other pickled or fermented vegetables</b> </li><li><b>Fava (broad) bean pods</b>; Italian beans and Chinese pea pods; snow peas </li><li><b>Yeast extracts</b> such as Marmite and Vegemite, bouillon cubes, canned and prepared soups and gravies </li><li><b>Spoiled or improperly stored food</b> of any kind, including leftovers kept too long </li></ul><p><mark style=\"background-color:#00ff00\">ALLOWED</mark></p><ul class=\"l0\"><li><b>fresh</b> cottage cheese, cream cheese, ricotta, milk; <b>fresh</b> meat, poultry, fish, and fresh lunch meats or hot dogs; other vegetables; soy milk; chain pizza with low-tyramine cheese </li></ul>"
+    },
+    {
+     "id": "63187845fa",
+     "prompt": "Tx for Depression & OCD",
+     "promptHtml": "<p><mark style=\"background-color:#00ff00\">Tx </mark>for <b>Depression </b>&amp; <b>OCD</b></p>",
+     "answerHtml": "<p>Repetitive Transcranial Magnetic Stimulation </p><p>[TMS]</p>"
+    },
+    {
+     "id": "472cffc01a",
+     "prompt": "zeitgeber",
+     "promptHtml": "<p><b>zeitgeber</b></p>",
+     "answerHtml": "<p> Any <b>external </b>or <b>environmental </b>cue that sets, resets, or synchronizes an organism's biological clock and <b>circadian rhythms</b>. </p><p>[ex: sunlight, light therapy]</p>"
+    },
+    {
+     "id": "93af9265e2",
+     "prompt": "Insomnia subtypes",
+     "promptHtml": "<p>Insomnia subtypes </p>",
+     "answerHtml": "<p>initial (trouble falling asleep), </p><p>middle (waking during the night), </p><p>terminal (waking too early).</p>"
+    },
+    {
+     "id": "8cd14c823c",
+     "prompt": "Depression Nursing Interventions",
+     "promptHtml": "<p><b>Depression</b></p><ul class=\"l0\"><li> <mark style=\"background-color:#00ff00\">Nursing </mark>Interventions</li></ul>",
+     "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Be available</mark>, especially during times of crisis; </li><li>use a calm, unhurried, genuine manner;</li><li>sit with the patient even in silence; </li><li>avoid false reassurance or cheerfulness; </li><li>provide simple, structured choices rather than open-ended ones because decision-making is impaired; </li><li><mark style=\"background-color:#00ff00\">set small, achievable daily goals</mark> and give honest positive feedback on progress;</li><li>provide psychoeducation to the patient and family about the illness and treatment goals; </li><li>encourage — but do not force — social and self-care activity; </li><li>monitor nutrition, sleep, and energy objectively rather than asking the patient to self-rate</li></ul>"
+    },
+    {
+     "id": "d02cfe7bfe",
+     "prompt": "Mania Nursing Interventions",
+     "promptHtml": "<p>Mania </p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Nursing </mark>Interventions</li></ul>",
+     "answerHtml": "<ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Protection of the patient and others</mark> is always the priority </li><li>Approach calmly and set firm, consistent limits using clear, simple language — long explanations are lost on a distractible, racing mind; </li><li>redirect rather than argue when the patient becomes tangential or grandiose;</li><li>reduce environmental stimulation (lower lighting/noise, fewer people, a quiet area) to decrease escalation; </li><li>monitor physical needs the patient is ignoring — rest, hydration, nutrition — because hyperactivity without self-care can produce exhaustion, dehydration, or collapse; </li><li>offer finger foods or high-calorie drinks the patient can eat on the move if sitting for a full meal is not possible </li><li><i>(general knowledge, consistent with the chapter's physical-needs focus)</i>; </li><li>avoid competitive activities and intense one-on-one confrontation, which can escalate agitation; </li><li>expect the patient to resist the idea that they are ill during acute mania, and build a trusting relationship over time rather than insisting on immediate insight</li></ul>"
+    },
+    {
+     "id": "7d6f0bc33b",
+     "prompt": "Electroconvulsive Therapy (ECT)",
+     "promptHtml": "<p>Electroconvulsive Therapy</p><p>(<mark style=\"background-color:#00ff00\">ECT</mark>)</p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ff00\">Expected adverse effects</mark> </p><ul class=\"l0\"><li>headache, </li><li>nausea, </li><li>muscle soreness, </li><li>transient post-treatment confusion, </li><li>and memory loss </li></ul><p>Teach:</p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">Memory loss (usually short-term, around the treatment period)</mark></li></ul><p>_______________________________________</p><p>more useful in those who are </p><ul class=\"l0\"><li>catatonic, depressed, medication resistant, assaultive, or psychotic\" </li></ul><p><mark style=\"background-color:#00ffff\">benzodiazepines </mark><mark style=\"background-color:#00ff00\">are </mark><mark style=\"background-color:#00ff00\"><b>discontinued before ECT</b></mark></p><p><mark style=\"background-color:#00ff00\"><b>Expected findings, not complications requiring intervention:</b></mark> </p><p>transient confusion </p><p>short-term memory loss, </p><p>including <b>retrograde amnesia</b> (no memory of events leading up to or during the treatment); </p><p>whether <mark style=\"background-color:#ffff00\">permanent memory loss occurs is controversial</mark>, but most clients fully recover </p><p><mark style=\"background-color:#ffff00\">A brief period of </mark><mark style=\"background-color:#ffff00;color:#ff0000\"><b>hypertension</b></mark> <mark style=\"background-color:#ffff00\">immediately follows the procedure and should be anticipated and </mark><mark style=\"background-color:#00ff00\">controlled </mark>rather than treated as unexpected </p><p>ECT is <b>not a cure</b> — it reduces incidence and severity of relapse, and weekly or monthly <b>maintenance ECT</b> can be used to sustain that effect </p><p><b>Exam tip:</b> <mark style=\"background-color:#00ffff\">Succinylcholine </mark>is given specifically <mark style=\"background-color:#00ff00\">to prevent injury from the muscle contractions of the induced seizure</mark>, not to sedate the client — expect a stem that asks why a muscle relaxant is used during ECT, and the correct answer is injury prevention during seizure activity, not anesthesia.</p>"
+    },
+    {
+     "id": "361805acc6",
+     "prompt": "Managing Stress",
+     "promptHtml": "<p>Managing <mark style=\"background-color:#00ff00\">Stress</mark></p>",
+     "answerHtml": "<p><b>Breathing control</b> </p><ul class=\"l0\"><li>for <span style=\"color:#ff0000\">hyperventilation</span>. Abdominal breathing: inhale slowly through the nose with a hand on the abdomen (it should rise), count to 5, pause, exhale through pursed lips while \"letting go.\" Do 10 breaths, then 30 seconds of normal breathing, for 3–5 minutes, and practice daily. Light-headedness is normal; stop for 30 seconds. </li><li><b>Four-square breathing</b>: inhale for 4, hold for 4, exhale through pursed lips for 4, rest for 4, take 2 normal breaths, and repeat. Practice it during calm periods, then use it at early signs of panic </li></ul><p><b>Progressive muscle relaxation</b> </p><ul class=\"l0\"><li>(tense each group 5–10 seconds, release for 15–20 seconds, head to toe; Box 27.5, PDF p.1164). This is useful for people who struggle with meditation or visualization.</li></ul><p><b>Exercise</b> </p><ul class=\"l0\"><li>reduces muscle tension, raises serotonin and endorphins, and improves oxygenation; 10–20 minutes, 2–3 times a week. Running reduced OC symptoms Exercise and yoga reduce PTSD symptoms </li><li></li></ul><p><b>Nutrition</b>: </p><ul class=\"l0\"><li>regular balanced meals to avoid hypoglycemia; reduce, then eliminate, caffeine (withdrawal can trigger panic), MSG, and food coloring; check OTC energy products </li></ul><p><b>Sleep hygiene</b>: </p><ul class=\"l0\"><li>regular bedtime and wake time, no naps, no alcohol (it causes rebound alerting), no caffeine after midafternoon or nicotine at night, no exercise within 3 hours of bed.</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Diagnosis of Mood Disorders",
+   "group": "Mood Disorders",
+   "cards": [
+    {
+     "id": "ca16d8155c",
+     "prompt": "Uncomplicated Grief",
+     "promptHtml": "<p>Uncomplicated Grief</p>",
+     "answerHtml": "<ul class=\"l0\"><li>Distress usually resolves within ~12 weeks [ <span style=\"color:#ff00ff\">&lt; 3 months</span> ]</li><li>Self esteem = intact</li><li>Guilt = specific to lost person</li><li>Follows a major loss </li><li>[depression is <mark style=\"background-color:#00ff00\">NORMAL</mark>]</li></ul>"
+    },
+    {
+     "id": "a64c8135f7",
+     "prompt": "Complicated Grief",
+     "promptHtml": "<p>Complicated Grief</p>",
+     "answerHtml": "<ul class=\"l0\"><li>Excessive duration, often <span style=\"color:#ff00ff\">&gt;3–6 months</span>; may be delayed or compounded by multiple losses</li><li>Function is impaired</li><li>Guilt = ruminative, excessive</li><li>Idealization of the deceased, denial of the loss, excessive/misdirected anger, substance use increase, somatic preoccupation</li></ul>"
+    },
+    {
+     "id": "53631ef8ab",
+     "prompt": "Major depressive disorder (MDD) - short",
+     "promptHtml": "<p><b>Major depressive disorder (MDD)</b> <br>- <mark style=\"background-color:#ffff00\">short</mark></p>",
+     "answerHtml": "<p><b>Major depressive disorder (MDD)</b> </p><ul class=\"l0\"><li>≥5 of 9 symptoms for <span style=\"color:#ff00ff\">≥2 weeks</span>, </li><li>at least <mark style=\"background-color:#ffff00\"><b>one</b></mark> being </li></ul><ul class=\"l1\"><li><span style=\"color:#ff0000\">depressed </span>mood </li><li>OR <span style=\"color:#ff0000\">anhedonia </span>[no pleasure]</li></ul><ul class=\"l0\"><li>episodic, often recurrent and worsening with each episode </li></ul>"
+    },
+    {
+     "id": "8192190f48",
+     "prompt": "Major depressive disorder (MDD) long",
+     "promptHtml": "<p><b>Major depressive disorder (MDD)</b> </p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">long</mark></li></ul>",
+     "answerHtml": "<p><b>Major depressive disorder (MDD)</b>:</p><p>one or more moods that are </p><p><span style=\"color:#ff0000\">depressed </span>or <span style=\"color:#ff0000\">anhedonic </span>for <span style=\"color:#ff00ff\">≥2 weeks</span>, <b>plus </b><span style=\"color:#ff00ff\"><b>4 </b></span><b>of 7 additional symptoms</b>:</p><p>sleep, </p><p>appetite/weight, </p><p>concentration, </p><p>energy, </p><p>psychomotor change, </p><p>guilt/worthlessness, </p><p>suicidal ideation </p><p><mark style=\"background-color:#ffff00\">[1 mood symptom + 4 others]</mark></p><p>Use <b>SIGECAPS</b> to recall the 9 criteria fast: </p><p><b>S</b>leep, </p><p><b>I</b>nterest (<span style=\"color:#ff0000\">anhedonia</span>), </p><p><b>G</b>uilt/low self-esteem, </p><p><b>E</b>nergy, </p><p><b>C</b>oncentration, </p><p><b>A</b>ppetite, </p><p><b>P</b>sychomotor change, </p><p><b>S</b>uicidal ideation  </p><p>→ MDD turns into → <mark style=\"background-color:#ffff00\">Dysthymia </mark></p><ul class=\"l0\"><li>a depressed mood plus <span style=\"color:#ff00ff\">3</span> SIGECAPS for <span style=\"color:#ff00ff\">2 years</span>, most days</li></ul>"
+    },
+    {
+     "id": "9f0dc5a160",
+     "prompt": "Persistent depressive disorder (dysthymia/PDD)",
+     "promptHtml": "<p><b>Persistent depressive disorder (dysthymia/PDD)</b> </p>",
+     "answerHtml": "<p><b>Persistent depressive disorder (dysthymia/PDD)</b> </p><ul class=\"l0\"><li>chronic, lower-grade depressive symptoms for <span style=\"color:#ff00ff\">≥2 years</span> (adults); an MDD episode can be superimposed (\"double depression\") </li></ul>"
+    },
+    {
+     "id": "55214afd81",
+     "prompt": "Bipolar I disorder",
+     "promptHtml": "<p><b>Bipolar I disorder</b> </p>",
+     "answerHtml": "<p><b>Bipolar I disorder</b> </p><ul class=\"l0\"><li>Combination of <span style=\"color:#ff0000\">depression </span>&amp; <span style=\"color:#ff0000\">manic</span></li><li><mark style=\"background-color:#ffff00\">MANIC</mark>:</li></ul><ul class=\"l1\"><li>At least <span style=\"color:#ff00ff\">1 week</span></li><li><span style=\"color:#ff00ff\">3</span> [or 4 if mood is irritable]</li></ul><ol class=\"l0\" start=\"1\"><li>Grandiosity</li><li>Decreased need for sleep</li><li>Flight of ideas</li><li>Distractibility</li><li>Psychomotor agitation</li><li>RIsky activities</li></ol><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">MIXED</mark>:</li></ul><ul class=\"l1\"><li> Alternating <span style=\"color:#ff0000\">manic </span>&amp; <span style=\"color:#ff0000\">MDD </span>for at least <span style=\"color:#ff00ff\">1 week</span></li><li><mark style=\"background-color:#00ff00\">Assess for suicide</mark></li></ul>"
+    },
+    {
+     "id": "8c2413eea7",
+     "prompt": "Bipolar II disorder",
+     "promptHtml": "<p><b>Bipolar II disorder</b> </p>",
+     "answerHtml": "<p><b>Bipolar II disorder</b> </p><ul class=\"l0\"><li>predominantly <span style=\"color:#0000ff\">depressive </span>course with <span style=\"color:#0000ff\"><b><u>hypo</u></b></span><span style=\"color:#0000ff\">manic </span>(not manic) episodes for <span style=\"color:#ff00ff\">at least 4 days</span></li></ul>"
+    },
+    {
+     "id": "2ded096ce6",
+     "prompt": "Cyclothymic disorder",
+     "promptHtml": "<p><b>Cyclothymic disorder</b></p>",
+     "answerHtml": "<p><b>Cyclothymic disorder</b></p><ul class=\"l0\"><li><span style=\"color:#ff00ff\"> ≥2</span> years of subthreshold <span style=\"color:#0000ff\"><u>hypo</u></span><span style=\"color:#0000ff\">manic </span>and <span style=\"color:#0000ff\">depressive </span>periods </li></ul>"
+    },
+    {
+     "id": "084d1698b9",
+     "prompt": "Panic Disorder (Diagnosis of Mood Disorders)",
+     "promptHtml": "<p><b>Panic Disorder</b> (Diagnosis of Mood Disorders)</p>",
+     "answerHtml": "<p>Panic Disorder:</p><p>Attacks peak within minutes (about <span style=\"color:#ff00ff\">10</span>) and last up to <span style=\"color:#ff00ff\">30 minutes</span>, </p><p>with at least <mark style=\"background-color:#ffff00\"><b>4</b></mark> of: </p><ul class=\"l0\"><li>palpitations, </li><li>sweating, </li><li>trembling, </li><li>shortness of breath or smothering,</li><li>choking, </li><li>chest pain, </li><li>nausea, </li><li>dizziness, </li><li>chills or heat sensations, </li><li>paresthesias, derealization or depersonalization, </li><li>fear of losing control or \"going crazy,\" </li><li>and fear of dying. </li><li>[mimic a <span style=\"color:#ff0000\">heart attack</span>]</li></ul><p>Diagnosis requires at least <span style=\"color:#ff00ff\">1 month of worry about further attacks</span> or avoidance behavior</p><p><span style=\"color:#ff0000\">Acute </span>Panic Treatment:</p><ul class=\"l0\"><li>(stay, </li><li>stay calm, </li><li>reassure, </li><li>short directions, </li><li>walk to a quiet area, </li><li>PRN medication, </li><li>vent afterward)</li></ul><p>Meds:</p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">SSRI</mark></li><li><mark style=\"background-color:#00ffff\">Effexor </mark>[SNRI]</li></ul>"
+    },
+    {
+     "id": "0a3726160c",
+     "prompt": "[more mood disorders]",
+     "promptHtml": "<p><b>[</b>more mood disorders]</p>",
+     "answerHtml": "<p><b>Mood disorder due to another medical condition or substance</b> </p><ul class=\"l0\"><li>mania or depression caused by a medical illness (e.g., thyroid dysfunction, CNS tumor, stroke) or by a substance/medication rather than arising independently</li></ul><p><b>Premenstrual dysphoric disorder (PMDD)</b> </p><ul class=\"l0\"><li>cyclical mood symptoms tied to the luteal phase of the menstrual cycle, resolving after menses starts </li></ul><p><b>Seasonal affective disorder (SAD)</b> </p><ul class=\"l0\"><li>the book treats this as the \"seasonal pattern\" presentation rather than a separate named chapter section: depressive episodes clustering in winter (or hypomanic/manic episodes clustering in summer in bipolar disorder), linked to circadian/light-exposure changes, and responsive to light therapy </li></ul><p><b>Disruptive mood dysregulation disorder (DMDD)</b> </p><ul class=\"l0\"><li>childhood-onset severe irritability/temper outbursts, deliberately separated from pediatric bipolar disorder in DSM-5</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Anxiety Disorders",
+   "group": "Anxiety Disorders",
+   "cards": [
+    {
+     "id": "b299a993a2",
+     "prompt": "Anxiety Biology",
+     "promptHtml": "<p>Anxiety Biology</p>",
+     "answerHtml": "<p>serotonin, </p><p>norepinephrine, </p><p>GABA receptor/chloride channel complex, </p><p>HPA axis, </p><p>gut-brain axis; </p><p>about 40% heritability</p>"
+    },
+    {
+     "id": "e891c1391a",
+     "prompt": "Primary Gain",
+     "promptHtml": "<p>Primary Gain</p>",
+     "answerHtml": "<p>The individual's <b>own desire</b> to relieve the anxiety and feel better — the direct motivation behind addressing physical symptoms, obsessions, compulsions, fears, worry, or isolation.</p>"
+    },
+    {
+     "id": "b01098bce0",
+     "prompt": "Secondary Gain",
+     "promptHtml": "<p>Secondary Gain</p>",
+     "answerHtml": "<p><b>Secondary gain</b> is the <b>attention </b>and <b>support </b>the person receives <i>because</i> of the illness — from health care providers, partners, or caregivers — which can paradoxically <b>decrease motivation to get well</b> and complicate treatment, because the person (consciously or not) is rewarded for staying sick </p><p>A nurse who keeps <span style=\"color:#ff0000\">rewarding helplessness with extra attention</span> risks reinforcing secondary gain rather than recovery.</p>"
+    },
+    {
+     "id": "599cee3a93",
+     "prompt": "Panic level anxiety",
+     "promptHtml": "<p><b>Panic </b>level anxiety</p>",
+     "answerHtml": "<p>short-term goal</p><p>is that the client <i>\"will verbalize ways to </i><b><i>intervene </i></b><i>in escalating anxiety within </i><span style=\"color:#ff00ff\"><i>1 week</i></span><i>,\"</i> </p><p>long-term goal </p><p>is that by discharge the client <i>\"will be able to </i><b><i>recognize symptoms</i></b><i> of </i><b><i>onset </i></b><i>of anxiety and </i><b><i>intervene </i></b><i>before reaching panic stage\"</i> </p>"
+    },
+    {
+     "id": "80365e5e87",
+     "prompt": "OCD Terms",
+     "promptHtml": "<p>OCD Terms</p>",
+     "answerHtml": "<p><b>Ego-dystonic</b></p><ul class=\"l0\"><li> the client's own belief that their <span style=\"color:#ff0000\">intrusive thoughts are \"unacceptable</span>\" and inconsistent with who they are, which is part of why OCD causes so much <span style=\"color:#ff0000\">shame</span>; </li></ul><p><b>magical thinking</b> </p><ul class=\"l0\"><li>the belief that thinking something is equivalent to doing it; </li></ul><p><b>mental contamination</b> </p><ul class=\"l0\"><li>feeling \"dirty\" or contaminated <span style=\"color:#ff0000\">by a </span><span style=\"color:#ff0000\"><b>thought </b></span><span style=\"color:#ff0000\">or </span><span style=\"color:#ff0000\"><b>memory </b></span>rather than a physical substance; </li></ul><p><b>cybercondria</b> </p><ul class=\"l0\"><li>excessive <span style=\"color:#ff0000\">online searching</span> driven by health-related obsessive anxiety</li></ul>"
+    },
+    {
+     "id": "833702444f",
+     "prompt": "Anxiety Levels",
+     "promptHtml": "<p>Anxiety <mark style=\"background-color:#ffff00\">Levels</mark></p>",
+     "answerHtml": "<p>Mild</p><p>Moderate</p><p>Severe</p><p>Panic</p>"
+    },
+    {
+     "id": "e1e241af04",
+     "prompt": "5-4-3-2-1 Grounding Method",
+     "promptHtml": "<p>5-4-3-2-1 Grounding Method</p>",
+     "answerHtml": "<p>5 things seen</p><p>4 touched</p><p>3 heard</p><p>2 smelled</p><p>1 tasted</p><p>used to reorient a client during <b>acute </b><span style=\"color:#ff0000\">panic</span></p>"
+    }
+   ]
+  },
+  {
+   "name": "Anxiety Disorders Diagnosis",
+   "group": "Anxiety Disorders",
+   "cards": [
+    {
+     "id": "cab6be9651",
+     "prompt": "General Anxiety Disorder [GAD]",
+     "promptHtml": "<p>General Anxiety Disorder</p><p>[GAD]</p>",
+     "answerHtml": "<p>At least <span style=\"color:#ff00ff\">6 months</span></p><p>Tx</p><ul class=\"l0\"><li>Antidepressants</li><li>Buspirone</li><li>Beta blockers [as ordered]</li></ul>"
+    },
+    {
+     "id": "d2b8fea05c",
+     "prompt": "OCD",
+     "promptHtml": "<p>OCD</p>",
+     "answerHtml": "<p>Obsessions and/or compulsions</p><p><span style=\"color:#ff00ff\">Over 1 hour a day</span> or <span style=\"color:#ff0000\">significant distress</span></p>"
+    },
+    {
+     "id": "10b6df9136",
+     "prompt": "PTSD",
+     "promptHtml": "<p>PTSD</p>",
+     "answerHtml": "<p><span style=\"color:#ff00ff\">Over 1 month</span>; </p><p>onset may be <b>delayed up to </b><span style=\"color:#ff00ff\"><b>6 months</b></span><b> or more</b></p><p><span style=\"color:#ff00ff\">4 </span>clusters for more than 1 month: </p><p>(1) <b>intrusion</b> (flashbacks, nightmares, dissociative reactions, distress at cues); </p><p>(2) <b>avoidance and numbing</b>; </p><p>(3) <b>negative mood and cognition</b> (irritability, guilt, shame, inability to feel positive emotions, \"no one can be trusted\"); </p><p>(4) <b>hyperarousal and hypervigilance</b> (startle, irritability, aggression, recklessness, sleep disturbance) </p><p>Med:</p><ul class=\"l0\"><li>sertraline (<mark style=\"background-color:#00ffff\">Zoloft</mark>), </li><li>paroxetine (<mark style=\"background-color:#00ffff\">Paxil</mark>), </li><li>off-label <mark style=\"background-color:#00ffff\">prazosin </mark>for <span style=\"color:#ff0000\">nightmares</span></li><li>[<b>no benzodiazepines</b>]</li></ul><p>_______________________________________________________________</p><p><b>Acute </b>PTSD</p><ul class=\"l0\"><li>symptoms occur <span style=\"color:#ff00ff\">within about 1 month</span> of the trauma; </li></ul><p><b>Chronic</b> PTSD</p><ul class=\"l0\"><li>symptoms persist <span style=\"color:#ff00ff\">3 months or longer</span>; </li></ul><p><b>Delayed Onset</b> PTSD</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">more than 6 months pass</span> between the trauma and the first symptoms</li></ul>"
+    },
+    {
+     "id": "35daeb893b",
+     "prompt": "Acute Stress Disorder",
+     "promptHtml": "<p>Acute Stress Disorder</p>",
+     "answerHtml": "<p>Resolves within <span style=\"color:#ff00ff\">1 month</span></p>"
+    },
+    {
+     "id": "dddd88992f",
+     "prompt": "Adjustment Disorder",
+     "promptHtml": "<p>Adjustment Disorder</p>",
+     "answerHtml": "<p>Within <span style=\"color:#ff00ff\">3 months</span> of the stressor.</p>"
+    },
+    {
+     "id": "084d1698b9-2",
+     "prompt": "Panic Disorder (Anxiety Disorders Diagnosis)",
+     "promptHtml": "<p>Panic Disorder (Anxiety Disorders Diagnosis)</p>",
+     "answerHtml": "<p>At least <span style=\"color:#ff00ff\">1 month</span> of worry or behavior change after an attack</p>"
+    },
+    {
+     "id": "8ef45c7914",
+     "prompt": "Agoraphobia",
+     "promptHtml": "<p>Agoraphobia </p>",
+     "answerHtml": "<p>Fear and <span style=\"color:#ff0000\">avoidance of places</span> where escape is hard</p><p>[crowd, public transport, open spaces, etc]</p><p><span style=\"color:#ff00ff\">2 or more</span> situations</p>"
+    }
+   ]
+  },
+  {
+   "name": "Cognitive Disorders",
+   "group": "Cognitive Disorders",
+   "cards": [
+    {
+     "id": "de672bff9d",
+     "prompt": "Delirium Dementia Depression",
+     "promptHtml": "<p>Delirium</p><p>Dementia</p><p>Depression</p>",
+     "answerHtml": "<p>All 3 can coexist!</p><ul class=\"l0\"><li>Preexisting dementia is \"one of the greatest risk factors for delirium\"</li></ul><p>[<b>pseudodementia</b>\"</p><ul class=\"l0\"><li>depression-related cognitive impairment</li><li>AKA “cognitive impairment associated with depression”</li></ul>"
+    },
+    {
+     "id": "bb96cd7350",
+     "prompt": "Assessment for Dementia / Delirium",
+     "promptHtml": "<p><mark style=\"background-color:#00ff00\">Assessment </mark>for Dementia / Delirium </p>",
+     "answerHtml": "<p>Montreal Cognitive Assessment (<b>MoCA</b>)</p><ul class=\"l0\"><li>[clock test]</li></ul><p><b>MMSE</b></p>"
+    },
+    {
+     "id": "18341be5c1",
+     "prompt": "6 cognitive domains",
+     "promptHtml": "<p>6 cognitive domains</p>",
+     "answerHtml": "<p><b>attention </b></p><ul class=\"l0\"><li>(distractibility with multiple stimuli), </li></ul><p><b>executive function </b></p><ul class=\"l0\"><li>(planning, decision-making, working memory)</li></ul><p><b>learning </b>and <b>memory </b></p><ul class=\"l0\"><li>(recall and recognition), </li></ul><p><b>language </b></p><ul class=\"l0\"><li>(expressive — naming, word finding, fluency, syntax, understanding), </li></ul><p><b>perceptual-motor </b></p><ul class=\"l0\"><li>(visual perception, visuoconstructive, perceptual-motor skill),  </li></ul><p><b>social cognition </b></p><ul class=\"l0\"><li>(recognizing emotions, considering another's mental state) </li></ul><p>DSM-5-TR recognizes exactly <span style=\"color:#ff00ff\">3 </span>diagnoses under this umbrella: </p><ul class=\"l0\"><li><b>delirium</b>, </li><li><b>mild neurocognitive disorder</b> (mild cognitive impairment, MCI), </li><li>major neurocognitive disorder (<b>dementia</b>)</li></ul>"
+    },
+    {
+     "id": "9a287fb267",
+     "prompt": "Cognitive Terms",
+     "promptHtml": "<p>Cognitive Terms</p>",
+     "answerHtml": "<p><b>aphasia</b> </p><ul class=\"l0\"><li>loss of <span style=\"color:#ff0000\">language </span>ability; </li></ul><p><b>anomia</b>  </p><ul class=\"l0\"><li>difficulty remembering <span style=\"color:#ff0000\">words </span>over time; </li></ul><p><b>agraphia</b> </p><ul class=\"l0\"><li>inability to express <span style=\"color:#ff0000\">thoughts </span>in <span style=\"color:#ff0000\">writing</span>; </li></ul><p><b>alexia</b> </p><ul class=\"l0\"><li>inability to understand <span style=\"color:#ff0000\">written language</span>; </li></ul><p><b>apraxia</b> </p><ul class=\"l0\"><li>inability to conceptualize <span style=\"color:#ff0000\">performing tasks</span>; </li></ul><p><b>agnosia</b> </p><ul class=\"l0\"><li>loss of sensory ability to <span style=\"color:#ff0000\">recognize objects</span></li></ul>"
+    },
+    {
+     "id": "1f6619a219",
+     "prompt": "Why is Down Syndrome a risk factor for Alzheimer?",
+     "promptHtml": "<p>Why is <span style=\"color:#ff0000\">Down Syndrome</span> a risk factor for <b>Alzheimer</b>?</p>",
+     "answerHtml": "<p>have an extra copy of chromosome 21, which <span style=\"color:#ff0000\">carries the </span><span style=\"color:#ff0000\"><b>amyloid </b></span><span style=\"color:#ff0000\">precursor protein gene</span>, and nearly all develop AD neuropathology by midlife</p>"
+    },
+    {
+     "id": "b297a2c667",
+     "prompt": "Types of Dementia",
+     "promptHtml": "<p>Types of <b>Dementia</b></p>",
+     "answerHtml": "<p>Dementia is the syndrome</p><p>→<span style=\"color:#ff0000\"> Alzheimer disease</span> is 1 <span style=\"color:#ff0000\">cause </span>of it!</p><p>→ <b>NO </b>CURE</p><ul class=\"l0\"><li>dementia of the Alzheimer type (DAT), </li><li>dementia with Lewy bodies (DLB), </li><li>Creutzfeldt-Jakob disease (CJD), </li><li>vascular dementia, </li><li>Parkinson disease dementia, </li><li>Huntington disease, </li></ul><ul class=\"l1\"><li>[<span style=\"color:#ff0000\">choreiform</span> movements]</li></ul><ul class=\"l0\"><li><b>Pick's disease</b>, </li><li><b>Binswanger disease</b>, </li><li><b>pseudodementia</b>, </li><li><b>HIV-associated dementia</b> </li></ul>"
+    },
+    {
+     "id": "13f7f97909",
+     "prompt": "Dementia Med",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Dementia </mark><mark style=\"background-color:#00ffff\">Med</mark></p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ffff\">Memantine </mark>(Namenda; Namenda XR)</p><ul class=\"l0\"><li>SE: <span style=\"color:#ff0000\">Dizziness, headache, diarrhea, constipation, confusion</span></li><li><span style=\"color:#ff0000\">Fall risk! </span></li><li>Monitor <mark style=\"background-color:#00ff00\">renal </mark>function</li><li>*174 generic <u>med </u><span style=\"color:#ff0000\"><u>interactions</u></span>!*</li></ul><p><mark style=\"background-color:#00ffff\">Memantine </mark>ER + <mark style=\"background-color:#00ffff\">donepezil </mark>(Namzaric)</p><ul class=\"l0\"><li>SE: <span style=\"color:#ff0000\">Headache, nausea, vomiting, diarrhea, dizziness, anorexia, ecchymosis</span></li></ul><p>*Only slows the <u>PROGRESSION</u>!!*</p>"
+    },
+    {
+     "id": "29d7b45abf",
+     "prompt": "Delirium Types",
+     "promptHtml": "<p>Delirium </p><ul class=\"l0\"><li>Types</li></ul>",
+     "answerHtml": "<p><b>Delirium is classified by its </b><span style=\"color:#ff0000\"><b>cause</b></span><b>, not just described by its symptoms.</b> </p><p>Townsend's DSM-5 categories sharpen what the base guide treats as a single entity: </p><p><b>substance intoxication delirium</b> (high doses of cannabis, cocaine, hallucinogens, alcohol, anxiolytics, or narcotics); </p><p><b>substance withdrawal delirium</b> (reducing or stopping long-term, high-dose alcohol, sedatives, hypnotics, or anxiolytics); </p><p><b>medication-induced delirium</b> (a side effect of a drug taken as prescribed — anticholinergics, antihypertensives, corticosteroids, anticonvulsants, cardiac glycosides, analgesics, anesthetics, antineoplastics, antiparkinson drugs, H2-receptor antagonists such as cimetidine); </p><p><b>delirium due to another medical condition</b> (systemic infection, metabolic disorder, fluid/electrolyte imbalance <mark style=\"background-color:#00ff00\">(check </mark><mark style=\"background-color:#00ff00\"><b>BP/HR</b></mark><mark style=\"background-color:#00ff00\">, mucous membranes, I&amp;Os [UOP at least </mark><mark style=\"background-color:#00ff00;color:#ff00ff\"><b>30 mL/hr</b></mark><mark style=\"background-color:#00ff00\">]),</mark> liver or kidney disease, thiamine deficiency, postoperative state, hypertensive encephalopathy, postictal state, head trauma); </p><p><b>delirium due to multiple etiologies</b></p>"
+    },
+    {
+     "id": "ba8f435c2e",
+     "prompt": "Treatment for Delirium",
+     "promptHtml": "<p><mark style=\"background-color:#00ff00\">Treatment </mark>for Delirium</p>",
+     "answerHtml": "<p><mark style=\"background-color:#00ff00\">Assess</mark>:</p><ul class=\"l0\"><li>vital signs  </li><li>oxygenation, </li><li>glucose, </li><li>infection screen, </li><li>medication review</li><li><mark style=\"background-color:#00ff00\">(check </mark><mark style=\"background-color:#00ff00\"><b>BP/HR</b></mark><mark style=\"background-color:#00ff00\">, mucous membranes, I&amp;Os [UOP at least </mark><mark style=\"background-color:#00ff00;color:#ff00ff\"><b>30 mL/hr</b></mark><mark style=\"background-color:#00ff00\">]),</mark></li></ul><p><b>Orientation activities</b> </p><ul class=\"l0\"><li>(update the patient's whiteboard, bring family in or arrange a phone call);</li></ul><p><b>oral fluid repletion</b> </p><ul class=\"l0\"><li>(every time any provider is present, help the patient drink a manageable cup of water); </li></ul><p><b>early mobilization</b> </p><ul class=\"l0\"><li>(immobility worsens delirium and other complications, even though fall risk must be watched); </li></ul><p><b>vision and hearing aids</b> </p><ul class=\"l0\"><li>(bring in the patient's usual glasses/hearing aids; speaking in a <b>lower-pitched voice</b> and rephrasing sentences can help a patient who cannot hear clearly); </li></ul><p><b>sleep, pain, medications</b> </p><ul class=\"l0\"><li>(optimize sleep, control pain, but limit psychoactive medications and sedatives when possible)</li></ul>"
+    },
+    {
+     "id": "f20014aca0",
+     "prompt": "Mild Alzheimer’s Treatment",
+     "promptHtml": "<p><b>Mild </b>Alzheimer’s <mark style=\"background-color:#00ff00\">Treatment</mark></p>",
+     "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b>Antiamyloid immunotherapy </b></mark><b>is taught by its current drug names</b>, not just as a class: </p><ul class=\"l0\"><li><mark style=\"background-color:#00ffff\">aducanumab-avwa, </mark></li><li><mark style=\"background-color:#00ffff\">lecanemab-irmb, </mark></li><li><mark style=\"background-color:#00ffff\">donanemab-azbt, </mark></li></ul><p>given IV during mild AD stages to remove amyloid-beta plaque </p>"
+    },
+    {
+     "id": "e88655ccc9",
+     "prompt": "Middle stage Alzheimer’s [treatment]",
+     "promptHtml": "<p><b>Middle stage </b>Alzheimer’s</p><p>[<mark style=\"background-color:#00ff00\">treatment</mark>]</p>",
+     "answerHtml": "<p><b>Repetitive questioning </b>and <b>cognitive engagement </b>= \"critical\" techniques</p>"
+    },
+    {
+     "id": "d010055b6c",
+     "prompt": "Lewy Bodies S&S",
+     "promptHtml": "<p>Lewy Bodies <span style=\"color:#ff0000\">S&amp;S</span></p>",
+     "answerHtml": "<p><b>NCD with Lewy bodies is given a specific life-expectancy range (</b><span style=\"color:#ff00ff\"><b>5–7 years</b></span><b>)</b> </p><p>S&amp;S</p><ul class=\"l0\"><li>Visual <span style=\"color:#ff0000\">hallucinations</span>, </li><li>parkinsonism, </li><li>fluctuating attention, </li></ul><p><u>triad of </u><span style=\"color:#ff0000\"><u>risks</u></span><u>: </u></p><p><b>falls</b>/syncope, </p><p>orthostatic <b>hypotension </b>with urinary incontinence, </p><p><mark style=\"background-color:#ffff00\">high psychotropic sensitivity</mark></p>"
+    },
+    {
+     "id": "bcd7554bb1",
+     "prompt": "Creutzfeldt-Jakob disease",
+     "promptHtml": "<p><b>Creutzfeldt-Jakob disease</b></p>",
+     "answerHtml": "<p><b>Creutzfeldt-Jakob disease is taught with transmission detail</b>: </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">person-to-person transmission is rare</span> but possible, and it can transmit between <span style=\"color:#ff0000\">people and animals </span></li></ul><p>(the \"Mad Cow Disease\" variant); </p><p>life expectancy is <span style=\"color:#ff00ff\">4–14 months,</span> </p><p>though <b>genetic </b>CJD can <span style=\"color:#ff00ff\">last years</span></p>"
+    },
+    {
+     "id": "a950e35694",
+     "prompt": "Mild Cognitive Impairment MCI diagnosis",
+     "promptHtml": "<p>Mild Cognitive Impairment</p><ul class=\"l0\"><li>MCI diagnosis</li></ul>",
+     "answerHtml": "<p><span style=\"color:#ff00ff\"><b>2 </b></span><b>named subtypes</b>: </p><p><mark style=\"background-color:#ffff00\">amnestic MCI </mark></p><ul class=\"l0\"><li>(forgetting events, conversations, appointments) </li></ul><p><mark style=\"background-color:#ffff00\">nonamnestic MCI </mark></p><ul class=\"l0\"><li>(impaired visual perception, decision-making, or task sequencing)</li></ul><p><span style=\"color:#ff0000\">Alcohol-induced </span>amnestic disorder:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Wernicke encephalopathy</span> (acute; vision impairment, ataxia, hypotension, confusion, coma from thiamine deficiency) </li><li>Progressing to <span style=\"color:#ff0000\">Korsakoff </span>amnestic syndrome (chronic; amnesia, inability to learn new information, confabulation)</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Dissociative & Somatoform Disorders",
+   "group": "Dissociative & Somatoform Disorders",
+   "cards": [
+    {
+     "id": "01d05c349a",
+     "prompt": "Somatoform disorder diagnosis",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Somatoform disorder</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">diagnosis</mark></li></ul>",
+     "answerHtml": "<p>May get <b>iatrogenic </b>illness </p><ul class=\"l0\"><li>[unintentionally induced]</li></ul><p>[Book]</p><p>one or more distressing symptoms for <span style=\"color:#ff00ff\">at least 6 months</span> with excessive thoughts, feelings, or behaviors about them</p><p>[Syllabus]</p><ul class=\"l0\"><li>many complaints before age 30 over several years</li><li>with pain in at least <span style=\"color:#ff00ff\">four </span>sites, </li><li><span style=\"color:#ff00ff\">2 GI</span> symptoms, </li><li><span style=\"color:#ff00ff\">1 sexual</span>/reproductive symptom, </li><li><span style=\"color:#ff00ff\">1</span> pseudo<span style=\"color:#ff00ff\">neurologic</span> symptom; </li><li>colorful, exaggerated descriptions; inconsistent histories; multiple simultaneous physicians; prescription drug addiction; and associated histrionic, borderline, and antisocial personality disorders</li></ul>"
+    },
+    {
+     "id": "21546c81b0",
+     "prompt": "Illness anxiety disorder [hypochondriasis] diagnosis",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Illness anxiety disorder</mark></p><p>[hypochondriasis]</p><ul class=\"l0\"><li>diagnosis</li></ul>",
+     "answerHtml": "<p>At least <span style=\"color:#ff00ff\">6 months</span></p>"
+    },
+    {
+     "id": "237ae6d1d4",
+     "prompt": "Dissociation diagnosis",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Dissociation </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">diagnosis</mark></li></ul>",
+     "answerHtml": "<p>\"<span style=\"color:#ff0000\">Failure</span> / alterations of </p><ul class=\"l0\"><li><b>consciousness</b>, </li><li><b>memory</b>, </li><li>perception, or</li><li><b>identity</b>\"; </li></ul><p>the patient \"<span style=\"color:#ff0000\">strips</span> an idea, object, or situation of its <span style=\"color:#ff0000\">emotional significance</span>\"; </p><p>dissociation functions as </p><ul class=\"l0\"><li>\"a defense against trauma that <span style=\"color:#ff0000\">separates </span><span style=\"color:#ff0000\"><b>emotions </b></span><span style=\"color:#ff0000\">from </span><span style=\"color:#ff0000\"><b>behaviors</b></span>,\" possibly in response to early childhood trauma such as abuse</li></ul><p><u>Causes</u>:</p><p><b>biologic/genetic</b> </p><ul class=\"l0\"><li>(traumatic events can impair the <span style=\"color:#ff0000\">limbic system</span>), </li></ul><p><b>psychosocial</b> </p><ul class=\"l0\"><li>(chronic childhood trauma), </li></ul><p><b>behavioral</b> </p><ul class=\"l0\"><li>(<span style=\"color:#ff0000\"><b>avoidance</b></span> and defense mechanisms), </li></ul><p><b>humanistic</b> </p><ul class=\"l0\"><li>(childhood or ongoing psychological trauma) </li></ul>"
+    },
+    {
+     "id": "2319a4047d",
+     "prompt": "5 Subtypes of Dissociative Amnesia diagnosis",
+     "promptHtml": "<p>5 <mark style=\"background-color:#ffff00\">Subtypes </mark>of <b>Dissociative Amnesia </b></p><ul class=\"l0\"><li><b>diagnosis</b></li></ul>",
+     "answerHtml": "<p><b>localized amnesia</b> </p><ul class=\"l0\"><li>inability to <span style=\"color:#ff0000\">recall specific events</span>, creating memory gaps often tied to a single period of stress or trauma; </li></ul><p><b>selective amnesia</b> </p><ul class=\"l0\"><li>forgetting <span style=\"color:#ff0000\">only some details</span> of a traumatic period while retaining others;</li></ul><p><b>generalized amnesia</b> </p><ul class=\"l0\"><li>a rare form that <span style=\"color:#ff0000\">erases identity and life memories entirely</span>, reported more often among sexual assault survivors or those under extreme stress; </li></ul><p><b>continuous amnesia</b> </p><ul class=\"l0\"><li><span style=\"color:#ff0000\">forgetting each new event</span> as it happens, often trauma-triggered; </li></ul><p><b>systematized amnesia</b> </p><ul class=\"l0\"><li>losing <span style=\"color:#ff0000\">memories tied to a specific category or person</span>, such as forgetting all interactions with one individual</li></ul><p>[risk for → <span style=\"color:#ff0000\"><b>suicidal thoughts</b></span><b> when memory is suddenly recovered and becomes overwhelming</b>]</p><p><b>Dissociative fugue</b>: </p><ul class=\"l0\"><li>a subtype of dissociative amnesia in which the client travels to a <b>new location</b> and <span style=\"color:#ff0000\">cannot recall their identity</span> or part of their <span style=\"color:#ff0000\">past</span>, lasting <span style=\"color:#ff00ff\">weeks to months</span> and usually following trauma</li></ul>"
+    },
+    {
+     "id": "8cbefbfb7d",
+     "prompt": "Depersonalization / Derealization Disorder 4 stage progression model",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Depersonalization / Derealization</b></mark> Disorder</p><p><span style=\"color:#ff00ff\">4</span> stage <b>progression </b>model</p>",
+     "answerHtml": "<p><b>(1) The Breaking Point</b> — the nervous system hits overload and activates <span style=\"color:#ff0000\">disconnection </span>as an emergency response; </p><p><b>2) The Shock</b> — the person suddenly feels <span style=\"color:#ff0000\">detached</span>; </p><p><b>(3) The Stuck Place</b> — the person becomes <span style=\"color:#ff0000\">afraid </span>of the disconnection itself, constantly monitoring whether they <span style=\"color:#ff0000\">feel \"real\"</span>; </p><p><b>(4) The Slow Return</b></p><p>[they feel “<span style=\"color:#ff0000\">mechanical</span>”]</p>"
+    },
+    {
+     "id": "6f207a4ddf",
+     "prompt": "Factitious Disorder vs Malingering diagnosis",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Factitious </mark>Disorder vs <mark style=\"background-color:#ffff00\">Malingering </mark></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">diagnosis</mark></li></ul>",
+     "answerHtml": "<p>The deciding question is <b><u>motive</u></b>, not behavior — <mark style=\"background-color:#ffff00\">both </mark><mark style=\"background-color:#ffff00\"><b>intentionally </b></mark>produce symptoms, but</p><p><span style=\"color:#ff0000\">factitious </span>disorder is driven by the internal need to occupy the <span style=\"color:#ff0000\">sick role</span>,</p><p><span style=\"color:#ff0000\">malingering </span>is driven by an external, identifiable <span style=\"color:#ff0000\">reward</span></p><ul class=\"l0\"><li><b>NOT </b>a disorder!!!</li><li>Nursing = </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ff00\">Objective, nonjudgmental documentation</mark></li></ul>"
+    },
+    {
+     "id": "9dba47f02f",
+     "prompt": "Functional Neurologic Symptom Disorder diagnosis [old = Conversion disorder]",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Functional Neurologic Symptom Disorder</mark></p><ul class=\"l0\"><li><mark style=\"background-color:#ffff00\">diagnosis</mark></li></ul><p>[old = Conversion disorder]</p>",
+     "answerHtml": "<p>Severe emotional distress or unconscious conflict is expressed through <span style=\"color:#ff0000\">neurologic symptoms:</span> </p><ul class=\"l0\"><li><b>impaired coordination</b> or <b>balance</b>,</li><li><b>paralysis</b>, </li><li><b>Aphonia </b>[no voice]</li><li><b>dysphagia </b>or lump in the throat, </li><li><b>urinary retention, </b></li><li><b>Akinesia </b>[loss of muscle movement]</li><li>loss of touch, </li><li><b>blindness</b>, </li><li>Double vision</li><li>Anosomia [no smell]</li><li><b>deafness</b>, </li><li>Hallucinations</li><li>Loss of pain sensation</li><li><b>Seizures</b>;</li></ul><p>[possible</p><ul class=\"l0\"><li>la belle indifference [<span style=\"color:#ff0000\">lack of care </span>about disability]</li></ul>"
+    }
+   ]
+  },
+  {
+   "name": "Must know!",
+   "group": "Must know!",
+   "cards": [
+    {
+     "id": "8c804f7612",
+     "prompt": "Lithium",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Lithium</mark></p>",
+     "answerHtml": "<p>Acute Mania = 0.8 - 1.4</p><p>Maintenance = 0.6 - 1.2</p><p>______________________________________________________________</p><p><span style=\"color:#ff0000\">Toxicity</span> </p><p>Mild &lt; 1.5</p><p>Moderate 1.5 - 2.5</p><p>Severe &gt; 2.5</p>"
+    },
+    {
+     "id": "341fd1a21d",
+     "prompt": "Neuroleptic Malignant Syndrome *Differences* Days! rigid, slow, \"lead pipe,\" hyporeflexia/normal reflexes;",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Neuroleptic Malignant Syndrome</mark></p><p>*Differences*</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Days</span>!</li><li>rigid, slow, \"lead pipe,\" </li><li><span style=\"color:#0000ff\"><b>hypo</b></span><b>reflexia/normal reflexes</b>;</li></ul>",
+     "answerHtml": "<p><mark style=\"background-color:#ffff00\">Neuroleptic Malignant Syndrome</mark></p><p>*Differences*</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Days</span>!</li><li>rigid, slow, \"lead pipe,\" </li><li><span style=\"color:#0000ff\"><b>hypo</b></span><b>reflexia/normal reflexes</b>;</li></ul><p>S&amp;S</p><ul class=\"l0\"><li><b>Severe \"lead-pipe\" muscle rigidity</b>,</li><li>high fever (usually 101–103°F, may exceed 103°F; syllabus notes up to 107°F), </li><li>altered mental status (confusion, mutism, stupor), </li><li>autonomic instability (tachycardia, labile BP, diaphoresis, incontinence); </li></ul><p>labs: </p><ul class=\"l0\"><li>elevated CPK, </li><li>leukocytosis, </li><li>elevated liver enzymes, </li><li>myoglobinuria </li></ul><p>Nursing:</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hold </span>all antipsychotics; </li><li>check <mark style=\"background-color:#00ff00\">temperature </mark>and <mark style=\"background-color:#00ff00\">VS </mark>frequently;</li><li>notify <span style=\"color:#ff0000\">prescriber</span>; </li><li><mark style=\"background-color:#00ff00\">cooling blanket</mark> and <mark style=\"background-color:#00ffff\">acetaminophen</mark>; </li><li><mark style=\"background-color:#00ffff\">IV fluids</mark> and <mark style=\"background-color:#00ff00\">I&amp;O</mark> (protect kidneys); </li><li><mark style=\"background-color:#00ff00\">protect </mark>rigid limbs; </li><li>anticipate transfer to medical/ICU; </li><li>drugs used: </li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\">dantrolene </mark>(muscle relaxant), </li><li><mark style=\"background-color:#00ffff\">bromocriptine </mark>(dopamine agonist), </li><li><mark style=\"background-color:#00ffff\">benzodiazepines</mark>; </li><li>sometimes <mark style=\"background-color:#00ff00\">ECT </mark></li></ul>"
+    },
+    {
+     "id": "eeac554e74",
+     "prompt": "Serotonin Syndrome *Differences* Hours! jerky, hyperreflexia and clonus, GI symptoms",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\">Serotonin Syndrome</mark></p><p>*Differences*</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Hours</span>!</li><li>jerky, <span style=\"color:#ff0000\"><b>hyper</b></span><b>reflexia and clonus</b>, </li><li>GI symptoms</li></ul>",
+     "answerHtml": "<p><mark style=\"background-color:#ffff00\">Serotonin Syndrome</mark></p><p>*Differences*</p><ul class=\"l0\"><li><span style=\"color:#ff00ff\">Hours</span>!</li><li>jerky, <span style=\"color:#ff0000\"><b>hyper</b></span><b>reflexia and clonus</b>, </li><li>GI symptoms</li></ul><p>S&amp;S</p><ul class=\"l0\"><li>Mental status change (agitation, confusion, hallucinations), </li><li><span style=\"color:#ff0000\"><b>neuromuscular </b></span><span style=\"color:#ff0000\"><b><u>hyper</u></b></span><span style=\"color:#ff0000\"><b>activity</b></span> (myoclonus, <b>hyperreflexia</b>, tremor, shivering, incoordination), </li><li>autonomic instability (fever, tachycardia, diaphoresis, BP changes), </li><li><span style=\"color:#ff0000\"><b>diarrhea</b></span>, </li><li><span style=\"color:#ff0000\">nausea/vomiting; </span></li><li>needs at least <span style=\"color:#ff00ff\"><b>3</b></span> findings </li></ul><p>Nursing</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop </span>the serotonergic drugs; </li><li>notify prescriber; </li><li><mark style=\"background-color:#00ff00\">VS</mark>; </li><li>mild cases—</li></ul><ul class=\"l1\"><li>supportive care (<mark style=\"background-color:#00ffff\">propranolol</mark>, <mark style=\"background-color:#00ffff\">lorazepam</mark>); </li></ul><ul class=\"l0\"><li>Moderate–severe—</li></ul><ul class=\"l1\"><li>hospitalize, <mark style=\"background-color:#00ffff\">IV fluids</mark>, <mark style=\"background-color:#00ffff\">antipyretics</mark>, <mark style=\"background-color:#00ff00\">cooling blanket;</mark></li></ul><ul class=\"l0\"><li>Severe = Antidote!</li></ul><ul class=\"l1\"><li><mark style=\"background-color:#00ffff\"><b>cyproheptadine</b></mark> (antiserotonergic) </li></ul>"
+    },
+    {
+     "id": "9b77e7b736",
+     "prompt": "Hypertensive crisis (MAOI + tyramine or sympathomimetic)",
+     "promptHtml": "<p><b>Hypertensive crisis </b></p><p><b>(MAOI + tyramine or sympathomimetic)</b></p>",
+     "answerHtml": "<p>HTN CRISIS:</p><p>S&amp;S</p><ul class=\"l0\"><li>Sudden <b>severe occipital or temporal (\"explosive\") headache</b>, </li><li>stiff/sore neck, </li><li>palpitations, </li><li>flushing, </li><li>chest pain, </li><li>nausea and vomiting, </li><li>sweating, </li><li>marked hypertension; </li><li>can cause stroke and death </li></ul><p>Nursing</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Hold </span>MAOI; </li><li>check <mark style=\"background-color:#00ff00\">BP </mark>frequently; </li><li>notify <span style=\"color:#ff0000\">prescriber </span>immediately; </li><li>keep patient <b>upright </b>and <b>quiet</b>; </li><li>anticipate<mark style=\"background-color:#00ffff\"> IV antihypertensive</mark></li><li>(<mark style=\"background-color:#00ffff\">phentolamine</mark> is the classic answer) <i>(general knowledge for phentolamine)</i></li></ul>"
+    },
+    {
+     "id": "b240487c1b",
+     "prompt": "Anticholinergic toxicity (crisis)",
+     "promptHtml": "<p><b>Anticholinergic toxicity (crisis)</b></p>",
+     "answerHtml": "<p><b>Anticholinergic toxicity (crisis)</b></p><p>S&amp;S</p><ul class=\"l0\"><li>\"<b>Hot as a hare, blind as a bat, mad as a hatter, dry as a bone</b>\" (also \"red as a beet\"): fever; hot, dry, flushed skin; </li><li>dilated nonreactive pupils, blurred vision; </li><li>dry mouth, burning thirst; </li><li>tachycardia; </li><li>decreased bowel sounds; </li><li>urinary retention; </li><li>confusion, </li><li>agitation, </li><li><b>visual hallucinations with picking motions</b>, </li><li>delirium, </li><li>seizures, </li><li>coma</li></ul><p>Nursing</p><ul class=\"l0\"><li><span style=\"color:#ff0000\">Stop </span>the offending drug, <span style=\"color:#ff0000\">notify </span>prescriber;</li><li><mark style=\"background-color:#00ffff\">antidote </mark><b>physostigmine 1–2 mg IV </b><b><u>slowly</u></b><b> over 5 minutes</b> </li><li>(fast push → seizures, bradycardia, heart block; short acting, may repeat); </li><li><mark style=\"background-color:#00ff00\">gastric lavage </mark><mark style=\"background-color:#00ffff\">/ charcoal</mark> for overdose; </li><li><mark style=\"background-color:#00ff00\">cooling</mark>; </li><li>safety; </li><li>usually improves within <span style=\"color:#ff00ff\">24–36 hours </span>of stopping </li></ul>"
+    },
+    {
+     "id": "7e02b32bed",
+     "prompt": "Agranulocytosis",
+     "promptHtml": "<p><mark style=\"background-color:#ffff00\"><b>Agranulocytosis</b></mark></p>",
+     "answerHtml": "<p><mark style=\"background-color:#ffff00\"><b>Agranulocytosis</b></mark></p><p><b>S&amp;S</b></p><ul class=\"l0\"><li><b>Sore throat, </b></li><li><b>fever, </b></li><li><b>mouth sores, </b></li><li><b>malaise, </b></li><li><b>flu-like symptoms</b>; </li><li>counts may drop over just <span style=\"color:#ff00ff\">2–3 days </span></li></ul><p>Nursing</p><ul class=\"l0\"><li><b>Hold the drug until a </b><mark style=\"background-color:#00ff00\"><b>WBC/ANC</b></mark><b> is drawn</b>; </li><li><span style=\"color:#ff0000\">notify </span>prescriber; </li><li><mark style=\"background-color:#00ff00\">infection precautions</mark> (reverse isolation may be needed); </li><li>counts usually recover in <span style=\"color:#ff00ff\">2–4 weeks</span> after stopping </li></ul>"
+    },
+    {
+     "id": "22675a5a7a",
+     "prompt": "Acute dystonia",
+     "promptHtml": "<p><b>Acute dystonia</b></p>",
+     "answerHtml": "<p><b>Acute dystonia</b></p><p>S&amp;S</p><ul class=\"l0\"><li>Thick tongue</li><li>jaw tightness, </li><li>stiff neck → torticollis, oculogyric crisis, opisthotonos, <span style=\"color:#ff0000\"><b>laryngopharyngeal spasm</b></span> with breathing difficulty </li></ul><p>Nursing</p><ul class=\"l0\"><li><mark style=\"background-color:#00ff00\">Airway </mark>first; </li><li>give <mark style=\"background-color:#00ffff\"><b>benztropine </b></mark><b>or </b><mark style=\"background-color:#00ffff\"><b>diphenhydramine </b></mark><b>IM/IV</b> as ordered; </li><li>stay with and <mark style=\"background-color:#00ff00\">reassure </mark>the patient (frightening but treatable) </li></ul>"
+    },
+    {
+     "id": "092e447efd",
+     "prompt": "Benzodiazepine withdrawal",
+     "promptHtml": "<p><b>Benzodiazepine withdrawal</b></p>",
+     "answerHtml": "<p><b>Benzodiazepine withdrawal</b></p><p>S&amp;S</p><ul class=\"l0\"><li>Rebound <b>anxiety </b>and <b>insomnia</b>, </li><li>tremor, </li><li>sweating, </li><li>palpitations, </li><li><b>light sensitivity,</b> </li><li>abdominal pain, </li><li>rising systolic BP; </li><li>can progress to <span style=\"color:#ff0000\"><b>seizures</b></span> </li></ul><p>Nursing</p><ul class=\"l0\"><li>Never stop abruptly—<mark style=\"background-color:#00ff00\">taper</mark> gradually; </li><li>prescriber may switch to a long-acting benzodiazepine first; </li><li><mark style=\"background-color:#00ff00\">seizure precautions</mark></li></ul>"
+    },
+    {
+     "id": "9d1b900eeb",
+     "prompt": "Water intoxication (psychogenic polydipsia)",
+     "promptHtml": "<p><b>Water intoxication (psychogenic polydipsia)</b></p>",
+     "answerHtml": "<p><b>Water intoxication (psychogenic polydipsia)</b></p><p>S&amp;S</p><ul class=\"l0\"><li>Low serum sodium, </li><li>confusion, </li><li>headache, </li><li>vomiting, </li><li>seizures; </li><li>rapid weight gain </li></ul><p>Nursing</p><ul class=\"l0\"><li>Monitor <mark style=\"background-color:#00ff00\">weights </mark>and <mark style=\"background-color:#00ff00\">intake</mark>, </li><li><span style=\"color:#ff0000\">restrict fluids</span> per order, </li><li>check sodium; </li><li><mark style=\"background-color:#00ff00\">seizure precautions </mark></li></ul>"
+    }
+   ]
+  }
+ ],
+ "key": "1fLx80jhl9mvRp0Cw27WZGiIOR_4aSw60ouHL-wjEQRA",
+ "sourceDocId": "1fLx80jhl9mvRp0Cw27WZGiIOR_4aSw60ouHL-wjEQRA",
+ "labelDuplicates": true,
+ "rev": 1
+}

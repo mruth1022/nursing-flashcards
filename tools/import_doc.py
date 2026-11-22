@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Convert a Google Doc (table of prompt | answer rows) into docs/cards.json.
+Convert a Google Doc (table of prompt | answer rows) into a test in docs/decks/.
 
 Usage:
   python3 tools/import_doc.py "https://docs.google.com/document/d/<ID>/edit"
@@ -23,8 +23,11 @@ Rules:
     (comma separated, one per table in document order), else the nearest heading
     above the table, else "Part N".
   * Each document is a "test" (deck) named after the doc title. Re-running the
-    import for a doc replaces that test in cards.json and keeps the others;
-    --fresh drops everything else.
+    import for a doc replaces that test and keeps the others; --fresh drops everything else.
+  * Each test is stored as docs/decks/<file>.json, listed in docs/decks/index.json (the app's
+    entry point). Every import bumps the test's "rev".
+  * A test edited in the app ("editedInApp": true) is not re-imported, because that would
+    overwrite the in-app edits; --force replaces it anyway.
   * The first row of a table is skipped when it looks like a header row
     ("Term | Definition", "Question | Answer", ...). Override with --keep-header
     or --skip-header.
@@ -662,16 +665,59 @@ def fetch_doc_title(doc_id: str) -> str | None:
 
 
 # --------------------------------------------------------------------------- main
+# -------------------------------------------------------------------------- storage
+def deck_file_name(key: str) -> str:
+    """docs/decks/<this> for a test key (a Google Doc id or an exported file name)."""
+    return (re.sub(r"[^A-Za-z0-9_-]+", "-", key).strip("-") or "deck") + ".json"
+
+
+def read_index(decks_dir: Path) -> dict:
+    p = decks_dir / "index.json"
+    try:
+        idx = json.loads(p.read_text(encoding="utf-8"))
+        idx.setdefault("decks", [])
+        return idx
+    except (OSError, json.JSONDecodeError):
+        return {"decks": []}
+
+
+def read_deck(decks_dir: Path, entry: dict) -> dict | None:
+    try:
+        return json.loads((decks_dir / entry["file"]).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, KeyError):
+        return None
+
+
+def write_deck(decks_dir: Path, index: dict, deck: dict) -> None:
+    """Write one test's file and update (or append) its entry in index.json, keeping the order."""
+    decks_dir.mkdir(parents=True, exist_ok=True)
+    fname = deck_file_name(deck["key"])
+    (decks_dir / fname).write_text(json.dumps(deck, ensure_ascii=False, indent=1), encoding="utf-8")
+    entry = {"key": deck["key"], "title": deck["title"], "file": fname, "cardCount": deck["cardCount"],
+             "rev": deck.get("rev", 1), "generatedAt": deck.get("generatedAt")}
+    for i, e in enumerate(index["decks"]):
+        if e["key"] == deck["key"]:
+            index["decks"][i] = entry
+            break
+    else:
+        index["decks"].append(entry)
+    index["generatedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    index["cardCount"] = sum(e["cardCount"] for e in index["decks"])
+    (decks_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("source", help="Google Doc URL, or path to an exported .html / .zip")
-    ap.add_argument("--out", default=str(Path(__file__).resolve().parent.parent / "docs" / "cards.json"))
+    ap.add_argument("--decks-dir", default=str(Path(__file__).resolve().parent.parent / "docs" / "decks"),
+                    help="Folder holding index.json and one file per test (default docs/decks)")
     ap.add_argument("--title", help="Override the deck title (defaults to the document title)")
     ap.add_argument("--sections", help="Comma-separated section names, one per table in document order")
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--skip-header", action="store_true", help="Always skip the first row of each table")
     g.add_argument("--keep-header", action="store_true", help="Never skip the first row of each table")
-    ap.add_argument("--fresh", action="store_true", help="Drop other tests already in cards.json")
+    ap.add_argument("--fresh", action="store_true", help="Drop the other tests")
+    ap.add_argument("--force", action="store_true", help="Re-import even if the test was edited in the app (loses those edits)")
     ap.add_argument("--dump-html", help="Also save the raw fetched HTML here (debugging)")
     lg = ap.add_mutually_exclusive_group()
     lg.add_argument("--label-duplicates", dest="label_dups", action="store_true", default=None,
@@ -685,8 +731,8 @@ def main(argv=None):
     if args.dump_html:
         Path(args.dump_html).write_text(html_text, encoding="utf-8")
 
-    out = Path(args.out)
-    img_dir = out.parent / "img"
+    decks_dir = Path(args.decks_dir)
+    img_dir = decks_dir.parent / "img"
     mode = "skip" if args.skip_header else "keep" if args.keep_header else "auto"
     names = [s for s in args.sections.split(",")] if args.sections else None
     deck_key = doc_id or Path(args.source).name
@@ -701,15 +747,20 @@ def main(argv=None):
     if doc_id:
         deck["sourceDocId"] = doc_id
 
-    bundle = {"generatedAt": deck["generatedAt"], "decks": []}
-    previous = None
-    if out.exists() and not args.fresh:
-        try:
-            old = json.loads(out.read_text(encoding="utf-8"))
-            previous = next((d for d in old.get("decks", []) if d.get("key") == deck_key), None)
-            bundle["decks"] = [d for d in old.get("decks", []) if d.get("key") != deck_key]
-        except (json.JSONDecodeError, OSError):
-            pass
+    index = read_index(decks_dir)
+    entry = next((e for e in index["decks"] if e["key"] == deck_key), None)
+    previous = read_deck(decks_dir, entry) if entry else None
+    if previous and previous.get("editedInApp") and not args.force:
+        print(f"Not imported: '{previous.get('title')}' has been edited in the app, and re-importing the doc would "
+              "overwrite those edits. Use --force to replace it anyway.", file=sys.stderr)
+        return 3
+    if args.fresh:
+        edited = [e["title"] for e in index["decks"] if e["key"] != deck_key and (read_deck(decks_dir, e) or {}).get("editedInApp")]
+        if edited and not args.force:
+            print("Not imported: --fresh would delete tests edited in the app (" + ", ".join(edited) + "). "
+                  "Use --force as well to delete them anyway.", file=sys.stderr)
+            return 3
+        index["decks"] = []
     label_dups = args.label_dups if args.label_dups is not None else bool(previous and previous.get("labelDuplicates"))
     if label_dups:
         deck["labelDuplicates"] = True
@@ -717,19 +768,21 @@ def main(argv=None):
         warnings = [w for w in warnings if not w.startswith("Duplicate prompt")]
         if n:
             print(f"Labelled {n} repeated prompt(s) with their section or pairing.")
-    bundle["decks"].append(deck)
-    bundle["cardCount"] = sum(d["cardCount"] for d in bundle["decks"])
-
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(bundle, ensure_ascii=False, indent=1), encoding="utf-8")
+    deck["rev"] = int(previous.get("rev", 0)) + 1 if previous else 1
+    write_deck(decks_dir, index, deck)
+    if args.fresh:
+        keep = {e["file"] for e in index["decks"]}
+        for f in decks_dir.glob("*.json"):
+            if f.name != "index.json" and f.name not in keep:
+                f.unlink()
 
     n_img = sum(c.get("images", 0) for s in deck["sections"] for c in s["cards"])
     print(f"Test: {deck['title']}")
     for s in deck["sections"]:
         print(f"  {len(s['cards']):4d}  {(s['group'] + ' › ') if s.get('group') else ''}{s['name']}")
-    print(f"Total cards: {deck['cardCount']}  ({n_img} images)  ->  {out}")
-    if len(bundle["decks"]) > 1:
-        print("Tests in cards.json: " + ", ".join(d["title"] for d in bundle["decks"]))
+    print(f"Total cards: {deck['cardCount']}  ({n_img} images)  ->  {decks_dir / deck_file_name(deck_key)}  (rev {deck['rev']})")
+    if len(index["decks"]) > 1:
+        print("Tests: " + ", ".join(e["title"] for e in index["decks"]))
     if warnings:
         print(f"\n{len(warnings)} warning(s):")
         for w in warnings[:40]:

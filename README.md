@@ -42,8 +42,12 @@ python3 tools/import_doc.py "https://docs.google.com/document/d/<OTHER_DOC_ID>/e
 git add -A && git commit -m "Add <test name>" && git push
 ```
 
-* Re-running the import for a doc **replaces** that test and keeps the others.
-* `--fresh` drops every other test and keeps only the one being imported.
+* Re-running the import for a doc **replaces** that test and keeps the others. Each test is its own
+  file in `docs/decks/`, listed in `docs/decks/index.json`; each import raises the test's `rev`.
+* A test that has been **edited in the app** is not re-imported (that would overwrite her edits);
+  the import stops with a message. `--force` replaces it anyway.
+* `--fresh` drops every other test and keeps only the one being imported (refused if that would
+  delete a test edited in the app, unless `--force`).
 * `--title "Exam 3"` overrides the title taken from the doc.
 * `--label-duplicates` adds the section name to repeated prompts ("Panic Disorder (Anxiety Disorders)"), or the
   answer's pairing ("Interactions! (Antipsychotics + ?)") when the repeats share a section. Progress is kept, and the
@@ -112,7 +116,11 @@ Then open http://localhost:8765. Useful to preview an import before pushing.
 
 ```bash
 python3 -m unittest tests.test_import tests.test_glossary
+node --test tests/
 ```
+
+The Node tests cover `docs/core.js`, the app logic that has no DOM (e.g. keeping a study session
+going when some of its cards are deleted).
 
 ## 7. Glossary (underlined terms)
 
@@ -147,10 +155,12 @@ python3 tools/build_glossary.py ~/Desktop/logs/20261119-0015-psych-nursing-study
 ## Layout
 
 ```
-docs/            GitHub Pages root: index.html, app.js, styles.css, cards.json, img/, cheer/
+docs/            GitHub Pages root: index.html, app.js, core.js, styles.css, img/, cheer/
+docs/decks/      index.json (the tests, in order) + one <key>.json per test
+                 (docs/cards.json is the old single-file format, kept only until the next release)
 docs/glossary/   index.json (which tests use which glossary) + one <name>.json per glossary
 tools/           import_doc.py, build_glossary.py (+ glossary_overrides.json), prepare_photos.py, test sample
-tests/           unit tests for the importer and the glossary builder
+tests/           Python tests (importer, glossary builder) and Node tests (core.js)
 ```
 
 ## If something goes wrong

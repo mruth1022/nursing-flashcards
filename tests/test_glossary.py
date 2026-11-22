@@ -72,10 +72,10 @@ class BuildTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             td = Path(td)
             (td / "g.md").write_text(MD, encoding="utf-8")
-            (td / "cards.json").write_text(json.dumps({"decks": [{"key": "k1", "title": "Psych A"}, {"key": "k2", "title": "OB"}]}), encoding="utf-8")
+            (td / "index.json").write_text(json.dumps({"decks": [{"key": "k1", "title": "Psych A"}, {"key": "k2", "title": "OB"}]}), encoding="utf-8")
             (td / "glossary").mkdir()
             (td / "glossary" / "index.json").write_text(json.dumps({"glossaries": [{"name": "ob", "file": "ob.json", "decks": ["k2"]}]}))
-            args = [str(td / "g.md"), "--name", "psych", "--decks", "Psych A", "--cards", str(td / "cards.json"),
+            args = [str(td / "g.md"), "--name", "psych", "--decks", "Psych A", "--index", str(td / "index.json"),
                     "--out-dir", str(td / "glossary"), "--overrides", str(td / "none.json")]
             self.assertEqual(bg.main(args), 0)
             idx = json.loads((td / "glossary" / "index.json").read_text())

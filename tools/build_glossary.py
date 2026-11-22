@@ -138,7 +138,7 @@ def main(argv=None) -> int:
     ap.add_argument("--name", required=True, help="Glossary id, used as the file name (e.g. psych)")
     ap.add_argument("--title", help="Shown in the app (defaults to the name)")
     ap.add_argument("--decks", required=True, help="Comma-separated test titles (or keys) that use this glossary")
-    ap.add_argument("--cards", default=str(ROOT / "docs" / "cards.json"))
+    ap.add_argument("--index", default=str(ROOT / "docs" / "decks" / "index.json"), help="The tests' index (docs/decks/index.json)")
     ap.add_argument("--out-dir", default=str(ROOT / "docs" / "glossary"))
     ap.add_argument("--overrides", default=str(ROOT / "tools" / "glossary_overrides.json"))
     args = ap.parse_args(argv)
@@ -152,12 +152,12 @@ def main(argv=None) -> int:
         print("No glossary entries found (expected lines like '- **Term**: definition').", file=sys.stderr)
         return 2
 
-    decks = json.loads(Path(args.cards).read_text(encoding="utf-8")).get("decks", [])
+    decks = json.loads(Path(args.index).read_text(encoding="utf-8")).get("decks", [])
     keys = []
     for want in [w.strip() for w in args.decks.split(",") if w.strip()]:
         d = next((d for d in decks if want in (d.get("title"), d.get("key"))), None)
         if not d:
-            raise SystemExit(f"No test called {want!r} in {args.cards}. Tests: " + ", ".join(x["title"] for x in decks))
+            raise SystemExit(f"No test called {want!r} in {args.index}. Tests: " + ", ".join(x["title"] for x in decks))
         keys.append(d["key"])
 
     out_dir = Path(args.out_dir)

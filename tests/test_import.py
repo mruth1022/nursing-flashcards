@@ -265,33 +265,69 @@ class HeadingAboveTableTests(unittest.TestCase):
         ])
 
 
+def read_tests(decks_dir):
+    """[(index entry, deck file)] in index order."""
+    idx = json.loads((Path(decks_dir) / "index.json").read_text())
+    return [(e, json.loads((Path(decks_dir) / e["file"]).read_text())) for e in idx["decks"]]
+
+
 class MainMergeTests(unittest.TestCase):
     def test_reimport_replaces_same_doc_and_keeps_others(self):
         with tempfile.TemporaryDirectory() as td:
-            out = Path(td) / "cards.json"
+            out = Path(td) / "decks"
             a = Path(td) / "a.html"; a.write_text(SAMPLE, encoding="utf-8")
             b = Path(td) / "b.html"; b.write_text(REAL_STYLE_DOC, encoding="utf-8")
-            self.assertEqual(import_doc.main([str(a), "--out", str(out), "--title", "Test A"]), 0)
-            self.assertEqual(import_doc.main([str(b), "--out", str(out), "--title", "Test B"]), 0)
-            bundle = json.loads(out.read_text())
-            self.assertEqual([d["title"] for d in bundle["decks"]], ["Test A", "Test B"])
-            self.assertEqual(bundle["cardCount"], 13 + 6)
-            # re-import A: replaces, does not duplicate
-            self.assertEqual(import_doc.main([str(a), "--out", str(out), "--title", "Test A2"]), 0)
-            bundle = json.loads(out.read_text())
-            self.assertEqual([d["title"] for d in bundle["decks"]], ["Test B", "Test A2"])
-            # --fresh drops the others
-            self.assertEqual(import_doc.main([str(a), "--out", str(out), "--fresh"]), 0)
-            bundle = json.loads(out.read_text())
-            self.assertEqual(len(bundle["decks"]), 1)
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out), "--title", "Test A"]), 0)
+            self.assertEqual(import_doc.main([str(b), "--decks-dir", str(out), "--title", "Test B"]), 0)
+            tests = read_tests(out)
+            self.assertEqual([e["title"] for e, _ in tests], ["Test A", "Test B"])
+            self.assertEqual([e["file"] for e, _ in tests], ["a-html.json", "b-html.json"])
+            self.assertEqual([d["cardCount"] for _, d in tests], [13, 6])
+            self.assertEqual(json.loads((out / "index.json").read_text())["cardCount"], 19)
+            # re-import A: replaced in place (order kept), rev goes up, B untouched
+            b_before = (out / "b-html.json").read_text()
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out), "--title", "Test A2"]), 0)
+            tests = read_tests(out)
+            self.assertEqual([e["title"] for e, _ in tests], ["Test A2", "Test B"])
+            self.assertEqual([(e["rev"], d["rev"]) for e, d in tests], [(2, 2), (1, 1)])
+            self.assertEqual((out / "b-html.json").read_text(), b_before)
+            # --fresh drops the others and their files
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out), "--fresh"]), 0)
+            self.assertEqual([e["key"] for e, _ in read_tests(out)], ["a.html"])
+            self.assertFalse((out / "b-html.json").exists())
+            self.assertEqual(read_tests(out)[0][1]["rev"], 3)
             self.assertTrue((Path(td) / "img").exists())
 
     def test_title_suffix_stripped(self):
         with tempfile.TemporaryDirectory() as td:
-            out = Path(td) / "cards.json"
+            out = Path(td) / "decks"
             a = Path(td) / "a.html"; a.write_text(SAMPLE, encoding="utf-8")
-            import_doc.main([str(a), "--out", str(out), "--title", "NS30A Final - Flashcards"])
-            self.assertEqual(json.loads(out.read_text())["decks"][0]["title"], "NS30A Final")
+            import_doc.main([str(a), "--decks-dir", str(out), "--title", "NS30A Final - Flashcards"])
+            self.assertEqual(read_tests(out)[0][1]["title"], "NS30A Final")
+
+    def test_edited_in_app_is_not_overwritten_without_force(self):
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / "decks"
+            a = Path(td) / "a.html"; a.write_text(SAMPLE, encoding="utf-8")
+            b = Path(td) / "b.html"; b.write_text(REAL_STYLE_DOC, encoding="utf-8")
+            import_doc.main([str(a), "--decks-dir", str(out)])
+            import_doc.main([str(b), "--decks-dir", str(out)])
+            f = out / "a-html.json"
+            d = json.loads(f.read_text()); d["editedInApp"] = True; d["title"] = "Her edit"; f.write_text(json.dumps(d))
+            edited = f.read_text()
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out)]), 3)
+            self.assertEqual(f.read_text(), edited)
+            self.assertEqual(import_doc.main([str(b), "--decks-dir", str(out), "--fresh"]), 3)  # would delete A
+            self.assertTrue(f.exists())
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out), "--force"]), 0)
+            d = json.loads(f.read_text())
+            self.assertNotIn("editedInApp", d)
+            self.assertEqual(d["title"], "Sample Nursing Deck")
+
+    def test_deck_file_names_are_safe(self):
+        self.assertEqual(import_doc.deck_file_name("1fLx80jhl9mvRp0Cw27WZGiIOR_4aSw60ouHL-wjEQRA"), "1fLx80jhl9mvRp0Cw27WZGiIOR_4aSw60ouHL-wjEQRA.json")
+        self.assertEqual(import_doc.deck_file_name("psych-units-5-12.html"), "psych-units-5-12-html.json")
+        self.assertEqual(import_doc.deck_file_name("../x y"), "x-y.json")
 
 
 class LabelDuplicateTests(unittest.TestCase):
@@ -322,16 +358,16 @@ class LabelDuplicateTests(unittest.TestCase):
     def test_flag_is_remembered_on_reimport_and_can_be_turned_off(self):
         doc = UNIT_DOC.replace("P wave", "Round to?")
         with tempfile.TemporaryDirectory() as td:
-            out = Path(td) / "cards.json"
+            out = Path(td) / "decks"
             a = Path(td) / "a.html"; a.write_text(doc, encoding="utf-8")
-            prompts = lambda: [c["prompt"] for s in json.loads(out.read_text())["decks"][0]["sections"] for c in s["cards"]]
-            import_doc.main([str(a), "--out", str(out)])
+            prompts = lambda: [c["prompt"] for s in read_tests(out)[0][1]["sections"] for c in s["cards"]]
+            import_doc.main([str(a), "--decks-dir", str(out)])
             self.assertNotIn("Round to? (Dosage Calculation)", prompts())
-            import_doc.main([str(a), "--out", str(out), "--label-duplicates"])
+            import_doc.main([str(a), "--decks-dir", str(out), "--label-duplicates"])
             self.assertIn("Round to? (Dosage Calculation)", prompts())
-            import_doc.main([str(a), "--out", str(out)])
+            import_doc.main([str(a), "--decks-dir", str(out)])
             self.assertIn("Round to? (Dosage Calculation)", prompts())
-            import_doc.main([str(a), "--out", str(out), "--no-label-duplicates"])
+            import_doc.main([str(a), "--decks-dir", str(out), "--no-label-duplicates"])
             self.assertNotIn("Round to? (Dosage Calculation)", prompts())
 
 
