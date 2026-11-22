@@ -293,6 +293,7 @@
           ${s.flipped
             ? h`<div class="back"><div class="q">${c.promptHtml || esc(c.prompt)}</div><div class="a">${c.answerHtml || '<i>(no answer)</i>'}</div></div>`
             : h`<div class="front"><div class="prompt">${c.promptHtml || esc(c.prompt)}</div></div><div class="tap-hint">Tap to reveal</div>`}
+          <div class="more-fade"></div>
         </div>
         <div class="actions">
           ${s.flipped
@@ -305,6 +306,10 @@
       </div>`;
 
     const $card = $app.querySelector('#card');
+    const $scroll = $card.querySelector('.back, .front');
+    const markMore = () => $card.classList.toggle('has-more', $scroll.scrollHeight - $scroll.scrollTop - $scroll.clientHeight > 4);
+    $scroll.addEventListener('scroll', markMore, { passive: true }); requestAnimationFrame(markMore);
+    $scroll.querySelectorAll('img').forEach(img => img.addEventListener('load', markMore));
     const flip = () => { if (s.flipped) return; $card.classList.add('flipping'); setTimeout(() => { s.flipped = true; saveSession(); renderStudy(); }, 150); };
     $card.addEventListener('click', (e) => {
       if (e.target.closest('a')) return;

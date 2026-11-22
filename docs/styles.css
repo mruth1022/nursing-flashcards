@@ -55,7 +55,7 @@ a { color: var(--accent); }
 .nav a .ico { font-size: 20px; }
 .nav a.active { color: var(--accent); }
 body.studying .nav { display: none; }
-body.studying .app { padding-bottom: 16px; }
+body.studying .app { padding-bottom: calc(16px + env(safe-area-inset-bottom)); height: 100dvh; min-height: 0; }
 
 @media (min-width: 760px) {
   .nav { top: 0; bottom: auto; height: 56px; padding-bottom: 0; border-top: 0; border-bottom: 1px solid var(--line);
@@ -162,12 +162,20 @@ textarea { min-height: 90px; resize: vertical; font-family: ui-monospace, Menlo,
   touch-action: pan-y;
 }
 .card.flipping { transform: rotateY(90deg); opacity: 0.6; }
-.card .kicker { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 16px 20px 0; display: flex; justify-content: space-between; }
-.card .front { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; overflow: auto; }
+.card .kicker { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 16px 20px 0; display: flex; justify-content: space-between; gap: 12px; }
+.card .kicker span:last-child { text-align: right; }
+/* margin:auto centres a short prompt but lets a long one scroll from its top (centring with align-items would clip the top) */
+.card .front { flex: 1; min-height: 0; display: flex; flex-direction: column; text-align: center; padding: 24px; overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+.card .front .prompt { margin: auto 0; }
 .card .front .prompt { font-size: clamp(1.25rem, 3.4vw, 1.9rem); font-weight: 700; line-height: 1.3; }
-.card .back { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+/* prompt + answer scroll together, so a long prompt can't squeeze the answer */
+.card .back { flex: 1; min-height: 0; overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 .card .back .q { padding: 10px 20px 8px; font-weight: 700; border-bottom: 1px solid var(--line); font-size: 1rem; }
-.card .back .a { flex: 1; overflow: auto; padding: 14px 20px 20px; -webkit-overflow-scrolling: touch; font-size: 1.02rem; overscroll-behavior: contain; }
+.card .back .a { padding: 14px 20px 20px; font-size: 1.02rem; }
+/* fade at the bottom edge while there is more to scroll */
+.card .more-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 36px; pointer-events: none; border-radius: 0 0 20px 20px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), var(--card)); opacity: 0; transition: opacity 0.15s ease; }
+.card.has-more .more-fade { opacity: 1; }
 .card .tap-hint { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 0 0 14px; }
 .card.dragging { transition: none; }
 
