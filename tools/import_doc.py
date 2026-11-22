@@ -28,6 +28,10 @@ Rules:
   * The first row of a table is skipped when it looks like a header row
     ("Term | Definition", "Question | Answer", ...). Override with --keep-header
     or --skip-header.
+  * --label-duplicates adds the section name to prompts that repeat in the test
+    ("Panic Disorder (Anxiety Disorders)"), or the answer's pairing ("Interactions!
+    (Antipsychotics + ?)") when the repeats share a section. Ids are unchanged, so
+    progress is kept. The setting is remembered for that test on re-import.
   * Prompt cells that are only an image become image cards.
   * Bold / italic / underline / strikethrough / highlights / text colour /
     bullets / numbering / line breaks / images are kept. Google Docs expresses
@@ -549,6 +553,49 @@ def extract(html_text: str, header_mode: str = "auto", img_dir: Path | None = No
     return deck, warnings
 
 
+def _pairing_hint(answer_html: str) -> str | None:
+    """'Antipsychotics + Nicotine ...' -> 'Antipsychotics + ?' (names the pairing, hides the answer)."""
+    first = _first_line(answer_html, limit=200)
+    if "+" not in first:
+        return None
+    left = first.split("+", 1)[0].strip(" :-–—")
+    return f"{left} + ?" if left else None
+
+
+def label_duplicate_prompts(deck: dict) -> int:
+    """Append a qualifier to prompts that repeat within a deck so they can be told apart.
+
+    The section name is used when it differs between the repeats; repeats inside one
+    section use the answer's pairing ('X + ?') or else 'n of m'. Only the displayed
+    prompt changes: card ids, and so study progress, stay the same. Returns the number
+    of cards relabelled.
+    """
+    groups: dict[str, list[tuple[dict, dict]]] = {}
+    for s in deck["sections"]:
+        for c in s["cards"]:
+            if not c.get("imagePrompt"):
+                groups.setdefault(re.sub(r"\s+", " ", c["prompt"]).strip().lower(), []).append((s, c))
+    changed = 0
+    for items in groups.values():
+        if len(items) < 2:
+            continue
+        per_section: dict[str, int] = {}
+        for s, _ in items:
+            per_section[s["name"]] = per_section.get(s["name"], 0) + 1
+        for i, (s, c) in enumerate(items, 1):
+            if per_section[s["name"]] == 1:
+                tag = s["name"]
+            else:
+                tag = _pairing_hint(c["answerHtml"]) or f"{i} of {len(items)}"
+            suffix = f" ({tag})"
+            c["prompt"] += suffix
+            ph = c.get("promptHtml") or ""
+            esc = html.escape(suffix, quote=False)
+            c["promptHtml"] = ph[: -len("</p>")] + esc + "</p>" if ph.endswith("</p>") else ph + esc
+            changed += 1
+    return changed
+
+
 def _owning_table(node: Node) -> Node | None:
     p = node.parent
     while p is not None:
@@ -626,6 +673,12 @@ def main(argv=None):
     g.add_argument("--keep-header", action="store_true", help="Never skip the first row of each table")
     ap.add_argument("--fresh", action="store_true", help="Drop other tests already in cards.json")
     ap.add_argument("--dump-html", help="Also save the raw fetched HTML here (debugging)")
+    lg = ap.add_mutually_exclusive_group()
+    lg.add_argument("--label-duplicates", dest="label_dups", action="store_true", default=None,
+                    help="Add the section (or the answer's 'X + ?' pairing) to repeated prompts. "
+                         "Remembered for this test on later re-imports.")
+    lg.add_argument("--no-label-duplicates", dest="label_dups", action="store_false",
+                    help="Turn --label-duplicates off for this test")
     args = ap.parse_args(argv)
 
     html_text, doc_id = resolve_source(args.source)
@@ -649,12 +702,21 @@ def main(argv=None):
         deck["sourceDocId"] = doc_id
 
     bundle = {"generatedAt": deck["generatedAt"], "decks": []}
+    previous = None
     if out.exists() and not args.fresh:
         try:
             old = json.loads(out.read_text(encoding="utf-8"))
+            previous = next((d for d in old.get("decks", []) if d.get("key") == deck_key), None)
             bundle["decks"] = [d for d in old.get("decks", []) if d.get("key") != deck_key]
         except (json.JSONDecodeError, OSError):
             pass
+    label_dups = args.label_dups if args.label_dups is not None else bool(previous and previous.get("labelDuplicates"))
+    if label_dups:
+        deck["labelDuplicates"] = True
+        n = label_duplicate_prompts(deck)
+        warnings = [w for w in warnings if not w.startswith("Duplicate prompt")]
+        if n:
+            print(f"Labelled {n} repeated prompt(s) with their section or pairing.")
     bundle["decks"].append(deck)
     bundle["cardCount"] = sum(d["cardCount"] for d in bundle["decks"])
 

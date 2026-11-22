@@ -45,6 +45,9 @@ git add -A && git commit -m "Add <test name>" && git push
 * Re-running the import for a doc **replaces** that test and keeps the others.
 * `--fresh` drops every other test and keeps only the one being imported.
 * `--title "Exam 3"` overrides the title taken from the doc.
+* `--label-duplicates` adds the section name to repeated prompts ("Panic Disorder (Anxiety Disorders)"), or the
+  answer's pairing ("Interactions! (Antipsychotics + ?)") when the repeats share a section. Progress is kept, and the
+  setting is remembered for that test on later re-imports (`--no-label-duplicates` turns it off).
 
 ## 3. How the doc is read
 

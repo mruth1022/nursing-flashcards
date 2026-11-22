@@ -294,5 +294,46 @@ class MainMergeTests(unittest.TestCase):
             self.assertEqual(json.loads(out.read_text())["decks"][0]["title"], "NS30A Final")
 
 
+class LabelDuplicateTests(unittest.TestCase):
+    def _deck(self):
+        card = lambda cid, prompt, ans: {"id": cid, "prompt": prompt, "promptHtml": f"<p>{prompt}</p>", "answerHtml": ans}
+        return {"sections": [
+            {"name": "Schizophrenia", "cards": [
+                card("a", "Interactions!", "<p>Antipsychotics + <b>Nicotine</b></p>"),
+                card("b", "Interactions!", "<p>Psychiatric Meds + Grapefruit</p>"),
+                card("c", "Interactions!", "<p>No pairing here</p>"),
+                card("d", "Unique", "<p>x</p>"),
+            ]},
+            {"name": "Mood Disorders", "cards": [card("e", "Panic Disorder", "<p>peak 10 min</p>")]},
+            {"name": "Anxiety & Panic", "cards": [card("f", "panic  disorder", "<p>1 month</p>")]},
+        ]}
+
+    def test_section_or_pairing_added_and_ids_kept(self):
+        deck = self._deck()
+        self.assertEqual(import_doc.label_duplicate_prompts(deck), 5)
+        cards = {c["id"]: c for s in deck["sections"] for c in s["cards"]}
+        self.assertEqual(cards["a"]["prompt"], "Interactions! (Antipsychotics + ?)")
+        self.assertEqual(cards["b"]["prompt"], "Interactions! (Psychiatric Meds + ?)")
+        self.assertEqual(cards["c"]["prompt"], "Interactions! (3 of 3)")
+        self.assertEqual(cards["d"]["prompt"], "Unique")
+        self.assertEqual(cards["e"]["prompt"], "Panic Disorder (Mood Disorders)")
+        self.assertEqual(cards["f"]["promptHtml"], "<p>panic  disorder (Anxiety &amp; Panic)</p>")
+
+    def test_flag_is_remembered_on_reimport_and_can_be_turned_off(self):
+        doc = UNIT_DOC.replace("P wave", "Round to?")
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / "cards.json"
+            a = Path(td) / "a.html"; a.write_text(doc, encoding="utf-8")
+            prompts = lambda: [c["prompt"] for s in json.loads(out.read_text())["decks"][0]["sections"] for c in s["cards"]]
+            import_doc.main([str(a), "--out", str(out)])
+            self.assertNotIn("Round to? (Dosage Calculation)", prompts())
+            import_doc.main([str(a), "--out", str(out), "--label-duplicates"])
+            self.assertIn("Round to? (Dosage Calculation)", prompts())
+            import_doc.main([str(a), "--out", str(out)])
+            self.assertIn("Round to? (Dosage Calculation)", prompts())
+            import_doc.main([str(a), "--out", str(out), "--no-label-duplicates"])
+            self.assertNotIn("Round to? (Dosage Calculation)", prompts())
+
+
 if __name__ == "__main__":
     unittest.main()
