@@ -1,0 +1,70 @@
+{
+ "psych": {
+  "exclude": [],
+  "excludeNames": [
+   "Mood",
+   "Memory",
+   "Group",
+   "Stress",
+   "Recovery",
+   "Assessment",
+   "Motivation",
+   "Anger",
+   "Cognition",
+   "Personality",
+   "Outcomes",
+   "Exploring",
+   "Challenging",
+   "arguing",
+   "agreeing",
+   "Acceptance",
+   "accepting",
+   "Violence",
+   "Assault",
+   "Coping"
+  ],
+  "dropNames": {
+   "Scaling questions (SFBT)": [
+    "SFBT"
+   ]
+  },
+  "aliases": {
+   "Referential thinking (ideas of reference)": [
+    "ideas of reference"
+   ],
+   "Boxed warning (black box warning)": [
+    "black box warning"
+   ],
+   "Complicated bereavement (prolonged grief disorder)": [
+    "prolonged grief disorder"
+   ],
+   "Conversion disorder (functional neurologic symptom disorder)": [
+    "functional neurologic symptom disorder",
+    "functional neurological symptom disorder"
+   ],
+   "Persistent depressive disorder (dysthymia)": [
+    "dysthymia"
+   ],
+   "Mixed episode (mixed features)": [
+    "mixed features"
+   ],
+   "Light therapy (phototherapy)": [
+    "phototherapy"
+   ],
+   "Rogers (client-centered therapy)": [
+    "client-centered therapy"
+   ],
+   "Traumatic crisis (adventitious/social crisis)": [
+    "adventitious crisis"
+   ],
+   "Psychomotor agitation/retardation": [
+    "psychomotor agitation",
+    "psychomotor retardation"
+   ],
+   "Depersonalization/derealization disorder": [
+    "depersonalization disorder",
+    "derealization disorder"
+   ]
+  }
+ }
+}

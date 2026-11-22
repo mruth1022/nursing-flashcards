@@ -111,8 +111,28 @@ Then open http://localhost:8765. Useful to preview an import before pushing.
 ## 6. Tests
 
 ```bash
-python3 -m unittest tests.test_import
+python3 -m unittest tests.test_import tests.test_glossary
 ```
+
+## 7. Glossary (underlined terms)
+
+Terms from a glossary are underlined on cards (study and Browse) for the tests that use it; tap one
+to see its definition. Home has an Underline / Off switch for tests with a glossary.
+
+The psych glossary comes from the study guide's "Glossary of Key Terms" (`- **Term**: definition (source)`
+lines). Rebuild it after the guide changes:
+
+```bash
+python3 tools/build_glossary.py ~/Desktop/logs/20261119-0015-psych-nursing-study-guide-v2.md --name psych --title "Psych glossary" --decks "Psych Units 5-12 Flashcards,Custom - Psych Exam 2 Flashcards"
+```
+
+* `--decks` lists the tests (by title) that get underlines. Other tests are untouched, and the app
+  only downloads a glossary when one of its tests is open.
+* `tools/glossary_overrides.json` turns off everyday words ("Mood", "Memory", …) and adds synonyms
+  the script can't work out (e.g. "dysthymia" for Persistent depressive disorder).
+* Matching: whole words, optional plural "s", longest term first, first occurrence per term on each
+  side of a card. Acronyms (TD, EPS) must match the capitals exactly. On the front of a card, a term
+  that is most of the prompt isn't underlined, so tapping it can't give the answer away.
 
 ## How progress and sync work
 
@@ -128,8 +148,9 @@ python3 -m unittest tests.test_import
 
 ```
 docs/            GitHub Pages root: index.html, app.js, styles.css, cards.json, img/, cheer/
-tools/           import_doc.py, prepare_photos.py, sample export used by the tests
-tests/           unit tests for the importer
+docs/glossary/   index.json (which tests use which glossary) + one <name>.json per glossary
+tools/           import_doc.py, build_glossary.py (+ glossary_overrides.json), prepare_photos.py, test sample
+tests/           unit tests for the importer and the glossary builder
 ```
 
 ## If something goes wrong
