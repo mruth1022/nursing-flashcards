@@ -330,3 +330,39 @@ mark.hit { background: #fff3a8; }
 .gl-foot { margin-top: 16px; font-size: 0.8rem; color: var(--muted); }
 @media (min-width: 760px) { .gl-pop { align-items: center; } .gl-sheet { border-radius: 18px; padding-bottom: 18px; } }
 @keyframes gl-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- editing ---------- */
+.b-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.b-head h1 { margin-right: auto; }
+.b-sec { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.sec-tools { margin-left: auto; display: inline-flex; gap: 6px; }
+.card-tools { display: inline-flex; gap: 2px; flex: none; }
+.icon-btn { border: 0; background: transparent; font-size: 1.05rem; line-height: 1; padding: 8px; border-radius: 10px; cursor: pointer; color: var(--muted); min-width: 36px; min-height: 36px; }
+.icon-btn:hover, .icon-btn:focus-visible { background: var(--bg); color: var(--ink); }
+.kicker-edit { padding: 2px 6px; min-width: 0; min-height: 0; margin: -4px -6px -4px 4px; font-size: 1rem; }
+.save-chip { font-size: 0.8rem; padding: 5px 10px; border-radius: 999px; background: var(--bg); color: var(--muted); border: 1px solid var(--line); cursor: pointer; white-space: nowrap; }
+.save-chip[data-state="saved"] { color: var(--yes); background: var(--yes-bg); border-color: transparent; }
+.save-chip[data-state="saving"] { color: var(--accent); }
+.save-chip[data-state="auth"], .save-chip[data-state="error"] { color: var(--no); background: var(--no-bg); border-color: transparent; }
+.toast-act { margin-left: 8px; border: 0; background: transparent; color: #9db4ff; font: inherit; font-weight: 700; cursor: pointer; padding: 2px 4px; }
+body.editing { overflow: hidden; }
+.ed-pop { position: fixed; inset: 0; z-index: 70; background: rgba(15, 18, 28, 0.4); display: flex; justify-content: center; align-items: stretch; }
+.ed-sheet { background: var(--card); width: 100%; max-width: 760px; display: flex; flex-direction: column; height: 100dvh; }
+@media (min-width: 760px) { .ed-pop { align-items: center; padding: 24px; } .ed-sheet { height: auto; max-height: calc(100dvh - 48px); border-radius: 18px; box-shadow: 0 10px 40px rgba(0,0,0,0.25); } }
+.ed-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: calc(8px + env(safe-area-inset-top)) 12px 8px; border-bottom: 1px solid var(--line); }
+.ed-tools { display: flex; flex-wrap: wrap; gap: 2px; padding: 6px 8px; border-bottom: 1px solid var(--line); background: var(--bg); }
+.ed-tools button { border: 0; background: transparent; min-width: 36px; height: 36px; border-radius: 8px; font-size: 0.95rem; cursor: pointer; color: var(--ink); padding: 0 6px; }
+.ed-tools button:hover, .ed-tools button:focus-visible { background: #fff; }
+.ed-sep { width: 1px; background: var(--line); margin: 6px 4px; }
+.ed-tools .sw { display: inline-block; width: 18px; height: 18px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.15); vertical-align: middle; }
+.ed-tools .sw.none { background: linear-gradient(to top right, #fff 45%, var(--no) 47%, var(--no) 53%, #fff 55%); }
+.ed-tools .fc { font-weight: 800; text-decoration: underline; text-decoration-thickness: 3px; }
+.ed-body { flex: 1; overflow: auto; padding: 12px 16px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling: touch; }
+.ed-body .lbl { display: block; font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin: 14px 0 6px; }
+.ed-body .lbl:first-child { margin-top: 4px; }
+.ed-field { min-height: 52px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 1rem; line-height: 1.45; background: #fff; outline: none; }
+.ed-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(59, 91, 219, 0.15); }
+#ed-answer { min-height: 180px; }
+.ed-field p { margin: 0 0 0.5em; }
+.ed-field mark { color: inherit; padding: 0 1px; }
+.ed-body input[type=text] { width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font: inherit; }
