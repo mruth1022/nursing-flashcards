@@ -373,3 +373,38 @@ class LabelDuplicateTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BehindRemoteTests(unittest.TestCase):
+    """The importer refuses to run on a checkout that is behind GitHub (where app edits land)."""
+
+    def git(self, cwd, *args):
+        import subprocess
+        subprocess.run(["git", "-C", str(cwd), *args], check=True, capture_output=True,
+                       env={"GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t", "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin", "HOME": str(cwd)})
+
+    def test_behind_remote_is_refused_until_pulled(self):
+        import shutil
+        if not shutil.which("git"):
+            self.skipTest("git not installed")
+        with tempfile.TemporaryDirectory() as td:
+            td = Path(td)
+            self.git(td, "init", "-q", "--bare", "-b", "main", "remote.git")
+            self.git(td, "clone", "-q", "remote.git", "me")
+            self.git(td, "clone", "-q", "remote.git", "app")
+            me, app = td / "me", td / "app"
+            (me / "docs").mkdir()
+            (me / "docs" / "x.txt").write_text("1")
+            self.git(me, "add", "-A"); self.git(me, "commit", "-qm", "one"); self.git(me, "push", "-q", "origin", "HEAD:main")
+            self.git(me, "branch", "-q", "--set-upstream-to=origin/main")
+            self.git(app, "pull", "-q", "origin", "main")
+            (app / "docs" / "x.txt").write_text("2")
+            self.git(app, "commit", "-qam", "edit in the app"); self.git(app, "push", "-q", "origin", "HEAD:main")
+            a = td / "a.html"; a.write_text(SAMPLE, encoding="utf-8")
+            out = me / "docs" / "decks"
+            self.assertEqual(import_doc.commits_behind(me / "docs"), 1)
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out)]), 4)
+            self.assertFalse(out.exists())
+            self.git(me, "pull", "-q", "origin", "main")
+            self.assertEqual(import_doc.main([str(a), "--decks-dir", str(out)]), 0)
+            self.assertIsNone(import_doc.commits_behind(td))  # not a checkout

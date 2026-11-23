@@ -619,6 +619,7 @@
           ? h`<div class="hint">This device saves edits to the shared cards, so they show up on every device.</div>
              <div class="row" style="margin-top:10px">${Edits.chipHtml()}${pendingN ? '<button class="btn small primary" data-act="save-now">Save now</button>' : ''}<span class="spacer"></span><button class="btn small ghost" data-act="forget">Forget this device</button></div>`
           : h`<div class="hint">${pendingN ? h`<b>${pendingN} change${pendingN === 1 ? '' : 's'}</b> made here ${pendingN === 1 ? 'is' : 'are'} saved on this device only. ` : ''}To save edits for every device, open the setup link Matt sent you, on this device.</div>`}
+        ${!Saver.hasToken() || Saver.state() === 'auth' ? h`<div class="row" style="margin-top:10px"><input type="password" id="setup-in" placeholder="…or paste the setup link here" autocomplete="off" style="flex:1;min-width:180px"><button class="btn small" data-act="setup-paste">Use link</button></div>` : ''}
       </div>`;
     $app.innerHTML = h`
       <h1>Sync devices</h1>
@@ -656,6 +657,11 @@
     $app.querySelector('[data-act=merge]').onclick = () => doImport(false);
     Edits.bindChip($app);
     const sv = $app.querySelector('[data-act=save-now]'); if (sv) sv.onclick = () => Saver.flush(true);
+    const sp = $app.querySelector('[data-act=setup-paste]'); if (sp) sp.onclick = async () => {
+      const $i = $app.querySelector('#setup-in'); const m = $i.value.match(/#setup=([^\s&]+)/); $i.value = '';
+      if (!m) { toast('That doesn’t look like a setup link'); return; }
+      await Saver.useSetupToken(m[1]); renderSync();
+    };
     const fg = $app.querySelector('[data-act=forget]'); if (fg) fg.onclick = () => {
       if (!confirm('Stop saving edits from this device? Edits not yet saved stay here. You’ll need a new setup link to turn saving back on.')) return;
       Saver.forget(); renderSync(); toast('This device no longer saves edits');
@@ -737,8 +743,30 @@
   // ------------------------------------------------------------ edits (queued ops)
   const Edits = (() => {
     const listeners = [];
+    const removed = new Set();   // ops this tab saved, so another tab's stored copy doesn't bring them back
     function count(key) { return key ? (state.pending[key] || []).length : Object.values(state.pending).reduce((n, l) => n + l.length, 0); }
-    function persist() { for (const k of Object.keys(state.pending)) if (!state.pending[k].length) delete state.pending[k]; saveJSON(EDITS_KEY, state.pending); }
+    // merge with the stored queue first: another tab may have added ops since this tab last read it
+    function mergeStored() {
+      const stored = loadJSON(EDITS_KEY) || {};
+      for (const [k, ops] of Object.entries(stored)) {
+        const mine = state.pending[k] = state.pending[k] || [];
+        const have = new Set(mine.map(o => o.n));
+        for (const o of ops) if (!have.has(o.n) && !removed.has(o.n)) mine.push(o);
+        mine.sort((a, b) => a.at - b.at);
+      }
+    }
+    function persist() {
+      mergeStored();
+      for (const k of Object.keys(state.pending)) if (!state.pending[k].length) delete state.pending[k];
+      saveJSON(EDITS_KEY, state.pending);
+    }
+    function markSaved(ops) { for (const o of ops) removed.add(o.n); }
+    window.addEventListener('storage', (e) => {
+      if (e.key !== EDITS_KEY) return;
+      mergeStored(); rebuild();
+      if (!Editor.isOpen() && ['browse', 'home'].includes(state.view)) rerender(true);
+      refreshChips();
+    });
     // record ops for a test, show them at once, and tell the saver
     function add(deckKey, ...ops) {
       const list = state.pending[deckKey] = state.pending[deckKey] || [];
@@ -760,7 +788,7 @@
     function chipHtml() { return h`<span class="save-chip" data-state="${Saver.state()}" role="status">${esc(Saver.text())}</span>`; }
     function bindChip(root) { const c = root.querySelector('.save-chip'); if (c) c.onclick = () => Saver.flush(true); }
     function refreshChips() { document.querySelectorAll('.save-chip').forEach(el => { el.dataset.state = Saver.state(); el.textContent = Saver.text(); }); }
-    return { add, count, persist, deleteCard, chipHtml, bindChip, refreshChips, onChange: (fn) => listeners.push(fn), rerender };
+    return { add, count, persist, markSaved, deleteCard, chipHtml, bindChip, refreshChips, onChange: (fn) => listeners.push(fn), rerender };
   })();
 
   // ------------------------------------------------------------ saving to GitHub
@@ -768,7 +796,9 @@
   // the token this device got from Matt's setup link. Batches go out a few seconds after the last
   // edit, when the page is hidden, and when the connection comes back.
   const Saver = (() => {
-    let status = 'idle', timer = null, retryTimer = null, busy = false, savedOnce = false;
+    let status = 'idle', timer = null, retryTimer = null, busy = false, savedOnce = false, failures = 0;
+    // ops for a test with no file on the site (old cards.json, or a test since removed) can't be saved
+    const saveable = () => Object.entries(state.pending).reduce((n, [k, l]) => n + (state.index && state.index.get(k) ? l.length : 0), 0);
     function repo() {
       if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) {
         const dev = loadJSON('nf.gh.dev'); // local testing only, e.g. tests/mock_github.py
@@ -779,25 +809,25 @@
     }
     const token = () => (loadJSON(GH_KEY) || {}).token || null;
     const canSave = () => !!(repo() && token());
-    function set(st) { status = st; Edits.refreshChips(); if (state.view === 'sync' && !Editor.isOpen()) renderSync(); }
+    function set(st) { status = st; Edits.refreshChips(); }
     function stateName() {
       if (busy) return 'saving';
       const n = Edits.count();
       if (!n) return savedOnce ? 'saved' : 'idle';
-      if (!canSave()) return 'local';
-      return ['offline', 'auth', 'error'].includes(status) ? status : 'pending';
+      if (!canSave() || !saveable()) return 'local';
+      return ['offline', 'auth', 'error', 'rate'].includes(status) ? status : 'pending';
     }
     function text() {
       const n = Edits.count(); const c = `${n} change${n === 1 ? '' : 's'}`;
       return {
         saving: 'Saving…', saved: 'All changes saved', idle: 'No unsaved changes',
         local: `${c} on this device only`, pending: `${c} waiting to save`, offline: `Offline · ${c} waiting`,
-        auth: 'Saving paused · ask Matt for a new link', error: 'Couldn’t save · will retry',
+        auth: 'Saving paused · ask Matt for a new link', error: 'Couldn’t save · will retry', rate: `GitHub is busy · ${c} waiting`,
       }[stateName()];
     }
     function schedule(ms = 6000) {
       clearTimeout(timer);
-      if (Edits.count() && canSave()) timer = setTimeout(() => flush(), ms);
+      if (saveable() && canSave()) timer = setTimeout(() => flush(), ms);
       Edits.refreshChips();
     }
     function retry(ms) { clearTimeout(retryTimer); retryTimer = setTimeout(() => flush(), ms); }
@@ -805,6 +835,7 @@
       clearTimeout(timer);
       if (busy) return;
       if (!Edits.count()) { if (manual) toast('Nothing to save'); return; }
+      if (!saveable()) { if (manual) toast('These changes are for a test that can’t be saved from the app'); set('local'); return; }
       const r = repo(), t = token();
       if (!r || !t) { if (manual) toast(r ? 'This device can’t save yet. Open the setup link Matt sent you.' : 'Saving isn’t available on this site'); set('local'); return; }
       busy = true; Edits.refreshChips();
@@ -819,6 +850,7 @@
             path: 'docs/decks/' + entry.file, ops, message: `App edit (${title}): ${NFCore.describeOps(ops)}`,
           });
           const done = new Set(ops.map(o => o.n));
+          Edits.markSaved(ops);
           state.pending[key] = (state.pending[key] || []).filter(o => !done.has(o.n));
           Edits.persist();
           const saved = loadJSON(SAVED_KEY) || {}; saved[key] = res.deck; saveJSON(SAVED_KEY, saved);
@@ -828,15 +860,18 @@
           // show changes that came from the other device
           if (JSON.stringify((state.decks.find(x => x.key === key) || {}).sections) !== before && !Editor.isOpen() && ['browse', 'home', 'stats'].includes(state.view)) Edits.rerender(true);
         }
-        savedOnce = true; busy = false; set(Edits.count() ? 'pending' : 'saved');
-        if (Edits.count()) schedule(1000); // edits made while saving
+        savedOnce = true; busy = false; failures = 0; set(saveable() ? 'pending' : 'saved');
+        if (saveable()) schedule(1000); // edits made while saving
         else if (manual) toast('All changes saved');
       } catch (e) {
         busy = false;
         const kind = e.kind || 'error';
+        failures++;
+        const backoff = (base) => Math.min(15 * 60000, base * 2 ** Math.min(failures - 1, 6));
         if (kind === 'auth') { set('auth'); if (manual) toast('GitHub refused this device’s key. Ask Matt for a new setup link.'); }
-        else if (kind === 'offline') { set('offline'); retry(30000); }
-        else { set('error'); retry(kind === 'conflict' ? 5000 : 60000); console.warn('Save failed:', e.message); }
+        else if (kind === 'offline') { set('offline'); retry(backoff(30000)); }
+        else if (kind === 'rate') { set('rate'); retry(15 * 60000); }
+        else { set('error'); retry(backoff(kind === 'conflict' ? 5000 : 60000)); console.warn('Save failed:', e.message); }
       }
     }
     // checks a token can write to the repo: true, false, or 'offline'
@@ -853,13 +888,13 @@
       if (!tok) return;
       if (!repo()) { toast('Setup links only work on the flashcards website'); return; }
       const ok = await verify(tok);
-      if (ok === true) { saveJSON(GH_KEY, { token: tok, at: Date.now() }); status = 'idle'; toast('Editing is turned on for this device'); schedule(500); if (state.view === 'sync') renderSync(); }
+      if (ok === true) { saveJSON(GH_KEY, { token: tok, at: Date.now() }); status = 'idle'; failures = 0; toast('Editing is turned on for this device'); schedule(500); if (state.view === 'sync') renderSync(); }
       else toast(ok === 'offline' ? 'You’re offline, so the setup link couldn’t be checked. Open it again when you’re online.' : 'This setup link didn’t work. Ask Matt for a new one.');
     }
     function forget() { saveJSON(GH_KEY, null); status = 'idle'; Edits.refreshChips(); }
     Edits.onChange(() => schedule());
-    window.addEventListener('online', () => { if (Edits.count()) flush(); });
-    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && Edits.count() && canSave()) flush(); });
+    window.addEventListener('online', () => { if (saveable()) flush(); });
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && saveable() && canSave()) flush(); });
     return { state: stateName, text, schedule, flush, verify, useSetupToken, forget, canSave, hasToken: () => !!token(), repo };
   })();
 
@@ -1231,7 +1266,7 @@
   // ------------------------------------------------------------ boot
   (async () => {
     try { await Promise.all([loadDecks(), Glossary.init()]); }
-    catch (e) { $app.innerHTML = '<p class="empty">Could not load the cards.<br>Check your connection and reload. (Developer: run <code>python3 tools/import_doc.py &lt;doc url&gt;</code>.)</p>'; return; }
+    catch (e) { if (setupToken) Saver.useSetupToken(setupToken); $app.innerHTML = '<p class="empty">Could not load the cards.<br>Check your connection and reload. (Developer: run <code>python3 tools/import_doc.py &lt;doc url&gt;</code>.)</p>'; return; }
     if (location.hash.startsWith('#sync=')) { await handleIncomingSync(location.hash.slice(6)); return; }
     const v = (location.hash || '#home').slice(1) || 'home';
     state.view = ['home', 'stats', 'browse', 'sync'].includes(v) ? v : (v === 'study' && state.session ? 'study' : 'home');

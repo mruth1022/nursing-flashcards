@@ -229,3 +229,38 @@ test('exportHtml writes heading rows and cards the importer can read back', () =
   assert.match(html, /<tr><td><h1>Unit 5<\/h1><\/td><td><\/td><\/tr>\n<tr><td><h2>Meds<\/h2><\/td><td><\/td><\/tr>\n<tr><td><p>A<\/p><\/td><td><p>1<\/p><\/td><\/tr>/);
   assert.match(html, /<td>verify<\/td>/);
 });
+
+// ---------------------------------------------------------------- review fixes
+test('renaming a unit is refused when its own section would clash with a sibling section', () => {
+  const d = { key: 'k', sections: [{ group: 'Cardio', name: 'Cardio', cards: [] }, { group: 'Cardio', name: 'Heart', cards: [] }] };
+  const r = applyOps(d, [{ t: 'renameGroup', group: 'Cardio', to: 'Heart' }]);
+  assert.equal(r.skipped.length, 1);
+  assert.equal(applyOps(d, [{ t: 'renameGroup', group: 'Cardio', to: 'Cardiac' }]).deck.sections.map(s => s.group + '|' + s.name).join(), 'Cardiac|Cardiac,Cardiac|Heart');
+});
+
+test('a deleted card restores into its section after the section or unit was renamed', () => {
+  let d = applyOps(deck0(), [{ t: 'del', id: 'a' }, { t: 'renameSec', sec: 'Unit 5␟Meds', name: 'Medications' }, { t: 'restore', id: 'a' }]).deck;
+  assert.deepEqual(ids(d)[0], 'Unit 5|Medications:a,b');
+  d = applyOps(deck0(), [{ t: 'del', id: 'c' }, { t: 'renameGroup', group: 'Unit 5', to: 'U5' }, { t: 'restore', id: 'c' }]).deck;
+  assert.deepEqual(ids(d), ['U5|Meds:a,b', 'U5|U5:c', 'Unit 6|Dx:d']);
+});
+
+test('save: a 422 that is not about the sha fails at once; a rate limit is not reported as a bad token', async () => {
+  const deck = deck0();
+  const reply = (status, body, headers = {}) => ({ status, ok: status < 300, json: async () => body, headers: { get: (k) => headers[k] ?? null } });
+  let puts = 0;
+  const f422 = async (url, o = {}) => (!o.method ? reply(200, { sha: 's', content: utf8ToB64(JSON.stringify(deck)) }) : (puts++, reply(422, { message: 'Invalid request: content is not valid Base64' })));
+  await assert.rejects(saveToGitHub(cfg({ fetch: f422 }, [])), e => e.kind === 'http' && e.status === 422);
+  assert.equal(puts, 1);
+  const fsha = async (url, o = {}) => (!o.method ? reply(200, { sha: 's', content: utf8ToB64(JSON.stringify(deck)) }) : reply(422, { message: 'sha does not match' }));
+  await assert.rejects(saveToGitHub(cfg({ fetch: fsha }, [])), e => e.kind === 'conflict');
+  const frate = async () => reply(403, { message: 'API rate limit exceeded' }, { 'x-ratelimit-remaining': '0' });
+  await assert.rejects(saveToGitHub(cfg({ fetch: frate }, [])), e => e.kind === 'rate');
+  const fbig = async () => reply(200, { sha: 's', content: '', encoding: 'none', size: 2000000 });
+  await assert.rejects(saveToGitHub(cfg({ fetch: fbig }, [])), e => e.kind === 'http' && /too large/.test(e.message));
+});
+
+test('sanitizer: data-src / data-class are not mistaken for src / class', () => {
+  assert.equal(sanitizeHtml('<img data-src="img/x.png" src="https://evil/y.png">'), '');
+  assert.equal(sanitizeHtml('<ul data-class="l2"><li>a</li></ul>'), '<ul><li>a</li></ul>');
+});

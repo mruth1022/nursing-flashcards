@@ -86,7 +86,7 @@
     return out;
   }
   function attr(attrs, name) {
-    const m = attrs.match(new RegExp('\\b' + name + '\\s*=\\s*("([^"]*)"|\'([^\']*)\'|([^\\s>]+))', 'i'));
+    const m = attrs.match(new RegExp('(?:^|\\s)' + name + '\\s*=\\s*("([^"]*)"|\'([^\']*)\'|([^\\s>]+))', 'i'));
     return m ? decodeEntities(m[2] ?? m[3] ?? m[4] ?? '') : null;
   }
 
@@ -255,13 +255,20 @@
         const s = findSec(deck, op.sec); if (!s || !op.name) return false;
         const k = secKey({ group: s.group, name: op.name });
         if (k !== op.sec && findSec(deck, k)) return false;
-        s.name = op.name; return true;
+        s.name = op.name;
+        for (const t of deck.trash || []) if (t.sec === op.sec) { t.sec = k; t.name = op.name; } // deleted cards follow
+        return true;
       }
       case 'renameGroup': {
         if (!op.to || op.to === op.group) return false;
         const secs = deck.sections.filter(s => (s.group || '') === op.group); if (!secs.length) return false;
         if (deck.sections.some(s => s.group === op.to)) return false;
-        for (const s of secs) { if (s.name === s.group) s.name = op.to; s.group = op.to; }
+        const rename = (g, n) => ({ group: op.to, name: n === g ? op.to : n });
+        // the unit's own section ("General") takes the new name too, so it must not clash with a sibling
+        const keys = secs.map(s => secKey(rename(s.group, s.name)));
+        if (new Set(keys).size !== keys.length) return false;
+        for (const s of secs) Object.assign(s, rename(s.group, s.name));
+        for (const t of deck.trash || []) if ((t.group || '') === op.group) { Object.assign(t, rename(t.group, t.name)); t.sec = secKey(t); }
         return true;
       }
       case 'moveSec': {
@@ -327,6 +334,8 @@
       let res;
       try { res = await cfg.fetch(url, { cache: 'no-store', ...opts, headers: { ...headers, ...(opts && opts.headers) } }); }
       catch (e) { throw new SaveError('offline', 'Network error: ' + e.message); }
+      const hdr = (k) => (res.headers && res.headers.get ? res.headers.get(k) : null);
+      if ((res.status === 403 || res.status === 429) && (hdr('x-ratelimit-remaining') === '0' || hdr('retry-after'))) throw new SaveError('rate', 'GitHub rate limit; will retry later', res.status);
       if (res.status === 401 || res.status === 403) throw new SaveError('auth', 'GitHub refused the token (' + res.status + ')', res.status);
       return res;
     };
@@ -334,6 +343,7 @@
       const got = await call(base + '?ref=' + encodeURIComponent(cfg.branch) + '&t=' + Date.now());
       if (!got.ok) throw new SaveError('http', 'Could not read ' + cfg.path + ' (' + got.status + ')', got.status);
       const meta = await got.json();
+      if (!meta.content) throw new SaveError('http', cfg.path + ' is too large to save through the GitHub API (over 1 MB)');
       const remote = JSON.parse(b64ToUtf8(meta.content));
       const { deck, skipped } = applyOps(remote, cfg.ops);
       deck.rev = (remote.rev || 0) + 1;
@@ -342,7 +352,12 @@
         method: 'PUT', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: cfg.message, content: utf8ToB64(JSON.stringify(deck, null, 1)), sha: meta.sha, branch: cfg.branch }),
       });
-      if (put.status === 409 || put.status === 422) continue; // the file changed since we read it: re-read and re-apply
+      if (put.status === 409) continue; // the file changed since we read it: re-read and re-apply
+      if (put.status === 422) {
+        const msg = await put.json().then(j => j.message || '', () => '');
+        if (/sha/i.test(msg)) continue;
+        throw new SaveError('http', 'GitHub rejected the save (422: ' + msg + ')', 422);
+      }
       if (!put.ok) throw new SaveError('http', 'Could not save ' + cfg.path + ' (' + put.status + ')', put.status);
       const body = await put.json();
       return { deck, skipped, commit: body.commit && body.commit.sha };

@@ -28,6 +28,8 @@ Rules:
     entry point). Every import bumps the test's "rev".
   * A test edited in the app ("editedInApp": true) is not re-imported, because that would
     overwrite the in-app edits; --force replaces it anyway.
+  * The import also stops if the checkout is behind GitHub (app edits are commits there); run
+    `git pull` first.
   * The first row of a table is skipped when it looks like a header row
     ("Term | Definition", "Question | Answer", ...). Override with --keep-header
     or --skip-header.
@@ -47,6 +49,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import subprocess
 import hashlib
 import html
 import json
@@ -666,6 +669,20 @@ def fetch_doc_title(doc_id: str) -> str | None:
 
 # --------------------------------------------------------------------------- main
 # -------------------------------------------------------------------------- storage
+def commits_behind(path: Path) -> int | None:
+    """How many commits the checkout holding `path` is behind its upstream (after a fetch), or None
+    if that can't be told (not a git checkout, no upstream, offline)."""
+    git = ["git", "-C", str(path)]
+    try:
+        if subprocess.run(git + ["rev-parse", "--abbrev-ref", "@{u}"], capture_output=True, text=True, timeout=10).returncode:
+            return None
+        subprocess.run(git + ["fetch", "--quiet"], capture_output=True, text=True, timeout=30)
+        out = subprocess.run(git + ["rev-list", "--count", "HEAD..@{u}"], capture_output=True, text=True, timeout=10)
+        return int(out.stdout.strip()) if out.returncode == 0 else None
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return None
+
+
 def deck_file_name(key: str) -> str:
     """docs/decks/<this> for a test key (a Google Doc id or an exported file name)."""
     return (re.sub(r"[^A-Za-z0-9_-]+", "-", key).strip("-") or "deck") + ".json"
@@ -747,6 +764,12 @@ def main(argv=None):
     if doc_id:
         deck["sourceDocId"] = doc_id
 
+    # edits made in the app are commits on GitHub; importing from an old checkout would miss them
+    behind = commits_behind(decks_dir if decks_dir.exists() else decks_dir.parent)  # --force does not skip this
+    if behind:
+        print(f"Not imported: GitHub has {behind} newer commit(s) (probably edits made in the app). "
+              "Run `git pull` first, then import again.", file=sys.stderr)
+        return 4
     index = read_index(decks_dir)
     entry = next((e for e in index["decks"] if e["key"] == deck_key), None)
     previous = read_deck(decks_dir, entry) if entry else None

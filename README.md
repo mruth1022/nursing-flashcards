@@ -20,12 +20,17 @@ Requirements: Python 3.9+ (macOS has it), `git`. The photo script also needs Pil
 
 ## 1. Update the cards after the doc changes
 
-The doc must be shared as **Anyone with the link can view**.
+The doc must be shared as **Anyone with the link can view**. Pull first: edits made in the app are
+commits on GitHub, and the import stops if this checkout is behind.
 
 ```bash
+git pull
 python3 tools/import_doc.py "https://docs.google.com/document/d/1dASQk4UBi9N3WojeGGZ-XcsBUPzvs01u0pl2h1urGf0/edit"
 git add -A && git commit -m "Update cards" && git push
 ```
+
+Once a test has been edited in the app, its Google Doc is retired: the import refuses to overwrite
+it (see section 8).
 
 The site updates about a minute after the push. The script prints the sections and card counts it
 found plus any warnings (empty answers, merged rows). Hard-refresh the browser if the old deck
@@ -115,7 +120,7 @@ Then open http://localhost:8765. Useful to preview an import before pushing.
 ## 6. Tests
 
 ```bash
-python3 -m unittest tests.test_import tests.test_glossary
+python3 -m unittest discover tests
 node --test tests/
 ```
 
@@ -142,6 +147,63 @@ python3 tools/build_glossary.py ~/Desktop/logs/20261119-0015-psych-nursing-study
   side of a card. Acronyms (TD, EPS) must match the capitals exactly. On the front of a card, a term
   that is most of the prompt isn't underlined, so tapping it can't give the answer away.
 
+## 8. Editing in the app
+
+Browse ▸ **✎ Edit cards** turns on editing for the selected test:
+
+* ✎ edits a card (prompt, answer, optional label) in a rich-text editor with bold, italic,
+  underline, strikethrough, lists, indent, her highlight colours and text colours. Pasting from
+  Google Docs keeps the formatting. The ✎ on the back of a card while studying opens the same editor.
+* 🗑 deletes a card (Undo in the message, or ⋯ ▸ Recently deleted later). ↕ moves it up or down or
+  into another section. **+ Card** adds one.
+* ⋯ on a section renames it, moves it, adds a section below, renames or moves its unit, or deletes it
+  once it is empty. **+ Add section** / **+ Add unit** are at the end of the list.
+* ⋯ in the header: Recently deleted, History of this test (links to each save on GitHub), and
+  Download as HTML (a backup that opens in Google Docs; `import_doc.py` reads it back).
+
+**How saving works.** Each change is queued on the device and shown at once. A few seconds after the
+last change (or when the page is hidden, or the connection returns) the app reads the test's file
+from GitHub, re-applies the queued changes to it and commits it to `main`. If the other device saved
+in between, it reads again and re-applies, so edits from the phone and the laptop combine. Pages
+redeploys within a couple of minutes; until then the device shows the copy it saved. Card IDs never
+change when a card is edited, so study progress is kept. The status chip says where things stand
+(saved, waiting, offline, paused).
+
+**Turning on saving for a device (once per device).**
+
+1. Create a fine-grained token at https://github.com/settings/personal-access-tokens/new: Repository
+   access ▸ Only select repositories ▸ `nursing-flashcards`; Permissions ▸ Contents ▸ Read and write;
+   expiry up to a year.
+2. Store it in the Keychain (it prompts for the token, so it stays out of the shell history):
+
+   ```bash
+   security add-generic-password -s nursing-flashcards-token -a "$USER" -w
+   ```
+
+3. Make the link and text it to her privately. She taps it once on her phone and once on her laptop,
+   then can delete the message:
+
+   ```bash
+   python3 tools/make_setup_link.py
+   ```
+
+The link is `…/nursing-flashcards/#setup=<token>`; the part after `#` never reaches a server, and the
+app removes it from the address bar immediately. Never commit the token or put it in the app's code:
+the repo and the site are public. If a device is lost or the token expires, regenerate it on GitHub
+and send a new link. Sync ▸ "Forget this device" removes the token from one device. Edits made
+before a device is set up stay on it and are saved once it is.
+
+**Doc imports after app edits.** `import_doc.py` refuses to re-import a test with `"editedInApp": true`
+(it would overwrite her edits) unless given `--force`, and refuses to run on a checkout that is
+behind GitHub. To restore an older version of a test, check out that file from an earlier commit
+(History shows them) and push it.
+
+**Testing saving locally** without a token: run `python3 tests/mock_github.py` (a stand-in for the
+GitHub API on port 8766 that works on a temporary copy of `docs/decks/`), then in the browser console
+of http://localhost:8765 run
+`localStorage['nf.gh.dev'] = JSON.stringify({api: 'http://localhost:8766', owner: 'o', repo: 'r'}); location.hash = '#setup=test-token'`.
+Saving is off on localhost unless `nf.gh.dev` is set.
+
 ## How progress and sync work
 
 * Every answer is stored in the browser (`localStorage`). Nothing leaves the device.
@@ -149,8 +211,9 @@ python3 tools/build_glossary.py ~/Desktop/logs/20261119-0015-psych-nursing-study
   Open it on another device and accept the merge. "Merge" keeps the newest answer per card from
   either device; "Replace" overwrites.
 * Stats ▸ "Reset all progress" clears the device.
-* Card identity is based on the prompt text, so editing an answer in the doc keeps its progress;
-  rewording a prompt makes it a new card.
+* Card identity is based on the prompt text when a doc is imported, so editing an answer in the doc
+  keeps its progress and rewording a prompt makes it a new card. Edits made in the app never change
+  a card's identity.
 
 ## Layout
 
@@ -159,8 +222,10 @@ docs/            GitHub Pages root: index.html, app.js, core.js, styles.css, img
 docs/decks/      index.json (the tests, in order) + one <key>.json per test
                  (docs/cards.json is the old single-file format, kept only until the next release)
 docs/glossary/   index.json (which tests use which glossary) + one <name>.json per glossary
-tools/           import_doc.py, build_glossary.py (+ glossary_overrides.json), prepare_photos.py, test sample
-tests/           Python tests (importer, glossary builder) and Node tests (core.js)
+tools/           import_doc.py, build_glossary.py (+ glossary_overrides.json), make_setup_link.py,
+                 prepare_photos.py, test sample
+tests/           Python tests (importer, glossary, setup link, export round trip), Node tests (core.js),
+                 mock_github.py (local stand-in for the GitHub API)
 ```
 
 ## If something goes wrong
@@ -170,3 +235,8 @@ tests/           Python tests (importer, glossary builder) and Node tests (core.
 * Site doesn't change after a push: wait a minute, then hard-refresh. Check
   https://github.com/mruth1022/nursing-flashcards/actions for a failed Pages build.
 * `ModuleNotFoundError: PIL`: run `python3 -m pip install pillow`.
+* `Not imported: GitHub has N newer commit(s)`: run `git pull`, then import again.
+* `Not imported: '<test>' has been edited in the app`: that test's doc is retired; edit it in the app.
+  `--force` replaces her edits with the doc.
+* App says "Saving paused · ask Matt for a new link": the token was revoked or expired. Make a new one
+  and a new link (section 8). Her queued edits are kept and save once the new link is opened.
