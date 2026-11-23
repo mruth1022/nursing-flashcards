@@ -9,10 +9,16 @@
 (() => {
   'use strict';
 
+  // A setup link (#setup=<token>) must leave the address bar and history at once.
+  let setupToken = null;
+  if (location.hash.startsWith('#setup=')) { setupToken = location.hash.slice(7); history.replaceState(null, '', location.pathname + location.search); }
+
   const STORE_KEY = 'nf.v1';
   const SESSION_KEY = 'nf.session.v1';
   const PREFS_KEY = 'nf.prefs.v2';
   const EDITS_KEY = 'nf.edits.v1';      // { deckKey: [op, ...] } not yet saved
+  const SAVED_KEY = 'nf.saved.v1';      // { deckKey: deck } last copy this device saved, used while the website catches up
+  const GH_KEY = 'nf.gh.v1';            // { token, at } this device's GitHub token (from the setup link)
 
   const $app = document.getElementById('app');
   const $nav = document.getElementById('nav');
@@ -65,7 +71,14 @@
     state.index = new Map((data.index || []).map(e => [e.key, e]));
     setBase(data.decks || [{ key: 'single', title: data.title || 'Flashcards', generatedAt: data.generatedAt, cardCount: data.cardCount, sections: data.sections }]);
   }
-  function setBase(decks) { state.base = decks; rebuild(); }
+  function setBase(decks) {
+    const saved = loadJSON(SAVED_KEY) || {};
+    state.base = decks.map(d => NFCore.newerDeck(d, saved[d.key]));
+    // forget saved copies the website has caught up with
+    const keep = {}; for (const d of decks) if (saved[d.key] && NFCore.newerDeck(d, saved[d.key]) !== d) keep[d.key] = saved[d.key];
+    if (Object.keys(keep).length !== Object.keys(saved).length) saveJSON(SAVED_KEY, Object.keys(keep).length ? keep : null);
+    rebuild();
+  }
   // the tests as shown = downloaded tests + this device's unsaved ops
   function rebuild() {
     state.decks = state.base.map(d => (state.pending[d.key] || []).length ? NFCore.applyOps(d, state.pending[d.key]).deck : d);
@@ -227,6 +240,7 @@
   // ------------------------------------------------------------ routing
   function go(view) { state.view = view; location.hash = view === 'home' ? '' : view; render(); }
   window.addEventListener('hashchange', () => {
+    if (location.hash.startsWith('#setup=')) { const raw = location.hash.slice(7); history.replaceState(null, '', location.pathname + location.search); Saver.useSetupToken(raw); return; }
     const v = (location.hash || '#home').slice(1).split('=')[0] || 'home';
     if (v === 'sync' && location.hash.startsWith('#sync=')) { handleIncomingSync(location.hash.slice(6)); return; }
     if (v === 'study' && !state.session) { state.view = 'home'; render(); return; }
@@ -592,8 +606,17 @@
   }
   function renderSync() {
     let y = 0, n = 0; for (const d of state.decks) { const s = deckStats(d); y += s.y; n += s.n; }
+    const pendingN = Edits.count();
+    const editPanel = h`<div class="panel">
+        <b>Saving card edits</b>
+        ${Saver.hasToken()
+          ? h`<div class="hint">This device saves edits to the shared cards, so they show up on every device.</div>
+             <div class="row" style="margin-top:10px">${Edits.chipHtml()}${pendingN ? '<button class="btn small primary" data-act="save-now">Save now</button>' : ''}<span class="spacer"></span><button class="btn small ghost" data-act="forget">Forget this device</button></div>`
+          : h`<div class="hint">${pendingN ? h`<b>${pendingN} change${pendingN === 1 ? '' : 's'}</b> made here ${pendingN === 1 ? 'is' : 'are'} saved on this device only. ` : ''}To save edits for every device, open the setup link Matt sent you, on this device.</div>`}
+      </div>`;
     $app.innerHTML = h`
       <h1>Sync devices</h1>
+      ${editPanel}
       <p class="sub">Progress is saved in this browser only. To carry it to another device, send yourself the sync link and open it there, or paste the code below.</p>
       <div class="panel">
         <b>This device</b><div class="hint">${y} got it · ${n} still learning · ${state.progress.sessions.length} sessions</div>
@@ -625,6 +648,12 @@
       catch (e) { toast('Could not read that code'); }
     };
     $app.querySelector('[data-act=merge]').onclick = () => doImport(false);
+    Edits.bindChip($app);
+    const sv = $app.querySelector('[data-act=save-now]'); if (sv) sv.onclick = () => Saver.flush(true);
+    const fg = $app.querySelector('[data-act=forget]'); if (fg) fg.onclick = () => {
+      if (!confirm('Stop saving edits from this device? Edits not yet saved stay here. You’ll need a new setup link to turn saving back on.')) return;
+      Saver.forget(); renderSync(); toast('This device no longer saves edits');
+    };
     $app.querySelector('[data-act=replace]').onclick = () => doImport(true);
   }
 
@@ -717,15 +746,116 @@
       rerender();
       toast('Deleted "' + (c.prompt.length > 40 ? c.prompt.slice(0, 40) + '…' : c.prompt) + '"', { label: 'Undo', run: () => { add(deckKey, { t: 'restore', id }); rerender(); } });
     }
-    function rerender() { if (state.view === 'browse') renderBrowse(); else if (state.view === 'study') renderStudy(); }
+    function rerender(quiet) {
+      const y = window.scrollY;
+      if (state.view === 'browse') renderBrowse(); else if (state.view === 'study') renderStudy(); else if (quiet) render();
+      if (quiet || state.view === 'browse') window.scrollTo(0, y);
+    }
     function chipHtml() { return h`<span class="save-chip" data-state="${Saver.state()}" role="status">${esc(Saver.text())}</span>`; }
     function bindChip(root) { const c = root.querySelector('.save-chip'); if (c) c.onclick = () => Saver.flush(true); }
     function refreshChips() { document.querySelectorAll('.save-chip').forEach(el => { el.dataset.state = Saver.state(); el.textContent = Saver.text(); }); }
     return { add, count, persist, deleteCard, chipHtml, bindChip, refreshChips, onChange: (fn) => listeners.push(fn), rerender };
   })();
 
-  // Saving is added in the GitHub step; until then edits stay on this device.
-  const Saver = { state: () => (Edits.count() ? 'local' : 'idle'), text: () => (Edits.count() ? `${Edits.count()} change${Edits.count() === 1 ? '' : 's'} on this device` : 'No unsaved changes'), flush: () => {}, schedule: () => {} };
+  // ------------------------------------------------------------ saving to GitHub
+  // Queued ops are committed to docs/decks/<file>.json in the repo the site is served from, using
+  // the token this device got from Matt's setup link. Batches go out a few seconds after the last
+  // edit, when the page is hidden, and when the connection comes back.
+  const Saver = (() => {
+    let status = 'idle', timer = null, retryTimer = null, busy = false, savedOnce = false;
+    function repo() {
+      if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) {
+        const dev = loadJSON('nf.gh.dev'); // local testing only, e.g. tests/mock_github.py
+        return dev && dev.api ? { branch: 'main', ...dev } : null;
+      }
+      const m = location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i); const seg = location.pathname.split('/').filter(Boolean)[0];
+      return m && seg ? { api: 'https://api.github.com', owner: m[1], repo: seg, branch: 'main' } : null;
+    }
+    const token = () => (loadJSON(GH_KEY) || {}).token || null;
+    const canSave = () => !!(repo() && token());
+    function set(st) { status = st; Edits.refreshChips(); if (state.view === 'sync' && !Editor.isOpen()) renderSync(); }
+    function stateName() {
+      if (busy) return 'saving';
+      const n = Edits.count();
+      if (!n) return savedOnce ? 'saved' : 'idle';
+      if (!canSave()) return 'local';
+      return ['offline', 'auth', 'error'].includes(status) ? status : 'pending';
+    }
+    function text() {
+      const n = Edits.count(); const c = `${n} change${n === 1 ? '' : 's'}`;
+      return {
+        saving: 'Saving…', saved: 'All changes saved', idle: 'No unsaved changes',
+        local: `${c} on this device only`, pending: `${c} waiting to save`, offline: `Offline · ${c} waiting`,
+        auth: 'Saving paused · ask Matt for a new link', error: 'Couldn’t save · will retry',
+      }[stateName()];
+    }
+    function schedule(ms = 6000) {
+      clearTimeout(timer);
+      if (Edits.count() && canSave()) timer = setTimeout(() => flush(), ms);
+      Edits.refreshChips();
+    }
+    function retry(ms) { clearTimeout(retryTimer); retryTimer = setTimeout(() => flush(), ms); }
+    async function flush(manual) {
+      clearTimeout(timer);
+      if (busy) return;
+      if (!Edits.count()) { if (manual) toast('Nothing to save'); return; }
+      const r = repo(), t = token();
+      if (!r || !t) { if (manual) toast(r ? 'This device can’t save yet. Open the setup link Matt sent you.' : 'Saving isn’t available on this site'); set('local'); return; }
+      busy = true; Edits.refreshChips();
+      try {
+        for (const key of Object.keys(state.pending)) {
+          const ops = (state.pending[key] || []).slice(); if (!ops.length) continue;
+          const entry = state.index && state.index.get(key); if (!entry) continue;
+          const before = JSON.stringify((state.decks.find(x => x.key === key) || {}).sections);
+          const title = (state.decks.find(x => x.key === key) || {}).title || key;
+          const res = await NFCore.saveToGitHub({
+            fetch: window.fetch.bind(window), api: r.api, owner: r.owner, repo: r.repo, branch: r.branch, token: t,
+            path: 'docs/decks/' + entry.file, ops, message: `App edit (${title}): ${NFCore.describeOps(ops)}`,
+          });
+          const done = new Set(ops.map(o => o.n));
+          state.pending[key] = (state.pending[key] || []).filter(o => !done.has(o.n));
+          Edits.persist();
+          const saved = loadJSON(SAVED_KEY) || {}; saved[key] = res.deck; saveJSON(SAVED_KEY, saved);
+          state.base = state.base.map(x => (x.key === key ? res.deck : x));
+          rebuild();
+          if (res.skipped.length) toast(`${res.skipped.length} change${res.skipped.length === 1 ? '' : 's'} couldn’t be applied: the card was changed or deleted on another device`);
+          // show changes that came from the other device
+          if (JSON.stringify((state.decks.find(x => x.key === key) || {}).sections) !== before && !Editor.isOpen() && ['browse', 'home', 'stats'].includes(state.view)) Edits.rerender(true);
+        }
+        savedOnce = true; busy = false; set(Edits.count() ? 'pending' : 'saved');
+        if (Edits.count()) schedule(1000); // edits made while saving
+        else if (manual) toast('All changes saved');
+      } catch (e) {
+        busy = false;
+        const kind = e.kind || 'error';
+        if (kind === 'auth') { set('auth'); if (manual) toast('GitHub refused this device’s key. Ask Matt for a new setup link.'); }
+        else if (kind === 'offline') { set('offline'); retry(30000); }
+        else { set('error'); retry(kind === 'conflict' ? 5000 : 60000); console.warn('Save failed:', e.message); }
+      }
+    }
+    // checks a token can write to the repo: true, false, or 'offline'
+    async function verify(tok) {
+      const r = repo(); if (!r) return false;
+      try {
+        const res = await fetch(`${r.api}/repos/${r.owner}/${r.repo}`, { cache: 'no-store', headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + tok } });
+        if (!res.ok) return false;
+        const j = await res.json(); return !!(j.permissions && j.permissions.push);
+      } catch { return 'offline'; }
+    }
+    async function useSetupToken(raw) {
+      let tok = ''; try { tok = decodeURIComponent(raw || '').trim(); } catch {}
+      if (!tok) return;
+      if (!repo()) { toast('Setup links only work on the flashcards website'); return; }
+      const ok = await verify(tok);
+      if (ok === true) { saveJSON(GH_KEY, { token: tok, at: Date.now() }); status = 'idle'; toast('Editing is turned on for this device'); schedule(500); if (state.view === 'sync') renderSync(); }
+      else toast(ok === 'offline' ? 'You’re offline, so the setup link couldn’t be checked. Open it again when you’re online.' : 'This setup link didn’t work. Ask Matt for a new one.');
+    }
+    function forget() { saveJSON(GH_KEY, null); status = 'idle'; Edits.refreshChips(); }
+    Edits.onChange(() => schedule());
+    window.addEventListener('online', () => { if (Edits.count()) flush(); });
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && Edits.count() && canSave()) flush(); });
+    return { state: stateName, text, schedule, flush, verify, useSetupToken, forget, canSave, hasToken: () => !!token(), repo };
+  })();
 
   // ------------------------------------------------------------ card editor
   const Editor = (() => {
@@ -963,5 +1093,7 @@
     const v = (location.hash || '#home').slice(1) || 'home';
     state.view = ['home', 'stats', 'browse', 'sync'].includes(v) ? v : (v === 'study' && state.session ? 'study' : 'home');
     render();
+    if (setupToken) { const raw = setupToken; setupToken = null; Saver.useSetupToken(raw); }
+    else if (Edits.count()) Saver.schedule(2000);
   })();
 })();
