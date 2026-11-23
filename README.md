@@ -220,7 +220,6 @@ Saving is off on localhost unless `nf.gh.dev` is set.
 ```
 docs/            GitHub Pages root: index.html, app.js, core.js, styles.css, img/, cheer/
 docs/decks/      index.json (the tests, in order) + one <key>.json per test
-                 (docs/cards.json is the old single-file format, kept only until the next release)
 docs/glossary/   index.json (which tests use which glossary) + one <name>.json per glossary
 tools/           import_doc.py, build_glossary.py (+ glossary_overrides.json), make_setup_link.py,
                  prepare_photos.py, test sample
