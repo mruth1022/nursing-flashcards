@@ -359,20 +359,36 @@
 
   /* ---------------------------------------------------------------- export */
 
-  /* The test as an HTML table document that tools/import_doc.py reads back (Heading 1 rows = units,
-   * Heading 2 rows = sections), e.g. to open in Google Docs or keep as a backup. */
-  function exportHtml(deck) {
-    const rows = [];
-    let group = null;
-    const groupsUsed = deck.sections.some(s => s.group);
+  /* The test as an HTML document in the shape of a Google Docs export, so tools/import_doc.py reads
+   * it back (and Google Docs opens it): tables of prompt | answer | label rows, Heading 1 rows for
+   * units, Heading 2 rows for sections, inline colours moved into CSS classes. A run of sections
+   * without a unit gets its own table. base: the site URL (ending in /) to make image links absolute. */
+  function exportHtml(deck, base) {
+    const classes = new Map();
+    const classify = (html) => String(html || '')
+      .replace(/<mark\b/g, '<span').replace(/<\/mark>/g, '</span>') // Google Docs marks highlights as styled spans
+      .replace(/ src="img\//g, ` src="${base || ''}img/`)              // full URLs so images load from a downloaded file
+      .replace(/<(ul|ol) class="l(\d)"/g, '<$1 class="lst-kix_export-$2"')  // list level, as Google Docs names it
+      .replace(/ style="([^"]*)"/g, (m, css) => {
+      if (!classes.has(css)) classes.set(css, 'c' + (classes.size + 1));
+      return ` class="${classes.get(css)}"`;
+    });
+    const tables = [];
+    let rows = null, group;
     for (const s of deck.sections) {
-      if (groupsUsed && (s.group || '') !== group) { group = s.group || ''; rows.push(`<tr><td><h1>${escText(group || 'General')}</h1></td><td></td></tr>`); }
+      const g = s.group || '';
+      if (!rows || g !== group) {
+        rows = []; tables.push(rows); group = g;
+        if (g) rows.push(`<tr><td><h1>${escText(g)}</h1></td><td></td></tr>`);
+      }
       rows.push(`<tr><td><h2>${escText(s.name)}</h2></td><td></td></tr>`);
-      for (const c of s.cards) rows.push(`<tr><td>${c.promptHtml || escText(c.prompt)}</td><td>${c.answerHtml}</td>${c.label ? `<td>${escText(c.label)}</td>` : ''}</tr>`);
+      for (const c of s.cards) rows.push(`<tr><td>${classify(c.promptHtml || escText(c.prompt))}</td><td>${classify(c.answerHtml)}</td>${c.label ? `<td>${escText(c.label)}</td>` : ''}</tr>`);
     }
+    const css = [...classes].map(([decl, cls]) => `.${cls}{${decl}}`).join('\n');
     return `<!doctype html><html><head><meta charset="utf-8"><title>${escText(deck.title)}</title>
-<style>table{border-collapse:collapse}td{border:1px solid #ccc;padding:6px;vertical-align:top}h1,h2{margin:0}</style></head>
-<body><table>\n${rows.join('\n')}\n</table></body></html>`;
+<style>table{border-collapse:collapse}td{border:1px solid #ccc;padding:6px;vertical-align:top}h1,h2{margin:0}
+${css}</style></head>
+<body>${tables.map(r => `<table>\n${r.join('\n')}\n</table>`).join('\n<p></p>\n')}</body></html>`;
   }
 
   const NFCore = {

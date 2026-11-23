@@ -514,7 +514,7 @@
     }).join('');
     $app.innerHTML = h`
       <div class="b-head"><h1>Browse</h1><span class="spacer"></span>
-        ${edit ? h`${Edits.chipHtml()}<button class="btn small primary" data-act="edit-done">Done</button>` : h`<button class="btn small" data-act="edit-on">✎ Edit cards</button>`}</div>
+        ${edit ? h`${Edits.chipHtml()}<button class="icon-btn" data-act="more" aria-label="More: recently deleted, history, download" title="Recently deleted, history, download">⋯</button><button class="btn small primary" data-act="edit-done">Done</button>` : h`<button class="btn small" data-act="edit-on">✎ Edit cards</button>`}</div>
       ${state.decks.length > 1 ? h`<div class="panel">${deckPicker()}</div>` : ''}
       <input type="search" id="q" placeholder="Search prompts and answers…" value="${esc(state.browseQuery)}" autocomplete="off">
       <p class="hint">${total} card${total === 1 ? '' : 's'}${terms.length ? ' match' : ''}. ${edit ? 'Tap ✎ to edit a card, 🗑 to delete it, or + Card to add one.' : 'Tap a card to expand.'}</p>
@@ -540,6 +540,7 @@
     tool('[data-del]', b => Edits.deleteCard(d.key, b.dataset.del));
     tool('[data-move]', b => Regroup.moveCard(d.key, b.dataset.move));
     tool('[data-secmenu]', b => Regroup.sectionMenu(d.key, b.dataset.secmenu));
+    const more = $app.querySelector('[data-act=more]'); if (more) more.onclick = () => Safety.menu(d.key);
     const as = $app.querySelector('[data-act=add-sec]'); if (as) as.onclick = () => Regroup.addSection(d.key, null);
     const au = $app.querySelector('[data-act=add-unit]'); if (au) au.onclick = () => Regroup.addUnit(d.key);
     Edits.bindChip($app);
@@ -952,6 +953,51 @@
       add(deckKey, { t: 'addSec', group: g, name: n, after: null });
     }
     return { moveCard, sectionMenu, addSection, addUnit };
+  })();
+
+
+  // ------------------------------------------------------------ recently deleted, history, download
+  const Safety = (() => {
+    const deckOf = (key) => state.decks.find(x => x.key === key);
+    function menu(deckKey) {
+      const d = deckOf(deckKey); const n = (d.trash || []).length;
+      openSheet(d.title, h`<div class="sheet-list">
+          <button class="sheet-item" data-a="trash">Recently deleted<span class="cnt">${n}</span></button>
+          <button class="sheet-item" data-a="history">History of this test</button>
+          <button class="sheet-item" data-a="export">Download as HTML<span class="cnt">backup · opens in Google Docs</span></button>
+        </div>`, (a) => (a === 'trash' ? trash(deckKey) : a === 'history' ? history(deckKey) : exportDeck(deckKey)));
+    }
+    function trash(deckKey) {
+      const d = deckOf(deckKey); const items = d.trash || [];
+      const body = items.length
+        ? h`<div class="sheet-sub">Deleted cards can be put back where they were. Their study progress comes back too.</div><div class="sheet-list">${items.map(t => h`<button class="sheet-item" data-a="restore" data-v="${esc(t.card.id)}"><span><b>${esc(t.card.prompt.length > 60 ? t.card.prompt.slice(0, 60) + '…' : t.card.prompt)}</b><br><span class="cnt">${esc(t.group && t.group !== t.name ? t.group + ' › ' : '')}${esc(t.name)}${t.at ? ' · ' + fmtDate(t.at) : ''}</span></span><span class="restore">Restore</span></button>`).join('')}</div>`
+        : '<p class="hint">No deleted cards.</p>';
+      openSheet('Recently deleted', body, (a, id) => { Edits.add(deckKey, { t: 'restore', id }); state.browseOpen.add(id); Edits.rerender(); toast('Card restored'); });
+    }
+    async function history(deckKey) {
+      const d = deckOf(deckKey); const entry = state.index && state.index.get(deckKey); const r = Saver.repo();
+      openSheet('History', '<p class="hint">Loading…</p>', () => {});
+      const show = (html) => { const el = document.querySelector('#sheet .gl-sheet'); if (el) el.innerHTML = h`<button class="gl-x" data-act="sheet-close" aria-label="Close">×</button><div class="gl-term">History</div>${html}`; };
+      if (!r || !entry) { show('<p class="hint">History is available on the flashcards website.</p>'); return; }
+      try {
+        const tok = (loadJSON(GH_KEY) || {}).token;
+        const res = await fetch(`${r.api}/repos/${r.owner}/${r.repo}/commits?path=${encodeURIComponent('docs/decks/' + entry.file)}&per_page=20`, { cache: 'no-store', headers: { Accept: 'application/vnd.github+json', ...(tok ? { Authorization: 'Bearer ' + tok } : {}) } });
+        if (!res.ok) throw new Error(res.status);
+        const list = await res.json();
+        show(h`<div class="sheet-sub">${esc(d.title)}: the last ${list.length} saves and imports. Matt can bring back any earlier version from GitHub.</div>
+          <div class="sheet-list">${list.map(c => h`<a class="sheet-item" href="${esc(c.html_url)}" target="_blank" rel="noopener"><span>${esc(c.commit.message.split('\n')[0].replace(/^App edit \([^)]*\): /, ''))}</span><span class="cnt">${c.commit.author && c.commit.author.date ? fmtDate(c.commit.author.date) : ''}</span></a>`).join('') || '<p class="hint">No history yet.</p>'}</div>`);
+      } catch { show('<p class="hint">Couldn’t load the history. Check your connection and try again.</p>'); }
+    }
+    function exportDeck(deckKey) {
+      const d = deckOf(deckKey);
+      const blob = new Blob([NFCore.exportHtml(d, location.origin + location.pathname.replace(/[^/]*$/, ''))], { type: 'text/html' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+      a.download = (d.title.replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '') || 'flashcards') + '.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      toast('Downloaded ' + a.download);
+    }
+    return { menu };
   })();
 
   // ------------------------------------------------------------ card editor

@@ -377,3 +377,5 @@ body.editing { overflow: hidden; }
 .sheet-item.danger { color: var(--no); }
 .sheet-item.danger[disabled] { color: var(--muted); }
 .sheet-item .cnt { color: var(--muted); font-size: 0.85rem; }
+a.sheet-item { text-decoration: none; }
+.sheet-item .restore { color: var(--accent); font-weight: 700; flex: none; }
