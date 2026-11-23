@@ -366,3 +366,14 @@ body.editing { overflow: hidden; }
 .ed-field p { margin: 0 0 0.5em; }
 .ed-field mark { color: inherit; padding: 0 1px; }
 .ed-body input[type=text] { width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font: inherit; }
+.sheet .sheet-sub { color: var(--muted); font-size: 0.88rem; margin: 4px 32px 10px 0; }
+.sheet .lbl { font-size: 0.75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin: 14px 0 6px; }
+.sheet-grp { font-size: 0.8rem; font-weight: 700; color: var(--muted); margin: 10px 0 4px; }
+.sheet-list { display: flex; flex-direction: column; }
+.sheet-item { text-align: left; border: 0; border-top: 1px solid var(--line); background: transparent; padding: 12px 4px; font: inherit; cursor: pointer; display: flex; justify-content: space-between; gap: 8px; color: var(--ink); }
+.sheet-item:first-child { border-top: 0; }
+.sheet-item:hover, .sheet-item:focus-visible { background: var(--bg); }
+.sheet-item[disabled] { color: var(--muted); cursor: default; background: transparent; }
+.sheet-item.danger { color: var(--no); }
+.sheet-item.danger[disabled] { color: var(--muted); }
+.sheet-item .cnt { color: var(--muted); font-size: 0.85rem; }

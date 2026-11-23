@@ -404,7 +404,7 @@
   }
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { if (Glossary.isOpen()) { Glossary.close(); return; } if (Editor.isOpen()) { Editor.close(); return; } closeLightbox(); Cheer.close(); return; }
+    if (e.key === 'Escape') { if (closeSheet()) return; if (Glossary.isOpen()) { Glossary.close(); return; } if (Editor.isOpen()) { Editor.close(); return; } closeLightbox(); Cheer.close(); return; }
     if (Editor.isOpen()) return;
     if (Glossary.isOpen()) return;
     if (state.view !== 'study' || !state.session) return;
@@ -503,11 +503,11 @@
       if (!cards.length && !(edit && !terms.length)) return '';
       const k = sKey(s);
       return h`<h2 class="b-sec">${s.group ? h`<span class="grp-inline">${esc(s.group)} ›</span> ` : ''}${esc(sLabel(d, s))} <span style="color:var(--muted);font-weight:400">${cards.length}</span>
-          ${edit ? h`<span class="sec-tools"><button class="btn small" data-add="${esc(k)}">+ Card</button></span>` : ''}</h2>
+          ${edit ? h`<span class="sec-tools"><button class="btn small" data-add="${esc(k)}">+ Card</button><button class="icon-btn" data-secmenu="${esc(k)}" aria-label="Section options" title="Section options">⋯</button></span>` : ''}</h2>
         <div class="panel" style="padding:4px 16px">
         ${cards.length ? '' : '<p class="hint" style="margin:10px 0">No cards in this section yet.</p>'}
         ${cards.map(c => h`<details class="b-card" data-id="${c.id}" ${terms.length || state.browseOpen.has(c.id) ? 'open' : ''}><summary><span class="dot ${statusOf(c.id) || ''}"></span><span class="p">${hi(c.promptHtml || esc(c.prompt))}</span>${c.label ? h`<span class="tag">${esc(c.label)}</span>` : ''}
-            ${edit ? h`<span class="card-tools"><button class="icon-btn" data-edit="${c.id}" aria-label="Edit card" title="Edit">✎</button><button class="icon-btn" data-del="${c.id}" aria-label="Delete card" title="Delete">🗑</button></span>` : ''}</summary>
+            ${edit ? h`<span class="card-tools"><button class="icon-btn" data-edit="${c.id}" aria-label="Edit card" title="Edit">✎</button><button class="icon-btn" data-move="${c.id}" aria-label="Move card" title="Move">↕</button><button class="icon-btn" data-del="${c.id}" aria-label="Delete card" title="Delete">🗑</button></span>` : ''}</summary>
           <div class="ans a">${hi(c.answerHtml || '<i>(no answer)</i>')}
             <div class="row" style="margin-top:10px"><button class="btn small" data-mark="no" data-id="${c.id}">Still learning</button><button class="btn small" data-mark="yes" data-id="${c.id}">Got it</button>${statusOf(c.id) ? h`<button class="btn small ghost" data-mark="clear" data-id="${c.id}">Clear</button>` : ''}</div>
           </div></details>`).join('')}</div>`;
@@ -518,7 +518,8 @@
       ${state.decks.length > 1 ? h`<div class="panel">${deckPicker()}</div>` : ''}
       <input type="search" id="q" placeholder="Search prompts and answers…" value="${esc(state.browseQuery)}" autocomplete="off">
       <p class="hint">${total} card${total === 1 ? '' : 's'}${terms.length ? ' match' : ''}. ${edit ? 'Tap ✎ to edit a card, 🗑 to delete it, or + Card to add one.' : 'Tap a card to expand.'}</p>
-      ${secsHtml || '<p class="empty">Nothing matches.</p>'}`;
+      ${secsHtml || '<p class="empty">Nothing matches.</p>'}
+      ${edit && !terms.length ? h`<div class="row" style="margin:18px 0 8px"><button class="btn small" data-act="add-sec">+ Add section</button><button class="btn small" data-act="add-unit">+ Add unit</button></div>` : ''}`;
     bindDeckPicker(renderBrowse);
     const $q = $app.querySelector('#q');
     let timer; $q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => { const pos = $q.selectionStart; state.browseQuery = $q.value; renderBrowse(); const nq = $app.querySelector('#q'); nq.focus(); try { nq.setSelectionRange(pos, pos); } catch {} }, 180); });
@@ -537,6 +538,10 @@
     tool('[data-edit]', b => Editor.open({ deckKey: d.key, cardId: b.dataset.edit }));
     tool('[data-add]', b => Editor.open({ deckKey: d.key, sec: b.dataset.add }));
     tool('[data-del]', b => Edits.deleteCard(d.key, b.dataset.del));
+    tool('[data-move]', b => Regroup.moveCard(d.key, b.dataset.move));
+    tool('[data-secmenu]', b => Regroup.sectionMenu(d.key, b.dataset.secmenu));
+    const as = $app.querySelector('[data-act=add-sec]'); if (as) as.onclick = () => Regroup.addSection(d.key, null);
+    const au = $app.querySelector('[data-act=add-unit]'); if (au) au.onclick = () => Regroup.addUnit(d.key);
     Edits.bindChip($app);
     Glossary.decorate();
   }
@@ -855,6 +860,98 @@
     window.addEventListener('online', () => { if (Edits.count()) flush(); });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && Edits.count() && canSave()) flush(); });
     return { state: stateName, text, schedule, flush, verify, useSetupToken, forget, canSave, hasToken: () => !!token(), repo };
+  })();
+
+
+  // ------------------------------------------------------------ sheets (simple action menus)
+  function openSheet(title, bodyHtml, onAction) {
+    closeSheet();
+    const el = document.createElement('div'); el.className = 'gl-pop'; el.id = 'sheet';
+    el.innerHTML = h`<div class="gl-sheet sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}"><button class="gl-x" data-act="sheet-close" aria-label="Close">×</button><div class="gl-term">${esc(title)}</div>${bodyHtml}</div>`;
+    el.addEventListener('click', (e) => {
+      if (e.target === el || e.target.closest('[data-act=sheet-close]')) { closeSheet(); return; }
+      const b = e.target.closest('[data-a]'); if (b && !b.disabled) { closeSheet(); onAction(b.dataset.a, b.dataset.v); }
+    });
+    document.body.appendChild(el);
+    el.querySelector('.gl-x').focus({ preventScroll: true });
+  }
+  function closeSheet() { const el = document.getElementById('sheet'); if (el) { el.remove(); return true; } return false; }
+
+  // ------------------------------------------------------------ regrouping (move cards, manage sections and units)
+  const Regroup = (() => {
+    const deckOf = (key) => state.decks.find(x => x.key === key);
+    const ask = (q, v) => { const r = prompt(q, v || ''); return r == null ? null : r.trim(); };
+    const secTitle = (d, s) => (s.group && s.group !== s.name ? s.group + ' › ' : '') + sLabel(d, s);
+
+    function moveCard(deckKey, id) {
+      const d = deckOf(deckKey); const c = state.cards.get(id); if (!d || !c) return;
+      const sec = d.sections.find(x => sKey(x) === c.sectionKey); const i = sec.cards.findIndex(x => x.id === id);
+      const body = h`<div class="sheet-sub">${esc(c.prompt.length > 70 ? c.prompt.slice(0, 70) + '…' : c.prompt)}</div>
+        <div class="lbl">Within ${esc(sLabel(d, sec))}</div>
+        <div class="row"><button class="btn small" data-a="up" ${i === 0 ? 'disabled' : ''}>↑ Move up</button><button class="btn small" data-a="down" ${i === sec.cards.length - 1 ? 'disabled' : ''}>↓ Move down</button>
+          <button class="btn small" data-a="top" ${i === 0 ? 'disabled' : ''}>⤒ To top</button></div>
+        <div class="lbl">Move to another section</div>
+        ${groupsOf(d).map(G => h`${G.name ? h`<div class="sheet-grp">${esc(G.name)}</div>` : ''}<div class="sheet-list">${G.secs.map(x => h`<button class="sheet-item" data-a="to" data-v="${esc(sKey(x))}" ${x === sec ? 'disabled' : ''}>${esc(sLabel(d, x))}<span class="cnt">${x === sec ? 'here' : x.cards.length}</span></button>`).join('')}</div>`).join('')}`;
+      openSheet('Move card', body, (a, v) => {
+        if (a === 'up') Edits.add(deckKey, { t: 'move', id, sec: c.sectionKey, before: sec.cards[i - 1].id });
+        else if (a === 'down') Edits.add(deckKey, { t: 'move', id, sec: c.sectionKey, before: sec.cards[i + 2] ? sec.cards[i + 2].id : null });
+        else if (a === 'top') Edits.add(deckKey, { t: 'move', id, sec: c.sectionKey, before: sec.cards[0].id });
+        else if (a === 'to') { Edits.add(deckKey, { t: 'move', id, sec: v, before: null }); const to = d.sections.find(x => sKey(x) === v); toast('Moved to ' + (to ? sLabel(d, to) : v)); }
+        Edits.rerender();
+      });
+    }
+
+    function sectionMenu(deckKey, key) {
+      const d = deckOf(deckKey); const sec = d && d.sections.find(x => sKey(x) === key); if (!sec) return;
+      const same = d.sections.filter(x => (x.group || '') === (sec.group || ''));
+      const j = same.indexOf(sec);
+      const groups = groupsOf(d); const gi = groups.findIndex(G => G.name === (sec.group || ''));
+      const body = h`<div class="sheet-sub">${esc(secTitle(d, sec))} · ${sec.cards.length} card${sec.cards.length === 1 ? '' : 's'}</div>
+        <div class="sheet-list">
+          <button class="sheet-item" data-a="rename">Rename section</button>
+          <button class="sheet-item" data-a="up" ${j === 0 ? 'disabled' : ''}>Move section up</button>
+          <button class="sheet-item" data-a="down" ${j === same.length - 1 ? 'disabled' : ''}>Move section down</button>
+          <button class="sheet-item" data-a="add">Add a section below</button>
+          ${sec.group ? h`<button class="sheet-item" data-a="rgroup">Rename unit “${esc(sec.group)}”</button>
+            <button class="sheet-item" data-a="gup" ${gi <= 0 ? 'disabled' : ''}>Move unit up</button>
+            <button class="sheet-item" data-a="gdown" ${gi === groups.length - 1 ? 'disabled' : ''}>Move unit down</button>` : ''}
+          <button class="sheet-item danger" data-a="del" ${sec.cards.length ? 'disabled' : ''}>Delete section${sec.cards.length ? ' (move or delete its cards first)' : ''}</button>
+        </div>`;
+      openSheet('Section', body, (a) => {
+        if (a === 'rename') { const n = ask('New name for this section:', sec.name); if (n && n !== sec.name) add(deckKey, { t: 'renameSec', sec: key, name: n }, 'A section with that name already exists in this unit'); }
+        else if (a === 'up') add(deckKey, { t: 'moveSec', sec: key, before: sKey(same[j - 1]) });
+        else if (a === 'down') { const after = d.sections[d.sections.indexOf(same[j + 1]) + 1]; add(deckKey, { t: 'moveSec', sec: key, before: after ? sKey(after) : null }); }
+        else if (a === 'add') addSection(deckKey, sec);
+        else if (a === 'rgroup') { const n = ask('New name for this unit:', sec.group); if (n && n !== sec.group) add(deckKey, { t: 'renameGroup', group: sec.group, to: n }, 'A unit with that name already exists'); }
+        else if (a === 'gup' || a === 'gdown') moveUnit(deckKey, d, groups, gi, a === 'gup' ? -1 : 1);
+        else if (a === 'del') { if (confirm(`Delete the empty section “${sec.name}”?`)) add(deckKey, { t: 'delSec', sec: key }); }
+      });
+    }
+    // all of a unit's sections go before the first section of the target unit
+    function moveUnit(deckKey, d, groups, gi, dir) {
+      const target = dir < 0 ? groups[gi - 1] : groups[gi + 2];
+      const before = target ? sKey(target.secs[0]) : null;
+      Edits.add(deckKey, ...groups[gi].secs.map(x => ({ t: 'moveSec', sec: sKey(x), before })));
+      Edits.rerender();
+    }
+    // apply one op; tell the user if it didn't apply (name clash etc.)
+    function add(deckKey, op, failMsg) {
+      const d = deckOf(deckKey);
+      if (!NFCore.applyOps(d, [op]).skipped.length) { Edits.add(deckKey, op); Edits.rerender(); }
+      else toast(failMsg || 'That change isn’t possible');
+    }
+    function addSection(deckKey, afterSec) {
+      const n = ask('Name of the new section:'); if (!n) return;
+      const group = afterSec ? afterSec.group || '' : '';
+      add(deckKey, { t: 'addSec', group, name: n, after: afterSec ? sKey(afterSec) : null }, 'A section with that name already exists here');
+    }
+    function addUnit(deckKey) {
+      const g = ask('Name of the new unit:'); if (!g) return;
+      if (deckOf(deckKey).sections.some(x => x.group === g)) { toast('A unit with that name already exists'); return; }
+      const n = ask('Name of its first section:', g); if (!n) return;
+      add(deckKey, { t: 'addSec', group: g, name: n, after: null });
+    }
+    return { moveCard, sectionMenu, addSection, addUnit };
   })();
 
   // ------------------------------------------------------------ card editor
